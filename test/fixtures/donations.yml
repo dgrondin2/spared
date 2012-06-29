@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date_donated: 2012-04-20
+  amount: 9.99
+
+two:
+  date_donated: 2012-04-20
+  amount: 9.99

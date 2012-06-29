@@ -1,0 +1,47 @@
+/*
+ * header.css.scss
+ *
+ * Stylesheet for "header.html.erb".
+ */
+ 
+@import "variables";
+ 
+ 
+/*    DIVS    */
+
+#header_container {
+	position: relative;
+	width: $page-width;
+}
+
+#login_links_container {
+	position: absolute;
+	right: 0px;
+	float: right;
+}
+
+#nav_bar {
+	position: absolute;
+	bottom: 15px;
+	right: 0px;
+}
+
+
+/*    FONTS    */
+
+.login_link {
+	color: $yellow;
+}
+
+.nav_link {
+	color: $black;
+	font-family: $nav-font-family;
+	font-size: $nav-font-size;
+	margin-left: 27px;
+	letter-spacing: -2px;
+	font-weight: 700;
+	
+	&:hover {
+		color: $yellow;
+	}
+}

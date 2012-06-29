@@ -1,0 +1,84 @@
+<!--
+  - home/index.html.erb
+  -
+  - Contents for home page when user is signed out.
+  -->
+
+
+<%= image_tag("about2/Coco Photo by Sarahbeth Photography.png", :class => 'wide_photo') %>
+
+<!--div class="heading_box">
+	<h1 class="heading_label">HOW DOES IT WORK?</h1>
+</div-->
+
+<div class="home_heading home_heading_label">How does it work?</div>
+
+<div id="home_flow_chart">
+	<%= image_tag("home/ORGANIZATION WISHLISTS.png", :class => 'home_flow_image inline') %>
+	<%= image_tag("home/Shape 2 copy 2.png", :class => 'home_flow_arrow inline') %>
+	<%= image_tag("home/ORGANIZATION WISHLISTS copy.png", :class => 'home_flow_image inline') %>
+	<%= image_tag("home/Shape 2 copy 2.png", :class => 'home_flow_arrow inline') %>
+	<%= image_tag("home/ORGANIZATION WISHLISTS copy 2.png", :class => 'home_flow_image inline') %>
+</div>
+
+<div class="content_box">
+	<div class="content_text_wrapper front_page">
+		<h2 class="content_heading">It's Easy... and It's Free!</h2>
+		
+		<li class="content">Browse a wishlist and donate items</li>
+		<li class="content">Post items you can spare and they will be matched with an
+									 organization in need</li>
+		<li class="content">Make a financial donation to a shelter of your choice</li>
+	</div>
+</div>
+
+<br/>
+<br/>
+
+<div class="content_box">
+	<div class="content_text_wrapper front_page">
+		<h2 class="content_heading">Anyone Can Help!</h2>
+		
+		<p class="content inline">Local shelter's top wishlist item is blankets?</p>
+		<p class="content inline bold">Donate them!</p>
+		<br/>
+		<p class="content inline">Puppy grew too large for his collar?</p>
+		<p class="content inline bold">Post it for donation!</p>
+		<br/>
+		<p class="content inline">Extra birthday cash?</p>
+		<p class="content inline bold">Donate it to your favorite organization!</p>
+		<br/>
+		<p class="content inline">Any donation, large or small, can benefit animals in shelters and
+						   rescues.</p>
+		<br/>
+		<br/>
+		<!-- The last <p> tag of .content_wrapper MUST be inline (or else bottom margin breaks): -->
+		<p class="content inline">Research shows that shelters don't often get the supplies they need and it is
+						   the goal of Spared to help make this happen.<br/> 
+						   By involving the community and streamlining the way organizations get 
+						   supplies, volunteers are less bogged down by daily operations,<br/> 
+						   and animals get the love and care they need. Getting rid of those unused pet 
+						   supplies also ensures a cleaner garage!</p>
+	</div>
+</div>
+
+<br/>
+<br/>
+
+<div class="content_box">
+	<div class="content_text_wrapper front_page">
+		<h2 class="content_heading">Who is Eligible?</h2>
+		
+		<p class="content">Though we aim to help all animal organizations, there are a few registration
+						   qualifications<br/> 
+						   to ensure integrity. To register an organization for donations, the 
+						   organization must:</p>
+		<li class="content">Be nonprofit [registered or non-registered]</li>
+		<li class="content">Have a physical address and facility</li>
+		<li class="content">Be willing to take care of shipping costs and/or transportation of items</li>
+		<br/>
+		<!-- The last <p> tag of .content_wrapper MUST be inline (or else bottom margin breaks): -->
+		<p class="content inline">For full eligibility requirements,</p>
+		<%= link_to 'register now!', 'register', :class => 'login_link inline', :rel => 'facebox' %>
+	</div>
+</div>

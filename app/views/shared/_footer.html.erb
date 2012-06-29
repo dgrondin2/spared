@@ -1,0 +1,22 @@
+<!--
+  - _footer.html.erb
+  -
+  - Contains the site's footer (nav bar and a line).
+  -->
+
+<%= stylesheet_link_tag "footer" %>
+
+<div id="footer_container">
+	<div id="footer_nav_links">
+		<%= link_to "home", root_url, :class => 'footer_nav_link inline' %>
+		<%= link_to "about", "http://localhost:3000/about", :class => 'footer_nav_link inline' %>
+		<%= link_to "faqs", "http://localhost:3000/faqs", :class => 'footer_nav_link inline' %>
+		<%= link_to "contact", "http://localhost:3000/contact", :class => 'footer_nav_link inline' %>
+		<%= link_to "copyright", "", :class => 'footer_nav_link inline' %>
+	</div>
+</div>
+
+<hr/>
+
+<br/>
+<br/>

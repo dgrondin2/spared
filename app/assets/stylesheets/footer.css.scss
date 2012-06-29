@@ -1,0 +1,30 @@
+/*
+ * header.css.scss
+ *
+ * Stylesheet for "footer.html.erb".
+ */
+ 
+@import "variables";
+
+/*    DIVS    */
+
+#footer_container {
+	clear: both;
+	margin-top: 100px;
+}
+
+#footer_nav_links {
+	padding-left: 10px;
+}
+
+
+/*    FONTS    */
+
+.footer_nav_link {
+	color: $darkgray;
+	font-size: $footer-nav-font-size;
+	font-family: $generic-font-family;
+	font-weight: 100;
+	
+	padding-right: 25px;
+}

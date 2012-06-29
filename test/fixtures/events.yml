@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  when: 2012-04-19 20:33:58
+  city: MyString
+  state: MyString
+  description: MyText
+  number_of_volunteers_needed: 1
+  image: 
+
+two:
+  name: MyString
+  when: 2012-04-19 20:33:58
+  city: MyString
+  state: MyString
+  description: MyText
+  number_of_volunteers_needed: 1
+  image: 

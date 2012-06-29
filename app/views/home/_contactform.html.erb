@@ -1,0 +1,12 @@
+<%= form_tag('/contact', :method => "post") do %>
+	<%= label_tag(:contact_name, 'Name', :class => 'contact_label content') %>
+	<%= text_field_tag(:contact_name,"", :class => 'text_field contact_textfield') %><br/>
+	<br/>
+	<%= label_tag(:contact_email, 'Email', :class => 'contact_label content') %>
+	<%= text_field_tag(:contact_email,"", :class => 'text_field contact_textfield') %><br/>
+	<br/>
+	<%= label_tag(:contact_comment, 'Comment', :class => 'contact_label content') %>
+	<%= text_area_tag(:contact_comment, "", :class => 'text_field contact_textarea') %><br/>
+	<br/>
+	<%= image_submit_tag("about3/SEND.png", :class => 'contact_button') %>
+<% end %>

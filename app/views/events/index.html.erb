@@ -1,0 +1,49 @@
+<%= render :partial => 'sessions/donordashnav' %>
+
+<div class="whitespace clear"></div>
+
+<%= render :partial => 'sessions/donormydash' %>
+
+
+<!-- Some white space to separate content from footer a little bit more: -->
+<div class="whitespace clear"></div>
+
+
+
+<!-- Auto-generated rails code (for reference):
+<h1>Listing events</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>When</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Description</th>
+    <th>Number of volunteers needed</th>
+    <th>Image</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @events.each do |event| %>
+  <tr>
+    <td><%= event.name %></td>
+    <td><%= event.when %></td>
+    <td><%= event.city %></td>
+    <td><%= event.state %></td>
+    <td><%= event.description %></td>
+    <td><%= event.number_of_volunteers_needed %></td>
+    <td><%= event.image %></td>
+    <td><%= link_to 'Show', event %></td>
+    <td><%= link_to 'Edit', edit_event_path(event) %></td>
+    <td><%= link_to 'Destroy', event, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Event', new_event_path %>
+-->

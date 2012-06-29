@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @item.name %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @item.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @item.state %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @item.zip %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @item.category %>
+</p>
+
+<p>
+  <b>Animal type:</b>
+  <%= @item.animal_type %>
+</p>
+
+<p>
+  <b>Condition:</b>
+  <%= @item.condition %>
+</p>
+
+<p>
+  <b>Estimated value:</b>
+  <%= @item.estimated_value %>
+</p>
+
+<p>
+  <b>Expiration date:</b>
+  <%= @item.expiration_date %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @item.description %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= @item.image %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

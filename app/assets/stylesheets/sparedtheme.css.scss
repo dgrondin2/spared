@@ -1,0 +1,283 @@
+/*
+ * sparedtheme.css.scss
+ *
+ * This is the general stylesheet for SPARED.ORG. It is linked inside "application.html.erb" and it
+ * styles every view.
+ */
+
+@import "variables";
+
+
+/*    DIVS    */
+
+#page_frame {
+	position: relative;
+	width: $page-width;
+	min-height: $page-height;
+	margin: 0 auto;
+	margin-top: $page-margin-top;
+}
+
+.content_box {
+	background-color: $beige-lightest;
+	
+	/* To accomodate floats: */
+	overflow: auto;
+	width: 100%;
+}
+
+.whitespace {
+	height: 30px;
+}
+
+.small_whitespace {
+	height: 15px;
+}
+
+.smaller_whitespace {
+	height: 10px;
+}
+
+
+
+/*    FONTS    */
+
+body {
+	font-family: $generic-font-family;
+	font-size: $generic-font-size;
+	color: $brown;
+}
+
+p, a, li {
+	
+}
+
+a {
+    color: $yellow;
+    font-weight: bold;
+    font-size: $generic-font-size;
+    font-family: $generic-font-family;
+    text-decoration: none;
+}
+
+.no_path_link {
+	color: $yellow;
+	font-weight: bold;
+	font-size: $generic-font-size;
+	font-family: $generic-font-family;
+	text-decoration: none;
+}
+
+li {
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+
+.heading_label {
+	color: $darkgray;
+	font-family: $caps-heading-font-family;
+	font-size: $caps-heading-font-size;
+	font-weight: 600;
+}
+
+.content_heading {
+	color: $brown;
+	font-family: $heading-font-family;
+	font-size: $heading-font-size;
+	font-weight: 500;
+}
+
+.content {
+	color: $brown;
+	font-family: $generic-font-family;
+	font-size: $generic-font-size;
+}
+
+.big {
+	font-family: $generic-font-family;
+	font-size: $large-font-size;
+	color: $brown;
+	line-height: 0.2;
+}
+
+.small {
+	font-size: $generic-font-size - 1;
+}
+
+
+
+
+
+/*    GENERAL    */
+
+.inline {
+	display: inline;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.clear_left {
+	clear: left;
+}
+
+.clear_right {
+	clear: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.green_bg {
+	background-color: $green;
+}
+
+.brown_bg {
+	background-color: $brown;
+}
+
+.beige_bg {
+	background-color: $beige;
+}
+
+.beige_lighter_bg {
+	background-color: $beige-lighter;
+}
+
+.blue_lighter_bg {
+	background-color: $blue-lighter;
+}
+
+.yellow_bg {
+	background-color: $yellow;
+}
+
+.blue {
+	color: $blue;
+}
+
+.brown {
+	color: $brown;
+}
+
+.white {
+	color: white;
+}
+
+
+
+
+/*    BUTTONS    */
+
+.button {
+	display: block;
+	text-transform: uppercase;
+	color: #fff;
+	border: 0px;
+	font-size: 100%;
+	text-align: center;
+
+	text-decoration: none;
+	font-weight: 100;
+}
+
+.small_button {
+	width: 92px;
+	height: 28px;
+}
+
+.wide_button {
+	width: 316px;
+	height: 32px;
+	font-size: 17px;
+	padding-top: 12px;
+}
+
+.button_border {
+	padding: 2px;
+	opacity: 1.0;
+	border: 2px solid;
+}
+
+.button_border:hover {
+	opacity: 0.85;
+}
+
+.big_button_border {
+	padding: 2px;
+	border: 4px solid;
+}
+
+.big_button_border:hover {
+	border-color: $green;
+}
+
+.big_button_border_static {
+	padding: 2px;
+	border: 4px solid;
+}
+
+.green_border {
+	border-color: $green;
+}
+
+.brown_border {
+	border-color: $brown;
+}
+
+.beige_border {
+	border-color: $beige;
+}
+
+.blue_border {
+	border-color: $blue-lighter;
+}
+	
+#cancel_button {
+	margin-right: 20px;
+}
+
+#cancel_link {
+	padding-top: 5px;
+	height: 23px;
+}
+
+#register_button {
+	margin-right: 15px;
+}
+
+
+
+
+/*    MISC    */
+
+hr {
+	color: $brown;
+	background-color: $brown;
+}
+
+.wide_photo {
+	margin: 30px 0px 30px 0px;
+}
+
+.text_field {
+	outline-color: $green;
+}
