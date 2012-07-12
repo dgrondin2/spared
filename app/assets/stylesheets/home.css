@@ -1,0 +1,120 @@
+/*
+ * home.css.scss
+ *
+ * Stylesheet for home page (when not signed in), about page, faqs page, contact page, and shop page.
+ */
+
+@import "variables";
+
+
+/*    DIVS    */
+
+#slideshow_container {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#home_flow_chart {
+
+}
+
+.content_text_wrapper {
+	padding: 10px 0px 30px 30px;
+	line-height: $generic-line-height;
+	float: left;
+	width: 63%;
+}
+
+.front_page {
+	width: 90%;
+}
+
+.content_pic_wrapper {
+	float: right;
+	padding-top: 30px;
+	padding-right: 30px;
+}
+
+#dash_content {
+	padding-top: 20px;
+}
+
+.home_heading {
+	width: 939px;
+	height: 52px;
+	text-transform: uppercase;
+	background-color: $blue-lighter;
+	color: $brown;
+	padding-left: 25px;
+	padding-top: 18px;
+}
+
+
+/*    FONTS    */
+
+.caption {
+	clear: right;
+	margin-top: 5px;
+	margin-bottom: 20px;
+
+	
+	font-family: $generic-font-family;
+	font-size: $caption-font-size;
+	line-height: $caption-line-height;
+	color: $brown;
+}
+
+.link_question {
+	display: block;
+	line-height: 1.2;
+}
+
+
+/*    FORMS    */
+
+.contact_textfield {
+	width: 390px;
+	height: 20px;
+}
+
+.contact_textarea {
+	width: 390px;
+	height: 100px;
+	max-height: 400px;
+	resize: vertical;
+}
+
+.contact_label {
+	width: 50px;
+  	float: left;
+  	text-align: left;
+  	margin-right: 40px;
+  	margin-top: 5px;
+  	display: block
+}
+
+.contact_button {
+	margin-left: 90px;
+}
+
+.contact_button:hover {
+	opacity: 0.85;
+}
+
+.home_heading_label {
+	color: $brown;
+	font-family: $caps-heading-font-family;
+	font-size: $caps-heading-font-size + 5;
+	font-weight: 700;
+}
+
+
+/*    MISC    */
+
+.home_flow_image {
+	padding: 19px;
+}
+
+.home_flow_arrow {
+	padding-bottom: 130px;
+}
