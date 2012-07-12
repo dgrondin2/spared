@@ -6,7 +6,7 @@ class DonorsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @donors }
+      format.json { render :json => @donors }
     end
   end
 
@@ -17,7 +17,7 @@ class DonorsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @donor }
+      format.json { render :json => @donor }
     end
   end
 
@@ -29,7 +29,7 @@ class DonorsController < ApplicationController
 
 #    respond_to do |format|
 #      format.html # new.html.erb
-#      format.json { render json: @donor }
+#      format.json { render :json => @donor }
 #    end
   end
   
@@ -48,11 +48,11 @@ class DonorsController < ApplicationController
 
     respond_to do |format|
       if @donor.save
-        format.html { redirect_to @donor, notice: 'Donor was successfully created.' }
-        format.json { render json: @donor, status: :created, location: @donor }
+        format.html { redirect_to @donor, :notice => 'Donor was successfully created.' }
+        format.json { render :json => @donor, :status => :created, :location => @donor }
       else
-        format.html { render action: "new" }
-        format.json { render json: @donor.errors, status: :unprocessable_entity }
+        format.html { render :action => "new" }
+        format.json { render :json => @donor.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -64,11 +64,11 @@ class DonorsController < ApplicationController
 
     respond_to do |format|
       if @donor.update_attributes(params[:donor])
-        format.html { redirect_to @donor, notice: 'Donor was successfully updated.' }
+        format.html { redirect_to @donor, :notice => 'Donor was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
-        format.json { render json: @donor.errors, status: :unprocessable_entity }
+        format.html { render :action => "edit" }
+        format.json { render :json => @donor.errors, :status => :unprocessable_entity }
       end
     end
   end

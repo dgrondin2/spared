@@ -9,7 +9,7 @@
 /*    DIVS    */
 
 #register_frame {
-	width: 430px;
+	width: 396px;
 	margin: 0 auto;
 	padding-left: 30px;
 	padding-right: 30px;
@@ -21,25 +21,25 @@
 #register_disclaimer {
 	padding-left: 130px;
 	line-height: 0.8;
+	font-size: 0.9em;
 }
 
  
 /*    FORMS    */
 
 .register_textfield {
-	width: 300px;
-	height: 20px;
+	width: 288px;
+	height: 23px;
+	border: 1px solid #777777;
+	border-radius: 1px;
 }
 
 .register_label {
 	width: 70px;
   	float: left;
   	text-align: left;
-  	margin-right: 40px;
+  	margin-right: 10px;
   	margin-top: 20px;
-  	display: block
-}
-
-.register_button {
-	margin-left: 90px;
+  	display: block;
+  	font-size: 0.9em;
 }

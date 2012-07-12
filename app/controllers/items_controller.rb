@@ -6,7 +6,7 @@ class ItemsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @items }
+      format.json { render :json => @items }
     end
   end
 
@@ -17,7 +17,7 @@ class ItemsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @item }
+      format.json { render :json => @item }
     end
   end
 
@@ -28,7 +28,7 @@ class ItemsController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @item }
+      format.json { render :json => @item }
     end
   end
 
@@ -44,11 +44,11 @@ class ItemsController < ApplicationController
 
     respond_to do |format|
       if @item.save
-        format.html { redirect_to @item, notice: 'Item was successfully created.' }
-        format.json { render json: @item, status: :created, location: @item }
+        format.html { redirect_to @item, :notice => 'Item was successfully created.' }
+        format.json { render :json => @item, :status => :created, :location => @item }
       else
-        format.html { render action: "new" }
-        format.json { render json: @item.errors, status: :unprocessable_entity }
+        format.html { render :action => "new" }
+        format.json { render :json => @item.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -60,11 +60,11 @@ class ItemsController < ApplicationController
 
     respond_to do |format|
       if @item.update_attributes(params[:item])
-        format.html { redirect_to @item, notice: 'Item was successfully updated.' }
+        format.html { redirect_to @item, :notice => 'Item was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
-        format.json { render json: @item.errors, status: :unprocessable_entity }
+        format.html { render :action => "edit" }
+        format.json { render :json => @item.errors, :status => :unprocessable_entity }
       end
     end
   end

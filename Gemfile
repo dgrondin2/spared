@@ -5,7 +5,7 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg', '~> 0.14.0'
 
 gem 'bcrypt-ruby', :require => 'bcrypt'
 
@@ -40,3 +40,5 @@ gem 'jquery-rails'
 
 gem 'facebox-rails'
 gem 'facebox-render'
+
+gem 'heroku'
