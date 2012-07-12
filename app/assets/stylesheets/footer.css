@@ -1,10 +1,9 @@
 /*
- * header.css.scss
+ * header.css
  *
  * Stylesheet for "footer.html.erb".
  */
  
-@import "variables";
 
 /*    DIVS    */
 
@@ -21,9 +20,9 @@
 /*    FONTS    */
 
 .footer_nav_link {
-	color: $darkgray;
-	font-size: $footer-nav-font-size;
-	font-family: $generic-font-family;
+	color: #333333;
+	font-size: 12px;
+	font-family: "Lucida Grande";
 	font-weight: 100;
 	
 	padding-right: 25px;

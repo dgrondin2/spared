@@ -1,10 +1,8 @@
 /*
- * home.css.scss
+ * home.css
  *
  * Stylesheet for home page (when not signed in), about page, faqs page, contact page, and shop page.
  */
-
-@import "variables";
 
 
 /*    DIVS    */
@@ -20,7 +18,7 @@
 
 .content_text_wrapper {
 	padding: 10px 0px 30px 30px;
-	line-height: $generic-line-height;
+	line-height: 21px;
 	float: left;
 	width: 63%;
 }
@@ -43,8 +41,8 @@
 	width: 939px;
 	height: 52px;
 	text-transform: uppercase;
-	background-color: $blue-lighter;
-	color: $brown;
+	background-color: #93d2af;
+	color: #44372b;
 	padding-left: 25px;
 	padding-top: 18px;
 }
@@ -58,10 +56,10 @@
 	margin-bottom: 20px;
 
 	
-	font-family: $generic-font-family;
-	font-size: $caption-font-size;
-	line-height: $caption-line-height;
-	color: $brown;
+	font-family: "Lucida Grande";
+	font-size: 11px;
+	line-height: 1.2;
+	color: #44372b;
 }
 
 .link_question {
@@ -90,7 +88,7 @@
   	text-align: left;
   	margin-right: 40px;
   	margin-top: 5px;
-  	display: block
+  	display: block;
 }
 
 .contact_button {
@@ -102,9 +100,9 @@
 }
 
 .home_heading_label {
-	color: $brown;
-	font-family: $caps-heading-font-family;
-	font-size: $caps-heading-font-size + 5;
+	color: #44372b;
+	font-family: "st-marie";
+	font-size: 29px;
 	font-weight: 700;
 }
 
