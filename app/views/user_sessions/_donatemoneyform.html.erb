@@ -1,0 +1,40 @@
+<!--
+  - sessions/_donatemoneyform.html.erb
+  -
+  - Form to donate money to organization and/or spared.org via PayPal.
+  -->
+  
+
+Alternatively, <%= link_to 'click here' %> to select an animal organization of your choice.<br/>
+<br/>
+
+<%= form_tag('/donatemoney', :method => 'post') do %>
+
+	<!-- Donate to organization: -->
+	<%= text_field_tag(:org_donation,"$0.00", :class => 'text_field donation_textfield') %><br/>
+	<br/><br/>
+	
+	<!-- "AND/OR" divider: -->
+	<div class="and_or_container">
+		<hr class="and_or_line_left" />
+		<p class="and_or_text">AND/OR</p>
+		<hr class="and_or_line_right" />
+	</div>
+	
+	<br/><br/>
+	
+	<!-- Donate to spared.org: -->
+	Donate to spared.org to help cover our administrative costs - keep us going!<br/>
+	<br/>
+	<%= text_field_tag(:spared_donation,"$0.00", :class => 'text_field donation_textfield') %><br/>
+	
+	<br/>
+	
+	<!-- Submit -->
+	<div id="donate_button" class="button_border green_border float_left">
+		<%= submit_tag("Donate", :class => 'button small_button green_bg', :type => 'button') %>
+	</div>
+	
+	<!-- Insert whitespace to expand text container: -->
+	<div class="whitespace"></div>
+<% end %>

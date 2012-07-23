@@ -1,0 +1,15 @@
+
+
+<%= form_tag('/login', :method => 'post') do %>
+	<%= label_tag(:donor_email, 'email', :class => 'login_label content') %>
+	<%= text_field_tag(:donor_email,"", :class => 'text_field login_textfield') %><br/>
+	<br/>
+	<%= label_tag(:donor_password, 'password', :class => 'login_label content') %>
+	<%= text_field_tag(:donor_password,"", :class => 'text_field login_textfield') %><br/>
+	<%= link_to "forgot password?", "", :class => 'forgot_password' %>
+	<br/>
+	<br/>
+	<div id="login_button" class="button_border green_border float_right">
+		<%= submit_tag("Login", :class => 'button small_button green_bg', :type => 'button') %>
+	</div>
+<% end %>
