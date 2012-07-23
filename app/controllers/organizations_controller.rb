@@ -24,8 +24,8 @@ class OrganizationsController < ApplicationController
   # GET /organizations/new
   # GET /organizations/new.json
   def new
-    render :layout => 'yieldonly'
     @organization = Organization.new
+    render :layout => 'yieldonly'
 
 #    respond_to do |format|
 #      format.html # new.html.erb

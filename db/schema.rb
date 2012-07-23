@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120421061202) do
+ActiveRecord::Schema.define(:version => 20120717033711) do
 
   create_table "donations", :force => true do |t|
     t.date     "date_donated"
@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(:version => 20120421061202) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "email"
-    t.string   "password"
     t.string   "street_address"
     t.string   "city"
     t.string   "state"
@@ -68,7 +67,6 @@ ActiveRecord::Schema.define(:version => 20120421061202) do
     t.string   "organization_name"
     t.string   "representative_name"
     t.string   "email"
-    t.string   "password"
     t.string   "street_address"
     t.string   "city"
     t.string   "state"
@@ -79,6 +77,21 @@ ActiveRecord::Schema.define(:version => 20120421061202) do
     t.binary   "image"
     t.datetime "created_at",               :null => false
     t.datetime "updated_at",               :null => false
+  end
+
+  create_table "user_sessions", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "crypted_password"
+    t.string   "password_salt"
+    t.string   "persistence_token"
+    t.string   "role"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
   end
 
   create_table "wishlist_items", :force => true do |t|

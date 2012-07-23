@@ -24,8 +24,8 @@ class DonorsController < ApplicationController
   # GET /donors/new
   # GET /donors/new.json
   def new
-  	render :layout => 'yieldonly'
     @donor = Donor.new
+    render :layout => 'yieldonly'
 
 #    respond_to do |format|
 #      format.html # new.html.erb
@@ -48,10 +48,10 @@ class DonorsController < ApplicationController
 
     respond_to do |format|
       if @donor.save
-        format.html { redirect_to @donor, :notice => 'Donor was successfully created.' }
+        format.html { redirect_to @donor, :notice => 'Registration successful.' }
         format.json { render :json => @donor, :status => :created, :location => @donor }
       else
-        format.html { render :action => "new" }
+        format.html { render :action => "new", :notice => 'Registration failed.' }
         format.json { render :json => @donor.errors, :status => :unprocessable_entity }
       end
     end

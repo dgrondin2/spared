@@ -48,3 +48,7 @@ gem 'facebox-rails'
 gem 'facebox-render'
 
 gem 'heroku'
+
+gem 'authlogic'
+
+gem 'thin'
