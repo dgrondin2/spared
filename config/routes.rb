@@ -16,7 +16,7 @@ Spared::Application.routes.draw do
 		resources :donations # Donation money given
 	end
 	
-	# resources :volunteers # No longer needed
+	# resources :volunteers  # No longer needed
 	
 	get 'home/index'
 	get 'sessions/new'
