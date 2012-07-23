@@ -58,5 +58,8 @@ module Spared
     
     # Add AuthLogic dependencies
 	config.gem 'authlogic'
+	
+	# To keep Heroku happy when precompiling assets
+	config.assets.initialize_on_precompile = false
   end
 end
