@@ -25,6 +25,7 @@ class DonorsController < ApplicationController
   # GET /donors/new.json
   def new
     @donor = Donor.new
+    @user = User.new
     render :layout => 'yieldonly'
 
 #    respond_to do |format|
@@ -45,6 +46,7 @@ class DonorsController < ApplicationController
   # POST /donors.json
   def create
     @donor = Donor.new(params[:donor])
+    @donor.user = User.new(params[:user])
 
     respond_to do |format|
       if @donor.save
