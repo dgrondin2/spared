@@ -40,10 +40,11 @@
 		<%= f.label :email, 'email*', :class => 'register_label' %><br />
 		<%= f.text_field :email, :class => 'text_field register_textfield' %>
 	  </div>
-	  <div class="field">
-		<%= f.label :email_confirmation, 'confirm', :class => 'register_label' %><br/>
-		<%= f.text_field :email_confirmation, :class => 'text_field register_textfield' %>
-	  </div>
+	  <!-- :email_confirmation field throws "NoMethodError" -->
+	  <!--div class="field">
+		<#%= f.label :email_confirmation, 'confirm', :class => 'register_label' %><br/>
+		<#%= f.text_field :email_confirmation, :class => 'text_field register_textfield' %>
+	  </div-->
 	  <p id="register_disclaimer">*email address will be used as username.</p>
 	  
 	  <div class="field">

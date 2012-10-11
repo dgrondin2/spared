@@ -15,8 +15,11 @@
 	clear:left;
 }
 
+#my_dash {
+	width: 33%;
+}
+
 #my_dash_heading {
-	width: 307px;
 	height: 28px;
 	text-transform: uppercase;
 	padding-left: 8px;
@@ -25,19 +28,18 @@
 
 .my_dash_link {
 	clear: left;
-	width: 307px;
 	height: 37px;
 	border-bottom: 1px solid #cfbe92;
 	padding-top: 8px;
 	padding-left: 8px;
 }
 
-.my_dash_link:hover {
+.my_dash_link:hover p {
 	color: #a8a70f;
+	cursor: pointer;
 }
 
 .dash_heading {
-	width: 604px;
 	height: 50px;
 	text-transform: uppercase;
 	background-color: #93d2af;
@@ -62,7 +64,7 @@
 }
 
 #donate_items_text {
-	padding: 15px 50px 35px 20px;
+	padding: 15px 50px 10px 20px;
 }
 
 .dash_text_wrapper {
@@ -178,6 +180,8 @@
 }
 
 .and_or_line_right {
+	position: relative;
+	top: -15px;
 	border: 0;
 	height: 1px;
 	width: 240px;

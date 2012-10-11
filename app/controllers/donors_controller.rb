@@ -1,14 +1,14 @@
-class DonorsController < ApplicationController
-  # GET /donors
-  # GET /donors.json
-  def index
-    @donors = Donor.all
+class DonorsController < Devise::RegistrationsController
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render :json => @donors }
-    end
-  end
+  ### Delete this -- we never need to list all donors
+  #def index
+  #  @donors = Donor.all
+
+  #  respond_to do |format|
+  #    format.html # index.html.erb
+  #    format.json { render :json => @donors }
+  #  end
+  #end
 
   # GET /donors/1
   # GET /donors/1.json
@@ -25,16 +25,16 @@ class DonorsController < ApplicationController
   # GET /donors/new.json
   def new
     @donor = Donor.new
-    @user = User.new
-    render :layout => 'yieldonly'
 
-#    respond_to do |format|
-#      format.html # new.html.erb
-#      format.json { render :json => @donor }
-#    end
+    respond_to do |format|
+      format.html { render :layout => 'yieldonly' } # new.html.erb
+      format.json { render :json => @donor }
+    end
   end
   
+  # Delete this after Devise is set up -- handled in user_sessions
   def login
+    render :layout => 'donordash'
   end
 
   # GET /donors/1/edit
@@ -66,7 +66,7 @@ class DonorsController < ApplicationController
 
     respond_to do |format|
       if @donor.update_attributes(params[:donor])
-        format.html { redirect_to @donor, :notice => 'Donor was successfully updated.' }
+        format.html { redirect_to @donor, :notice => 'Profile successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render :action => "edit" }

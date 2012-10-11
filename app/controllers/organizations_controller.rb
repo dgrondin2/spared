@@ -1,4 +1,4 @@
-class OrganizationsController < ApplicationController
+class OrganizationsController < Devise::RegistrationsController
   # GET /organizations
   # GET /organizations.json
   def index

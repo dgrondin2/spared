@@ -27,7 +27,8 @@ class DonationsController < ApplicationController
     @donation = Donation.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { # if user role is donor:
+                    render :action => 'donor-new', :layout => 'donordash' }
       format.json { render :json => @donation }
     end
   end
@@ -47,7 +48,7 @@ class DonationsController < ApplicationController
         format.html { redirect_to @donation, :notice => 'Donation was successfully created.' }
         format.json { render :json => @donation, :status => :created, :location => @donation }
       else
-        format.html { render :action => "new" }
+        format.html { render :action => "donor-new", :layout => 'donordash' }
         format.json { render :json => @donation.errors, :status => :unprocessable_entity }
       end
     end

@@ -43,3 +43,11 @@
 .nav_link:hover {
 	color: #a8a70f;
 }
+
+
+/*    MISC    */
+
+.header_line {
+	color: #44372b;
+	background-color: #44372b;
+}

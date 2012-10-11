@@ -49,8 +49,6 @@ gem 'facebox-render'
 
 gem 'heroku'
 
-# gem 'authlogic'
-
 gem 'thin'
 
 gem 'devise'

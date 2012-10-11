@@ -1,6 +1,6 @@
 <!--
   - _header.html.erb
-  -
+  
   - Contains the site's logo, sign up / log in links, and nav bar.
   -->
 
@@ -8,10 +8,10 @@
 
 <div id="header_container">
 	<div id="login_links_container">
-		<%= link_to 'Sign up', 'register', :class => 'login_link inline', :rel => 'facebox',
+		<%= link_to 'Sign up', '/donor/register', :class => 'login_link inline', :rel => 'facebox',
 										   :remote => true %>
 		<pre class="login_link inline"> | </pre>
-		<%= link_to 'Log in', 'login', :class => 'login_link inline' %>
+		<%= link_to 'Log in', '/donor/login', :class => 'login_link inline' %>
 	</div>
 	
 	<div id="nav_bar">
@@ -22,5 +22,5 @@
 	</div>
 
 	<%= link_to image_tag('home/logo_edit.png', :id => 'logo'), root_url %>
-	<hr/>
+	<hr class="header_line" />
 </div>

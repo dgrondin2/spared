@@ -1,46 +1,65 @@
 Spared::Application.routes.draw do
 
-	resources :user_sessions
+    devise_for :organizations
+
+    devise_for :donors
 	
-	resources :organizations do
-		resources :users
-		resources :items     # Wishlist items
-		resources :events    # Volunteering events being hosted
-		resources :donations # Donation money received
-	end
+
+    # Uncomment the following two blocks when setting up Devise:
+
+	#resources :organizations do
+	#	resources :items     # Wishlist items
+	#	resources :events    # Volunteering events being hosted
+	#	resources :donations # Donation money received
+	#end
 	
-	resources :donors do
-		resources :users
-		resources :items     # Donated items
-		resources :events    # Events at which donor has volunteered
-		resources :donations # Donation money given
-	end
-	
-	# resources :volunteers  # No longer needed
+	#resources :donors do
+	#	resources :items     # Donated items
+	#	resources :events    # Events at which donor has volunteered
+	#	resources :donations # Donation money given
+	#end
+
+	resources :item_offers
 	
 	get 'home/index'
 	get 'sessions/new'
 	
 	match '/about'   => 'home#about'
-	match '/faqs'	   => 'home#faqs'
+	match '/faqs'	 => 'home#faqs'
 	match '/contact' => 'home#contact'
 	match '/shop'    => 'home#shop'
 	
-	match '/register'     => 'donors#new'
-	match '/orgregister'  => 'organizations#new'
+	match '/donor/register'     => 'donors#new'
+	match '/org/register'  => 'organizations#new'
 	
-	match '/login'       => 'user_sessions#donorlogin'
-	match '/orglogin'    => 'user_sessions#orglogin'
-	
-	match '/donateitems' => 'user_sessions#donateitems'
-	match '/donatetime'  => 'user_sessions#donatetime'
-	match '/donatemoney' => 'user_sessions#donatemoney'
-	
-	match '/itemoffers'  => 'items#index'
-	match '/wishlists'   => 'wishlist_items#index'
-	match '/volunteer'   => 'events#index'
-	
-	match '/overview'	=> 'sessions#donoroverview'
+	devise_scope :donor do 
+		match '/donor/login' => 'donors#login'
+	end
+
+	devise_scope :organization do
+		match '/org/login' => 'organizations#sessions/new'
+	end
+
+	match '/donor/itemoffers'        => 'item_offers#overview' 	# "DONATE ITEMS"
+	match '/donor/itemoffers/new'	 => 'item_offers#new'
+	match '/donor/itemoffers/index'  => 'item_offers#index'		# "BROWSE ITEM-OFFER BOARD"
+	match '/donor/itemoffers/:id'    => 'item_offers#show'
+	# match '/donor/items/wishlists' => 'wishlist_items#index' 
+	match '/donor/events'            => 'events#new'
+	match '/donor/events/index'      => 'events#index'
+	match '/donor/donations'         => 'donations#new'
+
+	# MY DASHBOARD links (no views yet):
+	# match '/donor/overview' =>
+	# match '/donor/myitems' =>
+	# match '/donor/mydonations' =>
+	# match '/donor/myevents' =>
+
+
+
+
+
+
 	
 	# The priority is based upon order of creation:
 	# first created -> highest priority.

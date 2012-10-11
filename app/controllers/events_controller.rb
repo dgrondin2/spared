@@ -5,7 +5,8 @@ class EventsController < ApplicationController
     @events = Event.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html { #if user role is donor:
+                    render :action => 'donor-index', :layout => 'donordash' }
       format.json { render :json => @events }
     end
   end
@@ -27,7 +28,8 @@ class EventsController < ApplicationController
     @event = Event.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { # if user role is donor:
+                    render :action => 'donor-new', :layout => 'donordash' } # new.html.erb
       format.json { render :json => @event }
     end
   end
