@@ -1,0 +1,26 @@
+<!--
+  - items/new.html.erb:
+  - The landing page for clicking on "ITEMS" button in "donors/_donordashnav.html.erb".
+  - Links to the new item form via the "POST ITEM-OFFER" button.
+  -->
+
+
+<div class="dash_content float_right">
+
+	<div class="dash_brown_heading heading_label">Donate items</div>
+	
+	<div class="smaller_whitespace"></div>
+	
+	<%= image_tag('donate-initial/Lucy.png') %>
+
+	<div id="donate_items_text">
+		<p>Use this form to donate new and gently-used goods or in-kind services to animal<br/>
+			organizations. Add, edit and delete item-offers at any time after posting via the<br/>
+			ITEM-OFFERS section of My Dashboard. Organizations are responsible for shipping<br/>
+			and/or transportation of donated items.
+		</p>
+	</div>
+
+	<%= render :partial => 'donor-form' %>
+
+</div>

@@ -1,0 +1,40 @@
+<!--
+  - donordash.html.erb (layout)
+  -
+  - Renders the content with a header and footer, and the donor nav
+  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spared</title>
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= javascript_include_tag "jquery", "application" %>
+	<%= csrf_meta_tags %>
+</head>
+
+<body>
+	<div id="page_frame">
+		<!-- Flash messages for Devise -->
+		<p class="notice"><%= notice %></p>
+  
+		<%= render :partial => "shared/header" %>
+
+		<%= render :partial => "shared/donordashnav" %>
+
+		<div class="whitespace clear"></div>
+
+	
+		<%= yield %>
+
+		<% if !current_page?('/donor/login') %>
+			<%= render :partial => 'shared/donormydash' %>
+		<% end %>
+
+		<div class="whitespace clear"></div> 
+	
+		<%= render :partial => "shared/footer" %>
+		
+  	</div>	
+</body>
+</html>

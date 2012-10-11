@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @item_offer.name %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @item_offer.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @item_offer.state %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @item_offer.zip %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @item_offer.category %>
+</p>
+
+<p>
+  <b>Animal type:</b>
+  <%= @item_offer.animal_type %>
+</p>
+
+<p>
+  <b>Condition:</b>
+  <%= @item_offer.condition %>
+</p>
+
+<p>
+  <b>Estimated value:</b>
+  <%= @item_offer.estimated_value %>
+</p>
+
+<p>
+  <b>Expiration date:</b>
+  <%= @item_offer.expiration_date %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @item_offer.description %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= @item_offer.image %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_offer_path(@item_offer) %> |
+<%= link_to 'Back', item_offers_path %>

@@ -1,0 +1,64 @@
+<!--
+  - items/_search-form.html.erb:
+  - Form to search for items on the item-offer board.
+  - Used by both donors and organizations.
+-->
+
+<div id="search_container" class="float_left">
+
+	<div id="search_header">SEARCH / REFINE</div>
+
+	<div id="search_form_box">
+		<%= form_tag('/donor/items/index', :method => 'post') do %>
+
+			<!-- Search box -->
+			<%= label_tag(:search, 'Search for', :class => 'bold') %> <br/>
+			<%= text_field_tag(:search, "", :id => "search_text_field", :class => "text_field") %>
+
+			<br/><br/>
+			<hr/>
+			<br/>
+
+
+			<!-- Item details -->
+
+			<%= label_tag(:category, 'Item category:') %> <br/>
+			<div class="smaller_whitespace"></div>
+			<%= select_tag(:category, options_for_select(['Category']), :id => 'search_category_dropdown') %> <br/>
+
+			<br/>
+			<br/>
+
+			<%= label_tag(:condition, 'Item condition:') %> <br/>
+			<div class="smaller_whitespace"></div>
+			<%= select_tag(:condition, options_for_select([['Any'],['New'],['Used']]), :id => 'search_condition_dropdown') %> <br/>
+
+			<br/><br/>
+
+
+			<!-- Location -->
+
+			<%= label_tag(:city, 'Location:') %> <br/>
+
+			<div class="smaller_whitespace"></div>
+
+			<%= text_field_tag(:city, 'City', :id => 'search_city_text_field', :class => 'text_field') %>
+			<%= select_tag(:state, options_for_select(['State']), :id => 'search_state_dropdown') %> <br/>
+
+			<%= label_tag(:zip, 'or', :class => 'italic') %>
+			<%= text_field_tag(:zip, 'Zipcode', :id => 'search_zip_text_field', :class => 'text_field') %>
+			<%= select_tag(:miles, options_for_select([['10 mi'],['25 mi'],['50 mi'],['100 mi']]), :id => 'search_miles_dropdown', 
+						   :class => 'text_field') %> <br/>
+
+			<br/>
+
+			<!-- Submit -->
+			<div id="search_item_button" class="button_border green_border float_right">
+      			<%= submit_tag("Search", :class => 'button small_button green_bg', :type => 'button') %>
+    		</div>
+    		
+		<% end %>
+	</div>
+
+	<div class="small_whitespace"></div>
+</div>

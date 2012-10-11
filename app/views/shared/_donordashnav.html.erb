@@ -1,0 +1,73 @@
+<div class="float_left">
+	<h1 class="heading_label">DONATE:</h1>
+	
+	<!-- "Donate items" button -->
+	<% if current_page?('/donor/itemoffers') %>
+		<div class="big_button_border_static brown_border dash_image float_left">
+			<%= link_to image_tag('donor-navigation/selected5cropped.png'), '/donor/itemoffers' %>
+		</div>
+	<% else %>
+		<div class="big_button_border brown_border dash_image float_left">
+			<%= link_to image_tag('donor-navigation/standard5cropped.png'), '/donor/itemoffers' %>
+		</div>
+	<% end %>
+	
+	<!-- "Donate money" button -->
+	<% if current_page?('/donor/donations') %>
+		<div class="big_button_border_static brown_border dash_image float_left">
+			<%= link_to image_tag('donor-navigation/selected4cropped.png'), '/donor/donations' %>
+		</div>
+	<% else %>
+		<div class="big_button_border brown_border dash_image float_left">
+			<%= link_to image_tag('donor-navigation/standard4cropped.png'), '/donor/donations' %>
+		</div>
+	<% end %>
+	
+	<!-- "Donate time" button -->
+	<% if current_page?('/donor/events') %>
+		<div class="big_button_border_static brown_border dash_image float_left">
+			<%= link_to image_tag('donor-navigation/selected3cropped.png'), '/donor/events' %>
+		</div>
+	<% else %>
+		<div class="big_button_border brown_border dash_image float_left">
+			<%= link_to image_tag('donor-navigation/standard3cropped.png'), '/donor/events' %>
+		</div>
+	<% end %>
+</div>
+
+<div class="float_right">
+	<h1 class="heading_label">BROWSE:</h1>
+	
+	<!-- "Item-offer board" button -->
+	<% if current_page?('/donor/events/index') %>
+		<div class="big_button_border_static beige_border dash_image float_right">
+			<%= link_to image_tag('donor-navigation/selectedcropped.png'), '/donor/events/index' %>
+		</div>
+	<% else %>
+		<div class="big_button_border beige_border dash_image float_right">
+			<%= link_to image_tag('donor-navigation/standardcropped.png'), '/donor/events/index' %>
+		</div>
+	<% end %>
+	
+	<!-- "Organization wishlists" button -->
+	<% if current_page?('/donor/items/wishlists') %>
+		<div class="big_button_border_static beige_border dash_image float_right">
+			<%= link_to image_tag('donor-navigation/selected1cropped.png'), '/donor/items/wishlists' %>
+		</div>
+	<% else %>
+		<div class="big_button_border beige_border dash_image float_right">
+			<%= link_to image_tag('donor-navigation/standard1cropped.png'), '/donor/items/wishlists' %>
+		</div>
+	<% end %>
+	
+	<!-- "Volunteer opportunities" button -->
+	<% if current_page?('/donor/items/index') %>
+		<div class="big_button_border_static beige_border dash_image float_right">
+			<%= link_to image_tag('donor-navigation/selected2cropped.png'), '/donor/itemoffers/index' %>
+		</div>	
+	<% else %>
+		<div class="big_button_border beige_border dash_image float_right">
+			<%= link_to image_tag('donor-navigation/standard2cropped.png'), '/donor/itemoffers/index' %>
+		</div>
+	<% end %>
+</div>

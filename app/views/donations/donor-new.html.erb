@@ -1,0 +1,28 @@
+<!--
+  - views/donations/donor-new.html.erb:
+  - Landing page for clicking on the "MONEY" button in "shared/_donordashnav.html.erb".
+  - Contains form for donor to make new donation.
+ -->
+
+<div class="dash_content float_right">
+
+	<div class="dash_brown_heading heading_label white">Donate money</div>
+	
+	<div class="smaller_whitespace"></div>
+	
+	<%= image_tag ('donate-money/Shadow Photo by Blue Mutt Photography.png') %>
+	
+	<div class="smaller_whitespace"></div>
+	
+	<div class="dash_text_wrapper">
+		<p class="bold">
+			Donate to the animal organizations Spared selects for you.<br/>
+			We select the organizations needing the most help on a weekly basis.
+		</p>
+		
+		
+		<%= render :partial => 'donor-form' %>
+		
+		
+	</div>
+</div>
