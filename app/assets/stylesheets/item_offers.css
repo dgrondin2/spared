@@ -161,3 +161,50 @@
 #search_item_button {
 	margin-top: 10px;
 }
+
+#new_item_offer_container label {
+	display: block;
+	width: 150px;
+	float: left;
+	padding-top: 8px;
+}
+
+#new_item_offer_container input {
+	min-height: 20px;
+	margin-bottom: 8px;
+}
+
+#item_title_text_field {
+	width: 385px;
+}
+
+#item_description_text_area {
+	width: 385px;
+}
+
+#item_offer_category {
+	width: 165px;
+	height: 20px;
+	margin-top: 6px;
+}
+
+#item_offer_condition {
+	width: 165px;
+	height: 20px;
+	margin-top: 6px;
+}
+
+#item_offer_expiration_date {
+	width: 145px;
+	height: 20px;
+}
+
+#item_offer_zip {
+	width: 145px;
+	height: 20px;
+}
+
+#item_offer_estimated_value {
+	width: 145px;
+	height: 20px;
+}

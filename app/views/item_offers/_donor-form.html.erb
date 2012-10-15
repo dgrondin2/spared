@@ -13,52 +13,66 @@
       </div>
     <% end %>
 
-    <div class="field">
-      <%= f.label :name %><br />
-      <%= f.text_field :name %>
-    </div>
-    <div class="field">
-      <%= f.label :city %><br />
-      <%= f.text_field :city %>
-    </div>
-    <div class="field">
-      <%= f.label :state %><br />
-      <%= f.text_field :state %>
-    </div>
-    <div class="field">
-      <%= f.label :zip %><br />
-      <%= f.text_field :zip %>
-    </div>
-    <div class="field">
-      <%= f.label :category %><br />
-      <%= f.text_field :category %>
-    </div>
-    <div class="field">
-      <%= f.label :animal_type %><br />
-      <%= f.text_field :animal_type %>
-    </div>
-    <div class="field">
-      <%= f.label :condition %><br />
-      <%= f.text_field :condition %>
-    </div>
-    <div class="field">
-      <%= f.label :estimated_value %><br />
-      <%= f.text_field :estimated_value %>
-    </div>
-    <div class="field">
-      <%= f.label :expiration_date %><br />
-      <%= f.date_select :expiration_date %>
-    </div>
-    <div class="field">
-      <%= f.label :description %><br />
-      <%= f.text_area :description %>
-    </div>
-    <div class="field">
-      <%= f.label :image %><br />
-      <%= f.text_field :image %>
-    </div>
-    <div class="actions">
-      <%= f.submit %>
+    <div class="smaller_whitespace"></div>
+
+    <div id="new_item_offer_container">
+
+      <div class="field">
+        <%= f.label :name, 'Title:' %>
+        <%= f.text_field :name, :id => 'item_title_text_field', :class => 'text_field' %>
+      </div>
+
+      <div class="field">
+        <%= f.label :description, 'Description:' %>
+        <%= f.text_area :description, :rows => '7', :id => 'item_description_text_area', :class => 'text_field' %>
+      </div>
+
+      <div class="smaller_whitespace"></div>
+
+      <div class="field">
+        <%= f.label :animal_type, 'Animal type:' %>
+        <%= f.text_field :animal_type, :class => 'item_animal_type_checkboxes text_field' %>
+      </div>
+
+      <div class="field">
+        <%= f.label :category, 'Category:' %>
+        <%= f.select :category, options_for_select(['Category']), :id => 'item_offer_category' %> <br/>
+      </div>
+
+      <div class="smaller_whitespace"></div>
+
+      <div class="field">
+        <%= f.label :condition, 'Condition:' %>
+        <%= f.select :condition, options_for_select([['Any'],['New'],['Used']]), :id => 'item_offer_condition' %> <br/>
+      </div>
+
+      <div class="smaller_whitespace"></div>
+
+      <div class="field">
+        <%= f.label :expiration_date, 'Expiration date:' %>
+        <%= f.text_field :expiration_date, :id => 'item_offer_expiration_date', :class => 'text_field' %>
+        <%= link_to image_tag('-library/calendar_icon.png', :class => 'donation_calendar_img') %>
+      </div>
+
+      <div class="field">
+        <%= f.label :estimated_value, 'Estimated value:' %>
+        <%= f.text_field :estimated_value, :class => 'text_field' %>
+      </div>
+
+      <div class="field">
+        <%= f.label :zip, 'Location Zip Code:' %>
+        <%= f.text_field :zip, :class => 'text_field' %>
+      </div>
+
+      <div class="field">
+        <%= f.label :image, 'Add a photo:' %>
+        <%= f.text_field :image %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+
     </div>
   <% end %>
 

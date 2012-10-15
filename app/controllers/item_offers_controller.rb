@@ -46,11 +46,11 @@ class ItemOffersController < ApplicationController
 
     respond_to do |format|
       if @item_offer.save
-        format.html { redirect_to @item, :notice => 'Item was successfully created.' }
-        format.json { render :json => @item, :status => :created, :location => @item }
+        format.html { redirect_to :back, :notice => 'Item-offer was successfully posted.' }
+        format.json { render :json => @item_offer, :status => :created, :location => @item_offer }
       else
-        format.html { render :action => "new" }
-        format.json { render :json => @item.errors, :status => :unprocessable_entity }
+        format.html { render :action => "donor-new", :layout => 'donordash' }
+        format.json { render :json => @item_offer.errors, :status => :unprocessable_entity }
       end
     end
   end

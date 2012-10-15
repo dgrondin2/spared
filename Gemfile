@@ -52,3 +52,5 @@ gem 'heroku'
 gem 'thin'
 
 gem 'devise'
+
+gem "paperclip", "~> 3.0"
