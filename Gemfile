@@ -54,3 +54,4 @@ gem 'thin'
 gem 'devise'
 
 gem "paperclip", "~> 3.0"
+gem 'aws-sdk' # For Paperclip on Heroku
