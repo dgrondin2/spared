@@ -1,0 +1,12 @@
+development:
+  bucket: spared-bucket-dev
+  access_key_id: AKIAIF6AAPIXYIXEKILA
+  secret_access_key: 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
+test:
+  bucket: bucket-test
+  access_key_id: AKIAIF6AAPIXYIXEKILA
+  secret_access_key: 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
+production:
+  bucket: spared-bucket-pro
+  access_key_id: AKIAIF6AAPIXYIXEKILA
+  secret_access_key: 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

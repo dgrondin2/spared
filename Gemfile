@@ -54,4 +54,5 @@ gem 'thin'
 gem 'devise'
 
 gem "paperclip", "~> 3.0"
-gem 'aws-sdk' # For Paperclip on Heroku
+gem 'aws-sdk'
+gem 'aws-s3' # For img storage (Paperclip) on Heroku

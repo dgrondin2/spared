@@ -3,7 +3,13 @@ class ItemOffer < ActiveRecord::Base
 					        :expiration_date, :image, :name, :state, :zip
 
 	validates :name, :presence => true
-  has_attached_file :image, :styles => { :thumb => "50x50>" }
+
+  #paperclip
+  has_attached_file :image,
+                    :styles => { :thumb=> "50x50#" },
+                    :storage => :s3,
+                    :s3_credentials => "#{Rails.root}/config/s3.yml",
+                    :path => "/:style/:id/:filename"
 	
 	belongs_to :donor
 	belongs_to :organization
