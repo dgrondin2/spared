@@ -10,8 +10,8 @@ class DonorsController < Devise::RegistrationsController
   #  end
   #end
 
-  # GET /donors/1
-  # GET /donors/1.json
+
+  # View donor profile
   def show
     @donor = Donor.find(params[:id])
 
@@ -21,8 +21,7 @@ class DonorsController < Devise::RegistrationsController
     end
   end
 
-  # GET /donors/new
-  # GET /donors/new.json
+  # Donor user registration
   def new
     @donor = Donor.new
 
@@ -32,18 +31,17 @@ class DonorsController < Devise::RegistrationsController
     end
   end
   
-  # Delete this after Devise is set up -- handled in user_sessions
+  # TODO: Delete this after Devise is set up -- handled in user_sessions
   def login
     render :layout => 'donordash'
   end
 
-  # GET /donors/1/edit
+  # Edit profile
   def edit
     @donor = Donor.find(params[:id])
   end
 
-  # POST /donors
-  # POST /donors.json
+  # Donor user registration -- POST
   def create
     @donor = Donor.new(params[:donor])
     @donor.user = User.new(params[:user])
@@ -59,8 +57,7 @@ class DonorsController < Devise::RegistrationsController
     end
   end
 
-  # PUT /donors/1
-  # PUT /donors/1.json
+  # Edit profile -- POST
   def update
     @donor = Donor.find(params[:id])
 
@@ -75,8 +72,7 @@ class DonorsController < Devise::RegistrationsController
     end
   end
 
-  # DELETE /donors/1
-  # DELETE /donors/1.json
+  # I don't think this will be used
   def destroy
     @donor = Donor.find(params[:id])
     @donor.destroy
@@ -86,4 +82,45 @@ class DonorsController < Devise::RegistrationsController
       format.json { head :no_content }
     end
   end
+
+
+  # "MY DASHBOARD" actions:
+  # TODO: json
+
+  def overview
+
+
+    respond_to do |format|
+      format.html { render :action => 'donor-overview', :layout => 'donordash' }
+      format.json { }
+    end
+  end
+
+  def my_item_offers
+
+
+    respond_to do |format|
+      format.html { render :action => 'donor-my-items', :layout => 'donordash' }
+      format.json { }
+    end
+  end
+
+  def my_donations
+
+
+    respond_to do |format|
+      format.html { render :action => 'my-donations', :layout => 'donordash' }
+      format.json { }
+    end
+  end
+
+  def my_events
+
+
+    respond_to do |format|
+      format.html { render :action => 'donor-my-events', :layout => 'donordash' }
+      format.json { }
+    end
+  end
+
 end

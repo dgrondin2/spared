@@ -2,13 +2,13 @@
 	<h1 class="heading_label">DONATE:</h1>
 	
 	<!-- "Donate items" button -->
-	<% if current_page?('/donor/itemoffers') %>
+	<% if current_page?('/donor/item-offers') %>
 		<div class="big_button_border_static brown_border dash_image float_left">
-			<%= link_to image_tag('donor-navigation/selected5cropped.png'), '/donor/itemoffers' %>
+			<%= link_to image_tag('donor-navigation/selected5cropped.png'), '/donor/item-offers' %>
 		</div>
 	<% else %>
 		<div class="big_button_border brown_border dash_image float_left">
-			<%= link_to image_tag('donor-navigation/standard5cropped.png'), '/donor/itemoffers' %>
+			<%= link_to image_tag('donor-navigation/standard5cropped.png'), '/donor/item-offers' %>
 		</div>
 	<% end %>
 	
@@ -38,7 +38,7 @@
 <div class="float_right">
 	<h1 class="heading_label">BROWSE:</h1>
 	
-	<!-- "Item-offer board" button -->
+	<!-- "Volunteer opportunities" button -->
 	<% if current_page?('/donor/events/index') %>
 		<div class="big_button_border_static beige_border dash_image float_right">
 			<%= link_to image_tag('donor-navigation/selectedcropped.png'), '/donor/events/index' %>
@@ -50,7 +50,7 @@
 	<% end %>
 	
 	<!-- "Organization wishlists" button -->
-	<% if current_page?('/donor/items/wishlists') %>
+	<% if current_page?('/donor/wishlists') %>
 		<div class="big_button_border_static beige_border dash_image float_right">
 			<%= link_to image_tag('donor-navigation/selected1cropped.png'), '/donor/items/wishlists' %>
 		</div>
@@ -60,14 +60,14 @@
 		</div>
 	<% end %>
 	
-	<!-- "Volunteer opportunities" button -->
-	<% if current_page?('/donor/items/index') %>
+	<!-- "Item-offer board" button -->
+	<% if current_page?('/donor/item-offers/index') %>
 		<div class="big_button_border_static beige_border dash_image float_right">
-			<%= link_to image_tag('donor-navigation/selected2cropped.png'), '/donor/itemoffers/index' %>
+			<%= link_to image_tag('donor-navigation/selected2cropped.png'), '/donor/item-offers/index' %>
 		</div>	
 	<% else %>
 		<div class="big_button_border beige_border dash_image float_right">
-			<%= link_to image_tag('donor-navigation/standard2cropped.png'), '/donor/itemoffers/index' %>
+			<%= link_to image_tag('donor-navigation/standard2cropped.png'), '/donor/item-offers/index' %>
 		</div>
 	<% end %>
 </div>

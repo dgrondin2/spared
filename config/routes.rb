@@ -5,7 +5,7 @@ Spared::Application.routes.draw do
     devise_for :donors
 	
 
-    # Uncomment the following two blocks when setting up Devise:
+    # TODO: Uncomment the following two blocks when setting up Devise:
 
 	#resources :organizations do
 	#	resources :items     # Wishlist items
@@ -40,22 +40,21 @@ Spared::Application.routes.draw do
 		match '/org/login' => 'organizations#sessions/new'
 	end
 
-	match '/donor/itemoffers'        => 'item_offers#overview' 	# "DONATE ITEMS"
-	match '/donor/itemoffers/new'	 => 'item_offers#new'
-	match '/donor/itemoffers/index'  => 'item_offers#index'		# "BROWSE ITEM-OFFER BOARD"
-	match '/donor/itemoffers/:id'    => 'item_offers#show'
-	# match '/donor/items/wishlists' => 'wishlist_items#index' 
+	match '/donor/item-offers'       => 'item_offers#overview' 	# "DONATE ITEMS"
+	match '/donor/item-offers/new'	 => 'item_offers#new'
+	match '/donor/item-offers/index' => 'item_offers#index'		  # "BROWSE ITEM-OFFER BOARD"
+	match '/donor/item-offers/:id'   => 'item_offers#show'
+# TODO: Better URL for wishlists
+#   - misleading because wishlists are made by orgs
+	match '/donor/wishlists'         => 'wishlist_items#index'
 	match '/donor/events'            => 'events#new'
 	match '/donor/events/index'      => 'events#index'
 	match '/donor/donations'         => 'donations#new'
 
-	# MY DASHBOARD links (no views yet):
-	# match '/donor/overview' =>
-	# match '/donor/myitems' =>
-	# match '/donor/mydonations' =>
-	# match '/donor/myevents' =>
-
-
+  match '/donor/'               => 'donor#overview'
+  match '/donor/my-item-offers' => 'donor#submitted_item_offers'
+  match '/donor/my-donations'   => 'donor#donation_history'
+  match '/donor/my-events'      => 'donor#volunteer_calendar'
 
 
 

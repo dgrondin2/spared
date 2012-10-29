@@ -8,10 +8,24 @@
 <html>
 <head>
 	<title>Spared</title>
+    <%= stylesheet_link_tag 'jquery-ui-1.9.0.custom' %>
 	<%= stylesheet_link_tag    "application", :media => "all" %>
 	<%= stylesheet_link_tag 'sparedtheme' %>
-	<%= javascript_include_tag "jquery", "application" %>
+	<%= javascript_include_tag 'jquery-ui-1.9.0.custom', "jquery", "application" %>
 	<%= csrf_meta_tags %>
+
+    <script type="text/javascript">
+        $(document).ready(
+            function() {
+                $('.jquery-ui-date').datepicker({
+                    onClose: function(dateText, inst) {
+                        alert("My date is: " + dateText);
+                    }
+                });
+            }
+        );
+    </script>
+
 </head>
 
 <body>
