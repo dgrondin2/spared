@@ -1,0 +1,45 @@
+<div class="dash_content float_right">
+
+    <div class="dash_heading heading_label">DONATION HISTORY AT A GLANCE</div>
+
+    <div class="profile_summary">
+        <p>Suzie Green<br/>
+        Cincinnati, OH 45230</p>
+
+        <%= image_tag "donor-dashboard3/Layer-80.png" %>
+
+        <br/>
+        <div class="smaller_whitespace"></div>
+
+        <%= link_to "View/Edit profile", "/donor/edit" %>
+    </div>
+
+    <ul class="donation_overview">
+        <li class="donation_overview_header">
+            <p class="bold">You have donated a total of 4 items and $180.00.</p>
+        </li>
+        <li class="items_overview">
+            <div class="smaller_whitespace"></div>
+            <span class="bold float_left">My matched item-offers</span>
+            <%= link_to "View all", "", :class => "float_right" %>
+            <span>Paper towels</span>
+            <span>Dog bed</span>
+            <span>Cat food</span>
+        </li>
+        <li class="financial_donation_overview">
+          <div class="smaller_whitespace"></div>
+          <span class="bold float_left">My latest financial donations</span>
+          <%= link_to "View all", "", :class => "float_right" %>
+        </li>
+        <li class="events_overview">
+          <div class="smaller_whitespace"></div>
+          <span class="bold float_left">My volunteer opportunities</span>
+          <%= link_to "View all", "", :class => "float_right" %>
+        </li>
+    </ul>
+
+    <div class="small_whitespace clear"></div>
+
+    <div class="teal_mini_footer"></div>
+
+</div>
