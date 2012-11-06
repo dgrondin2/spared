@@ -1,4 +1,4 @@
-class DonorsController < Devise::RegistrationsController
+class DonorsController < ApplicationController
 
   ### Delete this -- we never need to list all donors
   #def index
@@ -91,7 +91,7 @@ class DonorsController < Devise::RegistrationsController
 
 
     respond_to do |format|
-      format.html { render :action => 'donor-overview', :layout => 'donordash' }
+      format.html { render :action => 'overview', :layout => 'donordash' }
       format.json { }
     end
   end
@@ -100,7 +100,7 @@ class DonorsController < Devise::RegistrationsController
 
 
     respond_to do |format|
-      format.html { render :action => 'donor-my-items', :layout => 'donordash' }
+      format.html { render :action => 'my-item-offers', :layout => 'donordash' }
       format.json { }
     end
   end
@@ -118,7 +118,7 @@ class DonorsController < Devise::RegistrationsController
 
 
     respond_to do |format|
-      format.html { render :action => 'donor-my-events', :layout => 'donordash' }
+      format.html { render :action => 'my-events', :layout => 'donordash' }
       format.json { }
     end
   end

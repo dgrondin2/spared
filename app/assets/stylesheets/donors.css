@@ -3,9 +3,7 @@
  *
  * Stylesheet for registration form, login form, and view/edit profile.
  */
- 
 
-/*    DIVS    */
 
 #register_frame {
 	width: 396px;
@@ -15,16 +13,25 @@
 }
 
 
-/*    FONTS    */
-
 #register_disclaimer {
 	padding-left: 130px;
 	line-height: 0.8;
 	font-size: 0.9em;
 }
 
- 
-/*    FORMS    */
+.my_dash_link {
+    display: block;
+    clear: left;
+    height: 37px;
+    border-bottom: 1px solid #cfbe92;
+    padding-top: 8px;
+    padding-left: 8px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #44372b;
+    line-height: 17px;
+}
+
 
 .register_textfield {
 	width: 288px;
@@ -41,4 +48,85 @@
   	margin-top: 20px;
   	display: block;
   	font-size: 0.9em;
+}
+
+.my_dash {
+    width: 33%;
+    float: left;
+    clear: left;
+}
+
+.my_dash_heading {
+    height: 28px;
+    text-transform: uppercase;
+    padding-left: 8px;
+    padding-top: 8px;
+    background-color: #93d2af;
+    color: #44372b;
+    font-family: "st-marie";
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.my_dash_link:hover p {
+    color: #a8a70f;
+    cursor: pointer;
+}
+
+.profile_summary {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.profile_summary > p {
+    font-size: 14px;
+    color: #44372b;
+}
+
+.donation_overview {
+    position: relative;
+    width: 67%;
+    float: right;
+    margin-top: 15px;
+}
+.donation_overview li {
+
+}
+.donation_overview span {
+    float: left;
+    clear: both;
+    line-height: 18px;
+    padding-left: 15px;
+}
+.donation_overview a {
+    padding-right: 15px;
+}
+.donation_overview_header {
+    background-color: #86c4a2;
+    height: 30px;
+}
+.donation_overview_header p {
+    padding: 7px 0 0 10px;
+}
+.items_overview {
+    background-color: #F5F0E2;
+}
+.financial_donation_overview {
+    background-color: #EFE7D3;
+}
+.events_overview {
+    background-color: #F5F0E2;
+}
+
+.items_overview, .financial_donation_overview, .events_overview {
+    height: 95px;
+    border-bottom: 1px solid #CFBE92;
+}
+
+.teal_mini_footer {
+    height: 10px;
+    width: 100%;
+    background-color: #93d2af;
+    clear: both;
 }

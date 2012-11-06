@@ -66,9 +66,10 @@ a {
 	text-decoration: none;
 }
 
-li {
-	padding-left: 10px;
-	padding-bottom: 5px;
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .heading_label {

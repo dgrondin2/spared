@@ -51,10 +51,10 @@ Spared::Application.routes.draw do
 	match '/donor/events/index'      => 'events#index'
 	match '/donor/donations'         => 'donations#new'
 
-  match '/donor/'               => 'donor#overview'
-  match '/donor/my-item-offers' => 'donor#submitted_item_offers'
-  match '/donor/my-donations'   => 'donor#donation_history'
-  match '/donor/my-events'      => 'donor#volunteer_calendar'
+  match '/donor/'               => 'donors#overview'
+  match '/donor/my-item-offers' => 'donors#my_item_offers'
+  match '/donor/my-donations'   => 'donors#my_donations'
+  match '/donor/my-events'      => 'donors#my_events'
 
 
 

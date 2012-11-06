@@ -6,28 +6,27 @@
   - Only appears when user is logged in as a donor.
 -->
 
-<div id="my_dash" class="float_left clear_left">
+<ul class="my_dash">
 	
-	<div id="my_dash_heading" class="blue_lighter_bg small_dash_heading">My Dashboard</div>
+	<li class="my_dash_heading">MY DASHBBOARD</li>
 	
-	<div id="my_dash_overview" class="my_dash_link beige_lighter_bg">
-		<p class="my_dash_button_title">Overview</p><br/>
-		<p class="my_dash_button_text">View donation history</p>
-	</div>
-	
-	<div id="my_dash_offers" class="my_dash_link">
-		<p class="my_dash_button_title">Item-Offers</p><br/>
-		<p class="my_dash_button_text">View submitted item-offers</p>
-	</div>
-	
-	<div id="my_dash_donations" class="my_dash_link">
-		<p class="my_dash_button_title">Financial Donations</p><br/>
-		<p class="my_dash_button_text">View financial donation history</p>
-	</div>
-	
-	<div id="my_dash_volunteer" class="my_dash_link">
-		<p class="my_dash_button_title">Volunteer</p><br/>
-		<p class="my_dash_button_text">View volunteer calendar & past events</p>
-	</div>
+	<li id="my_dash_overview" class="beige_lighter_bg">
+        <%= link_to "OVERVIEW<br/>View donation history".html_safe, "/donor/", :class => "my_dash_link" %>
+	</li>
 
-</div>
+	<li id="my_dash_offers">
+        <%= link_to "ITEM-OFFERS<br/>View submitted item-offers".html_safe, "/donor/my-item-offers",
+                    :class => "my_dash_link" %>
+	</li>
+	
+	<li id="my_dash_donations">
+        <%= link_to "FINANCIAL DONATIONS<br/>View financial donation history".html_safe, "/donor/my-donations",
+                    :class => "my_dash_link" %>
+	</li>
+	
+	<li id="my_dash_volunteer">
+        <%= link_to "VOLUNTEER<br/>View volunteer calendar & past events".html_safe, "/donor/my-events",
+                    :class => "my_dash_link" %>
+	</li>
+
+</ul>

@@ -56,3 +56,7 @@ gem 'devise'
 gem "paperclip", "~> 3.0"
 gem 'aws-sdk'
 gem 'aws-s3' # For img storage (Paperclip) on Heroku
+
+group :assets do
+  gem 'jquery-ui-rails'
+end
