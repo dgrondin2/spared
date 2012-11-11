@@ -130,3 +130,12 @@
     background-color: #93d2af;
     clear: both;
 }
+
+.item_offer_heading {
+    height: 40px;
+    margin-top: 20px;
+    background-color: #93d2af;
+}
+.item_offer_heading span {
+    padding: 10px 30px;
+}
