@@ -1,0 +1,39 @@
+<div class="dash_content float_right">
+
+    <div class="dash_heading heading_label">VOLUNTEER</div>
+
+    <p class="my_events_header">MY VOLUNTEER CALENDAR: UPCOMING EVENTS</p>
+
+    <div class="my_calendar">
+        <%= calendar @events do |event| %>
+            <div><%= link_to event.name, event %></div>
+        <% end %>
+    </div>
+
+    <div class="dash_list_heading">
+        <span class="bold float_left">VOLUNTEER HISTORY</span>
+        <span class="float_right ">Showing 1-1 of 1</span>
+    </div>
+
+    <div class="item_offer_post odd_item_offer">
+        <!-- Item-offer image -->
+        <div class="item_offer_image_container float_left">
+            <% # image_tag "Layer 6_10.png" %>
+        </div>
+
+        <!-- Item-offer information (overview) -->
+        <div class="item_offer_info_container float_left">
+            <p class="bold">Adoption Events</p>
+
+            <p>Volunteer at the Petsmart in Oakley on Saturday,<br/>
+                March 26, 2011! We need volunteers to staff...</p>
+            <%= link_to '[more]' %>
+        </div>
+
+        <!-- Link to view item-offer details -->
+        <div class="item_offer_link_container float_left">
+            <%= link_to 'View details', "", :rel => 'facebox' %>
+        </div>
+    </div>
+
+</div>

@@ -28,11 +28,8 @@
     <div class="whitespace"></div>
 
     <!--div id="donation_dates_container"-->
-      <%= label_tag(:date_from, "Dates") %>
-      <%= text_field_tag(:date_from, '', :id => 'donation_date_from_text_field', :class => 'text_field') %>
-        <%= link_to image_tag('-library/calendar_icon.png', :class => 'donation_calendar_img') %>
-      <%= label_tag(:date_to, 'to', :id => 'donation_to_label') %>
-      <%= text_field_tag(:date_to, '', :id => 'donation_date_to_text_field', :class => 'text_field') %>
+      <%= label_tag(:start_time, "Dates") %>
+      <%= text_field_tag(:start_time, '', :id => 'donation_date_from_text_field', :class => 'text_field') %>
         <%= link_to image_tag('-library/calendar_icon.png', :class => 'donation_calendar_img') %>
     <!--/div-->
 

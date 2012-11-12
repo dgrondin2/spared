@@ -131,11 +131,58 @@
     clear: both;
 }
 
-.item_offer_heading {
+.dash_list_heading {
     height: 40px;
     margin-top: 20px;
     background-color: #93d2af;
 }
-.item_offer_heading span {
+.dash_list_heading span {
     padding: 10px 30px;
+}
+
+.latest_financial_donations {
+    margin: 20px 0;
+    width: 100%;
+}
+.latest_financial_donations tr td {
+    padding: 5px 20px;
+}
+
+.even_row {
+    background-color: #EFE7D3;
+}
+.odd_row {
+    background-color: #F5F0E2;
+}
+
+#donation_table_header {
+    background-color: #F5F0E2;
+    padding: 15px 20px;
+}
+.latest_financial_donations .top_total,
+.latest_financial_donations .bottom_total {
+    background-color: #93d2af;
+    font-weight: bold;
+    height: 30px;
+}
+
+.latest_financial_donations .bottom_total {
+    text-align: right;
+}
+
+.my_calendar h2 {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.my_calendar {
+    border: 15px solid #EFE7D3;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    margin-top: 10px;
+}
+
+.my_events_header {
+    padding-left: 30px;
+    font-size: 14px;
 }

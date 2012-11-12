@@ -60,3 +60,5 @@ gem 'aws-s3' # For img storage (Paperclip) on Heroku
 group :assets do
   gem 'jquery-ui-rails'
 end
+
+gem "simple_calendar", "~> 0.0.7"

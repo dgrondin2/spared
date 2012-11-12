@@ -107,7 +107,6 @@ class DonorsController < ApplicationController
 
   def my_donations
 
-
     respond_to do |format|
       format.html { render :action => 'my-donations', :layout => 'donordash' }
       format.json { }
@@ -115,7 +114,7 @@ class DonorsController < ApplicationController
   end
 
   def my_events
-
+    @events = Event.all
 
     respond_to do |format|
       format.html { render :action => 'my-events', :layout => 'donordash' }
