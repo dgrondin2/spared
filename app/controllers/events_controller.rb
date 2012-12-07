@@ -1,4 +1,7 @@
 class EventsController < ApplicationController
+
+  before_filter :authenticate_donor!
+
   # GET /events
   # GET /events.json
   def index

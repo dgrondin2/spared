@@ -186,3 +186,39 @@
     padding-left: 30px;
     font-size: 14px;
 }
+
+.donor_sign_in {
+    background-color: #B8B713;
+    height: 33px;
+    width: 92px;
+    float: right;
+    border: 2px solid #FFF;
+    outline: 2px solid #B8B713;
+    margin: 25px 23px 0 0;
+    font-size: 13px;
+    clear: right;
+
+}
+
+.spared_button {
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.spared_button:hover {
+    opacity: 0.8;
+}
+
+.forgot_password_link {
+    float: right;
+    padding-right: 23px;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #BCBC22;
+    font-weight: 100;
+}
+
+.remember_me {
+    margin: 20px 0 0 15px;;
+    float: left;
+}

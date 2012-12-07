@@ -1,5 +1,7 @@
 class ItemOffersController < ApplicationController
 
+  before_filter :authenticate_donor!
+
   def overview
     respond_to do |format|
       format.html { #if user role is donor:

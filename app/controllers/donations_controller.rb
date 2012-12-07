@@ -1,4 +1,7 @@
 class DonationsController < ApplicationController
+
+  before_filter :authenticate_donor!
+
   # GET /donations
   # GET /donations.json
   def index

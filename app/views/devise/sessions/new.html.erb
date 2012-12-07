@@ -1,17 +1,21 @@
-<h2>Sign in</h2>
+<div id="login_container" class="float_left">
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
+	<h1 class="heading_label center">DONOR LOGIN</h1>
+	<br/>
+	<%= render 'donorloginform' %>
+</div>
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+<%= image_tag('donor-login/photo.png', :class => 'float_right') %>
 
-  <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-  <% end -%>
+<div class="small_whitespace clear_left"></div>
 
-  <div><%= f.submit "Sign in" %></div>
-<% end %>
+<div id="register_donor_button" class="button_border green_border float_left clear_left">
+	<%= link_to "Register As A Donor", 'register', :class => 'button wide_button green_bg', 
+												 :rel => 'facebox' %>
+</div>
 
-<%= render "devise/shared/links" %>
+<div class="smaller_whitespace clear_left"></div>
+
+<div id="org_login_button" class="button_border blue_border float_left clear_left">
+	<%= link_to "Organization Login", 'orglogin', :class => 'button wide_button blue_lighter_bg' %>
+</div>

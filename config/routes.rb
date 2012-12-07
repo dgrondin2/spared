@@ -28,12 +28,14 @@ Spared::Application.routes.draw do
 	match '/faqs'	 => 'home#faqs'
 	match '/contact' => 'home#contact'
 	match '/shop'    => 'home#shop'
-	
-	match '/donor/register'     => 'donors#new'
+
 	match '/org/register'  => 'organizations#new'
+
+  devise_for :donor, :path => '', :path_names => { :sign_in => "/donor/login", :sign_out => "/donor/logout", :sign_up => "donor/register" }
 	
 	devise_scope :donor do 
-		match '/donor/login' => 'donors#login'
+		get '/donor/login' => 'devise/sessions#new'
+    match '/donor/register' => 'devise/registrations#new'
 	end
 
 	devise_scope :organization do
@@ -51,7 +53,7 @@ Spared::Application.routes.draw do
 	match '/donor/events/index'      => 'events#index'
 	match '/donor/donations'         => 'donations#new'
 
-  match '/donor/'               => 'donors#overview'
+  match '/donor/'               => 'donors#overview', as: "donors"
   match '/donor/my-item-offers' => 'donors#my_item_offers'
   match '/donor/my-donations'   => 'donors#my_donations'
   match '/donor/my-events'      => 'donors#my_events'

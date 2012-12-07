@@ -10,6 +10,7 @@ class DonorsController < ApplicationController
   #  end
   #end
 
+  before_filter :authenticate_donor!, except: [:new]
 
   # View donor profile
   def show
@@ -30,8 +31,7 @@ class DonorsController < ApplicationController
       format.json { render :json => @donor }
     end
   end
-  
-  # TODO: Delete this after Devise is set up -- handled in user_sessions
+
   def login
     render :layout => 'donordash'
   end

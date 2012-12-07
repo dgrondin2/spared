@@ -114,7 +114,7 @@
   	text-align: left;
   	margin-right: 30px;
   	margin-left: 20px;
-  	margin-top: 5px;
+  	margin-top: 20px;
   	display: block
 }
 
@@ -123,13 +123,6 @@
 	width: 190px;
 	height: 23px;
 	border: 1px solid #777777;
-}
-
-#login_button {
-	clear: right;
-	margin-right: 23px;
-	margin-top: 18px;
-	font-size: $generic-font-size;
 }
 
 .donation_textfield {

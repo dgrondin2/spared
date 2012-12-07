@@ -25,10 +25,12 @@
 
 <body>
 	<div id="page_frame">
-		<!-- Flash messages for Devise -->
-		<p class="notice"><%= notice %></p>
+      <!-- Flash messages for Devise -->
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
   
 		<%= render :partial => "shared/header" %>
+
 
 		<%= render :partial => "shared/donordashnav" %>
 
@@ -37,7 +39,7 @@
 	
 		<%= yield %>
 
-		<% if !current_page?('/donor/login') %>
+		<% if donor_signed_in? %>
 			<%= render :partial => 'shared/donormydash' %>
 		<% end %>
 

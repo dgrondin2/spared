@@ -325,3 +325,7 @@ table {
 .next-month {
     float: right;
 }
+
+#facebox .content {
+    box-sizing: border-box;
+}
