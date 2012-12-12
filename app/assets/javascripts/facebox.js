@@ -189,6 +189,8 @@
 
     $('#facebox .close').click($.facebox.close)
     $('#facebox .close_image').attr('src', $.facebox.settings.closeImage)
+
+    $('#cancel_button').click($.facebox.close)
   }
 
   // getPageScroll() by quirksmode.com

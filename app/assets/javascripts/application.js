@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require facebox
 //= require_tree .
+
+jQuery(document).ready(function($) {
+    $(document).bind('beforeReveal.facebox', function() {
+        $("#facebox .content").empty();
+    });
+
+    $('a[rel*=facebox]').facebox()
+
+})

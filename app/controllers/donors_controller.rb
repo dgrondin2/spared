@@ -1,15 +1,5 @@
 class DonorsController < ApplicationController
 
-  ### Delete this -- we never need to list all donors
-  #def index
-  #  @donors = Donor.all
-
-  #  respond_to do |format|
-  #    format.html # index.html.erb
-  #    format.json { render :json => @donors }
-  #  end
-  #end
-
   before_filter :authenticate_donor!, except: [:new]
 
   # View donor profile
