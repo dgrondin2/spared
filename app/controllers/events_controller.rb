@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
 
-  before_filter :authenticate_donor!
+  before_filter :authorize
 
   # GET /events
   # GET /events.json

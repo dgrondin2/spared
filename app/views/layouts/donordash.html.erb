@@ -39,9 +39,8 @@
 	
 		<%= yield %>
 
-		<% if donor_signed_in? %>
-			<%= render :partial => 'shared/donormydash' %>
-		<% end %>
+        <%# TODO: Show partial if signed in %>
+		<%= render :partial => 'shared/donormydash' %>
 
 		<div class="whitespace clear"></div> 
 	

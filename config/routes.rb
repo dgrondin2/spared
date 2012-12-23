@@ -1,26 +1,12 @@
 Spared::Application.routes.draw do
+  resources :users
 
-    devise_for :organizations
+  get "sessions/new"
 
-    devise_for :donors
-	
+	resources :item_offers, :wishlist_items, :events, :donations
+  resources :users
+  resources :sessions
 
-    # TODO: Uncomment the following two blocks when setting up Devise:
-
-	#resources :organizations do
-	#	resources :items     # Wishlist items
-	#	resources :events    # Volunteering events being hosted
-	#	resources :donations # Donation money received
-	#end
-	
-	#resources :donors do
-	#	resources :items     # Donated items
-	#	resources :events    # Events at which donor has volunteered
-	#	resources :donations # Donation money given
-	#end
-
-	resources :item_offers
-	
 	get 'home/index'
 	get 'sessions/new'
 	
@@ -29,18 +15,14 @@ Spared::Application.routes.draw do
 	match '/contact' => 'home#contact'
 	match '/shop'    => 'home#shop'
 
-	match '/org/register'  => 'organizations#new'
-
-  devise_for :donor, :path => '', :path_names => { :sign_in => "/donor/login", :sign_out => "/donor/logout", :sign_up => "donor/register" }
-	
-	devise_scope :donor do 
-		get '/donor/login' => 'devise/sessions#new'
-    match '/donor/register' => 'devise/registrations#new'
-	end
-
-	devise_scope :organization do
-		match '/org/login' => 'organizations#sessions/new'
-	end
+  #TODO: Org auth routes
+	#get '/donor/login' => 'sessions#new'
+  #match '/donor/register' => 'devise/registrations#new'
+  #match '/org/login' => 'sessions#new'
+  #match '/org/register'  => 'organizations#new'
+  get '/donor/register', to: 'users#new', as: 'register'
+  get '/donor/login', to: 'sessions#new', as: 'login'
+  get '/donor/logout', to: 'sessions#destroy', as: 'logout'
 
 	match '/donor/item-offers'       => 'item_offers#overview' 	# "DONATE ITEMS"
 	match '/donor/item-offers/new'	 => 'item_offers#new'
@@ -53,7 +35,7 @@ Spared::Application.routes.draw do
 	match '/donor/events/index'      => 'events#index'
 	match '/donor/donations'         => 'donations#new'
 
-  match '/donor/'               => 'donors#overview', as: "donors"
+  match '/donor/'               => 'donors#overview', as: "donors_overview"
   match '/donor/my-item-offers' => 'donors#my_item_offers'
   match '/donor/my-donations'   => 'donors#my_donations'
   match '/donor/my-events'      => 'donors#my_events'

@@ -65,9 +65,6 @@ Spared::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  # Devise config
-  config.action_mailer.default_url_options = { :host => 'radiant-snow-8335.herokuapp.com' }
-
   # For using Paperclip on Heroku
   config.paperclip_defaults = {
       :storage => :s3,

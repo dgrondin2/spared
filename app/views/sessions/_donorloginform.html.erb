@@ -1,0 +1,11 @@
+<%= form_tag sessions_path do %>
+  <div><%= label_tag :email, 'email', :class => 'login_label content' %><br />
+  <%= text_field_tag :email, params[:email], :class => 'text_field login_textfield', :placeholder => "youremail@example.com" %></div>
+
+  <div><%= label_tag :password, 'password', :class => 'login_label content' %><br />
+  <%= password_field_tag :password, :class => 'text_field login_textfield' %></div>
+
+  <%# TODO: Remember me, forgot password links %>
+
+  <div><%= submit_tag "LOGIN", :class => 'donor_sign_in spared_button' %></div>
+<% end %>

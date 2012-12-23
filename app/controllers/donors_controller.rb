@@ -1,6 +1,6 @@
 class DonorsController < ApplicationController
 
-  before_filter :authenticate_donor!, except: [:new]
+  before_filter :authorize
 
   # View donor profile
   def show

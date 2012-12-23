@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121112014727) do
+ActiveRecord::Schema.define(:version => 20121223181850) do
 
   create_table "donations", :force => true do |t|
     t.date     "date_donated"
@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(:version => 20121112014727) do
   create_table "donors", :force => true do |t|
     t.string   "first_name"
     t.string   "last_name"
-    t.string   "email"
     t.string   "street_address"
     t.string   "city"
     t.string   "state"
@@ -31,21 +30,9 @@ ActiveRecord::Schema.define(:version => 20121112014727) do
     t.boolean  "limited_address"
     t.text     "bio"
     t.binary   "image"
-    t.datetime "created_at",                             :null => false
-    t.datetime "updated_at",                             :null => false
-    t.string   "encrypted_password",     :default => "", :null => false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          :default => 0
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
-
-  add_index "donors", ["email"], :name => "index_donors_on_email", :unique => true
-  add_index "donors", ["reset_password_token"], :name => "index_donors_on_reset_password_token", :unique => true
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -82,7 +69,6 @@ ActiveRecord::Schema.define(:version => 20121112014727) do
   create_table "organizations", :force => true do |t|
     t.string   "organization_name"
     t.string   "representative_name"
-    t.string   "email"
     t.string   "street_address"
     t.string   "city"
     t.string   "state"
@@ -91,35 +77,16 @@ ActiveRecord::Schema.define(:version => 20121112014727) do
     t.string   "website"
     t.text     "organization_description"
     t.binary   "image"
-    t.datetime "created_at",                               :null => false
-    t.datetime "updated_at",                               :null => false
-    t.string   "encrypted_password",       :default => "", :null => false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",            :default => 0
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
-  end
-
-  add_index "organizations", ["email"], :name => "index_organizations_on_email", :unique => true
-  add_index "organizations", ["reset_password_token"], :name => "index_organizations_on_reset_password_token", :unique => true
-
-  create_table "user_sessions", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
   end
 
   create_table "users", :force => true do |t|
     t.string   "email"
-    t.string   "crypted_password"
-    t.string   "password_salt"
-    t.string   "persistence_token"
     t.string   "role"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "password_digest"
   end
 
   create_table "wishlist_items", :force => true do |t|

@@ -1,6 +1,6 @@
 class ItemOffersController < ApplicationController
 
-  before_filter :authenticate_donor!
+  before_filter :authorize
 
   def overview
     respond_to do |format|

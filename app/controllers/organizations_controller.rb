@@ -1,6 +1,5 @@
 class OrganizationsController < Devise::RegistrationsController
-  # GET /organizations
-  # GET /organizations.json
+
   def index
     @organizations = Organization.all
 
@@ -10,8 +9,6 @@ class OrganizationsController < Devise::RegistrationsController
     end
   end
 
-  # GET /organizations/1
-  # GET /organizations/1.json
   def show
     @organization = Organization.find(params[:id])
 
@@ -21,8 +18,6 @@ class OrganizationsController < Devise::RegistrationsController
     end
   end
 
-  # GET /organizations/new
-  # GET /organizations/new.json
   def new
     @organization = Organization.new
     render :layout => 'yieldonly'
@@ -33,13 +28,10 @@ class OrganizationsController < Devise::RegistrationsController
 #    end
   end
 
-  # GET /organizations/1/edit
   def edit
     @organization = Organization.find(params[:id])
   end
 
-  # POST /organizations
-  # POST /organizations.json
   def create
     @organization = Organization.new(params[:organization])
 
@@ -54,8 +46,6 @@ class OrganizationsController < Devise::RegistrationsController
     end
   end
 
-  # PUT /organizations/1
-  # PUT /organizations/1.json
   def update
     @organization = Organization.find(params[:id])
 
@@ -70,8 +60,6 @@ class OrganizationsController < Devise::RegistrationsController
     end
   end
 
-  # DELETE /organizations/1
-  # DELETE /organizations/1.json
   def destroy
     @organization = Organization.find(params[:id])
     @organization.destroy
