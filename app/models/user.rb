@@ -4,4 +4,5 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :role
 
   validates_uniqueness_of :email
+  belongs_to :donor
 end

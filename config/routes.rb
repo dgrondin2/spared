@@ -20,7 +20,7 @@ Spared::Application.routes.draw do
   #match '/donor/register' => 'devise/registrations#new'
   #match '/org/login' => 'sessions#new'
   #match '/org/register'  => 'organizations#new'
-  get '/donor/register', to: 'users#new', as: 'register'
+  get '/donor/register', to: 'donors#new', as: 'register'
   get '/donor/login', to: 'sessions#new', as: 'login'
   get '/donor/logout', to: 'sessions#destroy', as: 'logout'
 

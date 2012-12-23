@@ -1,6 +1,6 @@
 class DonorsController < ApplicationController
 
-  before_filter :authorize
+  before_filter :authorize, except: [:new]
 
   # View donor profile
   def show
@@ -12,14 +12,10 @@ class DonorsController < ApplicationController
     end
   end
 
-  # Donor user registration
   def new
     @donor = Donor.new
 
-    respond_to do |format|
-      format.html { render :layout => 'yieldonly' } # new.html.erb
-      format.json { render :json => @donor }
-    end
+    render layout: 'yieldonly'
   end
 
   def login
@@ -34,14 +30,13 @@ class DonorsController < ApplicationController
   # Donor user registration -- POST
   def create
     @donor = Donor.new(params[:donor])
-    @donor.user = User.new(params[:user])
 
     respond_to do |format|
       if @donor.save
         format.html { redirect_to @donor, :notice => 'Registration successful.' }
         format.json { render :json => @donor, :status => :created, :location => @donor }
       else
-        format.html { render :action => "new", :notice => 'Registration failed.' }
+        format.html { redirect_to :controller => "users", :action => "new", :notice => 'Registration failed.' }
         format.json { render :json => @donor.errors, :status => :unprocessable_entity }
       end
     end

@@ -1,0 +1,58 @@
+<%= form_for @donor, url: donors_overview_path do |f| %>
+
+  <% if @donor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@donor.errors.count, "error") %> prohibited this donor from being saved:</h2>
+
+      <ul>
+        <% @donor.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name, "first name", :class => 'register_label' %><br />
+    <%= f.text_field :first_name, :class => 'text_field register_textfield' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name, "last name", :class => 'register_label' %><br />
+    <%= f.text_field :last_name, :class => 'text_field register_textfield' %>
+   </div>
+
+  <%= f.fields_for :users do |user_form| %>
+    <div class="field">
+      <%= user_form.label :email, 'email*', :class => 'register_label' %><br />
+      <%= user_form.text_field :email, :class => 'text_field register_textfield' %>
+    </div>
+    <!-- :email_confirmation field throws "NoMethodError" -->
+    <!--div class="field">
+      <#%= user_form.label :email_confirmation, 'confirm', :class => 'register_label' %><br/>
+      <#%= user_form.text_field :email_confirmation, :class => 'text_field register_textfield' %>
+    </div-->
+    <p id="register_disclaimer">*email address will be used as username.</p>
+
+    <div class="field">
+      <%= user_form.label :password, 'password', :class => 'register_label' %><br />
+      <%= user_form.password_field :password, :class => 'text_field register_textfield' %>
+    </div>
+    <div class="field">
+      <%= user_form.label :password_confirmation, 'confirm', :class => 'register_label' %><br />
+      <%= user_form.password_field :password_confirmation, :class => 'text_field register_textfield' %>
+    </div>
+  <% end %>
+
+  <br/>
+  <br/>
+
+  <div class="actions">
+    <div id="register_button" class="button_border green_border float_right">
+      <%= f.submit "Register", :class => 'button small_button green_bg' %>
+    </div>
+    <div id="cancel_button" class="button_border beige_border float_right">
+      <%= link_to "Cancel", 'login', :id => 'cancel_link', :class => 'button small_button beige_bg' %>
+    </div>
+  </div>
+<% end %>

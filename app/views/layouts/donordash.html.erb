@@ -7,45 +7,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Spared</title>
+  <title>Spared</title>
   <%= stylesheet_link_tag 'jquery-ui-1.9.0.custom' %>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= stylesheet_link_tag 'sparedtheme' %>
   <%= javascript_include_tag 'jquery-ui-1.9.0.custom', "jquery", "application" %>
-	<%= csrf_meta_tags %>
-
-  <script type="text/javascript">
-      $(document).ready(
-              function() {
-                  $('.jquery-ui-date').datepicker();
-              }
-      );
-  </script>
+  <%= csrf_meta_tags %>
 </head>
 
 <body>
-	<div id="page_frame">
-      <!-- Flash messages for Devise -->
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-  
-		<%= render :partial => "shared/header" %>
+  <div id="page_frame">
+    <!-- Flash messages for Devise -->
+    <p class="notice"><%= notice %></p>
+
+    <p class="alert"><%= alert %></p>
+
+    <%= render :partial => "shared/header" %>
 
 
-		<%= render :partial => "shared/donordashnav" %>
+    <%= render :partial => "shared/donordashnav" %>
 
-		<div class="whitespace clear"></div>
+    <div class="whitespace clear"></div>
 
-	
-		<%= yield %>
 
-        <%# TODO: Show partial if signed in %>
-		<%= render :partial => 'shared/donormydash' %>
+    <%= yield %>
 
-		<div class="whitespace clear"></div> 
-	
-		<%= render :partial => "shared/footer" %>
-		
-  	</div>	
+    <% if current_user %>
+      <%= render :partial => 'shared/donormydash' %>
+    <% end %>
+
+    <div class="whitespace clear"></div>
+
+    <%= render :partial => "shared/footer" %>
+
+  </div>
 </body>
 </html>
