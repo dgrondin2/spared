@@ -1,4 +1,4 @@
-class OrganizationsController < Devise::RegistrationsController
+class OrganizationsController < ApplicationController
 
   def index
     @organizations = Organization.all
