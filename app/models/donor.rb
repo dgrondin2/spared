@@ -1,7 +1,7 @@
 class Donor < ActiveRecord::Base
 
 	attr_accessible :bio, :city, :first_name, :image, :last_name,
-            :limited_address, :state, :street_address, :zip
+            :limited_address, :state, :street_address, :zip, :user_id
 
   # validates_confirmation_of :email
   # validates_presence_of :email

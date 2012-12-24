@@ -30,13 +30,19 @@ class DonorsController < ApplicationController
   # Donor user registration -- POST
   def create
     @donor = Donor.new(params[:donor])
+    @user = User.new(params[:user])
+
+    @donor.user_id = @user.id
+    puts @user.id
 
     respond_to do |format|
-      if @donor.save
+      if @donor.save and @user.save
+        puts "Registered! Now logging in..."
+        session[:user_id] = @user.id
         format.html { redirect_to @donor, :notice => 'Registration successful.' }
         format.json { render :json => @donor, :status => :created, :location => @donor }
       else
-        format.html { redirect_to :controller => "users", :action => "new", :notice => 'Registration failed.' }
+        format.html { redirect_to :action => "new", :notice => 'Registration failed.' }
         format.json { render :json => @donor.errors, :status => :unprocessable_entity }
       end
     end
