@@ -1,4 +1,4 @@
-<%= form_for @donor, url: donors_overview_path do |f| %>
+<%= form_for @donor, url: register_new_donor_path  do |f| %>
 
   <% if @donor.errors.any? %>
     <div id="error_explanation">
@@ -22,7 +22,7 @@
     <%= f.text_field :last_name, :class => 'text_field register_textfield' %>
    </div>
 
-  <%= f.fields_for :users do |user_form| %>
+  <%= f.fields_for :user do |user_form| %>
     <div class="field">
       <%= user_form.label :email, 'email*', :class => 'register_label' %><br />
       <%= user_form.text_field :email, :class => 'text_field register_textfield' %>

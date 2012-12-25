@@ -13,13 +13,11 @@ class DonorsController < ApplicationController
   end
 
   def new
+
     @donor = Donor.new
+    @donor.user = User.new
 
     render layout: 'yieldonly'
-  end
-
-  def login
-    render :layout => 'donordash'
   end
 
   # Edit profile
@@ -29,17 +27,13 @@ class DonorsController < ApplicationController
 
   # Donor user registration -- POST
   def create
-    @donor = Donor.new(params[:donor])
-    @user = User.new(params[:user])
 
-    @donor.user_id = @user.id
-    puts @user.id
+    @donor = Donor.new(params[:donor])
 
     respond_to do |format|
-      if @donor.save and @user.save
-        puts "Registered! Now logging in..."
-        session[:user_id] = @user.id
-        format.html { redirect_to @donor, :notice => 'Registration successful.' }
+      if @donor.save
+        session[:user_id] = @donor.user.id
+        format.html { redirect_to action: "overview", :notice => 'Registration successful.' }
         format.json { render :json => @donor, :status => :created, :location => @donor }
       else
         format.html { redirect_to :action => "new", :notice => 'Registration failed.' }
@@ -76,7 +70,6 @@ class DonorsController < ApplicationController
 
 
   # "MY DASHBOARD" actions:
-  # TODO: json
 
   def overview
 

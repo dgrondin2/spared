@@ -1,8 +1,4 @@
 Spared::Application.routes.draw do
-  resources :users
-
-  get "sessions/new"
-
 	resources :item_offers, :wishlist_items, :events, :donations
   resources :users
   resources :sessions
@@ -15,14 +11,11 @@ Spared::Application.routes.draw do
 	match '/contact' => 'home#contact'
 	match '/shop'    => 'home#shop'
 
-  #TODO: Org auth routes
-	#get '/donor/login' => 'sessions#new'
-  #match '/donor/register' => 'devise/registrations#new'
-  #match '/org/login' => 'sessions#new'
-  #match '/org/register'  => 'organizations#new'
+  #TODO: Org auth routes/
   get '/donor/register', to: 'donors#new', as: 'register'
   get '/donor/login', to: 'sessions#new', as: 'login'
   get '/donor/logout', to: 'sessions#destroy', as: 'logout'
+  post '/donor/register-new-donor', to: 'donors#create', as: 'register_new_donor'
 
 	match '/donor/item-offers'       => 'item_offers#overview' 	# "DONATE ITEMS"
 	match '/donor/item-offers/new'	 => 'item_offers#new'

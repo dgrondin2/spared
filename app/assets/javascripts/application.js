@@ -29,7 +29,6 @@ $(document).ready(function($) {
       alert("My date is: " + dateText);
     }
   });
-  console.log("hello?");
 
 
 });
