@@ -10,21 +10,21 @@
 	
 	<li class="my_dash_heading">MY DASHBBOARD</li>
 	
-	<li id="my_dash_overview" class="beige_lighter_bg">
+	<li id="my_dash_overview" <%= current_page?(donor_overview_path) ? "class=beige_lighter_bg": "" %>>
         <%= link_to "OVERVIEW<br/>View donation history".html_safe, "/donor/", :class => "my_dash_link" %>
 	</li>
 
-	<li id="my_dash_offers">
+	<li id="my_dash_offers" <%= current_page?(donor_item_offers_path) ? "class=beige_lighter_bg": "" %>>
         <%= link_to "ITEM-OFFERS<br/>View submitted item-offers".html_safe, "/donor/my-item-offers",
                     :class => "my_dash_link" %>
 	</li>
 	
-	<li id="my_dash_donations">
+	<li id="my_dash_donations" <%= current_page?(donor_donations_path) ? "class=beige_lighter_bg": "" %>>
         <%= link_to "FINANCIAL DONATIONS<br/>View financial donation history".html_safe, "/donor/my-donations",
                     :class => "my_dash_link" %>
 	</li>
 	
-	<li id="my_dash_volunteer">
+	<li id="my_dash_volunteer" <%= current_page?(donor_events_path) ? "class=beige_lighter_bg": "" %>>
         <%= link_to "VOLUNTEER<br/>View volunteer calendar & past events".html_safe, "/donor/my-events",
                     :class => "my_dash_link" %>
 	</li>

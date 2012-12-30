@@ -11,7 +11,6 @@ Spared::Application.routes.draw do
 	match '/contact' => 'home#contact'
 	match '/shop'    => 'home#shop'
 
-  #TODO: Org auth routes/
   get '/donor/register', to: 'donors#new', as: 'register'
   get '/donor/login', to: 'sessions#new', as: 'login'
   get '/donor/logout', to: 'sessions#destroy', as: 'logout'
@@ -22,16 +21,15 @@ Spared::Application.routes.draw do
 	match '/donor/item-offers/index' => 'item_offers#index'		  # "BROWSE ITEM-OFFER BOARD"
 	match '/donor/item-offers/:id'   => 'item_offers#show'
 # TODO: Better URL for wishlists
-#   - misleading because wishlists are made by orgs
 	match '/donor/wishlists'         => 'wishlist_items#index'
 	match '/donor/events'            => 'events#new'
 	match '/donor/events/index'      => 'events#index'
 	match '/donor/donations'         => 'donations#new'
 
-  match '/donor/'               => 'donors#overview', as: "donors_overview"
-  match '/donor/my-item-offers' => 'donors#my_item_offers'
-  match '/donor/my-donations'   => 'donors#my_donations'
-  match '/donor/my-events'      => 'donors#my_events'
+  match '/donor/'               => 'donors#overview', as: "donor_overview"
+  match '/donor/my-item-offers' => 'donors#my_item_offers', as: "donor_item_offers"
+  match '/donor/my-donations'   => 'donors#my_donations', as: "donor_donations"
+  match '/donor/my-events'      => 'donors#my_events', as: "donor_events"
 
 
 

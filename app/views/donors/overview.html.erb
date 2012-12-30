@@ -3,8 +3,14 @@
     <div class="dash_heading heading_label">DONATION HISTORY AT A GLANCE</div>
 
     <div class="profile_summary">
-        <p>Suzie Green<br/>
-        Cincinnati, OH 45230</p>
+        <p>
+          <%= "#{@donor.first_name} #{@donor.last_name}" %><br/>
+          <% if @donor.city.present? && @donor.state.present? %>
+            <%= "#{@donor.city}, #{@donor.state} #{@donor.zip}" %>
+          <% else %>
+            <%= "#{@donor.city}" %>
+          <% end %>
+        </p>
 
         <%= image_tag "donor-dashboard3/Layer-80.png" %>
 
@@ -22,19 +28,39 @@
             <div class="smaller_whitespace"></div>
             <span class="bold float_left">My matched item-offers</span>
             <%= link_to "View all", "", :class => "float_right" %>
-            <span>Paper towels</span>
-            <span>Dog bed</span>
-            <span>Cat food</span>
+            <% if @item_offers.any? %>
+                <% @item_offers.each do |item| %>
+                    <span><%= "#{item.name}" %></span>
+                <% end %>
+            <% else %>
+                <span>No item offers yet!</span>
+            <% end %>
         </li>
         <li class="financial_donation_overview">
           <div class="smaller_whitespace"></div>
           <span class="bold float_left">My latest financial donations</span>
           <%= link_to "View all", "", :class => "float_right" %>
+          <% if @donations.any? %>
+              <% @donations.each do |donation| %>
+                  <%# TODO: Change format and org name %>
+                  <span><%= "#{donation.date_donated} -- #{donation.amount} -- Org name" %></span>
+              <% end %>
+          <% else %>
+              <span>No donations yet!</span>
+          <% end %>
         </li>
         <li class="events_overview">
           <div class="smaller_whitespace"></div>
           <span class="bold float_left">My volunteer opportunities</span>
           <%= link_to "View all", "", :class => "float_right" %>
+          <% if @events.any? %>
+              <% @events.each do |event| %>
+                  <%# TODO: Change format and org name %>
+                  <span><%= "#{event.start_time} -- #{event.name}" %></span>
+              <% end %>
+          <% else %>
+              <span>No events yet!</span>
+          <% end %>
         </li>
     </ul>
 

@@ -12,5 +12,4 @@ class ItemOffer < ActiveRecord::Base
                     :path => "/:style/:id/:filename"
 	
 	belongs_to :donor
-	belongs_to :organization
 end

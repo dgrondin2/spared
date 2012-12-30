@@ -21,12 +21,5 @@ class PrepareTablesForNewAuth < ActiveRecord::Migration
     remove_column :organizations, :last_sign_in_at
     remove_column :organizations, :current_sign_in_ip
     remove_column :organizations, :last_sign_in_ip
-
-    remove_column :users, :crypted_password
-    remove_column :users, :password_salt
-    remove_column :users, :persistence_token
-    add_column :users, :password_digest, :string
-
-    drop_table :user_sessions
   end
 end

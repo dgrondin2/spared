@@ -29,6 +29,7 @@ class DonorsController < ApplicationController
   def create
 
     @donor = Donor.new(params[:donor])
+    @donor.user.role = "donor"
 
     respond_to do |format|
       if @donor.save
@@ -72,7 +73,12 @@ class DonorsController < ApplicationController
   # "MY DASHBOARD" actions:
 
   def overview
-
+    @user = current_user
+    @donor = Donor.find(@user.donor_id)
+    #TODO: Combine queries into one model method
+    @item_offers = ItemOffer.where("donor_id = ?", @user.donor_id)
+    @donations = Donation.where("donor_id = ?", @user.donor_id)
+    @events = Event.where("donor_id = ?", @user.donor_id)
 
     respond_to do |format|
       format.html { render :action => 'overview', :layout => 'donordash' }
@@ -81,7 +87,8 @@ class DonorsController < ApplicationController
   end
 
   def my_item_offers
-
+    @user = current_user
+    @item_offers = ItemOffer.where("donor_id = ?", @user.donor_id)
 
     respond_to do |format|
       format.html { render :action => 'my-item-offers', :layout => 'donordash' }
@@ -90,6 +97,8 @@ class DonorsController < ApplicationController
   end
 
   def my_donations
+    @user = current_user
+    @donations = Donation.where("donor_id = ?", @user.donor_id)
 
     respond_to do |format|
       format.html { render :action => 'my-donations', :layout => 'donordash' }
@@ -98,7 +107,8 @@ class DonorsController < ApplicationController
   end
 
   def my_events
-    @events = Event.all
+    @user = current_user
+    @events = Event.where("donor_id = ?", @user.donor_id)
 
     respond_to do |format|
       format.html { render :action => 'my-events', :layout => 'donordash' }

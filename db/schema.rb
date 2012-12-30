@@ -11,13 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121225182420) do
+ActiveRecord::Schema.define(:version => 20121230004151) do
 
   create_table "donations", :force => true do |t|
     t.date     "date_donated"
     t.decimal  "amount"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.integer  "donor_id"
   end
 
   create_table "donors", :force => true do |t|
@@ -32,7 +33,6 @@ ActiveRecord::Schema.define(:version => 20121225182420) do
     t.binary   "image"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
-    t.integer  "user_id"
   end
 
   create_table "events", :force => true do |t|
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(:version => 20121225182420) do
     t.binary   "image"
     t.datetime "created_at",                  :null => false
     t.datetime "updated_at",                  :null => false
+    t.integer  "donor_id"
   end
 
   create_table "item_offers", :force => true do |t|
@@ -65,6 +66,7 @@ ActiveRecord::Schema.define(:version => 20121225182420) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.integer  "donor_id"
   end
 
   create_table "organizations", :force => true do |t|
@@ -84,18 +86,16 @@ ActiveRecord::Schema.define(:version => 20121225182420) do
 
   create_table "users", :force => true do |t|
     t.string   "email"
+    t.string   "password_digest"
     t.string   "role"
+    t.integer  "donor_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
-    t.string   "password_digest"
-    t.integer  "donor_id"
   end
 
-  create_table "wishlist_items", :force => true do |t|
-    t.integer  "quantity"
-    t.text     "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+  create_table "volunteers", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
