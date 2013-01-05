@@ -1,6 +1,12 @@
-<h1>Editing donor</h1>
+<div class="dash_content float_right">
 
-<%= render 'form' %>
+    <div class="dash_heading heading_label">DONOR PROFILE</div>
 
-<%= link_to 'Show', @donor %> |
-<%= link_to 'Back', donors_path %>
+    <div class="edit_profile_picture_wrapper">
+        <%= link_to "< BACK TO OVERVIEW", donor_overview_path, class: "back_to_overview_link" %>
+        <%= image_tag "donor-dashboard3/Layer-80.png", class: "profile_picture" %>
+        <%= link_to "Upload a new photo", "", class: "new_photo_link" %>
+    </div>
+
+    <%= render 'edit-form' %>
+</div>

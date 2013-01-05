@@ -22,7 +22,10 @@ class DonorsController < ApplicationController
 
   # Edit profile
   def edit
-    @donor = Donor.find(params[:id])
+    @user = current_user
+    @donor = Donor.find(@user.donor_id)
+
+    render layout: "donordash"
   end
 
   # Donor user registration -- POST
@@ -45,11 +48,12 @@ class DonorsController < ApplicationController
 
   # Edit profile -- POST
   def update
-    @donor = Donor.find(params[:id])
+    @user = current_user
+    @donor = Donor.find(@user.donor_id)
 
     respond_to do |format|
       if @donor.update_attributes(params[:donor])
-        format.html { redirect_to @donor, :notice => 'Profile successfully updated.' }
+        format.html { redirect_to donor_overview_path, :notice => 'Profile successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render :action => "edit" }
@@ -78,6 +82,7 @@ class DonorsController < ApplicationController
     #TODO: Combine queries into one model method
     @item_offers = ItemOffer.where("donor_id = ?", @user.donor_id)
     @donations = Donation.where("donor_id = ?", @user.donor_id)
+    @total_donated = Donation.sum(:amount, conditions: {donor_id: @user.donor_id})
     @events = Event.where("donor_id = ?", @user.donor_id)
 
     respond_to do |format|

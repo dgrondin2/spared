@@ -17,12 +17,12 @@
         <br/>
         <div class="smaller_whitespace"></div>
 
-        <%= link_to "View/Edit profile", "/donor/edit" %>
+        <%= link_to "View/Edit profile", donor_edit_path %>
     </div>
 
     <ul class="donation_overview">
         <li class="donation_overview_header">
-            <p class="bold">You have donated a total of 4 items and $180.00.</p>
+            <p class="bold">You have donated a total of <%= @item_offers.count %> items and <%= number_to_currency @total_donated %>.</p>
         </li>
         <li class="items_overview">
             <div class="smaller_whitespace"></div>

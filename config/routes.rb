@@ -6,15 +6,18 @@ Spared::Application.routes.draw do
 	get 'home/index'
 	get 'sessions/new'
 	
-	match '/about'   => 'home#about'
-	match '/faqs'	 => 'home#faqs'
-	match '/contact' => 'home#contact'
-	match '/shop'    => 'home#shop'
+	match '/about'   => 'home#about', as: "about"
+	match '/faqs'	 => 'home#faqs', as: "faqs"
+	match '/contact' => 'home#contact', as: 'contact'
+	match '/shop'    => 'home#shop', as: 'shop'
 
   get '/donor/register', to: 'donors#new', as: 'register'
   get '/donor/login', to: 'sessions#new', as: 'login'
   get '/donor/logout', to: 'sessions#destroy', as: 'logout'
   post '/donor/register-new-donor', to: 'donors#create', as: 'register_new_donor'
+
+  get '/donor/edit-profile', to: 'donors#edit', as: 'donor_edit'
+  put '/donor/update-profile', to: 'donors#update', as: 'donor_update'
 
 	match '/donor/item-offers'       => 'item_offers#overview' 	# "DONATE ITEMS"
 	match '/donor/item-offers/new'	 => 'item_offers#new'
