@@ -129,8 +129,14 @@
     margin-top: 20px;
     background-color: #93d2af;
 }
+.dash_list_heading .heading-text {
+    font-size: 110%;
+}
 .dash_list_heading span {
-    padding: 10px 30px;
+    padding: 12px 30px;
+}
+.dash_list_heading .heading-text {
+    padding-left: 20px;
 }
 
 .latest_financial_donations {
