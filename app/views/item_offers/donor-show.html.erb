@@ -1,60 +1,34 @@
-<p id="notice"><%= notice %></p>
+<div class="item-offer-detail">
+    <div class="heading">ITEM DETAILS</div>
 
-<p>
-  <b>Name:</b>
-  <%= @item_offer.name %>
-</p>
+    <div class="image-wrapper">
+        <% if @item_offer.image.present? %>
+            <%= image_tag @item_offer.image.url(:detail) %>
+        <% end %>
+    </div>
 
-<p>
-  <b>City:</b>
-  <%= @item_offer.city %>
-</p>
+    <div class="details">
+        <p class="name"><%= @item_offer.name %></p>
+        <% if @item_offer.city.present? && @item_offer.state.present? %>
+            <p class="bold"><%= "#{@item_offer.city}, #{@item_offer.state}" %></p>
+        <% end %>
 
-<p>
-  <b>State:</b>
-  <%= @item_offer.state %>
-</p>
+        <br/>
 
-<p>
-  <b>Zip:</b>
-  <%= @item_offer.zip %>
-</p>
+        <p class="inline bold">Category: </p><%= "#{@item_offer.category}  |  " %>
+        <p class="inline bold">Animal Type: </p><%= "#{@item_offer.animal_type}  |  " %>
+        <p class="inline bold">Condition: </p><%= "#{@item_offer.condition}  |  " %>
+        <p class="inline bold">Location: </p><%= "#{@item_offer.zip}" %>
+        <br/>
+        <p class="inline bold">Estimated Value: </p><%= "#{@item_offer.estimated_value}  |  " %>
+        <p class="inline bold">Posted: </p><%= "#{@item_offer.created_at}  |  " %>
+        <p class="inline bold">Expires: </p><%= "#{@item_offer.expiration_date}" %>
+        <br/>
+        <br/>
+        <%= @item_offer.description %>
+    </div>
 
-<p>
-  <b>Category:</b>
-  <%= @item_offer.category %>
-</p>
+    <div class="whitespace clear"></div>
+    <div class="whitespace clear"></div>
+</div>
 
-<p>
-  <b>Animal type:</b>
-  <%= @item_offer.animal_type %>
-</p>
-
-<p>
-  <b>Condition:</b>
-  <%= @item_offer.condition %>
-</p>
-
-<p>
-  <b>Estimated value:</b>
-  <%= @item_offer.estimated_value %>
-</p>
-
-<p>
-  <b>Expiration date:</b>
-  <%= @item_offer.expiration_date %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @item_offer.description %>
-</p>
-
-<p>
-  <b>Image:</b>
-  <%= @item_offer.image %>
-</p>
-
-
-<%= link_to 'Edit', edit_item_offer_path(@item_offer) %> |
-<%= link_to 'Back', item_offers_path %>

@@ -208,3 +208,43 @@
 	width: 145px;
 	height: 20px;
 }
+
+.item-offer-detail {
+    margin: 25px;
+}
+
+.item-offer-detail .heading {
+    height: 35px;
+    padding: 10px 0 0 20px;
+    margin: 20px 0 30px 0;
+    width: 680px;
+
+    background-color: #93d2af;
+    box-sizing: border-box;
+    color: #3b261c;
+    font-size: 105%;
+    font-weight: bold;
+}
+
+.item-offer-detail .image-wrapper {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #d2c298;
+    margin: 0 20px;
+}
+
+.item-offer-detail .details {
+    color: #45372a;
+    float: left;
+}
+
+.item-offer-detail .details p {
+
+}
+
+.item-offer-detail .name {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+}

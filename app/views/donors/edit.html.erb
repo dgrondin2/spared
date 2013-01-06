@@ -4,7 +4,11 @@
 
     <div class="edit_profile_picture_wrapper">
         <%= link_to "< BACK TO OVERVIEW", donor_overview_path, class: "back_to_overview_link" %>
-        <%= image_tag "donor-dashboard3/Layer-80.png", class: "profile_picture" %>
+        <div class="avatar_wrapper">
+            <% if @donor.avatar_file_name.present? %>
+                <%= image_tag @donor.avatar.url(:thumb) %>
+            <% end %>
+        </div>
         <%= link_to "Upload a new photo", "", class: "new_photo_link" %>
     </div>
 

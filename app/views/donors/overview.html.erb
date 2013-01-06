@@ -12,10 +12,11 @@
             <% end %>
         </p>
 
-        <%= image_tag "donor-dashboard3/Layer-80.png" %>
-
-        <br/>
-        <div class="smaller_whitespace"></div>
+        <div class="avatar_wrapper">
+            <% if @donor.avatar_file_name.present? %>
+                <%= image_tag @donor.avatar.url(:thumb) %>
+            <% end %>
+        </div>
 
         <%= link_to "View/Edit profile", donor_edit_path %>
     </div>

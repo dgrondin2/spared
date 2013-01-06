@@ -239,6 +239,7 @@
     font-weight: 100;
     padding: 7px;
     box-sizing: border-box;
+    margin-bottom: 10px;
 }
 .edit_profile_picture_wrapper .back_to_overview_link:hover {
     opacity: 0.9;
@@ -291,4 +292,13 @@
 
 .edit_profile_wrapper input[type="submit"] {
     margin: 10px 0 0 135px;
+}
+
+.avatar_wrapper {
+    height: 75px;
+    margin-bottom: 10px;
+    width: 75px;
+
+    border: 1px solid #d2c298;
+    clear: left;
 }
