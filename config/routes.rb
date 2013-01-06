@@ -27,7 +27,7 @@ Spared::Application.routes.draw do
 	match '/donor/wishlists'         => 'wishlist_items#index'
 	match '/donor/events'            => 'events#new'
 	match '/donor/events/index'      => 'events#index'
-	match '/donor/donations'         => 'donations#new'
+	match '/donor/donations'         => 'donations#new', as: "new_donation"
 
   match '/donor/'               => 'donors#overview', as: "donor_overview"
   match '/donor/my-item-offers' => 'donors#my_item_offers', as: "donor_item_offers"

@@ -104,6 +104,7 @@ class DonorsController < ApplicationController
   def my_donations
     @user = current_user
     @donations = Donation.where("donor_id = ?", @user.donor_id)
+    @total_amount = Donation.sum(:amount, conditions: {donor_id: @user.donor_id})
 
     respond_to do |format|
       format.html { render :action => 'my-donations', :layout => 'donordash' }

@@ -44,7 +44,7 @@
           <% if @donations.any? %>
               <% @donations.each do |donation| %>
                   <%# TODO: Change format and org name %>
-                  <span><%= "#{donation.date_donated} -- #{donation.amount} -- Org name" %></span>
+                  <span><%= "#{donation.date_donated} -- #{number_to_currency donation.amount} -- Org name" %></span>
               <% end %>
           <% else %>
               <span>No donations yet!</span>

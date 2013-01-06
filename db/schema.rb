@@ -11,14 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130106005457) do
+ActiveRecord::Schema.define(:version => 20130106022430) do
 
   create_table "donations", :force => true do |t|
     t.date     "date_donated"
     t.decimal  "amount"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
     t.integer  "donor_id"
+    t.integer  "organization_id"
   end
 
 # Could not dump table "donors" because of following StandardError
