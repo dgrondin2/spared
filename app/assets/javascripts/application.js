@@ -26,7 +26,7 @@ $(document).ready(function($) {
 
   $('.jquery-ui-date').datepicker({
     onClose: function(dateText, inst) {
-      alert("My date is: " + dateText);
+      //alert("My date is: " + dateText);
     }
   });
 

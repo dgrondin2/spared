@@ -44,7 +44,9 @@ class ItemOffersController < ApplicationController
   end
 
   def create
+    donor = Donor.find(current_user.donor_id)
     @item_offer = ItemOffer.new(params[:item_offer])
+    @item_offer.donor_id = donor.id
 
     respond_to do |format|
       if @item_offer.save

@@ -5,92 +5,32 @@
     <!-- TODO: first span should be bigger font -->
     <div class="dash_list_heading">
         <span class="bold float_left">UNMATCHED ITEM-OFFER POSTS</span>
-        <span class="float_right ">Showing 1-3 of 3</span>
+        <span class="float_right ">Showing 1-3 of <%= @item_offers.count %></span>
     </div>
 
-    <div class="item_offer_post odd_item_offer">
-        <!-- Item-offer image -->
-        <div class="item_offer_image_container float_left">
-            <% # image_tag "Layer 6_10.png" %>
+    <% @item_offers.each do |item| %>
+        <div class="item_offer_post <%= cycle('odd','even') %>_item_offer">
+            <div class="item_offer_image_container float_left">
+                <% if item.image_file_name.present? %>
+                    <%= image_tag item.image.url(:thumb) %>
+                <% end %>
+            </div>
+
+            <div class="item_offer_info_container float_left">
+                <p class="bold"><%= item.name %></p>
+
+                <p><%= item.description %></p>
+            </div>
+
+            <div class="item_offer_link_container float_left">
+              <%= link_to 'View details', item, :rel => 'facebox' %>
+            </div>
         </div>
-
-        <!-- Item-offer information (overview) -->
-        <div class="item_offer_info_container float_left">
-          <p class="bold">KONG Dog Chew Toy</p>
-
-          <p>Kong - Classic Large Kong. UPC: 035585111117<br/>
-          RED KONG - For typical chewers.</p>
-        </div>
-
-        <!-- Link to view item-offer details -->
-        <div class="item_offer_link_container float_left">
-          <%= link_to 'View details', "", :rel => 'facebox' %>
-        </div>
-    </div>
-
-    <div class="item_offer_post even_item_offer">
-        <!-- Item-offer image -->
-        <div class="item_offer_image_container float_left">
-            <% # image_tag "Layer 6_10.png" %>
-        </div>
-
-        <!-- Item-offer information (overview) -->
-        <div class="item_offer_info_container float_left">
-            <p class="bold">Bulk Paper Towels</p>
-
-            <p>Brawny Paper Towels, Pure White 2-ply, 8 rolls,<br/>
-            unopened.</p>
-        </div>
-
-        <!-- Link to view item-offer details -->
-        <div class="item_offer_link_container float_left">
-            <%= link_to 'View details', "", :rel => 'facebox' %>
-        </div>
-    </div>
-
-    <div class="item_offer_post odd_item_offer">
-        <!-- Item-offer image -->
-        <div class="item_offer_image_container float_left">
-            <% # image_tag "Layer 6_10.png" %>
-        </div>
-
-        <!-- Item-offer information (overview) -->
-        <div class="item_offer_info_container float_left">
-            <p class="bold">Unopened Tide Laundry Detergent</p>
-
-            <p>Tide Liquid Laundry Detergent, Original Scent,<br/>
-               100oz. Retails for $12. Free to your organization!</p>
-        </div>
-
-        <!-- Link to view item-offer details -->
-        <div class="item_offer_link_container float_left">
-            <%= link_to 'View details', "", :rel => 'facebox' %>
-        </div>
-    </div>
+    <% end %>
 
     <div class="item_offer_heading">
         <span class="bold float_left">ITEM OFFER HISTORY</span>
         <span class="float_right ">Showing 1 of 1</span>
     </div>
-
-    <div class="item_offer_post odd_item_offer">
-        <!-- Item-offer image -->
-        <div class="item_offer_image_container float_left">
-            <% # image_tag "Layer 6_10.png" %>
-        </div>
-
-        <!-- Item-offer information (overview) -->
-        <div class="item_offer_info_container float_left">
-            <p class="bold">Used Dog Collar, Nylon, Large</p>
-
-            <p>Petsmart brand large nylon dog collar. Color: black,<br/>
-               Metal buckle. Good condition!</p>
-        </div>
-
-    <!-- Link to view item-offer details -->
-    <div class="item_offer_link_container float_left">
-        <%= link_to 'View details', "", :rel => 'facebox' %>
-    </div>
-  </div>
 
 </div>

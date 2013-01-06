@@ -47,7 +47,7 @@
 
 				<!-- Item-offer image -->
 				<div class="item_offer_image_container float_left">
-					<% if !item_offer.image_file_name.nil? %>
+					<% if item_offer.image_file_name.present? %>
                         <%= image_tag item_offer.image.url(:thumb) %>
 					<% end %>
 				</div>

@@ -4,12 +4,12 @@
 
     <div class="profile_summary">
         <p>
-          <%= "#{@donor.first_name} #{@donor.last_name}" %><br/>
-          <% if @donor.city.present? && @donor.state.present? %>
-            <%= "#{@donor.city}, #{@donor.state} #{@donor.zip}" %>
-          <% else %>
-            <%= "#{@donor.city}" %>
-          <% end %>
+            <%= "#{@donor.first_name} #{@donor.last_name}" %><br/>
+            <% if @donor.city.present? && @donor.state.present? %>
+                <%= "#{@donor.city}, #{@donor.state} #{@donor.zip}" %>
+            <% else %>
+                <%= "#{@donor.city}" %>
+            <% end %>
         </p>
 
         <%= image_tag "donor-dashboard3/Layer-80.png" %>
@@ -27,7 +27,7 @@
         <li class="items_overview">
             <div class="smaller_whitespace"></div>
             <span class="bold float_left">My matched item-offers</span>
-            <%= link_to "View all", "", :class => "float_right" %>
+            <%= link_to "View all", donor_item_offers_path, :class => "float_right" %>
             <% if @item_offers.any? %>
                 <% @item_offers.each do |item| %>
                     <span><%= "#{item.name}" %></span>
@@ -39,7 +39,7 @@
         <li class="financial_donation_overview">
           <div class="smaller_whitespace"></div>
           <span class="bold float_left">My latest financial donations</span>
-          <%= link_to "View all", "", :class => "float_right" %>
+          <%= link_to "View all", donor_donations_path, :class => "float_right" %>
           <% if @donations.any? %>
               <% @donations.each do |donation| %>
                   <%# TODO: Change format and org name %>
@@ -52,7 +52,7 @@
         <li class="events_overview">
           <div class="smaller_whitespace"></div>
           <span class="bold float_left">My volunteer opportunities</span>
-          <%= link_to "View all", "", :class => "float_right" %>
+          <%= link_to "View all", donor_events_path, :class => "float_right" %>
           <% if @events.any? %>
               <% @events.each do |event| %>
                   <%# TODO: Change format and org name %>

@@ -289,6 +289,6 @@
     margin-top: 10px;
 }
 
-.edit_profile_wrapper input[type="button"] {
+.edit_profile_wrapper input[type="submit"] {
     margin: 10px 0 0 135px;
 }
