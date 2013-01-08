@@ -10,12 +10,12 @@
 <div class="small_whitespace clear_left"></div>
 
 <div id="register_donor_button" class="button_border green_border float_left clear_left">
-	<%= link_to "Register As A Donor", 'register', :class => 'button wide_button green_bg', 
-												 :rel => 'facebox' %>
+	<%= link_to "Register As A Donor", donor_register_path, :class => 'button wide_button green_bg',
+	        :rel => 'facebox' %>
 </div>
 
 <div class="smaller_whitespace clear_left"></div>
 
 <div id="org_login_button" class="button_border blue_border float_left clear_left">
-	<%= link_to "Organization Login", 'orglogin', :class => 'button wide_button blue_lighter_bg' %>
+	<%= link_to "Organization Login", org_login_path, :class => 'button wide_button blue_lighter_bg' %>
 </div>

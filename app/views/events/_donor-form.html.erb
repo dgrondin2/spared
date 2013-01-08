@@ -29,8 +29,7 @@
 
     <!--div id="donation_dates_container"-->
       <%= label_tag(:start_time, "Dates") %>
-      <%= text_field_tag(:start_time, '', :id => 'donation_date_from_text_field', :class => 'text_field') %>
-        <%= link_to image_tag('-library/calendar_icon.png', :class => 'donation_calendar_img') %>
+      <%= text_field_tag(:start_time, '', :id => 'donation_date_from_text_field', :class => 'jquery-ui-date text_field') %>
     <!--/div-->
 
     <div class="whitespace"></div>

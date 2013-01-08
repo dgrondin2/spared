@@ -11,28 +11,54 @@ Spared::Application.routes.draw do
 	match '/contact' => 'home#contact', as: 'contact'
 	match '/shop'    => 'home#shop', as: 'shop'
 
-  get '/donor/register', to: 'donors#new', as: 'register'
-  get '/donor/login', to: 'sessions#new', as: 'login'
-  get '/donor/logout', to: 'sessions#destroy', as: 'logout'
-  post '/donor/register-new-donor', to: 'donors#create', as: 'register_new_donor'
+  get '/logout', to: 'sessions#destroy', as: 'logout'
+  get '/donor/register', to: 'donors#new', as: 'donor_register'
+  get '/donor/login', to: 'sessions#new', as: 'donor_login'
+  post '/donor/register-new-donor', to: 'donors#create', as: 'donor_register'
 
   get '/donor/edit-profile', to: 'donors#edit', as: 'donor_edit'
   put '/donor/update-profile', to: 'donors#update', as: 'donor_update'
 
-	match '/donor/item-offers'       => 'item_offers#overview' 	# "DONATE ITEMS"
-	match '/donor/item-offers/new'	 => 'item_offers#new'
-	match '/donor/item-offers/index' => 'item_offers#index'		  # "BROWSE ITEM-OFFER BOARD"
-	match '/donor/item-offers/:id'   => 'item_offers#show'
-# TODO: Better URL for wishlists
-	match '/donor/wishlists'         => 'wishlist_items#index'
-	match '/donor/events'            => 'events#new'
-	match '/donor/events/index'      => 'events#index'
-	match '/donor/donations'         => 'donations#new', as: "new_donation"
+	match '/donor/item-offers', to: 'item_offers#overview', as: 'donor_item_offer_overview'
+	match '/donor/item-offers/new',	to: 'item_offers#new', as: 'donor_new_item_offer'
+	match '/donor/item-offers/index', to: 'item_offers#index', as: 'donor_item_offers'
+	match '/donor/item-offers/:id', to: 'item_offers#show'
+	match '/donor/wishlists', to: 'wishlist_items#index', as: 'donor_wishlists'
+	match '/donor/events', to: 'events#new', as: 'donor_new_event'
+	match '/donor/events/index', to: 'events#index', as: "donor_events"
+  get '/donor/events/show/:id', to: 'events#show'
+	match '/donor/donations', to: 'donations#new', as: "donor_new_donation"
 
-  match '/donor/'               => 'donors#overview', as: "donor_overview"
-  match '/donor/my-item-offers' => 'donors#my_item_offers', as: "donor_item_offers"
-  match '/donor/my-donations'   => 'donors#my_donations', as: "donor_donations"
-  match '/donor/my-events'      => 'donors#my_events', as: "donor_events"
+  # My Dashboard
+  match '/donor', to: 'donors#overview', as: "donor_overview"
+  match '/donor/my-item-offers', to: 'donors#my_item_offers', as: "donor_my_item_offers"
+  match '/donor/my-donations', to: 'donors#my_donations', as: "donor_my_donations"
+  match '/donor/my-events', to: 'donors#my_events', as: "donor_my_events"
+
+  get '/org/register', to: 'organizations#new', as: 'org_register'
+  get '/org/login', to: 'sessions#new', as: 'org_login'
+  post 'org/register-new-org', to: 'organizations#create', as: 'org_register'
+
+  get '/org/edit-profile', to: 'organizations#edit', as: 'org_edit'
+  put '/org/update-profile', to: 'organizations#update', as: 'org_update'
+
+  get '/org/item-offers', to: 'item_offers#index', as: 'org_item_offers'
+  get '/org/item-offers/:id', to: 'item_offers#show', as: 'org_show_item_offer'
+  get '/org/wishlists', to: 'wishlists#index', as: 'org_wishlists'
+  get '/org/wishlists/:id', to: 'wishlists#show'
+  get '/org/wishlists/'
+  get '/org/events', to: "events#new", as: 'org_new_event'
+  get '/org/events/index', to: "events#index", as: 'org_events'
+  get '/org/events/show/:id', to: "events#show"
+  get '/org/donations', to: 'donations#index', as: 'org_donations'
+  get '/org/donations/distribute', to: 'donations#distribute', as: 'org_distribute_donations'
+
+  # My Dashboard
+  get '/org', to: 'organizations#overview', as: 'org_overview'
+  get '/org/my-item-matches', to: 'organizations#my_item_matches', as: 'org_my_item_matches'
+  get '/org/my-donations', to: 'organizations#my_donations', as: 'org_my_donations'
+  get '/org/my-events', to: 'organizations#my_events', as: 'org_my_events'
+
 
 
 

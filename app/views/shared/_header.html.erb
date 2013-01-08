@@ -3,21 +3,21 @@
 <div id="header_container">
 	<div id="login_links_container">
     <% if current_user.nil? %>
-      <%= link_to 'Sign up', '/donor/register', class: 'login_link inline', rel: 'facebox' %>
+      <%= link_to 'Sign up', donor_register_path, class: 'login_link inline', rel: 'facebox' %>
       <pre class="login_link inline"> | </pre>
-      <%= link_to 'Log in', '/donor/login', class: 'login_link inline' %>
+      <%= link_to 'Log in', donor_login_path, class: 'login_link inline' %>
     <% else %>
       <%= link_to 'My Account', '', class: 'login_link inline' %>
       <pre class="login_link inline"> | </pre>
-      <%= link_to 'Log out', '/donor/logout', class: 'login_link inline' %>
+      <%= link_to 'Log out', logout_path, class: 'login_link inline' %>
   <% end %>
 	</div>
 	
 	<div id="nav_bar">
-		<%= link_to 'about', 'about', class: 'nav_link inline' %>
-		<%= link_to 'faqs', 'faqs', class: 'nav_link inline' %>
-		<%= link_to 'contact', 'contact', class: 'nav_link inline' %>
-		<%= link_to 'shop', 'shop', class: 'nav_link inline' %>
+		<%= link_to 'about', about_path, class: 'nav_link inline' %>
+		<%= link_to 'faqs', faqs_path, class: 'nav_link inline' %>
+		<%= link_to 'contact', contact_path, class: 'nav_link inline' %>
+		<%= link_to 'shop', shop_path, class: 'nav_link inline' %>
 	</div>
 
 	<%= link_to image_tag('home/logo_edit.png', id: 'logo'), root_url %>

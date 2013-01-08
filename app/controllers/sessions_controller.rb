@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  def new
+  def donor_login
     if current_user
       redirect_to donors_overview_url
     else
@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
       redirect_to donor_overview_url, notice: "Logged in!"
     else
       flash.now.alert = "Email or password is invalid"
-      render "new"
+      render "donor-new"
     end
   end
 

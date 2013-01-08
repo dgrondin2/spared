@@ -1,10 +1,3 @@
-<!--
-  - items/overview.html.erb:
-  - The landing page for clicking on "ITEMS" button in "donors/_donordashnav.html.erb".
-  - Links to the new item form via the "POST ITEM-OFFER" button.
-  -->
-
-
 <div class="dash_content float_right">
 
 	<!-- Heading and image -->
@@ -34,11 +27,11 @@
 
 	<div id="item_offer_buttons">
 		<div id="post_item_offer_button_container" class="button_border green_border">
-			<%= link_to "POST ITEM-OFFER", '/donor/item-offers/new', :id => 'post_item_offer_button', :class => 'button green_bg' %>
+			<%= link_to "POST ITEM-OFFER", donor_new_item_offer_path, :id => 'post_item_offer_button', :class => 'button green_bg' %>
 		</div>
 
 		<div id="fulfill_wishlist_button_container" class="button_border green_border">
-			<%= link_to "FULFILL A WISHLIST", '/donor/wishlists/index', :id => 'fulfill_wishlist_button', :class => 'button green_bg' %>
+			<%= link_to "FULFILL A WISHLIST", donor_wishlists_path, :id => 'fulfill_wishlist_button', :class => 'button green_bg' %>
 		</div>
 	</div>
 
