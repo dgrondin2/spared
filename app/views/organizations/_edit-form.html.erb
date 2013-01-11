@@ -1,0 +1,45 @@
+<div class="org_edit_profile_wrapper">
+  <br/>
+  <%= form_for@organization, url: org_update_path do |f| %>
+      <div class="field">
+        <%= f.label :organization_name, "organization name" %>
+        <%= f.text_field :organization_name, value: @organization.organization_name, class: "org_text_field" %><br/>
+      </div>
+      <div class="field">
+        <%= f.label :representative_name, "representative name" %>
+        <%= f.text_field :representative_name, value: @organization.representative_name, class: "org_text_field" %><br/>
+      </div>
+      <br/>
+      <%= f.fields_for :user do |u| %>
+          <div class="field">
+            <%= u.label :email, "email" %>
+            <%= u.text_field :email, value: @user.email, class: "org_text_field" %><br/>
+          </div>
+          <div class="field">
+            <%= u.label :password, "password" %>
+            <%= u.password_field :password, class: "org_text_field" %><br/>
+          </div>
+      <% end %>
+      <br/>
+
+      <div class="field">
+        <%= f.label :street_address, "street address" %>
+        <%= f.text_field :street_address, value: @organization.street_address, class: "org_text_field" %><br/>
+      </div>
+      <div class="field">
+        <%= f.label :city, "city" %>
+        <%= f.text_field :city, value: @organization.city, class: "org_text_field" %><br/>
+      </div>
+      <div class="field">
+        <%= f.check_box :limited_address, checked: true %>
+        <%= f.label :limited_address, "Only display my city and zip code", class: "checkbox-label" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :bio, "short bio" %>
+        <%= f.text_area :bio %>
+      </div>
+
+      <%= f.submit("Save", :class => 'blue_spared_button', :type => 'submit') %>
+  <% end %>
+</div>

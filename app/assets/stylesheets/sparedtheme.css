@@ -331,6 +331,18 @@ table {
     font-weight: 100;
     font-size: 100%;
 }
-.green_spared_button:hover {
+.green_spared_button:hover, .blue_spared_button:hover {
     opacity: 0.9;
+}
+
+.blue_spared_button {
+    width: 100px;
+    height: 30px;
+    border: 2px solid white;
+    outline: 2px solid #93d2af;
+    background-color: #93d2af;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 100%;
 }

@@ -30,3 +30,77 @@
 .new_organization .field {
     width: 450px;
 }
+
+.org_my_dash_heading {
+    height: 28px;
+    text-transform: uppercase;
+    padding-left: 8px;
+    padding-top: 8px;
+    background-color: #b8b713;
+    color: #44372b;
+    font-family: "st-marie";
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.org_dash_heading {
+    height: 50px;
+    text-transform: uppercase;
+    background-color: #b8b713;
+    color: #44372b;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.yellow_mini_footer {
+    height: 10px;
+    width: 100%;
+    background-color: #b8b713;
+    clear: both;
+}
+
+.org_edit_profile_wrapper {
+    background-color: #f5f0e2;
+    float: right;
+    height: 580px;
+    margin-top: 10px;
+    width: 76%;
+}
+
+.org_edit_profile_wrapper .field {
+    margin-top: 10px;
+}
+
+.org_edit_profile_wrapper label, .org_edit_profile_wrapper legend {
+    min-width: 130px;
+    margin: 5px 5px 0 25px;
+    float: left;
+    clear: left;
+    font-size: 90%;
+}
+
+.org_edit_profile_wrapper input[type="text"], .org_edit_profile_wrapper input[type="password"] {
+    width: 270px;
+    height: 23px;
+}
+
+.org_edit_profile_wrapper .checkbox-label {
+    width: auto;
+    float: none;
+    clear: both;
+    margin: 0;
+}
+
+.org_edit_profile_wrapper input[type="checkbox"] {
+    margin-left: 135px;
+}
+
+.org_edit_profile_wrapper textarea {
+    width: 270px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.org_edit_profile_wrapper input[type="submit"] {
+    margin: 10px 0 0 135px;
+}

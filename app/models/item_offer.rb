@@ -12,4 +12,5 @@ class ItemOffer < ActiveRecord::Base
                     path: "/:style/:id/:filename"
 	
 	belongs_to :donor
+  belongs_to :item_match
 end

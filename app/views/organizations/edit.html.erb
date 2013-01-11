@@ -1,6 +1,16 @@
-<h1>Editing organization</h1>
+<div class="dash_content float_right">
 
-<%= render 'form' %>
+  <div class="org_dash_heading heading_label">ORGANIZATION PROFILE</div>
 
-<%= link_to 'Show', @organization %> |
-<%= link_to 'Back', organizations_path %>
+  <div class="edit_profile_picture_wrapper">
+    <%= link_to "< BACK TO OVERVIEW", org_overview_path, class: "back_to_overview_link" %>
+    <div class="avatar_wrapper">
+      <% if @organization.avatar_file_name.present? %>
+          <%= image_tag @organization.avatar.url(:thumb) %>
+      <% end %>
+    </div>
+    <%= link_to "Upload a new photo", "", class: "new_photo_link" %>
+  </div>
+
+  <%= render 'edit-form' %>
+</div>

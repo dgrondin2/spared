@@ -11,12 +11,19 @@ class ItemOffersController < ApplicationController
   end
 
   def index
+    @user = current_user
     @item_offers = ItemOffer.all
-    respond_to do |format|
-      format.html { # if user role is donor:
-                    render :action => 'donor-index', :layout => 'donor-dash' }
-      format.json { render :json => @item_offers }
-    end
+
+      respond_to do |format|
+        format.html {
+          if @user.role == "donor"
+            render :action => 'donor-index', layout: 'donor-dash'
+          elsif @user.role == "organization"
+            render :action => 'org-index', layout: 'org-dash'
+          end
+        }
+        format.json { render :json => @item_offers }
+      end
   end
 
   def show

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130111065021) do
+ActiveRecord::Schema.define(:version => 20130111085838) do
 
   create_table "donations", :force => true do |t|
     t.date     "date_donated"
@@ -22,8 +22,23 @@ ActiveRecord::Schema.define(:version => 20130111065021) do
     t.integer  "organization_id"
   end
 
-# Could not dump table "donors" because of following StandardError
-#   Unknown type 'attachment' for column 'avatar'
+  create_table "donors", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "street_address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.boolean  "limited_address"
+    t.text     "bio"
+    t.binary   "avatar"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
+  end
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -36,6 +51,14 @@ ActiveRecord::Schema.define(:version => 20130111065021) do
     t.datetime "created_at",                  :null => false
     t.datetime "updated_at",                  :null => false
     t.integer  "donor_id"
+  end
+
+  create_table "item_matches", :force => true do |t|
+    t.integer  "item_offer_id"
+    t.integer  "wishlist_item_id"
+    t.datetime "date_matched"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "item_offers", :force => true do |t|
@@ -69,9 +92,14 @@ ActiveRecord::Schema.define(:version => 20130111065021) do
     t.boolean  "limited_address"
     t.string   "website"
     t.text     "organization_description"
-    t.binary   "image"
+    t.binary   "avatar"
     t.datetime "created_at",               :null => false
     t.datetime "updated_at",               :null => false
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
+    t.text     "bio"
   end
 
   create_table "users", :force => true do |t|

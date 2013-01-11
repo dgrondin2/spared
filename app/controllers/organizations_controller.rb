@@ -24,12 +24,14 @@ class OrganizationsController < ApplicationController
     @organization = Organization.new
     @organization.user = User.new
 
-    render :layout => 'yield-only'
+    render layout: 'yield-only'
   end
 
   def edit
     @user = current_user
-    @organization = Organization.find(@user.donor_id)
+    @organization = Organization.find(@user.organization_id)
+
+    render layout: 'org-dash'
   end
 
   def create
@@ -53,8 +55,8 @@ class OrganizationsController < ApplicationController
     @organization = Organization.find(@user.organization_id)
 
     respond_to do |format|
-      if @donor.update_attributes(params[:donor])
-        format.html { redirect_to donor_overview_path, :notice => 'Profile successfully updated.' }
+      if @organization.update_attributes(params[:organization])
+        format.html { redirect_to org_overview_path, :notice => 'Profile successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render :action => "edit" }
@@ -76,6 +78,11 @@ class OrganizationsController < ApplicationController
   def overview
     @user = current_user
     @organization = Organization.find(@user.organization_id)
+
+    @wishlists = Wishlist.where("organization_id = ?", @user.organization_id)
+    # @donation_total
+    # @num_donors_donated
+    # @pending_item_matches
 
     respond_to do |format|
       format.html { render :action => 'overview', :layout => 'org-dash' }
