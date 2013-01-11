@@ -1,11 +1,11 @@
 class ItemOffersController < ApplicationController
 
-  before_filter :authorize
+  before_filter :authorize_donor
 
   def overview
     respond_to do |format|
       format.html { #if user role is donor:
-                    render :action => 'donor-overview', :layout => 'donordash'}
+                    render :action => 'donor-overview', :layout => 'donor-dash'}
       # format.json { }
     end
   end
@@ -14,7 +14,7 @@ class ItemOffersController < ApplicationController
     @item_offers = ItemOffer.all
     respond_to do |format|
       format.html { # if user role is donor:
-                    render :action => 'donor-index', :layout => 'donordash' }
+                    render :action => 'donor-index', :layout => 'donor-dash' }
       format.json { render :json => @item_offers }
     end
   end
@@ -23,7 +23,7 @@ class ItemOffersController < ApplicationController
     @item_offer = ItemOffer.find(params[:id])
 
     respond_to do |format|
-      format.html { render :action => 'donor-show', :layout => 'yieldonly' } # show.html.erb
+      format.html { render :action => 'donor-show', :layout => 'yield-only' } # show.html.erb
       format.json { render :json => @item_offer }
     end
   end
@@ -33,7 +33,7 @@ class ItemOffersController < ApplicationController
 
     respond_to do |format|
       format.html { # if user role is donor:
-                    render :action => 'donor-new', :layout => 'donordash' }
+                    render :action => 'donor-new', :layout => 'donor-dash' }
       format.json { render :json => @item_offer }
     end
   end
@@ -53,7 +53,7 @@ class ItemOffersController < ApplicationController
         format.html { redirect_to :back, :notice => 'Item-offer was successfully posted.' }
         format.json { render :json => @item_offer, :status => :created, :location => @item_offer }
       else
-        format.html { render :action => "donor-new", :layout => 'donordash' }
+        format.html { render :action => "donor-new", :layout => 'donor-dash' }
         format.json { render :json => @item_offer.errors, :status => :unprocessable_entity }
       end
     end

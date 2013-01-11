@@ -5,11 +5,12 @@ class ApplicationController < ActionController::Base
 
   protected
 
+  #TODO: This is a total pain but do this for every ctrl'er/action
   def layout_by_resource
     if controller_name == "sessions" || controller_name == "donors"
-      "donordash"
+      "donor-dash"
     elsif controller_name == "registrations" && action_name == "new"
-      "yieldonly"
+      "yield-only"
     else
       "application"
     end
@@ -23,7 +24,11 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user
 
-  def authorize
-    redirect_to login_url, alert: "You must log in first!" if current_user.nil?
+  def authorize_donor
+    redirect_to donor_login_url, alert: "You must log in first!" if current_user.nil?
+  end
+
+  def authorize_org
+    redirect_to org_login_url, alert: "You must log in first!" if current_user.nil?
   end
 end

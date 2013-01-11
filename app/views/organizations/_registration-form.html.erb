@@ -1,65 +1,58 @@
-<%= form_for(@organization) do |f| %>
-  <% if @organization.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@organization.errors.count, "error") %> prohibited this organization from being saved:</h2>
+<%= form_for @organization, class: "org-register-form", url: org_create_path  do |f| %>
 
-      <ul>
-      <% @organization.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+    <% if @organization.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@organization.errors.count, "error") %> prohibited this donor from being saved:</h2>
+
+          <ul>
+            <% @organization.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :organization_name, "organization name", :class => 'org_register_label' %><br />
+      <%= f.text_field :organization_name, :class => 'org_text_field register_textfield' %>
     </div>
-  <% end %>
 
-  <div class="field">
-    <%= f.label :organization_name %><br />
-    <%= f.text_field :organization_name %>
-  </div>
-  <div class="field">
-    <%= f.label :representative_name %><br />
-    <%= f.text_field :representative_name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.text_field :password %>
-  </div>
-  <div class="field">
-    <%= f.label :street_address %><br />
-    <%= f.text_field :street_address %>
-  </div>
-  <div class="field">
-    <%= f.label :city %><br />
-    <%= f.text_field :city %>
-  </div>
-  <div class="field">
-    <%= f.label :state %><br />
-    <%= f.text_field :state %>
-  </div>
-  <div class="field">
-    <%= f.label :zip %><br />
-    <%= f.text_field :zip %>
-  </div>
-  <div class="field">
-    <%= f.label :limited_address %><br />
-    <%= f.check_box :limited_address %>
-  </div>
-  <div class="field">
-    <%= f.label :website %><br />
-    <%= f.text_field :website %>
-  </div>
-  <div class="field">
-    <%= f.label :organization_description %><br />
-    <%= f.text_area :organization_description %>
-  </div>
-  <div class="field">
-    <%= f.label :image %><br />
-    <%= f.text_field :image %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="field">
+      <%= f.label :representative_name, "representative name", :class => 'org_register_label' %><br />
+      <%= f.text_field :representative_name, :class => 'org_text_field register_textfield' %>
+    </div>
+
+    <%= f.fields_for :user do |user_form| %>
+        <div class="field">
+          <%= user_form.label :email, 'email*', :class => 'org_register_label' %><br />
+          <%= user_form.text_field :email, :class => 'org_text_field register_textfield' %>
+        </div>
+        <!-- :email_confirmation field throws "NoMethodError" -->
+        <!--div class="field">
+          <#%= user_form.label :email_confirmation, 'confirm', :class => 'register_label' %><br/>
+          <#%= user_form.text_field :email_confirmation, :class => 'text_field register_textfield' %>
+        </div-->
+        <p id="register_disclaimer">*email address will be used as username.</p>
+
+        <div class="field">
+          <%= user_form.label :password, 'password', :class => 'org_register_label' %><br />
+          <%= user_form.password_field :password, :class => 'org_text_field register_textfield' %>
+        </div>
+        <div class="field">
+          <%= user_form.label :password_confirmation, 'confirm', :class => 'org_register_label' %><br />
+          <%= user_form.password_field :password_confirmation, :class => 'org_text_field register_textfield' %>
+        </div>
+    <% end %>
+
+    <br/>
+    <br/>
+
+    <div class="actions">
+      <div id="register_button" class="button_border green_border float_right">
+        <%= f.submit "Register", :class => 'button small_button green_bg' %>
+      </div>
+      <div id="cancel_button" class="button_border beige_border float_right">
+        <%= link_to "Cancel", 'login', :id => 'cancel_link', :class => 'button small_button beige_bg' %>
+      </div>
+    </div>
 <% end %>

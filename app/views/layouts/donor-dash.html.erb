@@ -1,9 +1,3 @@
-<!--
-  - donordash.html.erb (layout)
-  -
-  - Renders the content with a header and footer, and the donor nav
-  -->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +22,7 @@
     <%= render :partial => "shared/header" %>
 
 
-    <%= render :partial => "shared/donordashnav" %>
+    <%= render :partial => "shared/donor-dash-nav" %>
 
     <div class="whitespace clear"></div>
 
@@ -36,7 +30,7 @@
     <%= yield %>
 
     <% if current_user %>
-      <%= render :partial => 'shared/donormydash' %>
+      <%= render :partial => 'shared/donor-mydash' %>
     <% end %>
 
     <div class="whitespace clear"></div>

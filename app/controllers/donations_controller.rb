@@ -1,6 +1,6 @@
 class DonationsController < ApplicationController
 
-  before_filter :authorize
+  before_filter :authorize_donor
 
   # GET /donations
   # GET /donations.json
@@ -31,7 +31,7 @@ class DonationsController < ApplicationController
 
     respond_to do |format|
       format.html { # if user role is donor:
-                    render :action => 'donor-new', :layout => 'donordash' }
+                    render :action => 'donor-new', :layout => 'donor-dash' }
       format.json { render :json => @donation }
     end
   end
@@ -51,7 +51,7 @@ class DonationsController < ApplicationController
         format.html { redirect_to @donation, :notice => 'Donation was successfully created.' }
         format.json { render :json => @donation, :status => :created, :location => @donation }
       else
-        format.html { render :action => "donor-new", :layout => 'donordash' }
+        format.html { render :action => "donor-new", :layout => 'donor-dash' }
         format.json { render :json => @donation.errors, :status => :unprocessable_entity }
       end
     end

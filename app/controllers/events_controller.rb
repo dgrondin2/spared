@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
 
-  before_filter :authorize
+  before_filter :authorize_donor
 
   # GET /events
   # GET /events.json
@@ -9,7 +9,7 @@ class EventsController < ApplicationController
 
     respond_to do |format|
       format.html { #if user role is donor:
-                    render :action => 'donor-index', :layout => 'donordash' }
+                    render :action => 'donor-index', :layout => 'donor-dash' }
       format.json { render :json => @events }
     end
   end
@@ -32,7 +32,7 @@ class EventsController < ApplicationController
 
     respond_to do |format|
       format.html { # if user role is donor:
-                    render :action => 'donor-new', :layout => 'donordash' } # new.html.erb
+                    render :action => 'donor-new', :layout => 'donor-dash' } # new.html.erb
       format.json { render :json => @event }
     end
   end

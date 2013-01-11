@@ -1,3 +1,32 @@
-// Place all the styles related to the Organizations controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.org_sign_in {
+    background-color: #93d2af;
+    height: 33px;
+    width: 92px;
+    float: right;
+    border: 2px solid #FFF;
+    outline: 2px solid #93d2af;
+    margin: 25px 23px 0 0;
+    font-size: 13px;
+    clear: right;
+}
+
+.org_text_field {
+    outline-color: #93d2af;
+    font-size: 13px;
+    padding-left: 5px;
+    border-radius: 1px;
+}
+
+.org_register_label {
+    width: 120px;
+    float: left;
+    text-align: left;
+    margin-right: 10px;
+    margin-top: 20px;
+    display: block;
+    font-size: 0.9em;
+}
+
+.new_organization .field {
+    width: 450px;
+}

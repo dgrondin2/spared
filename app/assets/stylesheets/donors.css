@@ -1,10 +1,11 @@
 #register_frame {
-	width: 396px;
-	margin: 0 auto;
 	padding-left: 30px;
 	padding-right: 30px;
 }
 
+.new_donor .field {
+    width: 400px;
+}
 
 #register_disclaimer {
 	padding-left: 130px;
@@ -196,7 +197,6 @@
     margin: 25px 23px 0 0;
     font-size: 13px;
     clear: right;
-
 }
 
 .spared_button {

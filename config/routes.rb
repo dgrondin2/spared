@@ -13,8 +13,8 @@ Spared::Application.routes.draw do
 
   get '/logout', to: 'sessions#destroy', as: 'logout'
   get '/donor/register', to: 'donors#new', as: 'donor_register'
-  get '/donor/login', to: 'sessions#new', as: 'donor_login'
-  post '/donor/register-new-donor', to: 'donors#create', as: 'donor_register'
+  get '/donor/login', to: 'sessions#donor_login', as: 'donor_login'
+  post '/donor/register-new-donor', to: 'donors#create', as: 'donor_create'
 
   get '/donor/edit-profile', to: 'donors#edit', as: 'donor_edit'
   put '/donor/update-profile', to: 'donors#update', as: 'donor_update'
@@ -36,20 +36,21 @@ Spared::Application.routes.draw do
   match '/donor/my-events', to: 'donors#my_events', as: "donor_my_events"
 
   get '/org/register', to: 'organizations#new', as: 'org_register'
-  get '/org/login', to: 'sessions#new', as: 'org_login'
-  post 'org/register-new-org', to: 'organizations#create', as: 'org_register'
+  get '/org/login', to: 'sessions#org_login', as: 'org_login'
+  post 'org/register-new-org', to: 'organizations#create', as: 'org_create'
 
   get '/org/edit-profile', to: 'organizations#edit', as: 'org_edit'
   put '/org/update-profile', to: 'organizations#update', as: 'org_update'
 
   get '/org/item-offers', to: 'item_offers#index', as: 'org_item_offers'
   get '/org/item-offers/:id', to: 'item_offers#show', as: 'org_show_item_offer'
-  get '/org/wishlists', to: 'wishlists#index', as: 'org_wishlists'
+  get '/org/wishlists/index', to: 'wishlists#index', as: 'org_wishlists' # browse wishlists
   get '/org/wishlists/:id', to: 'wishlists#show'
-  get '/org/wishlists/'
+  get '/org/my-wishlists', to: 'wishlists#my_wishlists', as: 'org_my_wishlists'
   get '/org/events', to: "events#new", as: 'org_new_event'
   get '/org/events/index', to: "events#index", as: 'org_events'
   get '/org/events/show/:id', to: "events#show"
+  get '/org/events/manage', to: "events#manage", as: 'org_manage_events'
   get '/org/donations', to: 'donations#index', as: 'org_donations'
   get '/org/donations/distribute', to: 'donations#distribute', as: 'org_distribute_donations'
 

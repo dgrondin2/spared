@@ -1,6 +1,6 @@
 class DonorsController < ApplicationController
 
-  before_filter :authorize, except: [:new, :create]
+  before_filter :authorize_donor, except: [:new, :create]
 
   # View donor profile
   def show
@@ -17,7 +17,7 @@ class DonorsController < ApplicationController
     @donor = Donor.new
     @donor.user = User.new
 
-    render layout: 'yieldonly'
+    render layout: 'yield-only'
   end
 
   # Edit profile
@@ -25,7 +25,7 @@ class DonorsController < ApplicationController
     @user = current_user
     @donor = Donor.find(@user.donor_id)
 
-    render layout: "donordash"
+    render layout: "donor-dash"
   end
 
   # Donor user registration -- POST
@@ -62,23 +62,12 @@ class DonorsController < ApplicationController
     end
   end
 
-  # I don't think this will be used
-  def destroy
-    @donor = Donor.find(params[:id])
-    @donor.destroy
-
-    respond_to do |format|
-      format.html { redirect_to donors_url }
-      format.json { head :no_content }
-    end
-  end
-
-
-  # "MY DASHBOARD" actions:
+  # "MY DASHBOARD" actions:s
 
   def overview
     @user = current_user
     @donor = Donor.find(@user.donor_id)
+
     #TODO: Combine queries into one model method
     @item_offers = ItemOffer.where("donor_id = ?", @user.donor_id)
     @donations = Donation.where("donor_id = ?", @user.donor_id)
@@ -86,7 +75,7 @@ class DonorsController < ApplicationController
     @events = Event.where("donor_id = ?", @user.donor_id)
 
     respond_to do |format|
-      format.html { render :action => 'overview', :layout => 'donordash' }
+      format.html { render :action => 'overview', :layout => 'donor-dash' }
       format.json { }
     end
   end
@@ -96,7 +85,7 @@ class DonorsController < ApplicationController
     @item_offers = ItemOffer.where("donor_id = ?", @user.donor_id)
 
     respond_to do |format|
-      format.html { render :action => 'my-item-offers', :layout => 'donordash' }
+      format.html { render :action => 'my-item-offers', :layout => 'donor-dash' }
       format.json { }
     end
   end
@@ -107,7 +96,7 @@ class DonorsController < ApplicationController
     @total_amount = Donation.sum(:amount, conditions: {donor_id: @user.donor_id})
 
     respond_to do |format|
-      format.html { render :action => 'my-donations', :layout => 'donordash' }
+      format.html { render :action => 'my-donations', :layout => 'donor-dash' }
       format.json { }
     end
   end
@@ -117,7 +106,7 @@ class DonorsController < ApplicationController
     @events = Event.where("donor_id = ?", @user.donor_id)
 
     respond_to do |format|
-      format.html { render :action => 'my-events', :layout => 'donordash' }
+      format.html { render :action => 'my-events', :layout => 'donor-dash' }
       format.json { }
     end
   end

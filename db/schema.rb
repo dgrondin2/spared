@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130106022430) do
+ActiveRecord::Schema.define(:version => 20130111065021) do
 
   create_table "donations", :force => true do |t|
     t.date     "date_donated"
@@ -81,9 +81,31 @@ ActiveRecord::Schema.define(:version => 20130106022430) do
     t.integer  "donor_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+    t.integer  "organization_id"
   end
 
   create_table "volunteers", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "wishlist_items", :force => true do |t|
+    t.string   "name"
+    t.integer  "quantity"
+    t.string   "description"
+    t.decimal  "price"
+    t.binary   "image"
+    t.integer  "wishlist_id"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
+
+  create_table "wishlists", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
