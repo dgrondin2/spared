@@ -18,12 +18,29 @@ class SessionsController < ApplicationController
 
   def create
     user = User.find_by_email(params[:email])
+
+    if user.role == "donor"
+
+    elsif user.role == "organization"
+    end
+
+
     if user && user.authenticate(params[:password])
-      session[:user_id] = user.id
-      redirect_to donor_overview_url, notice: "Logged in!"
+      if user.role == "donor"
+        session[:user_id] = user.id
+        redirect_to donor_overview_url, notice: "Logged in!"
+      elsif user.role == "organization"
+        session[:user_id] = user.id
+        redirect_to org_overview_url, notice: "Logged in!"
+      end
     else
-      flash.now.alert = "Email or password is invalid"
-      render "donor-login"
+      if user.role == "donor"
+        flash.now.alert = "Email or password is invalid"
+        render "donor-login"
+      elsif user.role == "organization"
+        flash.now.alert = "Email or password is invalid"
+        render "org-login"
+      end
     end
   end
 

@@ -89,4 +89,29 @@ class OrganizationsController < ApplicationController
       format.json { }
     end
   end
+
+  def my_item_matches
+    @user = current_user
+    @item_matches = ItemMatch.where("organization_id = ?", @user.organization_id)
+
+    respond_to do |format|
+      format.html { render :action => 'my-item-matches', :layout => 'org-dash' }
+      format.json { }
+    end
+  end
+
+  def my_donations
+    @user = current_user
+    @donations = Donation.where("organization_id = ?", @user.organization_id)
+    @donation_total = Donation.sum(:amount, conditions: {organization_id: @user.organization_id})
+
+    render action: 'my-donations', layout: 'org-dash'
+  end
+
+  def my_events
+    @user = current_user
+    @events = Event.where("organization_id = ?", @user.organization_id)
+
+    render action: 'my-events', layout: 'org-dash'
+  end
 end
