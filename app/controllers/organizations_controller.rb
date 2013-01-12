@@ -103,7 +103,7 @@ class OrganizationsController < ApplicationController
   def my_donations
     @user = current_user
     @donations = Donation.where("organization_id = ?", @user.organization_id)
-    @donation_total = Donation.sum(:amount, conditions: {organization_id: @user.organization_id})
+    @total_amount = Donation.sum(:amount, conditions: {organization_id: @user.organization_id})
 
     render action: 'my-donations', layout: 'org-dash'
   end

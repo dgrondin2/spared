@@ -21,7 +21,24 @@
     <%= link_to "View/Edit profile", org_edit_path %>
   </div>
 
+  <ul class="org_overview">
+    <li>
+      <div class="summary">
+        You have <span class="bold">$0.00</span> raised from <span class="bold">0</span> donors.
+      </div>
+      <%= link_to "View Details", org_my_donations_path %>
+    </li>
+    <li>
+      <div class="summary">
+        <span class="bold">0</span> pending item-matches.
+      </div>
+      <%= link_to "View Details", org_my_item_matches_path %>
+    </li>
+  </ul>
+
   <div class="small_whitespace clear"></div>
+
+  <br/><br/><br/>
 
   <div class="yellow_mini_footer"></div>
 

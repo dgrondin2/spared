@@ -1,15 +1,12 @@
-<!--
-  - home/index.html.erb
-  -
-  - Contents for home page when user is signed out.
-  -->
-
-
-<%= image_tag("about2/Coco Photo by Sarahbeth Photography.png", :class => 'wide_photo') %>
-
-<!--div class="heading_box">
-	<h1 class="heading_label">HOW DOES IT WORK?</h1>
-</div-->
+<div class="slideshow">
+  <%= image_tag "1.jpg", class: "slide_shown" %>
+  <%= image_tag "2.jpg", class: "slide_hidden" %>
+  <% if current_user && current_user.role == "organization" %>
+    <%= link_to "GET STARTED, IT'S FREE!", org_login_path %>
+  <% else %>
+    <%= link_to "GET STARTED, IT'S FREE!", donor_login_path %>
+<% end %>
+</div>
 
 <div class="home_heading home_heading_label">How does it work?</div>
 

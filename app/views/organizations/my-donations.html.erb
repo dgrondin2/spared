@@ -2,4 +2,24 @@
 
   <div class="org_dash_heading heading_label">FINANCIAL DONATIONS</div>
 
+  <table class="org_latest_financial_donations">
+    <tr class="top_total">
+      <td colspan="3">You have raised a total of <%= number_to_currency @total_amount %>.</td>
+    </tr>
+    <tr>
+      <td id="donation_table_header" colspan="3"><%= @donations.any? ? "My Latest Financial Donations" : "No donations yet." %></td>
+    </tr>
+
+    <% @donations.each do |donation| %>
+        <tr class="<%= cycle('odd','even') %>_row">
+          <td><%= donation.date_donated %></td>
+          <td><%= donation.amount %></td>
+          <td>Organization name</td>
+        </tr>
+    <% end %>
+
+    <tr class="bottom_total">
+      <td colspan="3">Total: <%= number_to_currency @total_amount %></td>
+    </tr>
+  </table>
 </div>

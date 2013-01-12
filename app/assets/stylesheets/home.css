@@ -116,3 +116,36 @@
 .home_flow_arrow {
 	padding-bottom: 130px;
 }
+
+.slide_shown {
+    position: absolute;
+}
+.slide_hidden {
+    position: absolute;
+}
+.slideshow {
+    position: relative;
+    height: 360px;
+}
+.slideshow a {
+    display: block;
+    background-color: #B8B713;
+    color: #fff;
+    border: 2px solid #fff;
+    outline: 2px solid #B8B713;
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    font-size: 20px;
+    font-family: "lucida grande";
+    font-weight: 100;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    -mox-box-sizing: border-box;
+}
+
+.slideshow a:hover {
+    opacity: 0.9;
+}

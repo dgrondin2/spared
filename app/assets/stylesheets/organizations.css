@@ -104,3 +104,88 @@
 .org_edit_profile_wrapper input[type="submit"] {
     margin: 10px 0 0 135px;
 }
+
+.edit_profile_picture_wrapper .org_back_to_overview_link {
+    float: left;
+    background-color: #93d2af;
+    width: 130px;
+    height: 27px;
+    color: #fff;
+    font-size: 80%;
+    font-weight: 100;
+    padding: 7px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.edit_profile_picture_wrapper .org_back_to_overview_link:hover {
+    opacity: 0.9;
+}
+
+.edit_profile_picture_wrapper .org_new_photo_link {
+    float: left;
+    clear: left;
+    color: #93d2af;
+}
+
+.org_overview {
+    position: relative;
+    width: 68%;
+    float: right;
+    margin-top: 15px;
+}
+
+.org_overview .summary {
+    float: left;
+    background-color: #EFE7D3;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.org_overview a {
+    float: left;
+    color: #93d2af;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.org_dash_list_heading {
+    height: 40px;
+    margin-top: 20px;
+    background-color: #b8b713;
+}
+
+.org_dash_list_heading .heading-text {
+    font-size: 110%;
+}
+.org_dash_list_heading span {
+    padding: 12px 30px;
+}
+.org_dash_list_heading .heading-text {
+    padding-left: 20px;
+}
+
+.org_latest_financial_donations {
+    margin: 20px 0;
+    width: 100%;
+}
+.org_latest_financial_donations tr td {
+    padding: 5px 20px;
+}
+
+.org_latest_financial_donations .top_total,
+.org_latest_financial_donations .bottom_total {
+    background-color: #b8b713;
+    font-weight: bold;
+    height: 30px;
+}
+
+.org_latest_financial_donations .bottom_total {
+    text-align: right;
+}

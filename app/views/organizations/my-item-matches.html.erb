@@ -2,4 +2,33 @@
 
   <div class="org_dash_heading heading_label">ITEM-MATCHES</div>
 
+    <div class="org_dash_list_heading">
+      <span class="bold float_left heading-text">UNMATCHED ITEM-OFFER POSTS</span>
+      <span class="float_right ">Showing 1-3 of <%= @item_matches.count %></span>
+    </div>
+
+    <% @item_matches.each do |item| %>
+        <div class="item_offer_post <%= cycle('odd','even') %>_item_offer">
+          <div class="item_offer_image_container float_left">
+            <% if item.image_file_name.present? %>
+                <%= image_tag item.image.url(:thumb) %>
+            <% end %>
+          </div>
+
+          <div class="item_offer_info_container float_left">
+            <p class="bold"><%= item.name %></p>
+
+            <p><%= item.description %></p>
+          </div>
+
+          <div class="item_offer_link_container float_left">
+            <%= link_to 'View details', item, :rel => 'facebox' %>
+          </div>
+        </div>
+    <% end %>
+
+    <div class="org_dash_list_heading">
+      <span class="bold float_left heading-text">ITEM OFFER HISTORY</span>
+      <span class="float_right ">Showing 1 of 1</span>
+    </div>
 </div>
