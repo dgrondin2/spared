@@ -226,6 +226,17 @@ ul {
 	border-color: #b8b713;
 }
 
+.org_big_button_border {
+    padding: 2px;
+    border: 4px solid;
+    height: 137px;
+    width: 137px;
+}
+
+.org_big_button_border:hover {
+    border-color: #93d2af;
+}
+
 .big_button_border_static {
 	padding: 2px;
 	border: 4px solid;
@@ -333,6 +344,7 @@ table {
 }
 .green_spared_button:hover, .blue_spared_button:hover {
     opacity: 0.9;
+    cursor: pointer;
 }
 
 .blue_spared_button {

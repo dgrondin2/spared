@@ -62,7 +62,7 @@
     font-weight: 600;
 }
 
-.my_dash_link:hover p {
+.my_dash_link_hover a:hover {
     color: #a8a70f;
     cursor: pointer;
 }
@@ -225,7 +225,7 @@
 .edit_profile_wrapper {
     background-color: #f5f0e2;
     float: right;
-    height: 580px;
+    height: 630px;
     margin-top: 10px;
     width: 76%;
 }
@@ -307,4 +307,8 @@
 
     border: 1px solid #d2c298;
     clear: left;
+}
+
+.edit_profile_wrapper .field .short_field {
+    width: 135px;
 }

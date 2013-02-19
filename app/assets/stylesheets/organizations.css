@@ -62,7 +62,7 @@
 .org_edit_profile_wrapper {
     background-color: #f5f0e2;
     float: right;
-    height: 580px;
+    height: 630px;
     margin-top: 10px;
     width: 76%;
 }
@@ -188,4 +188,8 @@
 
 .org_latest_financial_donations .bottom_total {
     text-align: right;
+}
+
+.org_edit_profile_wrapper .field .short_field {
+    width: 135px;
 }

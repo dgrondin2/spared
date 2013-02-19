@@ -248,3 +248,15 @@
     font-weight: 300;
     margin: 0;
 }
+
+.request_item_link {
+    display: block;
+    background-color: #93d2af;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: 100;
+}
+
+.request_item_link:hover {
+    opacity: 0.9;
+}

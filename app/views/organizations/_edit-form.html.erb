@@ -15,10 +15,6 @@
             <%= u.label :email, "email" %>
             <%= u.text_field :email, value: @user.email, class: "org_text_field" %><br/>
           </div>
-          <div class="field">
-            <%= u.label :password, "password" %>
-            <%= u.password_field :password, class: "org_text_field" %><br/>
-          </div>
       <% end %>
       <br/>
 
@@ -28,7 +24,15 @@
       </div>
       <div class="field">
         <%= f.label :city, "city" %>
-        <%= f.text_field :city, value: @organization.city, class: "org_text_field" %><br/>
+        <%= f.text_field :city, value: @organization.city, class: "org_text_field short_field" %><br/>
+      </div>
+      <div class="field">
+        <%= f.label :state, "state" %>
+        <%= f.text_field :state, value: @organization.state, class: "org_text_field short_field" %><br/>
+      </div>
+      <div class="field">
+        <%= f.label :zip, "zip" %>
+        <%= f.text_field :zip, value: @organization.zip, class: "org_text_field short_field" %><br/>
       </div>
       <div class="field">
         <%= f.check_box :limited_address, checked: true %>

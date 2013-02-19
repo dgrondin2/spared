@@ -74,6 +74,12 @@ class EventsController < ApplicationController
     end
   end
 
+  def manage
+    respond_to do |format|
+      format.html { render action: 'org-manage', layout: 'org-dash' }
+    end
+  end
+
   # DELETE /events/1
   # DELETE /events/1.json
   def destroy

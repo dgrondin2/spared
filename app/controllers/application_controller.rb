@@ -1,22 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-  layout :layout_by_resource
-
-  protected
-
-  #TODO: This is a total pain but do this for every ctrl'er/action
-  def layout_by_resource
-    if controller_name == "sessions" || controller_name == "donors"
-      "donor-dash"
-    elsif controller_name == "registrations" && action_name == "new"
-      "yield-only"
-    else
-      "application"
-    end
-  end
-
-
   private
 
   def current_user

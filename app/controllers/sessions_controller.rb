@@ -19,12 +19,6 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by_email(params[:email])
 
-    if user.role == "donor"
-
-    elsif user.role == "organization"
-    end
-
-
     if user && user.authenticate(params[:password])
       if user.role == "donor"
         session[:user_id] = user.id

@@ -1,3 +1,6 @@
+<br/>
+<br/>
+
 <div class="slideshow">
   <%= image_tag "1.jpg", class: "slide_shown" %>
   <%= image_tag "2.jpg", class: "slide_hidden" %>
@@ -5,7 +8,13 @@
     <%= link_to "GET STARTED, IT'S FREE!", org_login_path %>
   <% else %>
     <%= link_to "GET STARTED, IT'S FREE!", donor_login_path %>
-<% end %>
+  <% end %>
+
+  <p class="slide_photo_credit slide_shown white">Mischa<br/>Off Leash Photography</p>
+  <p class="slide_photo_text slide_shown">Welcome to SPARED, a community-based, nonprofit donation network created for animal organizations.</p>
+  <p class="slide_photo_credit slide_hidden brown">Bear<br/>Thank Dog Photography</p>
+  <p class="slide_photo_text slide_hidden slide_photo_brown">What can you spare?<br/>Donate now to save a life.</p>
+
 </div>
 
 <div class="home_heading home_heading_label">How does it work?</div>
@@ -21,11 +30,13 @@
 <div class="content_box">
 	<div class="content_text_wrapper front_page">
 		<h2 class="content_heading">It's Easy... and It's Free!</h2>
-		
-		<li class="content">Browse a wishlist and donate items</li>
-		<li class="content">Post items you can spare and they will be matched with an
-									 organization in need</li>
-		<li class="content">Make a financial donation to a shelter of your choice</li>
+
+        <ul class="bullet">
+            <li class="content">Browse a wishlist and donate items</li>
+            <li class="content">Post items you can spare and they will be matched with an
+                                         organization in need</li>
+            <li class="content">Make a financial donation to a shelter of your choice</li>
+        </ul>
 	</div>
 </div>
 
@@ -70,9 +81,11 @@
 						   qualifications<br/> 
 						   to ensure integrity. To register an organization for donations, the 
 						   organization must:</p>
-		<li class="content">Be nonprofit [registered or non-registered]</li>
-		<li class="content">Have a physical address and facility</li>
-		<li class="content">Be willing to take care of shipping costs and/or transportation of items</li>
+        <ul class="bullet">
+            <li class="content">Be nonprofit [registered or non-registered]</li>
+            <li class="content">Have a physical address and facility</li>
+            <li class="content">Be willing to take care of shipping costs and/or transportation of items</li>
+        </ul>
 		<br/>
 		<!-- The last <p> tag of .content_wrapper MUST be inline (or else bottom margin breaks): -->
 		<p class="content inline">For full eligibility requirements,</p>

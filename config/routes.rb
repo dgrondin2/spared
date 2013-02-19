@@ -1,15 +1,15 @@
 Spared::Application.routes.draw do
-	resources :item_offers, :wishlist_items, :events, :donations
+  resources :item_offers, :wishlist_items, :events, :donations
   resources :users
   resources :sessions
 
-	get 'home/index'
-	get 'sessions/new'
-	
-	match '/about'   => 'home#about', as: "about"
-	match '/faqs'	 => 'home#faqs', as: "faqs"
-	match '/contact' => 'home#contact', as: 'contact'
-	match '/shop'    => 'home#shop', as: 'shop'
+  get 'home/index'
+  get 'sessions/new'
+
+  match '/about' => 'home#about', as: "about"
+  match '/faqs' => 'home#faqs', as: "faqs"
+  match '/contact' => 'home#contact', as: 'contact'
+  match '/shop' => 'home#shop', as: 'shop'
 
   get '/logout', to: 'sessions#destroy', as: 'logout'
   get '/donor/register', to: 'donors#new', as: 'donor_register'
@@ -19,15 +19,15 @@ Spared::Application.routes.draw do
   get '/donor/edit-profile', to: 'donors#edit', as: 'donor_edit'
   put '/donor/update-profile', to: 'donors#update', as: 'donor_update'
 
-	match '/donor/item-offers', to: 'item_offers#overview', as: 'donor_item_offer_overview'
-	match '/donor/item-offers/new',	to: 'item_offers#new', as: 'donor_new_item_offer'
-	match '/donor/item-offers/index', to: 'item_offers#index', as: 'donor_item_offers'
-	match '/donor/item-offers/:id', to: 'item_offers#show'
-	match '/donor/wishlists', to: 'wishlist_items#index', as: 'donor_wishlists'
-	match '/donor/events', to: 'events#new', as: 'donor_new_event'
-	match '/donor/events/index', to: 'events#index', as: "donor_events"
+  match '/donor/item-offers', to: 'item_offers#overview', as: 'donor_item_offer_overview'
+  match '/donor/item-offers/new', to: 'item_offers#new', as: 'donor_new_item_offer'
+  match '/donor/item-offers/index', to: 'item_offers#index', as: 'donor_item_offers'
+  match '/donor/item-offers/:id', to: 'item_offers#show'
+  match '/donor/wishlists', to: 'wishlist_items#index', as: 'donor_wishlists'
+  match '/donor/events', to: 'events#new', as: 'donor_new_event'
+  match '/donor/events/index', to: 'events#index', as: "donor_events"
   get '/donor/events/show/:id', to: 'events#show'
-	match '/donor/donations', to: 'donations#new', as: "donor_new_donation"
+  match '/donor/donations', to: 'donations#new', as: "donor_new_donation"
 
   # My Dashboard
   match '/donor', to: 'donors#overview', as: "donor_overview"
@@ -61,64 +61,60 @@ Spared::Application.routes.draw do
   get '/org/my-events', to: 'organizations#my_events', as: 'org_my_events'
 
 
+  # The priority is based upon order of creation:
+  # first created -> highest priority.
 
+  # Sample of regular route:
+  #   match 'products/:id' => 'catalog#view'
+  # Keep in mind you can assign values other than :controller and :action
 
+  # Sample of named route:
+  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
+  # This route can be invoked with purchase_url(:id => product.id)
 
-	
-	# The priority is based upon order of creation:
-	# first created -> highest priority.
-	
-	# Sample of regular route:
-	#   match 'products/:id' => 'catalog#view'
-	# Keep in mind you can assign values other than :controller and :action
-	
-	# Sample of named route:
-	#   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
-	# This route can be invoked with purchase_url(:id => product.id)
-	
-	# Sample resource route (maps HTTP verbs to controller actions automatically):
-	#   resources :products
-	
-	# Sample resource route with options:
-	#   resources :products do
-	#     member do
-	#       get 'short'
-	#       post 'toggle'
-	#     end
-	#
-	#     collection do
-	#       get 'sold'
-	#     end
-	#   end
-	
-	# Sample resource route with sub-resources:
-	#   resources :products do
-	#     resources :comments, :sales
-	#     resource :seller
-	#   end
-	
-	# Sample resource route with more complex sub-resources
-	#   resources :products do
-	#     resources :comments
-	#     resources :sales do
-	#       get 'recent', :on => :collection
-	#     end
-	#   end
-	
-	# Sample resource route within a namespace:
-	#   namespace :admin do
-	#     # Directs /admin/products/* to Admin::ProductsController
-	#     # (app/controllers/admin/products_controller.rb)
-	#     resources :products
-	#   end
-	
-	# You can have the root of your site routed with "root"
-	# just remember to delete public/index.html.
-	root :to => 'home#index'
-	
-	# See how all your routes lay out with "rake routes"
-	
-	# This is a legacy wild controller route that's not recommended for RESTful applications.
-	# Note: This route will make all actions in every controller accessible via GET requests.
-	# match ':controller(/:action(/:id))(.:format)'
+  # Sample resource route (maps HTTP verbs to controller actions automatically):
+  #   resources :products
+
+  # Sample resource route with options:
+  #   resources :products do
+  #     member do
+  #       get 'short'
+  #       post 'toggle'
+  #     end
+  #
+  #     collection do
+  #       get 'sold'
+  #     end
+  #   end
+
+  # Sample resource route with sub-resources:
+  #   resources :products do
+  #     resources :comments, :sales
+  #     resource :seller
+  #   end
+
+  # Sample resource route with more complex sub-resources
+  #   resources :products do
+  #     resources :comments
+  #     resources :sales do
+  #       get 'recent', :on => :collection
+  #     end
+  #   end
+
+  # Sample resource route within a namespace:
+  #   namespace :admin do
+  #     # Directs /admin/products/* to Admin::ProductsController
+  #     # (app/controllers/admin/products_controller.rb)
+  #     resources :products
+  #   end
+
+  # You can have the root of your site routed with "root"
+  # just remember to delete public/index.html.
+  root :to => 'home#index'
+
+  # See how all your routes lay out with "rake routes"
+
+  # This is a legacy wild controller route that's not recommended for RESTful applications.
+  # Note: This route will make all actions in every controller accessible via GET requests.
+  # match ':controller(/:action(/:id))(.:format)'
 end

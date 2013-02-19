@@ -7,7 +7,11 @@
       <pre class="login_link inline"> | </pre>
       <%= link_to 'Log in', donor_login_path, class: 'login_link inline' %>
     <% else %>
-      <%= link_to 'My Account', '', class: 'login_link inline' %>
+      <% if current_user.role == "donor" %>
+        <%= link_to 'My Dashboard', donor_overview_path, class: 'login_link inline' %>
+      <% else %>
+        <%= link_to 'My Dashboard', org_overview_path, class: 'login_link inline' %>
+    <% end %>
       <pre class="login_link inline"> | </pre>
       <%= link_to 'Log out', logout_path, class: 'login_link inline' %>
   <% end %>

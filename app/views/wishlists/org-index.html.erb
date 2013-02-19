@@ -2,7 +2,7 @@
 
 <div class="dash_content float_right">
 
-  <div class="dash_beige_heading heading_label">ITEM-OFFER BOARD</div>
+  <div class="dash_beige_heading heading_label">ORGANIZATION WISHLISTS</div>
 
   <br/>
 
@@ -19,7 +19,7 @@
     <p class="inline">Showing</p>
     <p class="inline bold">1-10</p>
     <p class="inline">of</p>
-    <p class="inline bold"><%= ItemOffer.count %></p> <br/>
+    <p class="inline bold"><%= Wishlist.count %></p> <br/>
   </div>
 
   <br/><br/>
@@ -27,47 +27,35 @@
 
   <!-- Display item-offers (if any) -->
 
-  <% if @item_offers.empty? %>
+  <% if @wishlists.empty? %>
 
       <div class="item_offer_post even_item_offer">
-        <p>There are no item-offers.</p>
+        <p>There are no wishlists yet.</p>
       </div>
 
   <% else %>
 
-      <% @item_offers.each do |item_offer| %>
+      <% @wishlists.each do |wishlist| %>
 
           <div class="item_offer_post <%= cycle('odd','even') %>_item_offer">
 
             <!-- Item-offer image -->
             <div class="item_offer_image_container float_left">
-              <% if item_offer.image_file_name.present? %>
-                  <%= image_tag item_offer.image.url(:thumb) %>
+              <% if wishlist.image_file_name.present? %>
+                  <%= image_tag wishlist.image.url(:thumb) %>
               <% end %>
             </div>
             <!-- Item-offer information (overview) -->
             <div class="item_offer_info_container float_left">
-              <p class="bold"><%= item_offer.name %></p>
+              <p class="bold"><%= wishlist.name %></p>
 
-              <p class="bold inline">Category:</p>
-              <p class="inline"><%= item_offer.category %> |</p>
-              <p class="bold inline">Condition:</p>
-              <p class="inline"><%= item_offer.condition %> |</p>
-              <p class="bold inline">Location:</p>
-              <p class="inline"><%= item_offer.zip %></p>
-              <br/>
-              <p class="bold inline">Posted:</p>
-              <p class="inline"><%= item_offer.created_at.to_date %> |</p>
-              <p class="bold inline">Expires:</p>
-              <p class="inline"><%= item_offer.expiration_date %></p>
-              <br/>
-              <p><%= item_offer.description %></p>
+              <p><%= wishlist.description %></p>
 
             </div>
 
             <!-- Link to view item-offer details -->
             <div class="item_offer_link_container float_left">
-              <%= link_to 'REQUEST ITEM', item_offer, class: "request_item_link", rel: 'facebox' %>
+              <%= link_to 'View details', wishlist, rel: 'facebox' %>
             </div>
           </div>
 

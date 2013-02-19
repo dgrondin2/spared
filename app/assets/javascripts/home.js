@@ -1,13 +1,14 @@
 $(document).ready(function($) {
-    $(".slide_hidden").hide();
-    window.setInterval(nextImage, 6000);
+    $('.slide_hidden').hide();
+    window.setInterval(nextImage, 4500);
 
     function nextImage() {
         var $current = $(".slide_shown"),
             $next = $(".slide_hidden");
 
-        $current.fadeOut();
-        $next.fadeIn();
+        $current.fadeOut("slow");
+        $next.show();
+        $next.fadeIn("slow");
 
         $next.removeClass("slide_hidden");
         $current.removeClass("slide_shown");

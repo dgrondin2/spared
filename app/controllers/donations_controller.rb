@@ -73,15 +73,9 @@ class DonationsController < ApplicationController
     end
   end
 
-  # DELETE /donations/1
-  # DELETE /donations/1.json
-  def destroy
-    @donation = Donation.find(params[:id])
-    @donation.destroy
-
+  def distribute
     respond_to do |format|
-      format.html { redirect_to donations_url }
-      format.json { head :no_content }
+      format.html { render action: 'org-distribute', layout: 'org-dash' }
     end
   end
 end

@@ -4,9 +4,7 @@ class ItemOffersController < ApplicationController
 
   def overview
     respond_to do |format|
-      format.html { #if user role is donor:
-                    render :action => 'donor-overview', :layout => 'donor-dash'}
-      # format.json { }
+      format.html { render :action => 'donor-overview', :layout => 'donor-dash' }
     end
   end
 
