@@ -74,6 +74,9 @@ class DonationsController < ApplicationController
   end
 
   def distribute
+    @user = current_user
+    @wishlists = Wishlist.all
+
     respond_to do |format|
       format.html { render action: 'org-distribute', layout: 'org-dash' }
     end

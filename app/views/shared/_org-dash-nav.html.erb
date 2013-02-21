@@ -1,7 +1,6 @@
 <div class="float_left">
   <h1 class="heading_label">TAKE ACTION:</h1>
 
-  <!-- "Donate items" button -->
   <% if current_page?('/donor/item-offers') %>
       <div class="big_button_border_static brown_border dash_image float_left">
         <%= link_to image_tag('view-edit-wishlists-selected.png'), org_my_wishlists_path %>
@@ -12,7 +11,6 @@
       </div>
   <% end %>
 
-  <!-- "Donate money" button -->
   <% if current_page?('/donor/donations') %>
       <div class="big_button_border_static brown_border dash_image float_left">
         <%= link_to image_tag('distribute-funds-selected.png'), org_distribute_donations_path %>
@@ -23,7 +21,6 @@
       </div>
   <% end %>
 
-  <!-- "Donate time" button -->
   <% if current_page?('/donor/events') %>
       <div class="big_button_border_static brown_border dash_image float_left">
         <%= link_to image_tag('manage-volunteers-selected.png'), org_manage_events_path %>
@@ -38,7 +35,6 @@
 <div class="float_right">
   <h1 class="heading_label">BROWSE:</h1>
 
-  <!-- "Volunteer opportunities" button -->
   <% if current_page?('/org/events') %>
       <div class="big_button_border_static beige_border dash_image float_right">
         <%= link_to image_tag('volunteer-opportunities-org-selected.png'), org_events_path %>
@@ -49,7 +45,6 @@
       </div>
   <% end %>
 
-  <!-- "Organization wishlists" button -->
   <% if current_page?('/org/wishlists') %>
       <div class="big_button_border_static beige_border dash_image float_right">
         <%= link_to image_tag('organization-wishlists-selected.png'), org_wishlists_path %>
@@ -60,7 +55,6 @@
       </div>
   <% end %>
 
-  <!-- "Item-offer board" button -->
   <% if current_page?('/org/item-offers') %>
       <div class="big_button_border_static beige_border dash_image float_right">
         <%= link_to image_tag('item-offer-board-org-selected.png'), org_item_offers_path %>

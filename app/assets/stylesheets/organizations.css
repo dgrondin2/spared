@@ -193,3 +193,12 @@
 .org_edit_profile_wrapper .field .short_field {
     width: 135px;
 }
+
+.distribute_donations_list {
+    margin-top: 10px;
+}
+
+.distribute_donations_header {
+    background-color: #EFE7D3;
+    height: 35px;
+}
