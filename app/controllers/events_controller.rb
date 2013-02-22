@@ -75,6 +75,9 @@ class EventsController < ApplicationController
   end
 
   def manage
+    @user = current_user
+    @events = Event.all
+
     respond_to do |format|
       format.html { render action: 'org-manage', layout: 'org-dash' }
     end

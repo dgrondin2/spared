@@ -1,0 +1,47 @@
+<div class="dash_content float_right">
+
+    <div class="dash_brown_heading heading_label white">MANAGE VOLUNTEERS</div>
+
+    <p class="my_events_header">MY VOLUNTEER CALENDAR: UPCOMING EVENTS</p>
+
+    <div class="my_calendar">
+        <%= calendar @events do |event| %>
+            <div><%= link_to event.name, event %></div>
+        <% end %>
+    </div>
+
+    <div class="dash_list_heading org_brown_header">
+        <span class="bold float_left">MANAGE VOLUNTEERS</span>
+        <span class="float_right ">Showing 1-1 of <%= @events.count() %></span>
+    </div>
+
+    <% if @events.count() > 0 %>
+        <% @events.each do |event| %>
+            <div class="event_post <%= cycle('odd','even') %>_event">
+                <div class="event_image_container float_left">
+                    <% if @event.image_file_name.present? %>
+                        <%= image_tag @event.image.url(:thumb) %>
+                    <% end %>
+                </div>
+
+                <div class="event_info_container float_left">
+                    <p class="bold"><%= @event.name %></p>
+
+                    <p><%= @event.description %></p>
+                    <%= link_to 'View contact list' %>
+                </div>
+
+                <div class="event_stats">
+                    <div class="progress_bar">
+                        <div class="progress"></div>
+                    </div>
+                    <p class="volunteers_attending">Attending volunteers <span>00</span></p>
+                    <p class="volunteers_needed">Total volunteers needed <span>10</span></p>
+                </div>
+            </div>
+        <% end %>
+    <% else %>
+        <div class="event_post odd_event">No events yet!</div>
+    <% end %>
+
+</div>
