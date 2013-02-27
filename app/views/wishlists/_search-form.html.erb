@@ -1,0 +1,68 @@
+<div id="search_container" class="float_left">
+
+  <div id="search_header">SEARCH / REFINE</div>
+
+  <div id="search_form_box">
+    <%= form_tag('/donor/items/index', :method => 'post') do %>
+
+        <%= label_tag(:search, 'Search for', :class => 'bold') %> <br/>
+        <% if current_user.role == "donor" %>
+            <%= text_field_tag(:search, "", :id => "search_text_field", :class => "text_field") %>
+        <% else %>
+            <%= text_field_tag(:search, "", :id => "search_text_field", :class => "org_text_field") %>
+        <% end %>
+
+        <br/><br/>
+        <hr/>
+        <br/>
+
+        <%= label_tag :dates_from, "Dates:" %><br/>
+        <%= text_field_tag :dates_from, "", class: 'org_text_field wishlist_date_field' %>
+        <%= label_tag :dates_to, "to" %>
+        <%= text_field_tag :dates_to, "", class: 'org_text_field wishlist_date_field' %>
+
+        <br/><br/>
+
+        <%= label_tag(:category, 'Activity category:') %> <br/>
+        <div class="smaller_whitespace"></div>
+        <%= select_tag(:category, options_for_select(['Category'])) %> <br/>
+        <div class="smaller_whitespace"></div>
+        <%= select_tag(:sub_category, options_for_select(['Sub-category'])) %> <br/>
+
+        <br/>
+
+        <%= label_tag(:city, 'Location:') %> <br/>
+
+        <div class="smaller_whitespace"></div>
+
+        <% if current_user.role == "donor" %>
+            <%= text_field_tag(:city, '', placeholder: "City", :id => 'search_city_text_field', :class => 'text_field') %>
+        <% else %>
+            <%= text_field_tag(:city, '', placeholder: "City", :id => 'search_city_text_field', :class => 'org_text_field') %>
+        <% end %>
+        <%= select_tag(:state, options_for_select(['State']), :id => 'search_state_dropdown') %> <br/>
+
+        <%= label_tag(:zip, 'or', :class => 'italic') %>
+        <% if current_user.role == "donor" %>
+            <%= text_field_tag(:zip, '', placeholder: "Zipcode", :id => 'search_zip_text_field', :class => 'text_field') %>
+        <% else %>
+            <%= text_field_tag(:zip, '', placeholder: "Zipcode", :id => 'search_zip_text_field', :class => 'org_text_field') %>
+        <% end %>
+        <%= select_tag(:miles, options_for_select([['10 mi'],['25 mi'],['50 mi'],['100 mi']]), :id => 'search_miles_dropdown',
+                       :class => 'text_field') %> <br/>
+
+        <br/>
+
+        <% if current_user.role == "donor" %>
+            <div id="search_item_button" class="button_border green_border float_right">
+              <%= submit_tag("Search", :class => 'button small_button green_bg', :type => 'button') %>
+            </div>
+        <% else %>
+            <%= submit_tag("Search", class: 'blue_spared_button float_right', type: 'button') %>
+        <% end %>
+
+    <% end %>
+  </div>
+
+  <div class="small_whitespace"></div>
+</div>

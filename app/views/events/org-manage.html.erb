@@ -19,15 +19,15 @@
         <% @events.each do |event| %>
             <div class="event_post <%= cycle('odd','even') %>_event">
                 <div class="event_image_container float_left">
-                    <% if @event.image_file_name.present? %>
-                        <%= image_tag @event.image.url(:thumb) %>
+                    <% if event.image_file_name.present? %>
+                        <%= image_tag event.image.url(:thumb) %>
                     <% end %>
                 </div>
 
                 <div class="event_info_container float_left">
-                    <p class="bold"><%= @event.name %></p>
+                    <p class="bold"><%= event.name %></p>
 
-                    <p><%= @event.description %></p>
+                    <p><%= event.description %></p>
                     <%= link_to 'View contact list' %>
                 </div>
 
@@ -45,3 +45,5 @@
     <% end %>
 
 </div>
+
+<%= render partial: "org-calendar-detail" %>

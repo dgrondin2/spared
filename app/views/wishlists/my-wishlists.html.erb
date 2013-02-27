@@ -3,22 +3,22 @@
     <div class="dash_brown_heading heading_label white">MY WISHLISTS</div>
 
     <ul class="distribute_donations_list">
-      <% if @wishlists.count() > 0 %>
-          <% @wishlists.each do |wishlist| %>
-              <li class="<%= cycle('odd','even') %>_wishlist">
-                <div class="wishlist_image"></div>
-                <div class="wishlist_info">
-                  <p class="title bold"><%= wishlist.name %></p>
-                  <p class="description"><%= wishlist.description %><a class="inline">[more]</a></p>
-                </div>
-                <%= link_to "view/edit" %>
-              </li>
-          <% end %>
-      <% else %>
-          <li class="odd_wishlist">No wishlists yet!</li>
-      <% end %>
+        <% if @wishlists.count() > 0 %>
+            <% @wishlists.each do |wishlist| %>
+                <li class="<%= cycle('odd','even') %>_wishlist">
+                    <div class="wishlist_image"></div>
+                    <div class="wishlist_info">
+                        <p class="title bold"><%= wishlist.name %></p>
+                        <p class="description"><%= wishlist.description %><a class="inline">[more]</a></p>
+                    </div>
+                    <%= link_to "view/edit" %>
+                </li>
+            <% end %>
+        <% else %>
+            <li class="odd_wishlist">No wishlists yet!</li>
+        <% end %>
     </ul>
 
-    <button class="org_button new_wishlist_button">CREATE NEW WISHLIST</button>
+    <%= link_to "CREATE NEW WISHLIST", org_new_wishlist_path, class: "org_button new_wishlist_button" %>
 
 </div>

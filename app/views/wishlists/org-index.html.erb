@@ -6,15 +6,12 @@
 
   <br/>
 
-  <!-- Change how table is sorted -->
   <%= label_tag(:sort, 'Sort by:') %>
   <%= select_tag(:sort, options_for_select([['Posted date'],['Name']])) %>
 
-  <!-- Change how many item-offers are displayed per page -->
   <%= label_tag(:results, 'Results:') %>
   <%= select_tag(:results, options_for_select([['10'],['20'],['30'],['50'],['100']])) %>
 
-  <!-- Display which item-offers are shown (and total) -->
   <div class="float_right">
     <p class="inline">Showing</p>
     <p class="inline bold">1-10</p>

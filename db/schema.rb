@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130204034739) do
+ActiveRecord::Schema.define(:version => 20130222052127) do
 
   create_table "donations", :force => true do |t|
     t.date     "date_donated"
@@ -51,6 +51,10 @@ ActiveRecord::Schema.define(:version => 20130204034739) do
     t.datetime "created_at",                  :null => false
     t.datetime "updated_at",                  :null => false
     t.integer  "donor_id"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "item_matches", :force => true do |t|

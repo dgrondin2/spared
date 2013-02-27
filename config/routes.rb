@@ -1,5 +1,5 @@
 Spared::Application.routes.draw do
-  resources :item_offers, :wishlist_items, :events, :donations
+  resources :item_offers, :events, :donations, :wishlists
   resources :users
   resources :sessions
 
@@ -45,8 +45,10 @@ Spared::Application.routes.draw do
   get '/org/item-offers', to: 'item_offers#index', as: 'org_item_offers'
   get '/org/item-offers/:id', to: 'item_offers#show', as: 'org_show_item_offer'
   get '/org/wishlists/index', to: 'wishlists#index', as: 'org_wishlists' # browse wishlists
-  get '/org/wishlists/:id', to: 'wishlists#show'
-  get '/org/my-wishlists', to: 'wishlists#my_wishlists', as: 'org_my_wishlists'
+  #TODO: BUG: Uncommenting the next line breaks the org_new_wishlist path because it goes to :show when it should be going to :new
+  #get '/org/wishlists/:id', to: 'wishlists#show'
+  get '/org/wishlists/new', to: 'wishlists#new', as: 'org_new_wishlist'
+  get '/org/my-wishlists', to: 'wishlists#my_wishlists', as: 'org_my_wishlists' # not in My Dashboard
   get '/org/events', to: "events#new", as: 'org_new_event'
   get '/org/events/index', to: "events#index", as: 'org_events'
   get '/org/events/show/:id', to: "events#show"

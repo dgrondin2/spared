@@ -256,6 +256,7 @@
     outline: 2px solid #93d2af;
     height: 35px;
     padding: 0 20px;
+    padding-top: 4px;
     box-sizing: border-box;
     font-size: 110%;
 }
@@ -265,7 +266,11 @@
 }
 
 .new_wishlist_button {
+    display: block;
     margin-top: 25px;
+    height: 30px;
+    width: 200px;
+    font-weight: normal;
 }
 
 .org_brown_header {
@@ -339,4 +344,60 @@
     height: 100%;
     width: 50%;
     background-color: #f26a5a;
+}
+
+.event_calendar_overlay {
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 630px;
+    border: 5px solid #44372b;
+    padding: 30px 0 30px 40px;
+    clear: both; /* DELETE ME WHEN YOU'RE DONE STYLING PARTIAL */
+    overflow: hidden;
+}
+
+.wishlist_date_field {
+    height: 25px;
+    width: 75px;
+}
+
+.event_calendar_overlay .details {
+    float: left;
+    width: 460px;
+}
+
+.event_calendar_overlay .header {
+    background-color: #44372b;
+    color: #fff;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 13px 0 0 15px;
+}
+
+.event_calendar_overlay .content {
+    background-color: #f7f3e7;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 1.4;
+    max-height: 260px;
+    overflow-y: scroll;
+}
+
+.event_calendar_overlay .content span {
+    color: #86c4a1;
+}
+
+.event_calendar_overlay .content a {
+    color: #86c4a1;
+}
+
+.event_calendar_overlay .title {
+    margin: 0;
+    font-weight: bold;
+}
+
+.event_calendar_overlay .date {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-weight: bold;
 }

@@ -15,6 +15,18 @@ class WishlistsController < ApplicationController
     end
   end
 
+  def new
+    @user = current_user
+    @wishlist = Wishlist.new
+
+    respond_to do |format|
+      format.html {
+        render :action => 'org-new', :layout => 'org-dash'
+      }
+      format.json { render :json => @wishlist }
+    end
+  end
+
   def my_wishlists
     @user = current_user
     @wishlists = Wishlist.all
