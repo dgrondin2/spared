@@ -1,6 +1,6 @@
 <div class="edit_profile_wrapper">
     <br/>
-    <%= form_for@donor, url: donor_update_path do |f| %>
+    <%= form_for @donor, url: donor_update_path do |f| %>
         <div class="field">
             <%= f.label :first_name, "first name" %>
             <%= f.text_field :first_name, value: @donor.first_name, class: "text_field" %><br/>

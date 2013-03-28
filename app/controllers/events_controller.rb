@@ -6,10 +6,16 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     @events = Event.all
+    @user = current_user
 
     respond_to do |format|
-      format.html { #if user role is donor:
-                    render :action => 'donor-index', :layout => 'donor-dash' }
+      format.html {
+        if current_user.role == "donor"
+          render action: 'donor-index', layout: 'donor-dash'
+        elsif current_user.role == "organization"
+          render action: 'org-index', layout: 'org-dash'
+        end
+      }
       format.json { render :json => @events }
     end
   end

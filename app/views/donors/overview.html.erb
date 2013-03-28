@@ -38,30 +38,30 @@
             <% end %>
         </li>
         <li class="financial_donation_overview">
-          <div class="smaller_whitespace"></div>
-          <span class="bold float_left">My latest financial donations</span>
-          <%= link_to "View all", donor_my_donations_path, :class => "float_right" %>
-          <% if @donations.any? %>
-              <% @donations.each do |donation| %>
-                  <%# TODO: Change format and org name %>
-                  <span><%= "#{donation.date_donated} -- #{number_to_currency donation.amount} -- Org name" %></span>
-              <% end %>
-          <% else %>
-              <span>No donations yet!</span>
-          <% end %>
+            <div class="smaller_whitespace"></div>
+            <span class="bold float_left">My latest financial donations</span>
+            <%= link_to "View all", donor_my_donations_path, :class => "float_right" %>
+            <% if @donations.any? %>
+                <% @donations.each do |donation| %>
+                    <%# TODO: Change format and org name %>
+                    <span><%= "#{donation.date_donated} -- #{number_to_currency donation.amount} -- Org name" %></span>
+                <% end %>
+            <% else %>
+                <span>No donations yet!</span>
+            <% end %>
         </li>
         <li class="events_overview">
-          <div class="smaller_whitespace"></div>
-          <span class="bold float_left">My volunteer opportunities</span>
-          <%= link_to "View all", donor_my_events_path, :class => "float_right" %>
-          <% if @events.any? %>
-              <% @events.each do |event| %>
-                  <%# TODO: Change format and org name %>
-                  <span><%= "#{event.start_time} -- #{event.name}" %></span>
-              <% end %>
-          <% else %>
-              <span>No events yet!</span>
-          <% end %>
+            <div class="smaller_whitespace"></div>
+            <span class="bold float_left">My volunteer opportunities</span>
+            <%= link_to "View all", donor_my_events_path, :class => "float_right" %>
+            <% if @events.any? %>
+                <% @events.each do |event| %>
+                    <%# TODO: Change format and org name %>
+                    <span><%= "#{event.start_time} -- #{event.name}" %></span>
+                <% end %>
+            <% else %>
+                <span>No events yet!</span>
+            <% end %>
         </li>
     </ul>
 

@@ -26,9 +26,16 @@ class ItemOffersController < ApplicationController
 
   def show
     @item_offer = ItemOffer.find(params[:id])
+    @user = current_user
 
     respond_to do |format|
-      format.html { render :action => 'donor-show', :layout => 'yield-only' } # show.html.erb
+      format.html {
+        if @user.role == "donor"
+          render action: 'donor-show', layout: 'yield-only'
+        elsif @user.role == "organization"
+          render action: 'org-show', layout: 'yield-only'
+        end
+      } # show.html.erb
       format.json { render :json => @item_offer }
     end
   end

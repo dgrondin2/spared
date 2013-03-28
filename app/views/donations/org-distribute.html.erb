@@ -1,25 +1,24 @@
 <div class="dash_content float_right">
 
-  <div class="dash_brown_heading heading_label white">DISTRIBUTE DONATED FUNDS</div>
+    <div class="dash_brown_heading heading_label white">DISTRIBUTE DONATED FUNDS</div>
 
-  <ul class="distribute_donations_list">
-    <li class="distribute_donations_header bold">
-        You have <a>$0</a> to ditribute among wishlists.
-    </li>
-    <% if @wishlists.count() > 0 %>
-        <% @wishlists.each do |wishlist| %>
-            <li class="<%= cycle('odd','even') %>_wishlist">
-                <div class="wishlist_image"></div>
-                <div class="wishlist_info">
-                    <p class="title bold"><%= wishlist.name %></p>
-                    <p class="description"><%= wishlist.description %><a class="inline">[more]</a></p>
-                </div>
-                <%= check_box_tag "select", "select" %>
-            </li>
+    <ul class="distribute_donations_list">
+        <li class="distribute_donations_header bold">
+            You have <a>$0</a> to ditribute among wishlists.
+        </li>
+        <% if @wishlists.count() > 0 %>
+            <% @wishlists.each do |wishlist| %>
+                <li class="<%= cycle('odd','even') %>_wishlist">
+                    <div class="wishlist_image"></div>
+                    <div class="wishlist_info">
+                        <p class="title bold"><%= wishlist.name %></p>
+                        <p class="description"><%= wishlist.description %><a class="inline">[more]</a></p>
+                    </div>
+                    <%= check_box_tag "select", "select" %>
+                </li>
+            <% end %>
+        <% else %>
+            <li class="odd_wishlist">No wishlists yet!</li>
         <% end %>
-    <% else %>
-        <li class="odd_wishlist">No wishlists yet!</li>
-    <% end %>
-  </ul>
-
+    </ul>
 </div>

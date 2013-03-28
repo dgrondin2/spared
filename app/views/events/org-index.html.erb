@@ -1,0 +1,55 @@
+<%= render :partial => 'org-search-form' %>
+
+<div class="dash_content float_right">
+
+  <div class="dash_beige_heading heading_label">VOLUNTEER OPPORTUNITIES</div>
+
+  <br/>
+
+  <%= label_tag(:sort, 'Sort by:') %>
+  <%= select_tag(:sort, options_for_select([['Posted date'],['Name']])) %>
+
+  <%= label_tag(:results, 'Results:') %>
+  <%= select_tag(:results, options_for_select([['10'],['20'],['30'],['50'],['100']])) %>
+
+  <div class="float_right">
+      <p class="inline">Showing</p>
+      <p class="inline bold">1-10</p>
+      <p class="inline">of</p>
+      <p class="inline bold"><%= @events.count %></p> <br/>
+  </div>
+
+  <br/><br/>
+
+  <% if @events.empty? %>
+
+      <div class="event_post even_event">
+        <p>No events yet!.</p>
+      </div>
+
+  <% else %>
+
+      <% @events.each do |event| %>
+
+          <div class="event_post <%= cycle('odd','even') %>_event">
+
+              <div class="event_image_container float_left">
+                  <% if event.image_file_name.present? %>
+                      <%= image_tag event.image.url(:thumb) %>
+                  <% end %>
+              </div>
+
+              <div class="event_info_container float_left">
+                  <p><%= event.description %></p>
+              </div>
+
+              <div class="event_link_container float_left">
+                  <%= link_to 'View Details', "/org/events/#{event.id}", class: "org_event_detail_link", rel: 'facebox' %>
+              </div>
+          </div>
+
+      <% end %>
+
+  <% end %>
+
+</div>
