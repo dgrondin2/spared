@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  quantity: 1
+  description: MyString
+  price: 9.99
+  image: 
+  wishlist_id: 1
+
+two:
+  name: MyString
+  quantity: 1
+  description: MyString
+  price: 9.99
+  image: 
+  wishlist_id: 1
