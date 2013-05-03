@@ -1,0 +1,414 @@
+.org_sign_in {
+    background-color: #93d2af;
+    height: 33px;
+    width: 92px;
+    float: right;
+    border: 2px solid #FFF;
+    outline: 2px solid #93d2af;
+    margin: 25px 23px 0 0;
+    font-size: 13px;
+    clear: right;
+}
+
+.org_text_field {
+    outline-color: #93d2af;
+    font-size: 13px;
+    padding-left: 5px;
+    border-radius: 1px;
+}
+
+.org_register_label {
+    width: 120px;
+    float: left;
+    text-align: left;
+    margin-right: 10px;
+    margin-top: 20px;
+    display: block;
+    font-size: 0.9em;
+}
+
+.new_organization .field {
+    width: 450px;
+}
+
+.org_my_dash_heading {
+    height: 28px;
+    text-transform: uppercase;
+    padding-left: 8px;
+    padding-top: 8px;
+    background-color: #b8b713;
+    color: #44372b;
+    font-family: "st-marie";
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.org_dash_heading {
+    height: 50px;
+    text-transform: uppercase;
+    background-color: #b8b713;
+    color: #44372b;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.yellow_mini_footer {
+    height: 10px;
+    width: 100%;
+    background-color: #b8b713;
+    clear: both;
+}
+
+.org_edit_profile_wrapper {
+    background-color: #f5f0e2;
+    float: right;
+    height: 630px;
+    margin-top: 10px;
+    width: 76%;
+}
+
+.org_edit_profile_wrapper .field {
+    margin-top: 10px;
+}
+
+.org_edit_profile_wrapper label, .org_edit_profile_wrapper legend {
+    min-width: 130px;
+    margin: 5px 5px 0 25px;
+    float: left;
+    clear: left;
+    font-size: 90%;
+}
+
+.org_edit_profile_wrapper input[type="text"], .org_edit_profile_wrapper input[type="password"] {
+    width: 270px;
+    height: 23px;
+}
+
+.org_edit_profile_wrapper .checkbox-label {
+    width: auto;
+    float: none;
+    clear: both;
+    margin: 0;
+}
+
+.org_edit_profile_wrapper input[type="checkbox"] {
+    margin-left: 135px;
+}
+
+.org_edit_profile_wrapper textarea {
+    width: 270px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.org_edit_profile_wrapper input[type="submit"] {
+    margin: 10px 0 0 135px;
+}
+
+.edit_profile_picture_wrapper .org_back_to_overview_link {
+    float: left;
+    background-color: #93d2af;
+    width: 130px;
+    height: 27px;
+    color: #fff;
+    font-size: 80%;
+    font-weight: 100;
+    padding: 7px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.edit_profile_picture_wrapper .org_back_to_overview_link:hover {
+    opacity: 0.9;
+}
+
+.edit_profile_picture_wrapper .org_new_photo_link {
+    float: left;
+    clear: left;
+    color: #93d2af;
+}
+
+.org_overview {
+    position: relative;
+    width: 68%;
+    float: right;
+    margin-top: 15px;
+}
+
+.org_overview .summary {
+    float: left;
+    background-color: #EFE7D3;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.org_overview a {
+    float: left;
+    color: #93d2af;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.org_dash_list_heading {
+    height: 40px;
+    margin-top: 20px;
+    background-color: #b8b713;
+}
+
+.org_dash_list_heading .heading-text {
+    font-size: 110%;
+}
+.org_dash_list_heading span {
+    padding: 12px 30px;
+}
+.org_dash_list_heading .heading-text {
+    padding-left: 20px;
+}
+
+.org_latest_financial_donations {
+    margin: 20px 0;
+    width: 100%;
+}
+.org_latest_financial_donations tr td {
+    padding: 5px 20px;
+}
+
+.org_latest_financial_donations .top_total,
+.org_latest_financial_donations .bottom_total {
+    background-color: #b8b713;
+    font-weight: bold;
+    height: 30px;
+}
+
+.org_latest_financial_donations .bottom_total {
+    text-align: right;
+}
+
+.org_edit_profile_wrapper .field .short_field {
+    width: 135px;
+}
+
+.distribute_donations_list {
+    margin-top: 10px;
+}
+
+.distribute_donations_header {
+    background-color: #EFE7D3;
+    box-sizing: border-box;
+    height: 35px;
+    padding: 10px 10px 0 30px;
+}
+
+.odd_wishlist {
+    background-color: #f8f4ea;
+}
+
+.even_wishlist {
+    background-color: #f3eedf;
+}
+
+.odd_wishlist, .even_wishlist {
+    border-bottom: 1px solid #cfbe92;
+    box-sizing: border-box;
+    height: 90px;
+    padding: 20px;
+}
+
+.odd_wishlist > *, .even_wishlist > * {
+    float: left;
+}
+
+.distribute_donations_list .wishlist_image {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #cfbe92;
+}
+
+.distribute_donations_list .wishlist_info {
+    height: 100%;
+    overflow: hidden;
+    padding-left: 20px;
+    width: 70%;
+}
+
+.wishlist_info p {
+    margin: 0;
+}
+.wishlist_info .title {
+    margin-bottom: 0.2em;
+    margin-top: -0.3em;
+}
+
+.odd_wishlist input, .even_wishlist input {
+    margin: 15px 0 0 20px;
+}
+
+.org_button {
+    background-color: #93d2af;
+    border: 2px solid #fff;
+    color: #fff;
+    outline: 2px solid #93d2af;
+    height: 35px;
+    padding: 0 20px;
+    padding-top: 4px;
+    box-sizing: border-box;
+    font-size: 110%;
+}
+
+.org_button:hover {
+    opacity: 0.9;
+}
+
+.new_wishlist_button {
+    display: block;
+    margin-top: 25px;
+    height: 30px;
+    width: 200px;
+    font-weight: normal;
+}
+
+.org_brown_header {
+    background-color: #44372b;
+    color: #fff;
+}
+
+.odd_event {
+    background-color: #f8f4ea;
+}
+
+.even_event {
+    background-color: #f3eedf;
+}
+
+.odd_event, .even_event {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-bottom: 1px solid #dcd0b0;
+}
+
+.event_image_container {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #d2c298;
+    margin-right: 15px;
+}
+
+.event_info_container {
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    top: 9px;
+    left: 90px;
+}
+
+.event_info_container p {
+    margin: 0;
+    margin-bottom: 7px;
+}
+
+.event_link_container {
+    position: absolute;
+    right: 20px;
+    top: 40%;
+}
+
+.event_stats {
+    float:right;
+}
+
+.event_stats p {
+    font-size: 80%;
+}
+
+.event_stats p span {
+    color: #86c4a1;
+}
+
+.progress_bar {
+    border: 1px solid black;
+    background-color: #fff;
+    width: 80px;
+    height: 10px;
+}
+
+.progress {
+    height: 100%;
+    width: 50%;
+    background-color: #f26a5a;
+}
+
+.event_calendar_overlay {
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 630px;
+    border: 5px solid #44372b;
+    padding: 30px 0 30px 40px;
+    overflow: hidden;
+}
+
+.wishlist_date_field {
+    height: 25px;
+    width: 75px;
+}
+
+.event_calendar_overlay .details {
+    float: left;
+    width: 460px;
+}
+
+.event_calendar_overlay .header {
+    background-color: #44372b;
+    color: #fff;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 13px 0 0 15px;
+}
+
+.event_calendar_overlay .content {
+    background-color: #f7f3e7;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 1.4;
+    max-height: 260px;
+    overflow-y: scroll;
+}
+
+.event_calendar_overlay .content span {
+    color: #86c4a1;
+}
+
+.event_calendar_overlay .content a {
+    color: #86c4a1;
+}
+
+.event_calendar_overlay .title {
+    margin: 0;
+    font-weight: bold;
+}
+
+.event_calendar_overlay .date {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.org_item_offer_overlay {
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 630px;
+    padding: 0 0 30px 40px;
+    overflow: hidden;
+}
+
+.org_item_offer_overlay > .header {
+    background-color: #c3c23b;
+}
