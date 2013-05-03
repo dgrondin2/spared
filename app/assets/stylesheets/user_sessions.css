@@ -1,12 +1,3 @@
-/*
- * sessions.css
- *
- * Stylesheet for login page and dashboard.
- */
-
-
-/*    DIVS    */
-
 #login_container {
 	float: left;
 	height: 260px;
@@ -98,10 +89,7 @@
 	color: #44372b;
 }
 
-.and_or_text {
-	margin: 8px;
-	display: inline;
-}
+
 
 
 
@@ -139,22 +127,3 @@
 	margin-right: 8px;
 }
 
-.and_or_line_left {
-	border: 0;
-	height: 1px;
-	width: 240px;
-	float: left;
-	color: #d9cba8;
-	background-color: #d9cba8;
-}
-
-.and_or_line_right {
-	position: relative;
-	top: -15px;
-	border: 0;
-	height: 1px;
-	width: 240px;
-	float: right;
-	color: #d9cba8;
-	background-color: #d9cba8;
-}
