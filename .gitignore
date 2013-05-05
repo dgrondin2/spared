@@ -15,4 +15,4 @@
 /tmp
 
 app/assets/.sass-cache
-
+.DS_Store
