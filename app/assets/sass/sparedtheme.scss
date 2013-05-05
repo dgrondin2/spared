@@ -50,6 +50,12 @@ ul {
     font-size: 12px;
 }
 
+input[type=text] {
+    outline-color: #b8b713;
+    font-size: 13px;
+    padding-left: 5px;
+}
+
 
 
 
@@ -93,6 +99,10 @@ ul {
         list-style-type: disc;
         margin-left: 20px;
     }
+}
+
+.wide-photo {
+    margin: 30px 0;
 }
 
 
@@ -285,9 +295,6 @@ ul {
 
 
 
-
-/*    MISC    */
-
 hr {
 	border: 0;
 	height: 1px;
@@ -295,15 +302,9 @@ hr {
 	background-color: #cfbe92;
 }
 
-.wide_photo {
-	margin: 30px 0px 30px 0px;
-}
 
-.text_field {
-	outline-color: #b8b713;
-	font-size: 13px;
-	padding-left: 5px;
-}
+
+
 
 table {
     border-collapse: collapse;
