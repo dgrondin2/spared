@@ -1,18 +1,24 @@
 $(document).ready(function($) {
-    $('.slide_hidden').hide();
-    window.setInterval(nextImage, 4500);
 
-    function nextImage() {
-        var $current = $(".slide_shown"),
-            $next = $(".slide_hidden");
+    function nextSlide() {
+        var $current = $('.slideshow .active'),
+            $next = $current.next('.slide');
 
-        $current.fadeOut("slow");
-        $next.show();
-        $next.fadeIn("slow");
+        if (!$next.length) {
+            $next = $('.slide').first();
+        }
 
-        $next.removeClass("slide_hidden");
-        $current.removeClass("slide_shown");
-        $next.addClass("slide_shown");
-        $current.addClass("slide_hidden");
+        $current.fadeOut('slow');
+        $next.fadeIn('slow');
+
+        $current.removeClass('active');
+        $next.addClass('active');
     }
+
+    if ($('.slideshow').length) {
+        $(function() {
+            setInterval(nextSlide, 5000);
+        });
+    }
+
 });

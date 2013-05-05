@@ -19,7 +19,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   # gem 'therubyracer', :platform => :ruby
   gem 'uglifier', '>= 1.0.3'
-  gem 'sass'
+  gem 'sass-rails'
   gem 'compass-rails'
 end
 

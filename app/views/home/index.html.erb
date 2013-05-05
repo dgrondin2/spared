@@ -1,94 +1,73 @@
-<br/>
-<br/>
-
 <div class="slideshow">
-  <%= image_tag "1.jpg", class: "slide_shown" %>
-  <%= image_tag "2.jpg", class: "slide_hidden" %>
+
+  <div class="active slide">
+      <%= image_tag "1.jpg"%>
+      <p class="credits white">Mischa<br/>Off Leash Photography</p>
+      <p class="slide-text">Welcome to SPARED, a community-based, nonprofit donation network created for animal organizations.</p>
+  </div>
+
+  <div class="slide">
+      <%= image_tag "2.jpg"%>
+      <p class="credits">Bear<br/>Thank Dog Photography</p>
+      <p class="slide-text-alt">What can you spare?<br/>Donate now to save a life.</p>
+  </div>
+
   <% if current_user && current_user.role == "organization" %>
-    <%= link_to "GET STARTED, IT'S FREE!", org_login_path %>
+      <%= link_to "GET STARTED, IT'S FREE!", org_login_path %>
   <% else %>
-    <%= link_to "GET STARTED, IT'S FREE!", donor_login_path %>
+      <%= link_to "GET STARTED, IT'S FREE!", donor_login_path %>
   <% end %>
-
-  <p class="slide_photo_credit slide_shown white">Mischa<br/>Off Leash Photography</p>
-  <p class="slide_photo_text slide_shown">Welcome to SPARED, a community-based, nonprofit donation network created for animal organizations.</p>
-  <p class="slide_photo_credit slide_hidden brown">Bear<br/>Thank Dog Photography</p>
-  <p class="slide_photo_text slide_hidden slide_photo_brown">What can you spare?<br/>Donate now to save a life.</p>
-
 </div>
 
-<div class="home_heading home_heading_label">How does it work?</div>
+<div class="teal-heading-banner">How does it work?</div>
 
-<div id="home_flow_chart">
-	<%= image_tag("home/ORGANIZATION WISHLISTS.png", :class => 'home_flow_image inline') %>
-	<%= image_tag("home/Shape 2 copy 2.png", :class => 'home_flow_arrow inline') %>
-	<%= image_tag("home/ORGANIZATION WISHLISTS copy.png", :class => 'home_flow_image inline') %>
-	<%= image_tag("home/Shape 2 copy 2.png", :class => 'home_flow_arrow inline') %>
-	<%= image_tag("home/ORGANIZATION WISHLISTS copy 2.png", :class => 'home_flow_image inline') %>
+<div class="home-flow-diagram">
+	<%= image_tag("home/ORGANIZATION WISHLISTS.png", :class => 'info') %>
+	<%= image_tag("home/Shape 2 copy 2.png", :class => 'arrow') %>
+	<%= image_tag("home/ORGANIZATION WISHLISTS copy.png", :class => 'info') %>
+	<%= image_tag("home/Shape 2 copy 2.png", :class => 'arrow') %>
+	<%= image_tag("home/ORGANIZATION WISHLISTS copy 2.png", :class => 'info') %>
 </div>
 
-<div class="content_box">
-	<div class="content_text_wrapper front_page">
-		<h2 class="content_heading">It's Easy... and It's Free!</h2>
+<div class="content-box">
+    <h2>It's Easy... and It's Free!</h2>
 
-        <ul class="bullet">
-            <li class="content">Browse a wishlist and donate items</li>
-            <li class="content">Post items you can spare and they will be matched with an
-                                         organization in need</li>
-            <li class="content">Make a financial donation to a shelter of your choice</li>
-        </ul>
-	</div>
+    <ul class="bullet">
+        <li>Browse a wishlist and donate items</li>
+        <li>Post items you can spare and they will be matched with an
+                                     organization in need</li>
+        <li>Make a financial donation to a shelter of your choice</li>
+    </ul>
 </div>
 
-<br/>
-<br/>
+<div class="content-box">
+    <h2>Anyone Can Help!</h2>
 
-<div class="content_box">
-	<div class="content_text_wrapper front_page">
-		<h2 class="content_heading">Anyone Can Help!</h2>
-		
-		<p class="content inline">Local shelter's top wishlist item is blankets?</p>
-		<p class="content inline bold">Donate them!</p>
-		<br/>
-		<p class="content inline">Puppy grew too large for his collar?</p>
-		<p class="content inline bold">Post it for donation!</p>
-		<br/>
-		<p class="content inline">Extra birthday cash?</p>
-		<p class="content inline bold">Donate it to your favorite organization!</p>
-		<br/>
-		<p class="content inline">Any donation, large or small, can benefit animals in shelters and
-						   rescues.</p>
-		<br/>
-		<br/>
-		<!-- The last <p> tag of .content_wrapper MUST be inline (or else bottom margin breaks): -->
-		<p class="content inline">Research shows that shelters don't often get the supplies they need and it is
-						   the goal of Spared to help make this happen.<br/> 
-						   By involving the community and streamlining the way organizations get 
-						   supplies, volunteers are less bogged down by daily operations,<br/> 
-						   and animals get the love and care they need. Getting rid of those unused pet 
-						   supplies also ensures a cleaner garage!</p>
-	</div>
+    <p>
+        Local shelter's top wishlist item is blankets? <span class="bold">Donate Them!</span><br/>
+        Puppy grew too large for his collar? <span class="bold">Post it for donation!</span><br/>
+        Extra birthday cash? <span class="bold">Donate it to your favorite organization!</span><br/>
+        Any donation, large or small, can benefit animals in shelters and rescues.<br/>
+        <br/>
+        Research shows that shelters don't often get the supplies they need and it is the goal of Spared to help make this happen.<br/>
+        By involving the community and streamlining the way organizations get supplies, volunteers are less bogged down by daily operations,<br/>
+        and animals get the love and care they need. Getting rid of those unused pet supplies also ensures a cleaner garage!
+    </p>
 </div>
 
-<br/>
-<br/>
+<div class="content-box">
+    <h2>Who is Eligible?</h2>
 
-<div class="content_box">
-	<div class="content_text_wrapper front_page">
-		<h2 class="content_heading">Who is Eligible?</h2>
-		
-		<p class="content">Though we aim to help all animal organizations, there are a few registration
-						   qualifications<br/> 
-						   to ensure integrity. To register an organization for donations, the 
-						   organization must:</p>
-        <ul class="bullet">
-            <li class="content">Be nonprofit [registered or non-registered]</li>
-            <li class="content">Have a physical address and facility</li>
-            <li class="content">Be willing to take care of shipping costs and/or transportation of items</li>
-        </ul>
-		<br/>
-		<!-- The last <p> tag of .content_wrapper MUST be inline (or else bottom margin breaks): -->
-		<p class="content inline">For full eligibility requirements,</p>
-		<%= link_to 'register now!', 'register', :class => 'login_link inline', :rel => 'facebox' %>
-	</div>
+    <p>
+        Though we aim to help all animal organizations, there are a few registration qualifications<br/>
+        to ensure integrity. To register an organization for donations, the organization must:
+    </p>
+
+    <ul class="bullet">
+        <li>Be nonprofit [registered or non-registered]</li>
+        <li>Have a physical address and facility</li>
+        <li>Be willing to take care of shipping costs and/or transportation of items</li>
+    </ul>
+
+    <p>For full eligibility requirements, <%= link_to 'register now!', 'register', :class => 'login_link', :rel => 'facebox' %></p>
 </div>

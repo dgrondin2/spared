@@ -1,21 +1,57 @@
-#page_frame {
-	position: relative;
-	width: 964px;
-	min-height: 1000px;
-	margin: 0 auto;
-	margin-top: 60px;
+@import 'compass';
+
+.page-frame {
+    position: relative;
+    width: 964px;
+    min-height: 1000px;
+    margin: 0 auto;
+    margin-top: 60px;
 }
 
-.content_box {
+.teal-heading-banner {
+    @extend .heading-banner;
+
+    background-color: #93d2af;
+    color: #44372b;
+}
+
+.heading-banner {
+    @include box-sizing(border-box);
+
+    font-family: "st-marie";
+    font-size: 29px;
+    font-weight: 700;
+    height: 70px;
+    padding-left: 25px;
+    padding-top: 18px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.content-box {
+    @include box-sizing(border-box);
+
 	background-color: #f5f0e2;
-	
-	/* To accomodate floats: */
+    line-height: 1.5;
+    margin: 30px 0;
 	overflow: auto;
-	width: 100%;
+    padding: 10px 30px 30px 30px;
+    width: 100%;
+
+    h2 {
+        color: #44372b;
+        font-family: "Lucida Grande";
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .bullet {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
 }
 
 
-/* bad practice, I know... */
+// TODO: Get rid of these
 .whitespace {
 	height: 30px;
 }
@@ -28,7 +64,6 @@
 
 
 
-/*    FONTS    */
 
 body {
 	font-family: "Lucida Grande";
@@ -69,19 +104,6 @@ ul {
 	font-weight: 600;
 }
 
-.content_heading {
-	color: #44372b;
-	font-family: "Lucida Grande";
-	font-size: 18px;
-	font-weight: 500;
-}
-
-.content {
-	color: #44372b;
-	font-family: "Lucida Grande";
-	font-size: 13px;
-}
-
 .big {
 	font-family: "Lucida Grande";
 	font-size: 14px;
@@ -97,7 +119,6 @@ ul {
 
 
 
-/*    GENERAL    */
 
 .inline {
 	display: inline;
