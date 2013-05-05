@@ -1,62 +1,31 @@
-<!--
-  - home/faq.html.erb
-  -
-  - Lists frequently asked questions with answers.
-  -->
-
 <%= image_tag("about2/Coco Photo by Sarahbeth Photography.png", :class => 'wide_photo') %>
 
-<div class="home_heading home_heading_label">Frequently asked questions</div>
+<div class="teal-heading-banner">Frequently asked questions</div>
 
-<br/>
-<br/>
+<div class="content-box">
+    <div class="questions">
+        <p>
+            <span class="question">Who does Spared help?</span><br/>
+            Spared helps dogs and cats via nonprofit animal organizations. By donating the supplies and
+            funds an animal organization needs to operate, shelter volunteers can spend less time managing
+            operations, and animals receive the love and care they need.
+        </p>
 
-<div class="content_box">
-	<div class="content_text_wrapper">
-		
-		<p class="content">
-		<%= link_to 'Who does Spared help?' %><br/>
-		Spared helps dogs and cats via nonprofit animal organizations. By donating the supplies and
-		funds an animal organization needs to operate, shelter volunteers can spend less time managing
-		operations, and animals receive the love and care they need.
-		</p>
-		
-		<p class="link_question no_path_link">Can I donate items instead of a cash donation?</p>
-		<p class="link_question no_path_link">Can I partially fund a wishlist?</p>
-		<p class="link_question no_path_link">Are donations made through Spared.org tax deductible?</p>
-		<p class="link_question no_path_link">Is my online donation secure?</p>
-		<p class="link_question no_path_link">Is there a minimum donation?</p>
-		<p class="link_question no_path_link">Should I offer to ship my items?</p>
-		
-		
-		<!-- Uncomment to have questions as Ruby links (but comment the questions above): -->
-		
-		<!--%= link_to 'Can I donate items instead of a cash donation?', "", :class => 'link_question' %>
-		<br/>
-		<%= link_to 'Can I partially fund a wishlist?', "", :class => 'link_question' %>
-		<br/>
-		<%= link_to 'Are donations made through Spared.org tax deductible?', :class => 'link_question' %>
-		<br/>
-		<%= link_to 'Is my online donation secure?', :class => 'link_question' %>
-		<br/>
-		<%= link_to 'Is there a minimum donation?', :class => 'link_question' %>
-		<br/>
-		<%= link_to 'Should I offer to ship my items?', :class => 'link_question' %>
-		<br/-->
-		
-		<br/>
-		<br/>
-		<br/>
-		
-		<p class="big">Have another question?</p>
-		<p class="content">Send us an email: <%= link_to 'info@spared.org' %></p>
-	</div>
-	
-	<div class="content_pic_wrapper">
-	
+        <p><span class="question">Can I donate items instead of a cash donation?</span></p>
+        <p><span class="question">Can I partially fund a wishlist?</span></p>
+        <p><span class="question">Are donations made through Spared.org tax deductible?</span></p>
+        <p><span class="question">Is my online donation secure?</span></p>
+        <p><span class="question">Is there a minimum donation?</span></p>
+        <p><span class="question">Should I offer to ship my items?</span></p>
+
+        <br/><br/>
+
+        <p class="big">Have another question?</p>
+        <p>Send us an email: <%= link_to 'info@spared.org' %></p>
+    </div>
+
+	<div class="home-picture-wrapper">
 		<%= image_tag("about2/Layer 3.png") %>
-			
 		<p class="caption">Sarah's Shih Tzu, Coco Bean</p>
-	
 	</div>
 </div>

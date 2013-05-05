@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6edb198c-74ba-4781-a1fb-081e6dc3d532" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/about.html.erb" afterPath="$PROJECT_DIR$/app/views/home/about.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/home.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/faqs.html.erb" afterPath="$PROJECT_DIR$/app/views/home/faqs.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/sass/home.scss" afterPath="$PROJECT_DIR$/app/assets/sass/home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/spared.iml" afterPath="$PROJECT_DIR$/.idea/spared.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/sass/sparedtheme.scss" afterPath="$PROJECT_DIR$/app/assets/sass/sparedtheme.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="spared.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,9 +41,11 @@
     <file path="/application.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1367725381982" ignored="false" />
     <file path="/index.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1367727535475" ignored="false" />
     <file path="/home.js" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1367722682240" ignored="false" />
-    <file path="/home.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1367726545440" ignored="false" />
+    <file path="/home.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1367729489089" ignored="false" />
     <file path="/a.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1367721906443" ignored="false" />
-    <file path="/sparedtheme.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1367727419041" ignored="false" />
+    <file path="/sparedtheme.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1367728949704" ignored="false" />
+    <file path="/about.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1367729707683" ignored="false" />
+    <file path="/faqs.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1367729566778" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,25 +68,25 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="36" selection-start="423" selection-end="423" vertical-scroll-proportion="-8.75">
+            <state line="18" column="49" selection-start="499" selection-end="499" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="41" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sparedtheme.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sparedtheme.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/sass/sparedtheme.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="0.2724177">
+            <state line="26" column="1" selection-start="375" selection-end="375" vertical-scroll-proportion="-15.6">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="faqs.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/faqs.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="49" selection-start="1158" selection-end="1158" vertical-scroll-proportion="-13.75">
               <folding />
             </state>
           </provider>
@@ -97,27 +95,16 @@
       <file leaf-file-name="home.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/sass/home.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="150" column="0" selection-start="2242" selection-end="2242" vertical-scroll-proportion="-29.24">
+            <state line="25" column="24" selection-start="500" selection-end="500" vertical-scroll-proportion="13.8">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <file leaf-file-name="about.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/home/about.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="33" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="25" selection-start="1568" selection-end="1568" vertical-scroll-proportion="-14.25">
+            <state line="33" column="6" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.56122446">
               <folding />
             </state>
           </provider>
@@ -141,8 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/sessions.scss" />
         <option value="$PROJECT_DIR$/app/views/donations/donor-new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/donations/_donor-form.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/home.scss" />
@@ -153,10 +138,12 @@
         <option value="$PROJECT_DIR$/app/assets/sass/application.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/home.js" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/sass/home.scss" />
-        <option value="$PROJECT_DIR$/app/assets/sass/sparedtheme.scss" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/sass/sparedtheme.scss" />
+        <option value="$PROJECT_DIR$/app/views/home/faqs.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/sass/home.scss" />
+        <option value="$PROJECT_DIR$/app/views/home/about.html.erb" />
       </list>
     </option>
   </component>
@@ -712,20 +699,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/fonts.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
@@ -791,37 +764,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/home.js">
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="41" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
+        <state line="39" column="9" selection-start="1534" selection-end="1534" vertical-scroll-proportion="-12.375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="36" selection-start="423" selection-end="423" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/sass/home.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="0" selection-start="2242" selection-end="2242" vertical-scroll-proportion="-29.24">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="25" selection-start="1568" selection-end="1568" vertical-scroll-proportion="-14.25">
+        <state line="18" column="49" selection-start="499" selection-end="499" vertical-scroll-proportion="-11.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/sass/sparedtheme.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="0.2724177">
+        <state line="26" column="1" selection-start="375" selection-end="375" vertical-scroll-proportion="-15.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="41" selection-start="479" selection-end="479" vertical-scroll-proportion="0.31456953">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/faqs.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="49" selection-start="1158" selection-end="1158" vertical-scroll-proportion="-13.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/sass/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="24" selection-start="500" selection-end="500" vertical-scroll-proportion="13.8">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/about.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="6" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.56122446">
           <folding />
         </state>
       </provider>

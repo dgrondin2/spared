@@ -47,7 +47,7 @@
         outline: 2px solid #B8B713;
         width: 270px;
         position: absolute;
-        bottom: 50px;
+        bottom: 30px;
         left: 30px;
         font-size: 22px;
         font-family: "lucida grande";
@@ -69,20 +69,20 @@
     }
 }
 
-.content_text_wrapper {
-	line-height: 21px;
-	width: 63%;
+.about-us > p {
+    float: left;
+    width: 65%;
+}
+.home-picture-wrapper {
+    float: right;
+    padding-top: 20px;
 }
 
 .front_page {
 	width: 90%;
 }
 
-.content_pic_wrapper {
-	float: right;
-	padding-top: 30px;
-	padding-right: 30px;
-}
+
 
 #dash_content {
 	padding-top: 20px;
@@ -106,9 +106,16 @@
 	color: #44372b;
 }
 
-.link_question {
-	display: block;
-	line-height: 1.2;
+.questions {
+    float: left;
+    width: 65%;
+}
+.question {
+    color: #a8a70f;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: "Lucida Grande";
+    text-decoration: none;
 }
 
 
