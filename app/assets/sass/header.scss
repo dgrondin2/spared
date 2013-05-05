@@ -1,53 +1,45 @@
-/*
- * header.css
- *
- * Stylesheet for "header.html.erb".
- */
- 
- 
-/*    DIVS    */
-
-#header_container {
+.page-header {
 	position: relative;
 	width: 964px;
-}
 
-#login_links_container {
-	position: absolute;
-	right: 0px;
-	float: right;
-}
+    .account-links {
+        float: right;
+        right: 0;
 
-#nav_bar {
-	position: absolute;
-	bottom: 15px;
-	right: 0px;
-}
+        li {
+            color: #a8a70f;
+            display: inline;
+        }
+        .separator {
+            padding: 0 5px;
+        }
+    }
 
+    nav {
+        bottom: 15px;
+        position: absolute;
+        right: 0;
 
-/*    FONTS    */
+        li {
+            display: inline;
+        }
 
-.login_link {
-	color: #a8a70f;
-}
+        a {
+            color: #000000;
+            font-family: "st-marie";
+            font-size: 18px;
+            margin-left: 27px;
+            letter-spacing: -2px;
+            font-weight: 700;
 
-.nav_link {
-	color: #000000;
-	font-family: "st-marie";
-	font-size: 18px;
-	margin-left: 27px;
-	letter-spacing: -2px;
-	font-weight: 700;
-}
+            &:hover {
+                color: #a8a70f;
+            }
+        }
+    }
 
-.nav_link:hover {
-	color: #a8a70f;
-}
-
-
-/*    MISC    */
-
-.header_line {
-	color: #44372b;
-	background-color: #44372b;
+    hr {
+        color: #44372b;
+        background-color: #44372b;
+    }
 }

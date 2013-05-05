@@ -1,37 +1,27 @@
-/*
- * header.css
- *
- * Stylesheet for "footer.html.erb".
- */
- 
-
-/*    DIVS    */
-
-#footer_container {
+.page-footer {
 	clear: both;
 	margin-top: 100px;
-}
 
-#footer_nav_links {
-	padding-left: 10px;
-}
+    nav {
+        padding-left: 10px;
 
+        li {
+            display: inline;
+        }
 
-/*    FONTS    */
+        li a {
+            color: #333333;
+            font-size: 12px;
+            font-family: "Lucida Grande";
+            font-weight: 100;
 
-.footer_nav_link {
-	color: #333333;
-	font-size: 12px;
-	font-family: "Lucida Grande";
-	font-weight: 100;
-	
-	padding-right: 25px;
-}
+            padding-right: 25px;
+        }
+    }
 
-
-/*    MISC    */
-
-.footer_line {
-	color: #8f8780;
-	background-color: #8f8780;
+    hr {
+        background-color: #8f8780;
+        color: #8f8780;
+        margin-bottom: 50px;
+    }
 }
