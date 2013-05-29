@@ -16,19 +16,9 @@
 //= require_tree .
 
 $(document).ready(function($) {
-
-  $(document).bind('beforeReveal.facebox', function() {
-      $("#facebox .content").empty();
-  });
-
-  $('a[rel*=facebox]').facebox();
-
-
-  $('.jquery-ui-date').datepicker({
-    onClose: function(dateText, inst) {
-      //alert("My date is: " + dateText);
-    }
-  });
-
-
+    $('.jquery-ui-date').datepicker({
+        onClose: function(dateText, inst) {
+          //alert("My date is: " + dateText);
+        }
+    });
 });

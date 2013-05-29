@@ -1,0 +1,100 @@
+@import 'compass';
+
+.left-dash-nav {
+    float: left;
+}
+.left-dash-nav a {
+    float: left;
+    margin-right: 8px;
+    outline: 4px solid #44372b;
+}
+
+.right-dash-nav {
+    float: right;
+}
+.right-dash-nav a {
+    float: right;
+    margin-left: 8px;
+    outline: 4px solid #cfbe92;
+}
+
+.donor-dash-nav,
+.org-dash-nav {
+    a {
+        border: 2px solid #fff;
+        display: block;
+    }
+    h2 {
+        font-family: 'st-marie';
+    }
+}
+
+.donor-dash-nav a {
+    &.active,
+    &:hover {
+        outline: 4px solid #b8b713;
+    }
+}
+
+.org-dash-nav a {
+    &.active,
+    &:hover {
+        outline: 4px solid #93d2af;
+    }
+}
+
+.big_button_border {
+    padding: 2px;
+    border: 4px solid;
+    height: 137px;
+    width: 137px;
+}
+
+.big_button_border:hover {
+    border-color: #b8b713;
+}
+
+.org_big_button_border {
+    padding: 2px;
+    border: 4px solid;
+    height: 137px;
+    width: 137px;
+}
+
+.org_big_button_border:hover {
+    border-color: #93d2af;
+}
+
+.big_button_border_static {
+    padding: 2px;
+    border: 4px solid;
+    height: 137px;
+    width: 137px;
+}
+
+.small_dash_heading {
+    color: #44372b;
+    font-family: "st-marie";
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.big_dash_heading {
+    color: #44372b;
+    font-family: "st-marie";
+    font-size: 24px;
+}
+
+.my_dash_button_title {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    display: inline;
+    color: #44372b;
+    line-height: 10px;
+}
+
+.my_dash_button_text {
+    display: inline;
+    color: #44372b;
+}

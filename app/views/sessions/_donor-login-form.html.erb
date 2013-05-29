@@ -1,13 +1,21 @@
-<%= form_tag sessions_path do %>
-  <div><%= label_tag :email, 'email', :class => 'login_label content' %><br />
-  <%= text_field_tag :email, params[:email], :class => 'text_field login_textfield', :placeholder => "youremail@example.com" %></div>
+<%= form_tag sessions_path, class: 'donor-login' do %>
+    <h2 class="st-marie-heading">DONOR LOGIN</h2>
 
-  <div><%= label_tag :password, 'password', :class => 'login_label content' %><br />
-  <%= password_field_tag :password, "", :class => 'text_field login_textfield' %></div>
+    <div class="field">
+        <%= label_tag :email, 'email' %>
+        <%= text_field_tag :email, params[:email], placeholder: "youremail@example.com" %>
+    </div>
 
-  <%= link_to "forgot password?", "", :class => "forgot_password_link" %>
+    <div class="field">
+        <%= label_tag :password, 'password' %>
+        <%= password_field_tag :password %>
+    </div>
 
-  <%# TODO: Remember me, forgot password links %>
+    <%= hidden_field_tag :donor_or_org, 'donor' %>
 
-  <div><%= submit_tag "LOGIN", :class => 'donor_sign_in spared_button' %></div>
+    <%= link_to "forgot password?", "", class: "forgot-password" %>
+
+    <%# TODO: Remember me, forgot password links %>
+
+    <%= submit_tag "LOGIN" %>
 <% end %>

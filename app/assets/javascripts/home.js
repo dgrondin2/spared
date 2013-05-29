@@ -21,4 +21,5 @@ $(document).ready(function($) {
         });
     }
 
+    $('a.facebox-modal').facebox();
 });

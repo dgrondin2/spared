@@ -2,20 +2,16 @@
 
 .page-frame {
     position: relative;
-    width: 964px;
     min-height: 1000px;
     margin: 0 auto;
     margin-top: 60px;
+    width: 964px;
 }
 
 body {
     font-family: "Lucida Grande";
     font-size: 13px;
     color: #44372b;
-}
-
-p, a, li {
-
 }
 
 a {
@@ -32,13 +28,6 @@ ul {
     margin: 0;
 }
 
-.heading_label {
-    color: #333333;
-    font-family: "st-marie";
-    font-size: 24px;
-    font-weight: 600;
-}
-
 .big {
     font-family: "Lucida Grande";
     font-size: 14px;
@@ -50,13 +39,14 @@ ul {
     font-size: 12px;
 }
 
-input[type=text] {
-    outline-color: #b8b713;
+input[type=text],
+input[type=password] {
+    border: 1px solid #777777;
+    border-radius: 1px;
     font-size: 13px;
+    outline-color: #b8b713;
     padding-left: 5px;
 }
-
-
 
 
 .teal-heading-banner {
@@ -77,6 +67,14 @@ input[type=text] {
     padding-top: 18px;
     text-transform: uppercase;
     width: 100%;
+}
+
+.st-marie-heading {
+    color: #333333;
+    font-family: "st-marie";
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
 }
 
 .content-box {
@@ -199,20 +197,6 @@ input[type=text] {
 	position: relative;
 }
 
-/*    BUTTONS    */
-
-.button {
-	display: block;
-	text-transform: uppercase;
-	color: #fff;
-	border: 0px;
-	font-size: 100%;
-	text-align: center;
-
-	text-decoration: none;
-	font-weight: 100;
-}
-
 .small_button {
 	width: 92px;
 	height: 28px;
@@ -235,62 +219,12 @@ input[type=text] {
 	opacity: 0.85;
 }
 
-.big_button_border {
-	padding: 2px;
-	border: 4px solid;
-	height: 137px;
-	width: 137px;
-}
-
-.big_button_border:hover {
-	border-color: #b8b713;
-}
-
-.org_big_button_border {
-    padding: 2px;
-    border: 4px solid;
-    height: 137px;
-    width: 137px;
-}
-
-.org_big_button_border:hover {
-    border-color: #93d2af;
-}
-
-.big_button_border_static {
-	padding: 2px;
-	border: 4px solid;
-	height: 137px;
-	width: 137px;
-}
-
-.green_border {
-	border-color: #b8b713;
-}
-
 .brown_border {
 	border-color: #44372b;
 }
 
-.beige_border {
-	border-color: #cfbe92;
-}
-
 .blue_border {
 	border-color: #93d2af;
-}
-	
-#cancel_button {
-	margin-right: 20px;
-}
-
-#cancel_link {
-	padding-top: 5px;
-	height: 23px;
-}
-
-#register_button {
-	margin-right: 23px;
 }
 
 

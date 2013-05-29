@@ -1,17 +1,4 @@
-#register_frame {
-	padding-left: 30px;
-	padding-right: 30px;
-}
-
-.new_donor .field {
-    width: 400px;
-}
-
-#register_disclaimer {
-	padding-left: 130px;
-	line-height: 0.8;
-	font-size: 0.9em;
-}
+@import 'compass';
 
 .my_dash_link {
     display: block;
@@ -24,24 +11,6 @@
     font-size: 13px;
     color: #44372b;
     line-height: 17px;
-}
-
-
-.register_textfield {
-	width: 288px;
-	height: 23px;
-	border: 1px solid #777777;
-	border-radius: 1px;
-}
-
-.register_label {
-	width: 70px;
-  	float: left;
-  	text-align: left;
-  	margin-right: 10px;
-  	margin-top: 20px;
-  	display: block;
-  	font-size: 0.9em;
 }
 
 .my_dash {
@@ -187,17 +156,6 @@
     font-size: 14px;
 }
 
-.donor_sign_in {
-    background-color: #B8B713;
-    height: 33px;
-    width: 92px;
-    float: right;
-    border: 2px solid #FFF;
-    outline: 2px solid #B8B713;
-    margin: 25px 23px 0 0;
-    font-size: 13px;
-    clear: right;
-}
 
 .spared_button {
     color: #FFF;
@@ -206,15 +164,6 @@
 }
 .spared_button:hover {
     opacity: 0.8;
-}
-
-.forgot_password_link {
-    float: right;
-    padding-right: 23px;
-    margin-top: 5px;
-    font-size: 12px;
-    color: #BCBC22;
-    font-weight: 100;
 }
 
 .remember_me {

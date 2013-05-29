@@ -1,14 +1,17 @@
 /* ...
 *= require_self
+*= require dashboard
 *= require donations
 *= require donors
 *= require events
+*= require facebox
 *= require fonts
 *= require footer
 *= require header
 *= require home
 *= require ie
-*= require item_offers
+*= require item-offers
+*= require jquery-ui-1.9.0.custom
 *= require organizations
 *= require sessions
 *= require sparedtheme
