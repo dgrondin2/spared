@@ -1,11 +1,12 @@
-/*
- * items.css
- *
- * Stylesheet for item-offer board, new item offers, item search... anything "item".
- */
-
- 
- /*    DIVS    */
+    .my-item-offers li,
+    .item_offer_post {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+        padding: 20px;
+        border-bottom: 1px solid #dcd0b0;
+    }
 
  .dash_beige_heading {
  	width: 604px;
@@ -15,15 +16,6 @@
 	color: #70624c;
 	padding-left: 25px;
 	padding-top: 20px;
- }
-
- .item_offer_post {
- 	position: relative;
- 	width: 100%;
- 	height: 100px;
- 	box-sizing: border-box;
- 	padding: 20px;
- 	border-bottom: 1px solid #dcd0b0;
  }
 
  .odd_item_offer {

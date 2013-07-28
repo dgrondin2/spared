@@ -58,6 +58,7 @@ input[type=password] {
 
 .heading-banner {
     @include box-sizing(border-box);
+    @include reset-box-model;
 
     font-family: "st-marie";
     font-size: 29px;
@@ -87,7 +88,7 @@ input[type=password] {
     padding: 10px 30px 30px 30px;
     width: 100%;
 
-    h2 {
+    h3 {
         color: #44372b;
         font-family: "Lucida Grande";
         font-size: 18px;
@@ -327,4 +328,11 @@ table {
 .and_or p {
     margin: 8px;
     display: inline;
+}
+
+.teal-mini-footer {
+    background-color: #93d2af;
+    clear: both;
+    height: 10px;
+    width: 100%;
 }
