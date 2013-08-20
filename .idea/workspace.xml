@@ -5,23 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6edb198c-74ba-4781-a1fb-081e6dc3d532" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/about.html.erb" afterPath="$PROJECT_DIR$/app/views/home/about.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/contact.html.erb" afterPath="$PROJECT_DIR$/app/views/home/contact.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/sass/dashboard.scss" afterPath="$PROJECT_DIR$/app/assets/sass/dashboard.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/sass/donors.scss" afterPath="$PROJECT_DIR$/app/assets/sass/donors.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/faqs.html.erb" afterPath="$PROJECT_DIR$/app/views/home/faqs.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/donors-and-orgs.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/layout.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/login-and-signup.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/sass/dashboard.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/sass/donors.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/sass/footer.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/sass/header.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/sass/ie.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/sass/organizations.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/sass/print.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/sass/screen.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/sass/sessions.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/sass/users.scss" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/sass/application.scss" afterPath="$PROJECT_DIR$/app/assets/sass/application.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/sass/donations.scss" afterPath="$PROJECT_DIR$/app/assets/sass/donations.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/sass/events.scss" afterPath="$PROJECT_DIR$/app/assets/sass/events.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/sass/fonts.scss" afterPath="$PROJECT_DIR$/app/assets/sass/fonts.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/sass/home.scss" afterPath="$PROJECT_DIR$/app/assets/sass/home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/sass/item-offers.scss" afterPath="$PROJECT_DIR$/app/assets/sass/item-offers.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/donors/my-item-offers.html.erb" afterPath="$PROJECT_DIR$/app/views/donors/my-item-offers.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/donors/overview.html.erb" afterPath="$PROJECT_DIR$/app/views/donors/overview.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/sass/sessions.scss" afterPath="$PROJECT_DIR$/app/assets/sass/sessions.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/donors/my-donations.html.erb" afterPath="$PROJECT_DIR$/app/views/donors/my-donations.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/donors/my-events.html.erb" afterPath="$PROJECT_DIR$/app/views/donors/my-events.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/sass/sparedtheme.scss" afterPath="$PROJECT_DIR$/app/assets/sass/sparedtheme.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/sass/wishlists.scss" afterPath="$PROJECT_DIR$/app/assets/sass/wishlists.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="spared.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1374977512875" ignored="false" />
+    <file path="/Dummy.txt" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1376863636617" ignored="false" />
     <file path="/org-distribute.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1361498424196" ignored="false" />
     <file path="/donations_controller.rb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1361324819626" ignored="false" />
     <file path="/organizations.css" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1362020068826" ignored="false" />
@@ -29,7 +40,7 @@
     <file path="/wishlists_controller.rb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1361851345875" ignored="false" />
     <file path="/events_controller.rb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1362187823691" ignored="false" />
     <file path="/org-manage.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1361945332037" ignored="false" />
-    <file path="/*.regexp" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1364446572252" ignored="false" />
+    <file path="/*.regexp" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1376969746445" ignored="false" />
     <file path="/_org-calendar-detail.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1361945930992" ignored="false" />
     <file path="/20130222052127_add_attachment_to_events.rb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1361510621959" ignored="false" />
     <file path="/routes.rb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1361932020038" ignored="false" />
@@ -44,12 +55,12 @@
     <file path="/Gemfile" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1367724861920" ignored="false" />
     <file path="/sparedtheme.css" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1364521583837" ignored="false" />
     <file path="/_donor-form.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1364447229317" ignored="false" />
-    <file path="/a.dummy" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1371004365855" ignored="false" />
-    <file path="/application.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1369195971659" ignored="false" />
+    <file path="/a.dummy" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1374981682267" ignored="false" />
+    <file path="/application.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1376964338132" ignored="false" />
     <file path="/application.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1367787922992" ignored="false" />
     <file path="/index.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1370995832786" ignored="false" />
     <file path="/home.js" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1368323188000" ignored="false" />
-    <file path="/home.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1369195817924" ignored="false" />
+    <file path="/home.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1376965585426" ignored="false" />
     <file path="/a.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1367721906443" ignored="false" />
     <file path="/sparedtheme.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1371002597775" ignored="false" />
     <file path="/about.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1370995800791" ignored="false" />
@@ -68,7 +79,7 @@
     <file path="/new.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1368396341206" ignored="false" />
     <file path="/donor-login.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1369194251361" ignored="false" />
     <file path="/_donor-login-form.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1369419857111" ignored="false" />
-    <file path="/sessions.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1370908768600" ignored="false" />
+    <file path="/sessions.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1376965903489" ignored="false" />
     <file path="/_mixins.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1369194834820" ignored="false" />
     <file path="/_org-login-form.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1369419852385" ignored="false" />
     <file path="/donor-dash.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1368406107771" ignored="false" />
@@ -82,7 +93,17 @@
     <file path="/sessions_controller.rb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1369421831556" ignored="false" />
     <file path="/overview.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1371005601566" ignored="false" />
     <file path="/my-item-offers.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1371004306669" ignored="false" />
-    <file path="/item-offers.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1371004398427" ignored="false" />
+    <file path="/item-offers.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1376966517533" ignored="false" />
+    <file path="/my-donations.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1374984623627" ignored="false" />
+    <file path="/my-events.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1374979856027" ignored="false" />
+    <file path="/index (1).html" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1374980503309" ignored="false" />
+    <file path="/donations.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1376966300839" ignored="false" />
+    <file path="/login-and-signup.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1376964199861" ignored="false" />
+    <file path="/layout.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1376964991560" ignored="false" />
+    <file path="/donors-and-orgs.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1376968963250" ignored="false" />
+    <file path="/fonts.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1376965154709" ignored="false" />
+    <file path="/wishlists.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1376966377440" ignored="false" />
+    <file path="/events.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1376966412909" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,107 +117,79 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="donors.scss" pinned="false" current="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/app/assets/sass/donors.scss">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0">
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="item-offers.scss" pinned="false" current="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/app/assets/sass/item-offers.scss">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state line="10" column="22" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="sparedtheme.scss" pinned="false" current="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/app/assets/sass/sparedtheme.scss">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state line="303" column="21" selection-start="3974" selection-end="3974" vertical-scroll-proportion="0.25650558">
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="spared" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dashboard.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/sass/dashboard.scss">
+      <file leaf-file-name="donors-and-orgs.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/sass/donors-and-orgs.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="161" column="36" selection-start="2589" selection-end="2589" vertical-scroll-proportion="0.0">
+            <state line="380" column="1" selection-start="7280" selection-end="7280" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="overview.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/donors/overview.html.erb">
+      <file leaf-file-name="donations.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/sass/donations.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="32" selection-start="405" selection-end="405" vertical-scroll-proportion="-6.25">
+            <state line="100" column="22" selection-start="1569" selection-end="1569" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my-item-offers.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/donors/my-item-offers.html.erb">
+      <file leaf-file-name="events.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/sass/events.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
+            <state line="113" column="19" selection-start="1819" selection-end="1819" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/about.html.erb">
+      <file leaf-file-name="sparedtheme.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/sass/sparedtheme.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="1529" selection-end="1529" vertical-scroll-proportion="0.0">
+            <state line="431" column="30" selection-start="5936" selection-end="5936" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_registration-form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/donors/_registration-form.html.erb">
+      <file leaf-file-name="item-offers.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/sass/item-offers.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0">
+            <state line="241" column="0" selection-start="3457" selection-end="3457" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="faqs.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/home/faqs.html.erb">
+      <file leaf-file-name="wishlists.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/sass/wishlists.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="586" selection-end="586" vertical-scroll-proportion="0.2549575">
+            <state line="19" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.5405405">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+      <file leaf-file-name="login-and-signup.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/sass/login-and-signup.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="8" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
+            <state line="178" column="1" selection-start="3120" selection-end="3120" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/sass/layout.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="1" selection-start="849" selection-end="849" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -220,29 +213,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/shared/_org-dash-nav.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/sessions/_org-login-form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/sessions/_donor-login-form.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/sass/fonts.scss" />
+        <option value="$PROJECT_DIR$/app/assets/sass/footer.scss" />
+        <option value="$PROJECT_DIR$/app/assets/sass/header.scss" />
+        <option value="$PROJECT_DIR$/app/assets/sass/layout.scss" />
         <option value="$PROJECT_DIR$/app/assets/sass/home.scss" />
-        <option value="$PROJECT_DIR$/app/assets/sass/sessions.scss" />
-        <option value="$PROJECT_DIR$/app/views/home/about.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/home/contact.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/home/faqs.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/sass/donors.scss" />
+        <option value="$PROJECT_DIR$/app/assets/sass/wishlists.scss" />
+        <option value="$PROJECT_DIR$/app/assets/sass/organizations.scss" />
+        <option value="$PROJECT_DIR$/app/assets/sass/events.scss" />
+        <option value="$PROJECT_DIR$/app/assets/sass/donors-and-orgs.scss" />
+        <option value="$PROJECT_DIR$/app/assets/sass/dashboard.scss" />
+        <option value="$PROJECT_DIR$/app/assets/sass/login-and-signup.scss" />
         <option value="$PROJECT_DIR$/app/assets/sass/sparedtheme.scss" />
         <option value="$PROJECT_DIR$/app/assets/sass/item-offers.scss" />
-        <option value="$PROJECT_DIR$/app/views/donors/my-item-offers.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/donors/overview.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/sass/dashboard.scss" />
+        <option value="$PROJECT_DIR$/app/assets/sass/donations.scss" />
+        <option value="$PROJECT_DIR$/app/assets/sass/sessions.scss" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
-    <option name="y" value="25" />
-    <option name="width" value="918" />
+    <option name="x" value="168" />
+    <option name="y" value="22" />
+    <option name="width" value="1157" />
     <option name="height" value="878" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -293,8 +286,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -326,8 +319,22 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="spared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -345,25 +352,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="donors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spared" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spared" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="sass" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -374,14 +367,14 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editor" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.lastSelected" value="editor" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -516,13 +509,6 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -556,6 +542,13 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <list size="0" />
@@ -608,14 +601,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="25" width="918" height="878" extended-state="0" />
+    <frame x="168" y="22" width="1157" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23431498" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27144685" sideWeight="0.9983753" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21433963" sideWeight="0.7285531" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20252025" sideWeight="0.7285531" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -624,7 +618,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27144685" sideWeight="0.9983753" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -695,102 +688,93 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/sass/application.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" />
+        <state line="14" column="2" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/sass/sessions.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/wishlists/donor-index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="1" selection-start="3048" selection-end="3048" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/sass/home.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="1" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_org-dash-nav.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="68" selection-start="585" selection-end="585" vertical-scroll-proportion="-7.5" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/contact.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="56" selection-start="146" selection-end="146" vertical-scroll-proportion="-1.25" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/sparedtheme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="15" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/donors/_registration-form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0">
+        <state line="3" column="3" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/about.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/sass/fonts.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="1529" selection-end="1529" vertical-scroll-proportion="0.0">
+        <state line="3" column="3" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/sass/events.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="8" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/sass/dashboard.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="161" column="36" selection-start="2589" selection-end="2589" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/donors/my-item-offers.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/sass/donors.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/sass/item-offers.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="22" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/sass/sparedtheme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="303" column="21" selection-start="3974" selection-end="3974" vertical-scroll-proportion="0.25650558">
+        <state line="113" column="19" selection-start="1819" selection-end="1819" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/donors/overview.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="32" selection-start="405" selection-end="405" vertical-scroll-proportion="-6.25">
+        <state line="25" column="35" selection-start="915" selection-end="915" vertical-scroll-proportion="0.4116424">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/faqs.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/sass/layout.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="586" selection-end="586" vertical-scroll-proportion="0.2549575">
+        <state line="49" column="1" selection-start="849" selection-end="849" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/sass/donors-and-orgs.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="380" column="1" selection-start="7280" selection-end="7280" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/sass/login-and-signup.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="1" selection-start="3120" selection-end="3120" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/sass/sparedtheme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="431" column="30" selection-start="5936" selection-end="5936" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/sass/item-offers.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="241" column="0" selection-start="3457" selection-end="3457" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/sass/donations.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="22" selection-start="1569" selection-end="1569" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/sass/wishlists.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.5405405">
           <folding />
         </state>
       </provider>

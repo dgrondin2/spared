@@ -336,3 +336,122 @@ table {
     height: 10px;
     width: 100%;
 }
+
+.org_text_field {
+    outline-color: #93d2af;
+    font-size: 13px;
+    padding-left: 5px;
+    border-radius: 1px;
+}
+
+.yellow_mini_footer {
+    height: 10px;
+    width: 100%;
+    background-color: #b8b713;
+    clear: both;
+}
+
+.spared_button {
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.spared_button:hover {
+    opacity: 0.8;
+}
+.even_row {
+    background-color: #EFE7D3;
+}
+.odd_row {
+    background-color: #F5F0E2;
+}
+
+.org_button {
+    background-color: #93d2af;
+    border: 2px solid #fff;
+    color: #fff;
+    outline: 2px solid #93d2af;
+    height: 35px;
+    padding: 0 20px;
+    padding-top: 4px;
+    box-sizing: border-box;
+    font-size: 110%;
+}
+
+.org_button:hover {
+    opacity: 0.9;
+}
+
+.org_brown_header {
+    background-color: #44372b;
+    color: #fff;
+}
+
+.big_button_border {
+    padding: 2px;
+    border: 4px solid;
+    height: 137px;
+    width: 137px;
+}
+
+.big_button_border:hover {
+    border-color: #b8b713;
+}
+
+.org_big_button_border {
+    padding: 2px;
+    border: 4px solid;
+    height: 137px;
+    width: 137px;
+}
+
+.org_big_button_border:hover {
+    border-color: #93d2af;
+}
+
+.big_button_border_static {
+    padding: 2px;
+    border: 4px solid;
+    height: 137px;
+    width: 137px;
+}
+
+.dash-content {
+    float: right;
+    width: 65%;
+
+    .teal-heading-banner {
+        font-size: 24px;
+        padding-top: 21px;
+    }
+}
+
+.dash_heading {
+    height: 50px;
+    text-transform: uppercase;
+    background-color: #93d2af;
+    color: #44372b;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.dash_brown_heading {
+    width: 604px;
+    height: 50px;
+    text-transform: uppercase;
+    background-color: #44372b;
+    color: white;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.dash_text_wrapper {
+    background-color: #f5f0e2;
+    padding: 10px 40px 30px 30px;
+    line-height: 15px;
+    width: 88%;
+}
+
+.and_or_container {
+    position: relative;
+}

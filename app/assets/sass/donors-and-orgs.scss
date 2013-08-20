@@ -1,0 +1,381 @@
+/**
+ * @file donors-and-orgs.scss
+ * @overview includes donor/org overview pages, edit profile, MY DASHBOARD partial, HOW TO HELP partial
+ */
+
+.org_my_dash_heading {
+    height: 28px;
+    text-transform: uppercase;
+    padding-left: 8px;
+    padding-top: 8px;
+    background-color: #b8b713;
+    color: #44372b;
+    font-family: "st-marie";
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.org_dash_heading {
+    height: 50px;
+    text-transform: uppercase;
+    background-color: #b8b713;
+    color: #44372b;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.org_edit_profile_wrapper {
+    background-color: #f5f0e2;
+    float: right;
+    height: 630px;
+    margin-top: 10px;
+    width: 76%;
+}
+
+.org_edit_profile_wrapper .field {
+    margin-top: 10px;
+}
+
+.org_edit_profile_wrapper label, .org_edit_profile_wrapper legend {
+    min-width: 130px;
+    margin: 5px 5px 0 25px;
+    float: left;
+    clear: left;
+    font-size: 90%;
+}
+
+.org_edit_profile_wrapper input[type="text"], .org_edit_profile_wrapper input[type="password"] {
+    width: 270px;
+    height: 23px;
+}
+
+.org_edit_profile_wrapper .checkbox-label {
+    width: auto;
+    float: none;
+    clear: both;
+    margin: 0;
+}
+
+.org_edit_profile_wrapper input[type="checkbox"] {
+    margin-left: 135px;
+}
+
+.org_edit_profile_wrapper textarea {
+    width: 270px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.org_edit_profile_wrapper input[type="submit"] {
+    margin: 10px 0 0 135px;
+}
+
+.edit_profile_picture_wrapper .org_back_to_overview_link {
+    float: left;
+    background-color: #93d2af;
+    width: 130px;
+    height: 27px;
+    color: #fff;
+    font-size: 80%;
+    font-weight: 100;
+    padding: 7px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.edit_profile_picture_wrapper .org_back_to_overview_link:hover {
+    opacity: 0.9;
+}
+
+.edit_profile_picture_wrapper .org_new_photo_link {
+    float: left;
+    clear: left;
+    color: #93d2af;
+}
+
+.org_edit_profile_wrapper .field .short_field {
+    width: 135px;
+}
+
+.org_dash_list_heading {
+    height: 40px;
+    margin-top: 20px;
+    background-color: #b8b713;
+}
+
+.org_dash_list_heading .heading-text {
+    font-size: 110%;
+}
+.org_dash_list_heading span {
+    padding: 12px 30px;
+}
+.org_dash_list_heading .heading-text {
+    padding-left: 20px;
+}
+
+.org_overview {
+    position: relative;
+    width: 68%;
+    float: right;
+    margin-top: 15px;
+}
+
+.org_overview .summary {
+    float: left;
+    background-color: #EFE7D3;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.org_overview a {
+    float: left;
+    color: #93d2af;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+//TODO: Add .donor to html tag if user is donor
+.donor {
+    .edit_profile_wrapper {
+        background-color: #f5f0e2;
+        float: right;
+        height: 630px;
+        margin-top: 10px;
+        width: 76%;
+    }
+
+    .edit_profile_picture_wrapper {
+        float: left;
+        margin-top: 10px;
+    }
+
+    .edit_profile_picture_wrapper .back_to_overview_link {
+        float: left;
+        background-color: #b8b713;
+        width: 130px;
+        height: 27px;
+        color: #fff;
+        font-size: 80%;
+        font-weight: 100;
+        padding: 7px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    .edit_profile_picture_wrapper .back_to_overview_link:hover {
+        opacity: 0.9;
+    }
+
+    .edit_profile_picture_wrapper .profile_picture {
+        float: left;
+        clear: left;
+        margin: 10px 0;
+    }
+
+    .edit_profile_picture_wrapper .new_photo_link {
+        float: left;
+        clear: left;
+    }
+
+    .edit_profile_wrapper .field {
+        margin-top: 10px;
+    }
+
+    .edit_profile_wrapper label, .edit_profile_wrapper legend {
+        min-width: 85px;
+        margin: 5px 5px 0 45px;
+        float: left;
+        clear: left;
+        font-size: 90%;
+    }
+
+    .edit_profile_wrapper input[type="text"], .edit_profile_wrapper input[type="password"] {
+        width: 270px;
+        height: 23px;
+    }
+
+    .edit_profile_wrapper .checkbox-label {
+        width: auto;
+        float: none;
+        clear: both;
+        margin: 0;
+    }
+
+    .edit_profile_wrapper input[type="checkbox"] {
+        margin-left: 135px;
+    }
+
+    .edit_profile_wrapper textarea {
+        width: 270px;
+        height: 150px;
+        margin-top: 10px;
+    }
+
+    .edit_profile_wrapper input[type="submit"] {
+        margin: 10px 0 0 135px;
+    }
+
+    .avatar {
+        height: 75px;
+        margin-bottom: 10px;
+        width: 75px;
+
+        border: 1px solid #d2c298;
+        clear: left;
+    }
+
+    .edit_profile_wrapper .field .short_field {
+        width: 135px;
+    }
+}
+
+.dash_list_heading {
+    height: 40px;
+    margin-top: 20px;
+    background-color: #93d2af;
+}
+.dash_list_heading .heading-text {
+    font-size: 110%;
+}
+.dash_list_heading span {
+    padding: 12px 30px;
+}
+.dash_list_heading .heading-text {
+    padding-left: 20px;
+}
+
+.progress_bar {
+    border: 1px solid black;
+    background-color: #fff;
+    width: 80px;
+    height: 10px;
+}
+
+.progress {
+    height: 100%;
+    width: 50%;
+    background-color: #f26a5a;
+}
+
+.my_dash_button_title {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    display: inline;
+    color: #44372b;
+    line-height: 10px;
+}
+
+.my_dash_button_text {
+    display: inline;
+    color: #44372b;
+}
+
+.my_dash_link {
+    display: block;
+    clear: left;
+    height: 37px;
+    border-bottom: 1px solid #cfbe92;
+    padding-top: 8px;
+    padding-left: 8px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #44372b;
+    line-height: 17px;
+}
+
+.my_dash {
+    width: 33%;
+    float: left;
+    clear: left;
+}
+
+.my_dash_heading {
+    height: 28px;
+    text-transform: uppercase;
+    padding-left: 8px;
+    padding-top: 8px;
+    background-color: #93d2af;
+    color: #44372b;
+    font-family: "st-marie";
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.my_dash_link_hover a:hover {
+    color: #a8a70f;
+    cursor: pointer;
+}
+
+.items-overview, .financial-donation-overview, .events-overview {
+    @include box-sizing(border-box);
+    border-bottom: 1px solid #CFBE92;
+    font-size: 12px;
+    height: 95px;
+    padding-top: 10px;
+}
+
+.items-overview {
+    background-color: #F5F0E2;
+}
+.financial-donation-overview {
+    background-color: #EFE7D3;
+}
+.events-overview {
+    background-color: #F5F0E2;
+}
+
+.overview-heading {
+    @include box-sizing(border-box);
+    @include reset-box-model;
+    background-color: #86c4a2;
+    float: right;
+    font-size: 13px;
+    font-weight: bold;
+    height: 30px;
+    margin-top: 15px;
+    padding: 7px 0 0 10px;
+    width: 68%;
+}
+
+.donation-overview {
+    position: relative;
+    float: right;
+    margin-bottom: 23px;
+    width: 68%;
+
+    a {
+        float: right;
+        padding-right: 15px;
+    }
+
+    h4 {
+        @include reset-box-model;
+        font-weight: bold;
+    }
+
+    span, h4 {
+        clear: both;
+        float: left;
+        font-size: 12px;
+        line-height: 18px;
+        padding-left: 15px;
+    }
+}
+
+.profile-summary {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+
+    & > p {
+        font-size: 14px;
+        color: #44372b;
+    }
+}

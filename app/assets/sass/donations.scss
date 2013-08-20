@@ -1,10 +1,39 @@
-/*    DIVS    */
+/**
+ * @file donations.scss
+ * @overview includes everything about donations
+ */
+
+.latest-financial-donations {
+    margin: 20px 0;
+    width: 100%;
+
+    tr {
+        td {
+            padding: 5px 20px;
+
+        }
+    }
+
+    .header {
+        background-color: #F5F0E2;
+        padding: 15px 20px;
+    }
+
+    .top-total,
+    .bottom-total {
+        background-color: #93d2af;
+        font-weight: bold;
+        height: 30px;
+    }
+
+    .bottom-total {
+        text-align: right;
+    }
+}
 
 #donation_dates_container {
 	position: relative;
 }
-
-/*    FORM    */
 
 #donation_location_text_field {
 	width: 215px;
@@ -34,11 +63,56 @@
 	margin-right: 30px;
 }
 
-
-/*    MISC    */
-
 .donation_calendar_img {
 	position: relative;
 	top: 8px;
 	right: -4px;
+}
+
+.distribute_donations_list {
+    margin-top: 10px;
+}
+
+.distribute_donations_header {
+    background-color: #EFE7D3;
+    box-sizing: border-box;
+    height: 35px;
+    padding: 10px 10px 0 30px;
+}
+
+.distribute_donations_list .wishlist_image {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #cfbe92;
+}
+
+.distribute_donations_list .wishlist_info {
+    height: 100%;
+    overflow: hidden;
+    padding-left: 20px;
+    width: 70%;
+}
+
+.org_latest_financial_donations {
+    margin: 20px 0;
+    width: 100%;
+}
+.org_latest_financial_donations tr td {
+    padding: 5px 20px;
+}
+
+.org_latest_financial_donations .top_total,
+.org_latest_financial_donations .bottom_total {
+    background-color: #b8b713;
+    font-weight: bold;
+    height: 30px;
+}
+
+.org_latest_financial_donations .bottom_total {
+    text-align: right;
+}
+
+.donation_textfield {
+    width: 135px;
+    height: 25px;
 }

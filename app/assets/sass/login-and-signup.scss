@@ -1,7 +1,7 @@
-@import 'compass';
-@import 'mixins';
-
-// STYLES FOR LOGIN AND REGISTRATION FORMS
+/**
+ * login-and-signup.scss
+ * @overview: includes all login and signup partials
+ */
 
 form.new_donor {
     padding: 0 30px;
@@ -103,6 +103,46 @@ form.org-login {
     }
 }
 
+.org_sign_in {
+    background-color: #93d2af;
+    height: 33px;
+    width: 92px;
+    float: right;
+    border: 2px solid #FFF;
+    outline: 2px solid #93d2af;
+    margin: 25px 23px 0 0;
+    font-size: 13px;
+    clear: right;
+}
+
+.org_register_label {
+    width: 120px;
+    float: left;
+    text-align: left;
+    margin-right: 10px;
+    margin-top: 20px;
+    display: block;
+    font-size: 0.9em;
+}
+
+.new_organization .field {
+    width: 450px;
+}
+
+.forgot_password {
+    float: right;
+    margin-right: 23px;
+    font-size: 12px;
+    font-weight: 100;
+    color: #b8b713;
+    padding-top: 4px;
+}
+
+.remember_me {
+    margin: 20px 0 0 15px;;
+    float: left;
+}
+
 .login-image {
     float: right;
 }
@@ -137,58 +177,3 @@ form.org-login {
     padding-top: 14px;
     width: 320px;
 }
-
-.dash_heading {
-    height: 50px;
-    text-transform: uppercase;
-    background-color: #93d2af;
-    color: #44372b;
-    padding-left: 25px;
-    padding-top: 20px;
-}
-
-.dash_brown_heading {
-    width: 604px;
-    height: 50px;
-    text-transform: uppercase;
-    background-color: #44372b;
-    color: white;
-    padding-left: 25px;
-    padding-top: 20px;
-}
-
-.end_block {
-    width: 629px;
-    height: 8px;
-}
-
-#donate_items_text {
-    padding: 15px 50px 10px 20px;
-}
-
-.dash_text_wrapper {
-    background-color: #f5f0e2;
-    padding: 10px 40px 30px 30px;
-    line-height: 15px;
-    width: 88%;
-}
-
-.and_or_container {
-    position: relative;
-}
-
-
-.forgot_password {
-    float: right;
-    margin-right: 23px;
-    font-size: 12px;
-    font-weight: 100;
-    color: #b8b713;
-    padding-top: 4px;
-}
-
-.donation_textfield {
-    width: 135px;
-    height: 25px;
-}
-

@@ -1,14 +1,19 @@
-    .my-item-offers li,
-    .item_offer_post {
-        position: relative;
-        width: 100%;
-        height: 100px;
-        box-sizing: border-box;
-        padding: 20px;
-        border-bottom: 1px solid #dcd0b0;
-    }
+/**
+ * @file item-offers.scss
+ * @overview includes everything about item-offers, including the search item-offers partial
+ */
 
- .dash_beige_heading {
+.my-item-offers li,
+.item_offer_post {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-bottom: 1px solid #dcd0b0;
+}
+
+.dash_beige_heading {
  	width: 604px;
 	height: 50px;
 	text-transform: uppercase;
@@ -16,47 +21,47 @@
 	color: #70624c;
 	padding-left: 25px;
 	padding-top: 20px;
- }
+}
 
- .odd_item_offer {
+.odd_item_offer {
  	background-color: #f8f4ea;
- }
+}
 
- .even_item_offer {
+.even_item_offer {
  	background-color: #f3eedf;
- }
+}
 
- .item_offer_image_container {
+.item_offer_image_container {
  	height: 50px;
  	width: 50px;
  	border: 1px solid #d2c298;
  	margin-right: 15px;
- }
+}
 
- .item_offer_info_container {
+.item_offer_info_container {
  	position: absolute;
  	height: 100%;
  	width: 70%;
  	top: 18px;
  	left: 90px;
- }
+}
 
- .item_offer_info_container p {
+.item_offer_info_container p {
  	margin: 0;
  	margin-bottom: 7px;
- }
+}
 
- .item_offer_link_container {
+.item_offer_link_container {
  	position: absolute;
  	right: 20px;
  	top: 40%;
- }
+}
 
- #search_container {
+#search_container {
  	width: 33%;
- }
+}
 
- #search_header {
+#search_header {
  	box-sizing: border-box;
  	height: 40px;
  	background-color: #cfbe92;
@@ -64,18 +69,18 @@
  	padding-top: 10px;
  	font-family: "st-marie";
  	font-size: 16px;
- }
+}
 
- #search_form_box {
+#search_form_box {
  	height: 445px;
  	background-color: #f4eee0;
  	box-sizing: border-box;
  	padding: 18px;
- }
+}
 
- #item_offer_buttons {
+#item_offer_buttons {
  	position: relative;
- }
+}
 
 
  /*    BUTTONS    */
@@ -251,4 +256,20 @@
 
 .request_item_link:hover {
     opacity: 0.9;
+}
+
+.org_item_offer_overlay {
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 630px;
+    padding: 0 0 30px 40px;
+    overflow: hidden;
+}
+
+.org_item_offer_overlay > .header {
+    background-color: #c3c23b;
+}
+
+#donate_items_text {
+    padding: 15px 50px 10px 20px;
 }

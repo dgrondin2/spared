@@ -1,0 +1,48 @@
+/**
+ * @file wishlists.scss
+ * @overview includes everything about wishlists
+ */
+
+.odd_wishlist {
+    background-color: #f8f4ea;
+}
+
+.even_wishlist {
+    background-color: #f3eedf;
+}
+
+.odd_wishlist, .even_wishlist {
+    border-bottom: 1px solid #cfbe92;
+    box-sizing: border-box;
+    height: 90px;
+    padding: 20px;
+}
+
+.odd_wishlist > *, .even_wishlist > * {
+    float: left;
+}
+
+.wishlist_info p {
+    margin: 0;
+}
+.wishlist_info .title {
+    margin-bottom: 0.2em;
+    margin-top: -0.3em;
+}
+
+.odd_wishlist input, .even_wishlist input {
+    margin: 15px 0 0 20px;
+}
+
+.new_wishlist_button {
+    display: block;
+    margin-top: 25px;
+    height: 30px;
+    width: 200px;
+    font-weight: normal;
+}
+
+.wishlist_date_field {
+    height: 25px;
+    width: 75px;
+}
