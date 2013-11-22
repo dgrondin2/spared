@@ -1,42 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Spared</title>
-  <%= stylesheet_link_tag 'jquery-ui-1.9.0.custom' %>
-  <%= stylesheet_link_tag "application", :media => "all" %>
-  <%= stylesheet_link_tag 'sparedtheme' %>
-
-  <%= javascript_include_tag 'jquery-1.8.2.js' %>
-  <%= javascript_include_tag 'jquery-ui-1.9.0.custom', "jquery", "application" %>
-  <%= javascript_include_tag 'facebox.js' %>
-  <%= csrf_meta_tags %>
+    <title>Spared</title>
+    <%= stylesheet_link_tag 'application' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
 </head>
 
 <body>
-  <div id="page_frame">
-    <!-- Flash messages for Devise -->
-    <p class="notice"><%= notice %></p>
+    <div class='page-frame'>
+        <% role = (logged_in? && current_user.role == 'organization') ? 'org' : 'donor' %>
+        <%= render :partial => 'shared/header' %>
+        <%= render :partial => "shared/#{role}-dash-nav" %>
 
-    <p class="alert"><%= alert %></p>
+        <div class='whitespace clear'></div>
 
-    <%= render :partial => "shared/header" %>
+        <div class='dash-content'>
+            <%= yield %>
+        </div>
 
+        <% if logged_in? %>
+            <%= render :partial => "shared/#{role}-mydash" %>
+        <% end %>
 
-    <%= render :partial => "shared/donor-dash-nav" %>
+        <div class='whitespace clear'></div>
 
-    <div class="whitespace clear"></div>
-
-
-    <%= yield %>
-
-    <% if current_user %>
-      <%= render :partial => 'shared/donor-mydash' %>
-    <% end %>
-
-    <div class="whitespace clear"></div>
-
-    <%= render :partial => "shared/footer" %>
-
-  </div>
+        <%= render :partial => 'shared/footer' %>
+    </div>
 </body>
 </html>

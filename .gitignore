@@ -13,3 +13,14 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+app/assets/tmp
+/public
+/.sass-cache
+
+/.idea
+
+# Ignore CSS files (only edit SASS files)
+app/assets/stylesheets/*.css
+
+app/assets/.sass-cache
+.DS_Store

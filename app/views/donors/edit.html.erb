@@ -1,16 +1,13 @@
-<div class="dash_content float_right">
+<div class="teal-heading-banner">DONOR PROFILE</div>
 
-    <div class="dash_heading heading_label">DONOR PROFILE</div>
-
-    <div class="edit_profile_picture_wrapper">
-        <%= link_to "< BACK TO OVERVIEW", donor_overview_path, class: "back_to_overview_link" %>
-        <div class="avatar_wrapper">
-            <% if @donor.avatar_file_name.present? %>
-                <%= image_tag @donor.avatar.url(:thumb) %>
-            <% end %>
-        </div>
-        <%= link_to "Upload a new photo", "", class: "new_photo_link" %>
+<div class="edit_profile_picture_wrapper">
+    <%= link_to "< BACK TO OVERVIEW", donor_overview_path, class: "back_to_overview_link" %>
+    <div class="avatar">
+        <% if @donor.avatar_file_name.present? %>
+            <%= image_tag @donor.avatar.url(:thumb) %>
+        <% end %>
     </div>
-
-    <%= render 'edit-form' %>
+    <%= link_to "Upload a new photo", "", class: "new_photo_link" %>
 </div>
+
+<%= render 'edit-form' %>

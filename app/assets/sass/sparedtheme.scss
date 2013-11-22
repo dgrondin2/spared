@@ -1,0 +1,456 @@
+@import 'compass';
+
+.page-frame {
+    min-height: 1000px;
+    margin: 0 auto;
+    margin-top: 60px;
+    position: relative;
+    width: 964px;
+}
+
+body {
+    font-family: "Lucida Grande";
+    font-size: 13px;
+    color: #44372b;
+}
+
+a {
+    color: #a8a70f;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: "Lucida Grande";
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.big {
+    font-family: "Lucida Grande";
+    font-size: 14px;
+    color: #44372b;
+    line-height: 0.2;
+}
+
+.small {
+    font-size: 12px;
+}
+
+input[type=text],
+input[type=password] {
+    border: 1px solid #777777;
+    border-radius: 1px;
+    font-size: 13px;
+    outline-color: #b8b713;
+    padding-left: 5px;
+}
+
+textarea {
+    outline-color: #b8b713;
+}
+
+
+.teal-heading-banner {
+    @extend .heading-banner;
+
+    background-color: #93d2af;
+    color: #44372b;
+}
+
+.heading-banner {
+    @include box-sizing(border-box);
+    @include reset-box-model;
+
+    font-family: "st-marie";
+    font-size: 29px;
+    font-weight: 700;
+    height: 70px;
+    padding-left: 25px;
+    padding-top: 18px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.st-marie-heading {
+    color: #333333;
+    font-family: "st-marie";
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.content-box {
+    @include box-sizing(border-box);
+
+	background-color: #f5f0e2;
+    line-height: 1.5;
+    margin: 30px 0;
+	overflow: hidden;
+    padding: 10px 30px 30px 30px;
+    width: 100%;
+
+    h3 {
+        color: #44372b;
+        font-family: "Lucida Grande";
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .bullet {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+}
+
+.dash-content {
+    float: right;
+    width: 65%;
+}
+
+.wide-photo {
+    margin: 30px 0;
+}
+
+
+// TODO: Get rid of these
+.whitespace {
+	height: 30px;
+}
+.small_whitespace {
+	height: 15px;
+}
+.smaller_whitespace {
+	height: 10px;
+}
+
+
+
+.inline {
+	display: inline;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.clear_left {
+	clear: left;
+}
+
+.clear_right {
+	clear: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.green_bg {
+	background-color: #b8b713;
+}
+
+.brown_bg {
+	background-color: #44372b;
+}
+
+.beige_bg {
+	background-color: #cfbe92;
+}
+
+.beige_lighter_bg {
+	background-color: #efe7d3;
+}
+
+.blue_lighter_bg {
+	background-color: #93d2af;
+}
+
+.yellow_bg {
+	background-color: #a8a70f;
+}
+
+.blue {
+	color: #86c4a2;
+}
+
+.brown {
+	color: #44372b;
+}
+
+.white {
+	color: #ffffff;
+}
+
+.relative {
+	position: relative;
+}
+
+.small_button {
+	width: 92px;
+	height: 28px;
+}
+
+.wide_button {
+	width: 316px;
+	height: 32px;
+	font-size: 17px;
+	padding-top: 12px;
+}
+
+.button_border {
+	padding: 2px;
+	opacity: 1.0;
+	border: 2px solid;
+}
+
+.button_border:hover {
+	opacity: 0.85;
+}
+
+.brown_border {
+	border-color: #44372b;
+}
+
+.blue_border {
+	border-color: #93d2af;
+}
+
+
+
+hr {
+	border: 0;
+	height: 1px;
+	color: #cfbe92;
+	background-color: #cfbe92;
+}
+
+
+
+
+
+table {
+    border-collapse: collapse;
+}
+
+.calendar td {
+    height: 80px;
+    width: 80px;
+    border: 1px solid #CCCCCC;
+}
+
+.day_number {
+    width: 100%;
+    height: 80px;
+    text-align: right;
+}
+
+.not-current-month {
+    color: #ccc;
+}
+
+.calendar thead tr th {
+    color: #757575;
+    font-weight: normal;
+}
+
+.previous-month {
+    float: left;
+}
+.next-month {
+    float: right;
+}
+
+#facebox .content {
+    box-sizing: border-box;
+}
+
+.green_spared_button {
+    width: 100px;
+    height: 30px;
+    border: 2px solid white;
+    outline: 2px solid #b8b713;
+    background-color: #b8b713;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 100%;
+}
+.green_spared_button:hover, .blue_spared_button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.blue_spared_button {
+    width: 100px;
+    height: 30px;
+    border: 2px solid white;
+    outline: 2px solid #93d2af;
+    background-color: #93d2af;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 100%;
+}
+
+.and_or .left {
+    border: 0;
+    height: 1px;
+    width: 240px;
+    float: left;
+    color: #d9cba8;
+    background-color: #d9cba8;
+}
+
+.and_or .right {
+    position: relative;
+    top: -15px;
+    border: 0;
+    height: 1px;
+    width: 240px;
+    float: right;
+    color: #d9cba8;
+    background-color: #d9cba8;
+}
+
+.and_or p {
+    margin: 8px;
+    display: inline;
+}
+
+.teal-mini-footer {
+    background-color: #93d2af;
+    clear: both;
+    height: 10px;
+    width: 100%;
+}
+
+.org_text_field {
+    outline-color: #93d2af;
+    font-size: 13px;
+    padding-left: 5px;
+    border-radius: 1px;
+}
+
+.yellow_mini_footer {
+    height: 10px;
+    width: 100%;
+    background-color: #b8b713;
+    clear: both;
+}
+
+.spared_button {
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.spared_button:hover {
+    opacity: 0.8;
+}
+.even_row {
+    background-color: #EFE7D3;
+}
+.odd_row {
+    background-color: #F5F0E2;
+}
+
+.org_button {
+    background-color: #93d2af;
+    border: 2px solid #fff;
+    color: #fff;
+    outline: 2px solid #93d2af;
+    height: 35px;
+    padding: 0 20px;
+    padding-top: 4px;
+    box-sizing: border-box;
+    font-size: 110%;
+}
+
+.org_button:hover {
+    opacity: 0.9;
+}
+
+.org_brown_header {
+    background-color: #44372b;
+    color: #fff;
+}
+
+.big_button_border {
+    padding: 2px;
+    border: 4px solid;
+    height: 137px;
+    width: 137px;
+}
+
+.big_button_border:hover {
+    border-color: #b8b713;
+}
+
+.org_big_button_border {
+    padding: 2px;
+    border: 4px solid;
+    height: 137px;
+    width: 137px;
+}
+
+.org_big_button_border:hover {
+    border-color: #93d2af;
+}
+
+.big_button_border_static {
+    padding: 2px;
+    border: 4px solid;
+    height: 137px;
+    width: 137px;
+}
+
+.dash_heading {
+    height: 50px;
+    text-transform: uppercase;
+    background-color: #93d2af;
+    color: #44372b;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.dash_brown_heading {
+    width: 604px;
+    height: 50px;
+    text-transform: uppercase;
+    background-color: #44372b;
+    color: white;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.dash_text_wrapper {
+    background-color: #f5f0e2;
+    padding: 10px 40px 30px 30px;
+    line-height: 15px;
+    width: 88%;
+}
+
+.and_or_container {
+    position: relative;
+}

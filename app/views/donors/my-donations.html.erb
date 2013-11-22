@@ -1,13 +1,13 @@
-<div class="dash_content float_right">
+<div class="dash-content">
 
-    <div class="dash_heading heading_label">FINANCIAL DONATIONS</div>
+    <div class="teal-heading-banner">FINANCIAL DONATIONS</div>
 
-    <table class="latest_financial_donations">
-        <tr class="top_total">
+    <table class="latest-financial-donations">
+        <tr class="top-total">
             <td colspan="3">You have donated a total of <%= number_to_currency @total_amount %>.</td>
         </tr>
         <tr>
-            <td id="donation_table_header" colspan="3"><%= @donations.any? ? "My Latest Financial Donations" : "No donations yet." %></td>
+            <td class="header" colspan="3"><%= @donations.any? ? "My Latest Financial Donations" : "No donations yet." %></td>
         </tr>
 
         <% @donations.each do |donation| %>
@@ -18,7 +18,7 @@
             </tr>
         <% end %>
 
-        <tr class="bottom_total">
+        <tr class="bottom-total">
             <td colspan="3">Total: <%= number_to_currency @total_amount %></td>
         </tr>
     </table>

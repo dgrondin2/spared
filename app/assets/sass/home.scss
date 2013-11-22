@@ -1,0 +1,156 @@
+/**
+ * @file home.scss
+ * @overview includes home page (signed out), about, faqs, contact
+ */
+
+@import "compass";
+
+.slideshow {
+    margin: 30px 0;
+    min-height: 321px; // image height
+    position: relative;
+
+    .slide {
+        display: none;
+        position: absolute;
+
+        .credits {
+            top: -13px;
+            right: 0;
+            backround-color: #fff;
+            opacity: 0.8;
+            padding: 5px;
+            position: absolute;
+            font-size: 11px;
+        }
+
+        .slide-text {
+            left: 30px;
+            top: 50px;
+
+            color: #eee;
+            font-size: 24px;
+            line-height: 1.3;
+            max-width: 500px;
+            position: absolute;
+            text-shadow: 2px 2px 4px #777;
+        }
+        .slide-text-alt {
+            @extend .slide-text;
+            color: #604e3e;
+        }
+    }
+    .active {
+        display: block;
+    }
+
+    a {
+        display: block;
+        background-color: #B8B713;
+        color: #fff;
+        border: 2px solid #fff;
+        outline: 2px solid #B8B713;
+        width: 270px;
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        font-size: 22px;
+        font-family: "lucida grande";
+        font-weight: 100;
+        padding: 20px 20px;
+
+        &:hover {
+            background-color: #c4be1f;
+        }
+    }
+}
+
+.home-flow-diagram {
+    .arrow {
+        padding-bottom: 130px;
+    }
+    .info {
+        margin: 19px;
+    }
+}
+
+.about-us > p {
+    float: left;
+    width: 65%;
+}
+.home-picture-wrapper {
+    float: right;
+    padding-top: 20px;
+}
+
+.front_page {
+	width: 90%;
+}
+
+.home_heading {
+	width: 939px;
+	height: 52px;
+
+}
+
+.caption {
+	clear: right;
+	margin-top: 5px;
+	margin-bottom: 20px;
+
+	
+	font-family: "Lucida Grande";
+	font-size: 11px;
+	line-height: 1.2;
+	color: #44372b;
+}
+
+.faqs {
+    .questions {
+        float: left;
+        width: 65%;
+    }
+    .question {
+        color: #a8a70f;
+        font-weight: bold;
+        font-size: 13px;
+        font-family: "Lucida Grande";
+        text-decoration: none;
+    }
+}
+
+.contact-content {
+    float: left;
+    width: 70%;
+}
+
+.contact-form {
+    input[type=text] {
+        width: 390px;
+        height: 20px;
+    }
+
+    textarea {
+        width: 390px;
+        height: 100px;
+        max-height: 400px;
+        resize: vertical;
+    }
+
+    label {
+        width: 50px;
+        float: left;
+        text-align: left;
+        margin-right: 40px;
+        margin-top: 5px;
+        display: block;
+    }
+
+    .submit-button {
+        margin-left: 90px;
+
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+}

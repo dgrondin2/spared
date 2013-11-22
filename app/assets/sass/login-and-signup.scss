@@ -1,0 +1,182 @@
+/**
+ * login-and-signup.scss
+ * @overview: includes all login and signup partials
+ */
+
+@import 'compass';
+@import 'mixins';
+
+form.new_donor {
+    padding: 0 30px;
+    margin-bottom: 30px;
+
+    .actions {
+        height: 38px;
+        margin-top: 40px;
+
+        .cancel {
+            @include beige-button;
+            float: right;
+            height: 34px;
+            line-height: 30px;
+            margin-right: 20px;
+            width: 92px;
+        }
+        input[type=submit] {
+            @include green-button;
+            float: right;
+            height: 34px;
+            margin-right: 23px;
+            width: 92px;
+        }
+    }
+
+    .disclaimer {
+        padding-left: 130px;
+        line-height: 0.8;
+        font-size: 0.9em;
+    }
+
+    .field {
+        margin-top: 20px;
+        width: 400px;
+    }
+
+    input[type=text],
+    input[type=password] {
+        height: 23px;
+        width: 288px;
+    }
+
+    label {
+        display: block;
+        float: left;
+        font-size: 0.9em;
+        line-height: 28px;
+        margin-right: 10px;
+        text-align: left;
+        width: 70px;
+    }
+}
+
+form.donor-login,
+form.org-login {
+    float: left;
+    height: 262px;
+    width: 320px;
+    border: 2px solid #b4afa9;
+    clear:left;
+    margin-bottom: 15px;
+
+    .field {
+        margin-top: 20px;
+    }
+
+    .forgot-password {
+        float: right;
+        padding-right: 23px;
+        margin-top: 5px;
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    input[type=text],
+    input[type=password] {
+        width: 190px;
+        height: 23px;
+        border: 1px solid #777777;
+    }
+
+    input[type=submit] {
+        @include green-button;
+        height: 33px;
+        width: 92px;
+        float: right;
+        margin: 35px 23px 0 0;
+        clear: right;
+    }
+
+    label {
+        width: 50px;
+        float: left;
+        line-height: 27px;
+        text-align: left;
+        margin-right: 30px;
+        margin-left: 20px;
+    }
+}
+
+.org_sign_in {
+    background-color: #93d2af;
+    height: 33px;
+    width: 92px;
+    float: right;
+    border: 2px solid #FFF;
+    outline: 2px solid #93d2af;
+    margin: 25px 23px 0 0;
+    font-size: 13px;
+    clear: right;
+}
+
+.org_register_label {
+    width: 120px;
+    float: left;
+    text-align: left;
+    margin-right: 10px;
+    margin-top: 20px;
+    display: block;
+    font-size: 0.9em;
+}
+
+.new_organization .field {
+    width: 450px;
+}
+
+.forgot_password {
+    float: right;
+    margin-right: 23px;
+    font-size: 12px;
+    font-weight: 100;
+    color: #b8b713;
+    padding-top: 4px;
+}
+
+.remember_me {
+    margin: 20px 0 0 15px;;
+    float: left;
+}
+
+.login-image {
+    float: right;
+}
+
+.donor-login-button {
+    @include green-button;
+}
+
+.register-donor-button {
+    @include green-button;
+    margin-bottom: 14px;
+}
+
+.org-login-button {
+    @include teal-button;
+}
+
+.register-org-button {
+    @include teal-button;
+    margin-bottom: 14px;
+}
+
+.register-donor-button,
+.register-org-button,
+.donor-login-button,
+.org-login-button {
+    clear: left;
+    float: left;
+    font-size: 14px;
+    height: 48px;
+    margin-left: 2px; // from outline
+    padding-top: 14px;
+    width: 320px;
+}

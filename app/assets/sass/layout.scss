@@ -1,0 +1,122 @@
+/**
+ * @file layout.scss
+ * @overview includes header, footer, and dash nav partial
+ */
+
+.page-header {
+    position: relative;
+    width: 964px;
+
+    .account-links {
+        float: right;
+        right: 0;
+
+        li {
+            color: #a8a70f;
+            display: inline;
+        }
+        .separator {
+            padding: 0 5px;
+        }
+    }
+
+    nav {
+        bottom: 15px;
+        position: absolute;
+        right: 0;
+
+        li {
+            display: inline;
+        }
+
+        a {
+            color: #000000;
+            font-family: "st-marie";
+            font-size: 18px;
+            margin-left: 27px;
+            letter-spacing: -2px;
+            font-weight: 700;
+
+            &:hover {
+                color: #a8a70f;
+            }
+        }
+    }
+
+    hr {
+        color: #44372b;
+        background-color: #44372b;
+    }
+}
+
+.page-footer {
+    clear: both;
+    margin-top: 100px;
+
+    nav {
+        padding-left: 10px;
+
+        li {
+            display: inline;
+        }
+
+        li a {
+            color: #333333;
+            font-size: 12px;
+            font-family: "Lucida Grande";
+            font-weight: 100;
+
+            padding-right: 25px;
+        }
+    }
+
+    hr {
+        background-color: #8f8780;
+        color: #8f8780;
+        margin-bottom: 50px;
+    }
+}
+
+.left-dash-nav {
+    float: left;
+}
+.left-dash-nav a {
+    float: left;
+    margin-right: 16px; // 8px for outlines + 8 for margin
+    outline: 4px solid #44372b;
+}
+
+.right-dash-nav {
+    float: right;
+}
+.right-dash-nav a {
+    float: right;
+    margin-left: 16px;
+    outline: 4px solid #cfbe92;
+}
+
+.donor-dash-nav,
+.org-dash-nav {
+    a {
+        border: 2px solid #fff;
+        display: block;
+        height: 137px;
+    }
+    h2 {
+        font-family: 'st-marie';
+    }
+}
+
+.donor-dash-nav a {
+    &.active,
+    &:hover {
+        outline: 4px solid #b8b713;
+    }
+}
+
+.org-dash-nav a {
+    &.active,
+    &:hover {
+        outline: 4px solid #93d2af;
+    }
+}

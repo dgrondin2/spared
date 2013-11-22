@@ -1,16 +1,13 @@
-<%= stylesheet_link_tag "footer" %>
+<footer class="page-footer">
+	<nav>
+        <ul>
+            <li><%= link_to 'home', root_url %></li>
+            <li><%= link_to 'about', about_path %></li>
+            <li><%= link_to 'faqs', faqs_path %></li>
+            <li><%= link_to 'contact', contact_path %></li>
+            <li><%= link_to 'copyright', '' %></li>
+        </ul>
+    </nav>
+    <hr/>
+</footer>
 
-<div id="footer_container">
-	<div id="footer_nav_links">
-		<%= link_to "home", root_url, :class => 'footer_nav_link inline' %>
-		<%= link_to "about", about_path, :class => 'footer_nav_link inline' %>
-		<%= link_to "faqs", faqs_path, :class => 'footer_nav_link inline' %>
-		<%= link_to "contact", contact_path, :class => 'footer_nav_link inline' %>
-		<%= link_to "copyright", "", :class => 'footer_nav_link inline' %>
-	</div>
-</div>
-
-<hr class="footer_line" />
-
-<br/>
-<br/>

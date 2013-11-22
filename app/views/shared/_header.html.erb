@@ -1,29 +1,29 @@
-<%= stylesheet_link_tag 'header' %>
-
-<div id="header_container">
-	<div id="login_links_container">
-    <% if current_user.nil? %>
-      <%= link_to 'Sign up', donor_register_path, class: 'login_link inline', rel: 'facebox' %>
-      <pre class="login_link inline"> | </pre>
-      <%= link_to 'Log in', donor_login_path, class: 'login_link inline' %>
-    <% else %>
-      <% if current_user.role == "donor" %>
-        <%= link_to 'My Dashboard', donor_overview_path, class: 'login_link inline' %>
-      <% else %>
-        <%= link_to 'My Dashboard', org_overview_path, class: 'login_link inline' %>
-    <% end %>
-      <pre class="login_link inline"> | </pre>
-      <%= link_to 'Log out', logout_path, class: 'login_link inline' %>
-  <% end %>
-	</div>
+<header class='page-header'>
+	<ul class='account-links'>
+        <% if logged_in? %>
+            <% if current_user.role == 'donor' %>
+                <li><%= link_to 'My Dashboard', donor_overview_path %></li>
+            <% else %>
+                <li><%= link_to 'My Dashboard', org_overview_path %></li>
+            <% end %>
+            <li class="separator"> | </li>
+            <li><%= link_to 'Log out', logout_path %></li>
+        <% else %>
+            <li><%= link_to 'Sign up', donor_register_path, class: 'facebox-modal' %></li>
+            <li class="separator"> | </li>
+            <li><%= link_to 'Log in', donor_login_path %></li>
+        <% end %>
+	</ul>
 	
-	<div id="nav_bar">
-		<%= link_to 'about', about_path, class: 'nav_link inline' %>
-		<%= link_to 'faqs', faqs_path, class: 'nav_link inline' %>
-		<%= link_to 'contact', contact_path, class: 'nav_link inline' %>
-		<%= link_to 'shop', shop_path, class: 'nav_link inline' %>
-	</div>
+	<nav>
+        <ul>
+            <li><%= link_to 'about', about_path %></li>
+            <li><%= link_to 'faqs', faqs_path %></li>
+            <li><%= link_to 'contact', contact_path %></li>
+            <li><%= link_to 'shop', shop_path %></li>
+        </ul>
+	</nav>
 
 	<%= link_to image_tag('home/logo_edit.png', id: 'logo'), root_url %>
-	<hr class="header_line" />
-</div>
+	<hr/>
+</header>
