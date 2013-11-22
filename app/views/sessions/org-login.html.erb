@@ -1,21 +1,6 @@
-<div id="login_container" class="float_left">
+<%= render 'org-login-form' %>
 
-  <h1 class="heading_label center">ORGANIZATION LOGIN</h1>
-  <br/>
-  <%= render 'org-login-form' %>
-</div>
+<%= image_tag('donor-login/photo.png', class: 'login-image') %>
 
-<%= image_tag('donor-login/photo.png', class: 'float_right') %>
-
-<div class="small_whitespace clear_left"></div>
-
-<div id="register_donor_button" class="button_border blue_border float_left clear_left">
-  <%= link_to "Register As An Organization", org_register_path, class: 'button wide_button blue_lighter_bg',
-              rel: 'facebox' %>
-</div>
-
-<div class="smaller_whitespace clear_left"></div>
-
-<div id="org_login_button" class="button_border green_border float_left clear_left">
-  <%= link_to "Donor Login", donor_login_path, class: 'button wide_button green_bg' %>
-</div>
+<%= link_to "Register As An Organization", org_register_path, class: 'register-org-button facebox-modal' %>
+<%= link_to "Donor Login", donor_login_path, class: 'donor-login-button' %>

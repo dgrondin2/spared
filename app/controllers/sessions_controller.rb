@@ -1,19 +1,20 @@
 class SessionsController < ApplicationController
   def donor_login
-    if current_user
-      redirect_to donors_overview_url
+    if logged_in?
+      redirect_to donor_overview_url if current_user.role == 'donor'
+      redirect_to org_overview_url if current_user.role == 'organization'
     else
       render "donor-login", layout: "donor-dash"
     end
   end
 
   def org_login
-    if current_user
-      redirect_to org_overview_url
+    if logged_in?
+      redirect_to org_overview_url if current_user.role == 'organization'
+      redirect_to donor_overview_url if current_user.role == 'donor'
     else
       render "org-login", layout: "org-dash"
     end
-
   end
 
   def create

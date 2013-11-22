@@ -42,7 +42,7 @@ class OrganizationsController < ApplicationController
       if @organization.save
         session[:user_id] = @organization.user.id
         format.html { redirect_to action: "overview", :notice => 'Registration successful.' }
-        format.json { render :json => @organization, :status => :created, :location => @organization }
+        format.json { render :json => @organization, :status => :created }
       else
         format.html { redirect_to :action => "new", :notice => 'Registration failed.' }
         format.json { render :json => @organization.errors, :status => :unprocessable_entity }

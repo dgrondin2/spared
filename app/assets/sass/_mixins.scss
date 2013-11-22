@@ -1,0 +1,34 @@
+.button {
+    @include box-sizing(border-box);
+    display: block;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 13px;
+    font-weight: 100;
+    outline: 2px solid;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        opacity: .85;
+    }
+}
+
+@mixin beige-button {
+    @extend .button;
+    background-color: #cfbe92;
+    outline-color: #cfbe92;
+}
+
+@mixin green-button {
+    @extend .button;
+    background-color: #b8b713;
+    outline-color: #b8b713;
+}
+
+@mixin teal-button {
+    @extend .button;
+    background-color: #93d2af;
+    outline-color: #93d2af;
+}

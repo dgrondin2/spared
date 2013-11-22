@@ -7,6 +7,7 @@ gem 'rails', '3.2.3'
 
 group :development do
 	gem 'sqlite3'
+  gem 'pry'
 end
 
 group :production do
@@ -19,6 +20,8 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   # gem 'therubyracer', :platform => :ruby
   gem 'uglifier', '>= 1.0.3'
+  gem 'sass-rails'
+  gem 'compass-rails'
 end
 
 gem 'jquery-rails'

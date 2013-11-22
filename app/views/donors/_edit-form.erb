@@ -1,49 +1,46 @@
-<div class="edit_profile_wrapper">
+<%= form_for @donor, url: donor_update_path do |f| %>
+    <div class="field">
+        <%= f.label :first_name, "first name" %>
+        <%= f.text_field :first_name, value: @donor.first_name, class: "text_field" %><br/>
+    </div>
+    <div class="field">
+        <%= f.label :last_name, "last name" %>
+        <%= f.text_field :last_name, value: @donor.last_name, class: "text_field" %><br/>
+    </div>
     <br/>
-    <%= form_for @donor, url: donor_update_path do |f| %>
+    <%= f.fields_for :user do |u| %>
         <div class="field">
-            <%= f.label :first_name, "first name" %>
-            <%= f.text_field :first_name, value: @donor.first_name, class: "text_field" %><br/>
+            <%= u.label :email, "email" %>
+            <%= u.text_field :email, value: @user.email, class: "text_field" %><br/>
         </div>
-        <div class="field">
-            <%= f.label :last_name, "last name" %>
-            <%= f.text_field :last_name, value: @donor.last_name, class: "text_field" %><br/>
-        </div>
-        <br/>
-        <%= f.fields_for :user do |u| %>
-            <div class="field">
-                <%= u.label :email, "email" %>
-                <%= u.text_field :email, value: @user.email, class: "text_field" %><br/>
-            </div>
-        <% end %>
-        <br/>
-
-        <div class="field">
-            <%= f.label :street_address, "street address" %>
-            <%= f.text_field :street_address, value: @donor.street_address, class: "text_field" %><br/>
-        </div>
-        <div class="field">
-            <%= f.label :city, "city" %>
-            <%= f.text_field :city, value: @donor.city, class: "text_field short_field" %><br/>
-        </div>
-        <div class="field">
-            <%= f.label :state, "state" %>
-            <%= f.text_field :state, value: @donor.state, class: "text_field short_field" %><br/>
-        </div>
-        <div class="field">
-            <%= f.label :zip, "zip" %>
-            <%= f.text_field :zip, value: @donor.zip, class: "text_field short_field" %><br/>
-        </div>
-        <div class="field">
-            <%= f.check_box :limited_address, checked: true %>
-            <%= f.label :limited_address, "Only display my city and zip code", class: "checkbox-label" %>
-        </div>
-
-        <div class="field">
-            <%= f.label :bio, "short bio" %>
-            <%= f.text_area :bio %>
-        </div>
-
-        <%= f.submit("Save", :class => 'green_spared_button', :type => 'submit') %>
     <% end %>
-</div>
+    <br/>
+
+    <div class="field">
+        <%= f.label :street_address, "street address" %>
+        <%= f.text_field :street_address, value: @donor.street_address, class: "text_field" %><br/>
+    </div>
+    <div class="field">
+        <%= f.label :city, "city" %>
+        <%= f.text_field :city, value: @donor.city, class: "text_field short_field" %><br/>
+    </div>
+    <div class="field">
+        <%= f.label :state, "state" %>
+        <%= f.text_field :state, value: @donor.state, class: "text_field short_field" %><br/>
+    </div>
+    <div class="field">
+        <%= f.label :zip, "zip" %>
+        <%= f.text_field :zip, value: @donor.zip, class: "text_field short_field" %><br/>
+    </div>
+    <div class="field">
+        <%= f.check_box :limited_address, checked: true %>
+        <%= f.label :limited_address, "Only display my city and zip code", class: "checkbox-label" %>
+    </div>
+
+    <div class="field">
+        <%= f.label :bio, "short bio" %>
+        <%= f.text_area :bio %>
+    </div>
+
+    <%= f.submit("Save", :class => 'green_spared_button', :type => 'submit') %>
+<% end %>
