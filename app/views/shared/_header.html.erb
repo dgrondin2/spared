@@ -1,17 +1,17 @@
-<div class="page-header">
-	<ul class="account-links">
-        <% if current_user.nil? %>
-            <li><%= link_to 'Sign up', donor_register_path, class: 'facebox-modal' %></li>
-            <li class="separator"> | </li>
-            <li><%= link_to 'Log in', donor_login_path %></li>
-        <% else %>
-            <% if current_user.role == "donor" %>
+<header class='page-header'>
+	<ul class='account-links'>
+        <% if logged_in? %>
+            <% if current_user.role == 'donor' %>
                 <li><%= link_to 'My Dashboard', donor_overview_path %></li>
             <% else %>
                 <li><%= link_to 'My Dashboard', org_overview_path %></li>
-        <% end %>
+            <% end %>
             <li class="separator"> | </li>
             <li><%= link_to 'Log out', logout_path %></li>
+        <% else %>
+            <li><%= link_to 'Sign up', donor_register_path, class: 'facebox-modal' %></li>
+            <li class="separator"> | </li>
+            <li><%= link_to 'Log in', donor_login_path %></li>
         <% end %>
 	</ul>
 	
@@ -26,4 +26,4 @@
 
 	<%= link_to image_tag('home/logo_edit.png', id: 'logo'), root_url %>
 	<hr/>
-</div>
+</header>

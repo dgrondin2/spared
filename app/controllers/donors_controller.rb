@@ -32,15 +32,19 @@ class DonorsController < ApplicationController
   def create
 
     @donor = Donor.new(params[:donor])
-    @donor.user.role = "donor"
+    @donor.user.role = 'donor'
 
     respond_to do |format|
       if @donor.save
         session[:user_id] = @donor.user.id
-        format.html { redirect_to action: "overview", :notice => 'Registration successful.' }
-        format.json { render :json => @donor, :status => :created, :location => @donor }
+        format.html { redirect_to action: 'overview' }
+        format.json { render :json => @donor, :status => :created }
       else
-        format.html { redirect_to :action => "new", :notice => 'Registration failed.' }
+        flash[:error] = 'Registration failed. Please try again.'
+        Rails.logger.info "Registration failed: #{@donor.errors}"
+
+        #TODO: I don't think we want to simply redirect to donors#new since its view is a modal
+        format.html { redirect_to :action => 'new' }
         format.json { render :json => @donor.errors, :status => :unprocessable_entity }
       end
     end
@@ -56,13 +60,13 @@ class DonorsController < ApplicationController
         format.html { redirect_to donor_overview_path, :notice => 'Profile successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render :action => "edit" }
+        format.html { render :action => 'edit' }
         format.json { render :json => @donor.errors, :status => :unprocessable_entity }
       end
     end
   end
 
-  # "MY DASHBOARD" actions:s
+  # "MY DASHBOARD" actions
 
   def overview
     @user = current_user

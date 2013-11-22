@@ -105,16 +105,18 @@
 	color: #44372b;
 }
 
-.questions {
-    float: left;
-    width: 65%;
-}
-.question {
-    color: #a8a70f;
-    font-weight: bold;
-    font-size: 13px;
-    font-family: "Lucida Grande";
-    text-decoration: none;
+.faqs {
+    .questions {
+        float: left;
+        width: 65%;
+    }
+    .question {
+        color: #a8a70f;
+        font-weight: bold;
+        font-size: 13px;
+        font-family: "Lucida Grande";
+        text-decoration: none;
+    }
 }
 
 .contact-content {

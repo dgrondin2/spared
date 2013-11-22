@@ -25,15 +25,15 @@ Spared::Application.routes.draw do
   match '/donor/item-offers/:id', to: 'item_offers#show'
   match '/donor/wishlists', to: 'wishlist_items#index', as: 'donor_wishlists'
   match '/donor/events', to: 'events#new', as: 'donor_new_event'
-  match '/donor/events/index', to: 'events#index', as: "donor_events"
+  match '/donor/events/index', to: 'events#index', as: 'donor_events'
   get '/donor/events/show/:id', to: 'events#show'
-  match '/donor/donations', to: 'donations#new', as: "donor_new_donation"
+  match '/donor/donations', to: 'donations#new', as: 'donor_new_donation'
 
   # My Dashboard
   match '/donor', to: 'donors#overview', as: "donor_overview"
-  match '/donor/my-item-offers', to: 'donors#my_item_offers', as: "donor_my_item_offers"
-  match '/donor/my-donations', to: 'donors#my_donations', as: "donor_my_donations"
-  match '/donor/my-events', to: 'donors#my_events', as: "donor_my_events"
+  match '/donor/my-item-offers', to: 'donors#my_item_offers', as: 'donor_my_item_offers'
+  match '/donor/my-donations', to: 'donors#my_donations', as: 'donor_my_donations'
+  match '/donor/my-events', to: 'donors#my_events', as: 'donor_my_events'
 
   get '/org/register', to: 'organizations#new', as: 'org_register'
   get '/org/login', to: 'sessions#org_login', as: 'org_login'

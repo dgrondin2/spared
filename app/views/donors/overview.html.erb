@@ -1,65 +1,61 @@
-<div class="dash-content">
+<h2 class="teal-heading-banner">DONATION HISTORY AT A GLANCE</h2>
 
-    <h2 class="teal-heading-banner">DONATION HISTORY AT A GLANCE</h2>
+<div class="profile-summary">
+    <p>
+        <%= "#{@donor.first_name} #{@donor.last_name}" %><br/>
+        <% if @donor.city.present? && @donor.state.present? %>
+            <%= "#{@donor.city}, #{@donor.state} #{@donor.zip}" %>
+        <% else %>
+            <%= "#{@donor.city}" %>
+        <% end %>
+    </p>
 
-    <div class="profile-summary">
-        <p>
-            <%= "#{@donor.first_name} #{@donor.last_name}" %><br/>
-            <% if @donor.city.present? && @donor.state.present? %>
-                <%= "#{@donor.city}, #{@donor.state} #{@donor.zip}" %>
-            <% else %>
-                <%= "#{@donor.city}" %>
-            <% end %>
-        </p>
-
-        <div class="avatar">
-            <% if @donor.avatar_file_name.present? %>
-                <%= image_tag @donor.avatar.url(:thumb) %>
-            <% end %>
-        </div>
-
-        <%= link_to "View/Edit profile", donor_edit_path %>
+    <div class="avatar">
+        <% if @donor.avatar_file_name.present? %>
+            <%= image_tag @donor.avatar.url(:thumb) %>
+        <% end %>
     </div>
 
-    <h3 class="overview-heading">You have donated a total of <%= @item_offers.count %> items and <%= number_to_currency @total_donated %>.</h3>
-    <ul class="donation-overview">
-        <li class="items-overview">
-            <h4>My matched item-offers</h4>
-            <%= link_to "View all", donor_my_item_offers_path %>
-            <% if @item_offers.any? %>
-                <% @item_offers.each do |item| %>
-                    <span><%= "#{item.name}" %></span>
-                <% end %>
-            <% else %>
-                <span>No item offers yet!</span>
-            <% end %>
-        </li>
-        <li class="financial-donation-overview">
-            <h4>My latest financial donations</h4>
-            <%= link_to "View all", donor_my_donations_path %>
-            <% if @donations.any? %>
-                <% @donations.each do |donation| %>
-                    <%# TODO: Change format and org name %>
-                    <span><%= "#{donation.date_donated} -- #{number_to_currency donation.amount} -- Org name" %></span>
-                <% end %>
-            <% else %>
-                <span>No donations yet!</span>
-            <% end %>
-        </li>
-        <li class="events-overview">
-            <h4>My volunteer opportunities</h4>
-            <%= link_to "View all", donor_my_events_path %>
-            <% if @events.any? %>
-                <% @events.each do |event| %>
-                    <%# TODO: Change format and org name %>
-                    <span><%= "#{event.start_time} -- #{event.name}" %></span>
-                <% end %>
-            <% else %>
-                <span>No events yet!</span>
-            <% end %>
-        </li>
-    </ul>
-
-    <div class="teal-mini-footer"></div>
-
+    <%= link_to "View/Edit profile", donor_edit_path %>
 </div>
+
+<h3 class="overview-heading">You have donated a total of <%= @item_offers.count %> items and <%= number_to_currency @total_donated %>.</h3>
+<ul class="donation-overview">
+    <li class="items-overview">
+        <h4>My matched item-offers</h4>
+        <%= link_to "View all", donor_my_item_offers_path %>
+        <% if @item_offers.any? %>
+            <% @item_offers.each do |item| %>
+                <span><%= "#{item.name}" %></span>
+            <% end %>
+        <% else %>
+            <span>No item offers yet!</span>
+        <% end %>
+    </li>
+    <li class="financial-donation-overview">
+        <h4>My latest financial donations</h4>
+        <%= link_to "View all", donor_my_donations_path %>
+        <% if @donations.any? %>
+            <% @donations.each do |donation| %>
+                <%# TODO: Change format and org name %>
+                <span><%= "#{donation.date_donated} -- #{number_to_currency donation.amount} -- Org name" %></span>
+            <% end %>
+        <% else %>
+            <span>No donations yet!</span>
+        <% end %>
+    </li>
+    <li class="events-overview">
+        <h4>My volunteer opportunities</h4>
+        <%= link_to "View all", donor_my_events_path %>
+        <% if @events.any? %>
+            <% @events.each do |event| %>
+                <%# TODO: Change format and org name %>
+                <span><%= "#{event.start_time} -- #{event.name}" %></span>
+            <% end %>
+        <% else %>
+            <span>No events yet!</span>
+        <% end %>
+    </li>
+</ul>
+
+<div class="teal-mini-footer"></div>

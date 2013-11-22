@@ -12,8 +12,8 @@
       <p class="slide-text-alt">What can you spare?<br/>Donate now to save a life.</p>
   </div>
 
-  <% if current_user && current_user.role == "organization" %>
-      <%= link_to "GET STARTED, IT'S FREE!", org_login_path %>
+  <% if logged_in? %>
+      <%= link_to 'VIEW MY DASHBOARD', current_user.role == 'organization' ? org_overview_path : donor_overview_path %>
   <% else %>
       <%= link_to "GET STARTED, IT'S FREE!", donor_login_path %>
   <% end %>
@@ -44,9 +44,9 @@
     <h3>Anyone Can Help!</h3>
 
     <p>
-        Local shelter's top wishlist item is blankets? <span class="bold">Donate Them!</span><br/>
-        Puppy grew too large for his collar? <span class="bold">Post it for donation!</span><br/>
-        Extra birthday cash? <span class="bold">Donate it to your favorite organization!</span><br/>
+        Local shelter's top wishlist item is blankets? <b>Donate Them!</b><br/>
+        Puppy grew too large for his collar? <b>Post it for donation!</b><br/>
+        Extra birthday cash? <b>Donate it to your favorite organization!</b><br/>
         Any donation, large or small, can benefit animals in shelters and rescues.<br/>
         <br/>
         Research shows that shelters don't often get the supplies they need and it is the goal of Spared to help make this happen.<br/>
@@ -69,5 +69,7 @@
         <li>Be willing to take care of shipping costs and/or transportation of items</li>
     </ul>
 
-    <p>For full eligibility requirements, <%= link_to 'register now!', 'register', :class => 'login_link', :rel => 'facebox' %></p>
+    <% unless logged_in? %>
+        <p>For full eligibility requirements, <%= link_to 'register now!', donor_register_path, class: 'facebox-modal' %></p>
+    <% end %>
 </div>

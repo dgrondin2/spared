@@ -8,21 +8,24 @@
 </head>
 
 <body>
-    <div class="page-frame">
-        <%= render :partial => "shared/header" %>
-        <%= render :partial => "shared/donor-dash-nav" %>
+    <div class='page-frame'>
+        <% role = (logged_in? && current_user.role == 'organization') ? 'org' : 'donor' %>
+        <%= render :partial => 'shared/header' %>
+        <%= render :partial => "shared/#{role}-dash-nav" %>
 
-        <div class="whitespace clear"></div>
+        <div class='whitespace clear'></div>
 
-        <%= yield %>
+        <div class='dash-content'>
+            <%= yield %>
+        </div>
 
-        <% if current_user %>
-            <%= render :partial => 'shared/donor-mydash' %>
+        <% if logged_in? %>
+            <%= render :partial => "shared/#{role}-mydash" %>
         <% end %>
 
-        <div class="whitespace clear"></div>
+        <div class='whitespace clear'></div>
 
-        <%= render :partial => "shared/footer" %>
+        <%= render :partial => 'shared/footer' %>
     </div>
 </body>
 </html>
