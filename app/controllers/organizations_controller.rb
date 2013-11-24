@@ -37,6 +37,7 @@ class OrganizationsController < ApplicationController
   def create
     @organization = Organization.new(params[:organization])
     @organization.user.role = "organization"
+    @organization.user.organization_id = @organization.id
 
     respond_to do |format|
       if @organization.save

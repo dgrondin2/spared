@@ -18,6 +18,8 @@
 
         <% if current_user %>
             <%= render :partial => 'shared/org-mydash' %>
+        <% else %>
+            <%= render :partial => "sessions/org-login-form" %>
         <% end %>
 
         <div class="whitespace clear"></div>

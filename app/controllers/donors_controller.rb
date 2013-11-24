@@ -33,6 +33,7 @@ class DonorsController < ApplicationController
 
     @donor = Donor.new(params[:donor])
     @donor.user.role = 'donor'
+    @donor.user.donor_id = @donor.id
 
     respond_to do |format|
       if @donor.save

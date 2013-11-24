@@ -4,4 +4,14 @@ class User < ActiveRecord::Base
 
   belongs_to :donor
   belongs_to :organization
+
+  def is_donor?
+    return true if self.donor_id
+    false
+  end
+
+  def is_organization?
+    return true if self.organization_id
+    false
+  end
 end

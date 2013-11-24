@@ -5,132 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6edb198c-74ba-4781-a1fb-081e6dc3d532" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/.sass-cache/1c02b508dcca8e46cee824213062871e8fadea38/_utilities.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/.sass-cache/a1145790d03817189ca7af9b94cdd1a7eb066e1d/_utilities.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/.sass-cache/c312a146e5ca52c79ee06da585b17e71caa95108/print.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/home/_contact-form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/.sass-cache/89c121c8067603a4331f6851775f57c631d09a21/_reset.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/.sass-cache/c9bb63b1772b5da6bf94d09787ed3c2c05eba7f0/_reset.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/application.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/.idea/assets.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/config.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/dominicgrondin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/donations.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/donors-and-orgs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/events.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/home.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/ie.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/.sass-cache/c312a146e5ca52c79ee06da585b17e71caa95108/ie.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/item_match_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/item_matches.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/layout.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/login-and-signup.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/print.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/screen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/.sass-cache/c312a146e5ca52c79ee06da585b17e71caa95108/screen.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/sparedtheme.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/user_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/users_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/helpers/users_helper_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/wishlist_item_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/wishlist_items.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/wishlist_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/sass/wishlists.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/wishlists.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/wishlists_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/helpers/wishlists_helper_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/sessions.js.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/users.js.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/donations.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/donors.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/events.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/footer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/header.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/home.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/organizations.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/sessions.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/sparedtheme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/user_sessions.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/users.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/wishlists.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/shared/_links.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/home/_contactform.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/user_sessions/_donorloginform.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/user_sessions/donorlogin.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/user_sessions/donoroffers.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/user_sessions/donoroverview.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/user_sessions/donorvolunteer.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/user_sessions/orglogin.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/edit.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/new.html.erb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/fonts.css" afterPath="$PROJECT_DIR$/app/assets/sass/fonts.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/item_offers.css" afterPath="$PROJECT_DIR$/app/assets/sass/item-offers.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_donor-dash-nav.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_donor-dash-nav.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/donations/_donor-form.html.erb" afterPath="$PROJECT_DIR$/app/views/donations/_donor-form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/sessions/donor-login.html.erb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sessions/_donor-login-form.html.erb" afterPath="$PROJECT_DIR$/app/views/sessions/_donor-login-form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/donors/_edit-form.erb" afterPath="$PROJECT_DIR$/app/views/donors/_edit-form.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_org-dash-nav.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_org-dash-nav.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sessions/_org-login-form.html.erb" afterPath="$PROJECT_DIR$/app/views/sessions/_org-login-form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/donors/_registration-form.html.erb" afterPath="$PROJECT_DIR$/app/views/donors/_registration-form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/about.html.erb" afterPath="$PROJECT_DIR$/app/views/home/about.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/contact.html.erb" afterPath="$PROJECT_DIR$/app/views/home/contact.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/donor-dash.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/donor-dash.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sessions/donor-login.html.erb" afterPath="$PROJECT_DIR$/app/views/sessions/donor-login.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/donors_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/donors_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/donors/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/donors/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/facebox.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/facebox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/faqs.html.erb" afterPath="$PROJECT_DIR$/app/views/home/faqs.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/home.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/donors/my-donations.html.erb" afterPath="$PROJECT_DIR$/app/views/donors/my-donations.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/donors/my-events.html.erb" afterPath="$PROJECT_DIR$/app/views/donors/my-events.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/donors/my-item-offers.html.erb" afterPath="$PROJECT_DIR$/app/views/donors/my-item-offers.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/donors/new.html.erb" afterPath="$PROJECT_DIR$/app/views/donors/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/org-dash.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/org-dash.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sessions/org-login.html.erb" afterPath="$PROJECT_DIR$/app/views/sessions/org-login.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/organizations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/organizations_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/donors/overview.html.erb" afterPath="$PROJECT_DIR$/app/views/donors/overview.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffold.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffold.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/spared.iml" afterPath="$PROJECT_DIR$/.idea/spared.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/yield-only.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/yield-only.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="spared.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1385095497141" ignored="false" />
+    <file path="/Dummy.txt" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1385255287163" ignored="false" />
     <file path="/org-distribute.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1361498424196" ignored="false" />
     <file path="/donations_controller.rb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1361324819626" ignored="false" />
     <file path="/organizations.css" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1362020068826" ignored="false" />
@@ -174,21 +64,21 @@
     <file path="/_registration-form.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1368326420985" ignored="false" />
     <file path="/scaffold.css" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1368323647212" ignored="false" />
     <file path="/donors.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1368401264992" ignored="false" />
-    <file path="/new.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1368396341206" ignored="false" />
-    <file path="/donor-login.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1369194251361" ignored="false" />
-    <file path="/_donor-login-form.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1369419857111" ignored="false" />
+    <file path="/new.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1385263632039" ignored="false" />
+    <file path="/donor-login.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1385261032343" ignored="false" />
+    <file path="/_donor-login-form.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1385279043782" ignored="false" />
     <file path="/sessions.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1376965903489" ignored="false" />
     <file path="/_mixins.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1369194834820" ignored="false" />
     <file path="/_org-login-form.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1369419852385" ignored="false" />
-    <file path="/donor-dash.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1377058941170" ignored="false" />
-    <file path="/org-dash.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1368406112891" ignored="false" />
+    <file path="/donor-dash.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1385259849202" ignored="false" />
+    <file path="/org-dash.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1385261179142" ignored="false" />
     <file path="/yield-only.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1368406298699" ignored="false" />
     <file path="/Volumes/Work/dev/ewok/app/views/sales/index.responsive.haml" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1369119109636" ignored="false" />
     <file path="/org-login.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1369195505200" ignored="false" />
     <file path="/dashboard.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1371089859032" ignored="false" />
     <file path="/_donor-dash-nav.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1369368884800" ignored="false" />
     <file path="/_org-dash-nav.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1369372198872" ignored="false" />
-    <file path="/sessions_controller.rb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1377746790607" ignored="false" />
+    <file path="/sessions_controller.rb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1385270844443" ignored="false" />
     <file path="/overview.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1371005601566" ignored="false" />
     <file path="/my-item-offers.html.erb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1371004306669" ignored="false" />
     <file path="/item-offers.scss" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1376966517533" ignored="false" />
@@ -206,8 +96,10 @@
     <file path="/application_controller.rb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1377058096576" ignored="false" />
     <file path="/users_controller.rb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1377060663831" ignored="false" />
     <file path="$PROJECT_DIR$/app/assets/stylesheets/home.css" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1377059961083" ignored="false" />
-    <file path="/donors_controller.rb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1377061667187" ignored="false" />
+    <file path="/donors_controller.rb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1385268869986" ignored="false" />
     <file path="/.gitignore" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1385095579973" ignored="false" />
+    <file path="/user.rb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1385270177766" ignored="false" />
+    <file path="/organizations_controller.rb" changelist="6edb198c-74ba-4781-a1fb-081e6dc3d532" time="1385269035271" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,43 +122,7 @@
       <file leaf-file-name="donors_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/donors_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="10" selection-start="1606" selection-end="1606" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="overview.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/donors/overview.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="36" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="organizations_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/organizations_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
+            <state line="24" column="24" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -275,34 +131,79 @@
       <file leaf-file-name="sessions_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="22" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
+            <state line="4" column="60" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <file leaf-file-name="organizations_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/organizations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="2" selection-start="1810" selection-end="1810" vertical-scroll-proportion="0.0">
+            <state line="22" column="9" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.51369864">
+            <state line="16" column="3" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="donor-dash.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/donor-dash.html.erb">
+      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="7" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
+            <state line="117" column="32" selection-start="3963" selection-end="3963" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="org-dash.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/org-dash.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="63" selection-start="565" selection-end="565" vertical-scroll-proportion="-13.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="-1.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_donor-login-form.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/sessions/_donor-login-form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="554" selection-end="554" vertical-scroll-proportion="0.31990522">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_org-login-form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sessions/_org-login-form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="-11.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="org-login.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sessions/org-login.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -326,30 +227,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_footer.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/sass/home.scss" />
-        <option value="$PROJECT_DIR$/app/views/home/faqs.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/home/contact.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/sass/sparedtheme.scss" />
-        <option value="$PROJECT_DIR$/app/views/layouts/donor-dash.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/controllers/organizations_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/donors/overview.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/donors_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/views/layouts/donor-dash.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/sessions/donor-login.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/sessions/org-login.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/org-dash.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/sessions/_org-login-form.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/donors_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/organizations_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/sessions/_donor-login-form.html.erb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="154" />
+    <option name="x" value="26" />
     <option name="y" value="22" />
-    <option name="width" value="1054" />
-    <option name="height" value="878" />
+    <option name="width" value="1155" />
+    <option name="height" value="1016" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -430,6 +331,86 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sessions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -440,14 +421,14 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editor" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.lastSelected" value="editor" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -582,13 +563,6 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -622,6 +596,13 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <list size="0" />
@@ -674,14 +655,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="154" y="22" width="1054" height="878" extended-state="0" />
+    <frame x="26" y="22" width="1155" height="1016" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23431498" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26985854" sideWeight="0.9983753" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19543651" sideWeight="0.7297921" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19927862" sideWeight="0.73014146" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -690,7 +672,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27020785" sideWeight="0.9983753" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -761,82 +742,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_header.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="7" selection-start="655" selection-end="655" vertical-scroll-proportion="-8.75" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/organizations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/donors/overview.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="36" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/donors_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="10" selection-start="1606" selection-end="1606" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/donor-dash.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/sass/donors-and-orgs.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="1" selection-start="4353" selection-end="4353" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/sass/donations.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="131" selection-end="131" vertical-scroll-proportion="0.018541409" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/sass/item-offers.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="230" column="19" selection-start="3348" selection-end="3348" vertical-scroll-proportion="0.072929546" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/sass/home.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="105" column="1" selection-start="1828" selection-end="1828" vertical-scroll-proportion="0.018541409" />
@@ -856,7 +761,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.51369864">
+        <state line="6" column="23" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/donor-dash.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="8" selection-start="642" selection-end="738" vertical-scroll-proportion="-14.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/org-dash.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="63" selection-start="565" selection-end="565" vertical-scroll-proportion="-13.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/org-login.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="32" selection-start="3963" selection-end="3963" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/donors_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="24" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="3" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="60" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/organizations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="9" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/_org-login-form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="-11.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/_donor-login-form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="554" selection-end="554" vertical-scroll-proportion="0.31990522">
           <folding />
         </state>
       </provider>

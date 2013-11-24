@@ -21,6 +21,8 @@
 
         <% if logged_in? %>
             <%= render :partial => "shared/#{role}-mydash" %>
+        <% else %>
+            <%= render :partial => "sessions/#{role}-login-form" %>
         <% end %>
 
         <div class='whitespace clear'></div>
