@@ -1,14 +1,11 @@
-<%# TODO: Why do I need this file?? A 'yield-only' layout probably means the view should be a partial %>
+<% role = (logged_in? && current_user.role == 'organization') ? 'org' : 'donor' %>
 
 <!DOCTYPE html>
 <html>
 <head>
-    <%= stylesheet_link_tag 'application' %>
-    <%= javascript_include_tag 'application' %>
-    <%= csrf_meta_tags %>
 </head>
 
-<body>
+<body class=<%= role %>>
 	<%= yield %>
 </body>
 </html>
