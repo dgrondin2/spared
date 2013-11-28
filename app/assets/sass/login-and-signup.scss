@@ -85,6 +85,14 @@ form.org-login {
     clear:left;
     margin-bottom: 15px;
 
+    .st-marie-heading {
+        margin: 30px auto;
+
+        .org & {
+            font-size: 18px;
+        }
+    }
+
     .field {
         margin-top: 20px;
     }
@@ -95,6 +103,10 @@ form.org-login {
         margin-top: 5px;
         font-size: 12px;
         font-weight: 100;
+
+        .org & {
+            color: #86c4a1;
+        }
     }
 
     input[type=text],
@@ -109,8 +121,13 @@ form.org-login {
         height: 33px;
         width: 92px;
         float: right;
-        margin: 35px 23px 0 0;
+        margin: 25px 23px 0 0;
         clear: right;
+
+        .org & {
+            @include teal-button;
+            margin-top: 30px;
+        }
     }
 
     label {

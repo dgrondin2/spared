@@ -21,4 +21,8 @@ class ApplicationController < ActionController::Base
   def authorize_org
     redirect_to org_login_url, alert: "You must log in first!" if current_user.nil?
   end
+
+  def cookie_domain
+    Rails.env.development? ? '.localhost' : '.spared.org'
+  end
 end

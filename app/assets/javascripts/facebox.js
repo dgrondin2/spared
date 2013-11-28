@@ -193,6 +193,12 @@
     $('#facebox .close_image').attr('src', $.facebox.settings.closeImage)
 
     $('#facebox .cancel').click($.facebox.close)
+    $('#facebox').on('click', function(e) {
+       if ($(e.target).hasClass('cancel')) {
+           e.preventDefault();
+           $(document).trigger('close.facebox');
+       }
+    });
   }
 
   // getPageScroll() by quirksmode.com
