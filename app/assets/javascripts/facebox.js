@@ -80,7 +80,6 @@
   /*
    * Public, $.facebox methods
    */
-  console.log("extending facebox()")
   $.extend($.facebox, {
     settings: {
       opacity      : 0.5,
@@ -159,8 +158,6 @@
 
     return this.bind('click.facebox', clickHandler)
   }
-
-  console.log("finished extending public facebox methods")
 
   /*
    * Private methods
