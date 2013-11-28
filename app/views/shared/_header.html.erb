@@ -9,9 +9,9 @@
             <li class="separator"> | </li>
             <li><%= link_to 'Log out', logout_path %></li>
         <% else %>
-            <li><%= link_to 'Sign up', donor_register_path, class: 'facebox-modal' %></li>
+            <li><%= link_to 'Sign up', current_page?(org_login_path) ? org_register_path : donor_register_path, class: 'facebox-modal' %></li>
             <li class="separator"> | </li>
-            <li><%= link_to 'Log in', donor_login_path %></li>
+            <li><%= link_to 'Log in', current_page?(org_login_path) ? org_login_path : donor_login_path %></li>
         <% end %>
 	</ul>
 	
