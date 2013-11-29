@@ -1,4 +1,6 @@
 class WishlistsController < ApplicationController
+  before_filter :authorize_user
+
   def index
     @user = current_user
     @wishlists = Wishlist.all

@@ -1,7 +1,3 @@
-<% # this var guesses whether logged out user is donor or organization. either equals 'donor' or 'organization' %>
-<% which_reg_or_login_page = current_page?(org_login_path) ? 'org' : nil %>
-<% which_reg_or_login_page ||= cookies[:is_member] %>
-
 <header class='page-header'>
 	<ul class='account-links'>
         <% if logged_in? %>
@@ -13,9 +9,9 @@
             <li class="separator"> | </li>
             <li><%= link_to 'Log out', logout_path %></li>
         <% else %>
-            <li><%= link_to 'Sign up', which_reg_or_login_page == 'org' ? org_register_path : donor_register_path, class: 'facebox-modal' %></li>
+            <li><%= link_to 'Sign up', guess_user_role == 'org' ? org_register_path : donor_register_path, class: 'facebox-modal' %></li>
             <li class="separator"> | </li>
-            <li><%= link_to 'Log in', which_reg_or_login_page == 'org' ? org_login_path : donor_login_path %></li>
+            <li><%= link_to 'Log in', guess_user_role == 'org' ? org_login_path : donor_login_path %></li>
         <% end %>
 	</ul>
 	

@@ -12,6 +12,15 @@ Spared::Application.routes.draw do
   match '/shop' => 'home#shop', as: 'shop'
 
   get '/logout', to: 'sessions#destroy', as: 'logout'
+
+  # Browse pages
+
+  get '/item-offers', to: 'item_offers#index', as: 'browse_item_offers'
+  get '/wishlists', to: 'wishlists#index', as: 'browse_wishlists'
+  get '/events', to: 'events#index', as: 'browse_events'
+
+  # Donor specific
+
   get '/donor/register', to: 'donors#new', as: 'donor_register'
   get '/donor/login', to: 'sessions#donor_login', as: 'donor_login'
   post '/donor/register-new-donor', to: 'donors#create', as: 'donor_create'
@@ -21,11 +30,8 @@ Spared::Application.routes.draw do
 
   match '/donor/item-offers', to: 'item_offers#overview', as: 'donor_item_offer_overview'
   match '/donor/item-offers/new', to: 'item_offers#new', as: 'donor_new_item_offer'
-  match '/donor/item-offers/index', to: 'item_offers#index', as: 'donor_item_offers'
   match '/donor/item-offers/:id', to: 'item_offers#show'
-  match '/donor/wishlists', to: 'wishlist_items#index', as: 'donor_wishlists'
   match '/donor/events', to: 'events#new', as: 'donor_new_event'
-  match '/donor/events/index', to: 'events#index', as: 'donor_events'
   get '/donor/events/show/:id', to: 'events#show'
   match '/donor/donations', to: 'donations#new', as: 'donor_new_donation'
 
@@ -35,6 +41,8 @@ Spared::Application.routes.draw do
   match '/donor/my-donations', to: 'donors#my_donations', as: 'donor_my_donations'
   match '/donor/my-events', to: 'donors#my_events', as: 'donor_my_events'
 
+  # Org specific
+
   get '/org/register', to: 'organizations#new', as: 'org_register'
   get '/org/login', to: 'sessions#org_login', as: 'org_login'
   post 'org/register-new-org', to: 'organizations#create', as: 'org_create'
@@ -42,15 +50,12 @@ Spared::Application.routes.draw do
   get '/org/edit-profile', to: 'organizations#edit', as: 'org_edit'
   put '/org/update-profile', to: 'organizations#update', as: 'org_update'
 
-  get '/org/item-offers', to: 'item_offers#index', as: 'org_item_offers'
   get '/org/item-offers/:id', to: 'item_offers#show', as: 'org_show_item_offer'
-  get '/org/wishlists/index', to: 'wishlists#index', as: 'org_wishlists' # browse wishlists
   #TODO: BUG: Uncommenting the next line breaks the org_new_wishlist path because it goes to :show when it should be going to :new
   #get '/org/wishlists/:id', to: 'wishlists#show'
   get '/org/wishlists/new', to: 'wishlists#new', as: 'org_new_wishlist'
   get '/org/my-wishlists', to: 'wishlists#my_wishlists', as: 'org_my_wishlists' # not in My Dashboard
   get '/org/events', to: "events#new", as: 'org_new_event'
-  get '/org/events/index', to: "events#index", as: 'org_events'
   get '/org/events/show/:id', to: "events#show"
   get '/org/events/manage', to: "events#manage", as: 'org_manage_events'
   get '/org/donations', to: 'donations#index', as: 'org_donations'

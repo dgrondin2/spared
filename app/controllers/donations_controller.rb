@@ -1,6 +1,5 @@
 class DonationsController < ApplicationController
-
-  before_filter :authorize_donor
+  before_filter :authorize_user
 
   # GET /donations
   # GET /donations.json
