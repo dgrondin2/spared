@@ -37,12 +37,7 @@ class DonorsController < ApplicationController
 
     respond_to do |format|
       if @donor.save
-        session[:user_id] = @donor.user.id
-        #TODO: FIX THIS COOKIE CODE:
-        cookies[:is_member] = {
-            value: 'donor',
-            domain: cookie_domain,
-        }
+        log_in_user(@donor.user.id)
         format.html { redirect_to action: 'overview' }
         format.json { render :json => @donor, :status => :created }
       else

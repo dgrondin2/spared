@@ -1,3 +1,7 @@
+<% role = current_user.role if current_user %>
+<% role ||= cookies[:is_member] if cookies[:is_member] %>
+<% role ||= 'donor' %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +11,7 @@
     <%= csrf_meta_tags %>
 </head>
 
-<body>
+<body class=<%= role %>>
     <div class='page-frame'>
         <%= render :partial => "shared/header" %>
         <%= yield %>

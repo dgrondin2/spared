@@ -24,7 +24,7 @@ class SessionsController < ApplicationController
       flash[:error] = "Email or password is invalid."
       redirect_to :back
     elsif user && user.authenticate(params[:password])
-      session[:user_id] = user.id
+      log_in_user(user.id)
       if user.role == "donor"
         redirect_to donor_overview_url, notice: "Logged in!"
       elsif user.role == "organization"

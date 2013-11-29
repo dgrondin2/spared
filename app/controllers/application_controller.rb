@@ -23,6 +23,18 @@ class ApplicationController < ActionController::Base
   end
 
   def cookie_domain
-    Rails.env.development? ? '.localhost' : '.spared.org'
+    Rails.env.development? ? 'localhost' : 'spared.org'
+  end
+
+  def log_in_user(user_id)
+    # assumes log in is successful
+    session[:user_id] = user_id
+    cookie_val = current_user.role == 'organization' ? 'org' : 'donor'
+    cookies[:is_member] = {
+        value: cookie_val,
+        domain: cookie_domain,
+        path: '/',
+        expires: 1.year.from_now
+    }
   end
 end
