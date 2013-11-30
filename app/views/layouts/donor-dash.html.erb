@@ -7,11 +7,10 @@
     <%= csrf_meta_tags %>
 </head>
 
-<body>
+<body class='donor'>
     <div class='page-frame'>
-        <% role = (logged_in? && current_user.role == 'organization') ? 'org' : 'donor' %>
         <%= render :partial => 'shared/header' %>
-        <%= render :partial => "shared/#{role}-dash-nav" %>
+        <%= render :partial => "shared/donor-dash-nav" %>
 
         <div class='whitespace clear'></div>
 
@@ -20,7 +19,9 @@
         </div>
 
         <% if logged_in? %>
-            <%= render :partial => "shared/#{role}-mydash" %>
+            <%= render :partial => "shared/donor-mydash" %>
+        <% else %>
+            <%= render :partial => "sessions/donor-login-form" %>
         <% end %>
 
         <div class='whitespace clear'></div>

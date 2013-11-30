@@ -1,5 +1,4 @@
 class DonorsController < ApplicationController
-
   before_filter :authorize_donor, except: [:new, :create]
 
   # View donor profile
@@ -33,10 +32,11 @@ class DonorsController < ApplicationController
 
     @donor = Donor.new(params[:donor])
     @donor.user.role = 'donor'
+    @donor.user.donor_id = @donor.id
 
     respond_to do |format|
       if @donor.save
-        session[:user_id] = @donor.user.id
+        log_in_user(@donor.user.id)
         format.html { redirect_to action: 'overview' }
         format.json { render :json => @donor, :status => :created }
       else

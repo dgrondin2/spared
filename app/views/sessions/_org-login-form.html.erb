@@ -6,6 +6,10 @@
         <%= text_field_tag :email, params[:email], placeholder: "youremail@example.com" %>
     </div>
 
+    <% if flash[:error] %>
+        <div class="login-error"><%= flash[:error] %></div>
+    <% end %>
+
     <div class='field'>
         <%= label_tag :password, 'password' %>
         <%= password_field_tag :password %>
@@ -19,3 +23,6 @@
 
     <%= submit_tag "LOGIN" %>
 <% end %>
+
+<%= link_to "Register As An Organization", org_register_path, class: 'register-org-button facebox-modal' %>
+<%= link_to "Donor Login", donor_login_path, class: 'donor-login-button' %>

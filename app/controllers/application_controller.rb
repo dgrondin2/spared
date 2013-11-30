@@ -21,4 +21,30 @@ class ApplicationController < ActionController::Base
   def authorize_org
     redirect_to org_login_url, alert: "You must log in first!" if current_user.nil?
   end
+
+  def authorize_user
+    return true if current_user
+    if false # TODO: if we came from login page, redirect back to it
+    elsif cookies[:is_member] && cookies[:is_member] == 'org'
+      redirect_to org_login_url
+    else
+      redirect_to donor_login_url
+    end
+  end
+
+  def cookie_domain
+    Rails.env.development? ? 'localhost' : 'spared.org'
+  end
+
+  def log_in_user(user_id)
+    # assumes log in is successful
+    session[:user_id] = user_id
+    cookie_val = current_user.role == 'organization' ? 'org' : 'donor'
+    cookies[:is_member] = {
+        value: cookie_val,
+        domain: cookie_domain,
+        path: '/',
+        expires: 1.year.from_now
+    }
+  end
 end

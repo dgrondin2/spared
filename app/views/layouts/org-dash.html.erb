@@ -7,7 +7,7 @@
     <%= csrf_meta_tags %>
 </head>
 
-<body>
+<body class='org'>
     <div class="page-frame">
         <%= render :partial => "shared/header" %>
         <%= render :partial => "shared/org-dash-nav" %>
@@ -18,6 +18,8 @@
 
         <% if current_user %>
             <%= render :partial => 'shared/org-mydash' %>
+        <% else %>
+            <%= render :partial => "sessions/org-login-form" %>
         <% end %>
 
         <div class="whitespace clear"></div>

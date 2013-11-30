@@ -80,7 +80,6 @@
   /*
    * Public, $.facebox methods
    */
-  console.log("extending facebox()")
   $.extend($.facebox, {
     settings: {
       opacity      : 0.5,
@@ -160,8 +159,6 @@
     return this.bind('click.facebox', clickHandler)
   }
 
-  console.log("finished extending public facebox methods")
-
   /*
    * Private methods
    */
@@ -193,6 +190,12 @@
     $('#facebox .close_image').attr('src', $.facebox.settings.closeImage)
 
     $('#facebox .cancel').click($.facebox.close)
+    $('#facebox').on('click', function(e) {
+       if ($(e.target).hasClass('cancel')) {
+           e.preventDefault();
+           $(document).trigger('close.facebox');
+       }
+    });
   }
 
   // getPageScroll() by quirksmode.com

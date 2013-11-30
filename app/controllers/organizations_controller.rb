@@ -37,10 +37,11 @@ class OrganizationsController < ApplicationController
   def create
     @organization = Organization.new(params[:organization])
     @organization.user.role = "organization"
+    @organization.user.organization_id = @organization.id
 
     respond_to do |format|
       if @organization.save
-        session[:user_id] = @organization.user.id
+        log_in_user(@organization.user.id)
         format.html { redirect_to action: "overview", :notice => 'Registration successful.' }
         format.json { render :json => @organization, :status => :created }
       else
