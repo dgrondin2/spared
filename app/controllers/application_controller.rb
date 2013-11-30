@@ -24,7 +24,7 @@ class ApplicationController < ActionController::Base
 
   def authorize_user
     return true if current_user
-    if false # TODO: if we came from org login page, redirect back to it
+    if false # TODO: if we came from login page, redirect back to it
     elsif cookies[:is_member] && cookies[:is_member] == 'org'
       redirect_to org_login_url
     else
