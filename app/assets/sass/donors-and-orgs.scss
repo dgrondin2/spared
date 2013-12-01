@@ -38,9 +38,11 @@
         padding-left: 8px;
         font-weight: 500;
         font-size: 13px;
-        color: #44372b;
         line-height: 17px;
 
+        .org & {
+            color: #44372b;
+        }
         &:hover {
             color: #a8a70f;
             cursor: pointer;
@@ -146,18 +148,18 @@
         font-size: 14px;
         color: #44372b;
     }
-
-    .avatar {
-        height: 75px;
-        margin-bottom: 10px;
-        width: 75px;
-
-        border: 1px solid #d2c298;
-        clear: left;
-    }
 }
 
-// this class name comes from rails -- can't be changed
+.avatar {
+    height: 75px;
+    margin-bottom: 10px;
+    width: 75px;
+
+    border: 1px solid #d2c298;
+    clear: left;
+}
+
+// these class names come from rails -- can't be changed
 .edit_donor,
 .edit_organization {
     @include box-sizing(border-box);
@@ -177,6 +179,7 @@
     }
     textarea {
         resize: vertical;
+        height: 150px;
         width: 282px;
     }
     .field {
@@ -204,9 +207,47 @@
     }
 }
 
-// this class name comes from rails -- can't be changed
 .edit_organization {
+    padding-right: 25px;
 
+    .field {
+        label {
+            width: 130px;
+        }
+        .bio-label {
+            width: 135px;
+        }
+    }
+    input[type=submit] {
+        @include teal-button;
+        margin-left: 137px;
+    }
+}
+
+aside.edit-sidebar {
+    float: left;
+    margin-top: 10px;
+
+    .back-to-overview {
+        @include box-sizing(border-box);
+        float: left;
+        display: block;
+        background-color: #b8b713;
+        width: 130px;
+        height: 27px;
+        color: #fff;
+        font-size: 10px;
+        font-weight: 100;
+        padding: 7px;
+        margin-bottom: 10px;
+
+        .org & {
+            background-color: #93d2af;
+        }
+        &:hover {
+            opacity: 0.9;
+        }
+    }
 }
 
 .org_edit_profile_wrapper {
@@ -255,23 +296,6 @@
     margin: 10px 0 0 135px;
 }
 
-.edit_profile_picture_wrapper .org_back_to_overview_link {
-    float: left;
-    background-color: #93d2af;
-    width: 130px;
-    height: 27px;
-    color: #fff;
-    font-size: 80%;
-    font-weight: 100;
-    padding: 7px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    margin-bottom: 10px;
-}
-.edit_profile_picture_wrapper .org_back_to_overview_link:hover {
-    opacity: 0.9;
-}
-
 .edit_profile_picture_wrapper .org_new_photo_link {
     float: left;
     clear: left;
@@ -301,22 +325,6 @@
 .edit_profile_picture_wrapper {
     float: left;
     margin-top: 10px;
-}
-
-.edit_profile_picture_wrapper .back_to_overview_link {
-    float: left;
-    background-color: #b8b713;
-    width: 130px;
-    height: 27px;
-    color: #fff;
-    font-size: 80%;
-    font-weight: 100;
-    padding: 7px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-}
-.edit_profile_picture_wrapper .back_to_overview_link:hover {
-    opacity: 0.9;
 }
 
 .edit_profile_picture_wrapper .profile_picture {
