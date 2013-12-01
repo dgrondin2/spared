@@ -4,6 +4,7 @@
  */
 
 @import 'compass';
+@import 'mixins';
 
 .my-dash {
     width: 318px;
@@ -59,12 +60,13 @@
 
     position: relative;
     float: right;
+    margin-bottom: 20px;
     width: 430px;
 
     h3 {
         @include box-sizing(border-box);
         @include reset-box-model;
-        background-color: #86c4a2;
+        background-color: #93d2af;
         float: right;
         font-size: 13px;
         font-weight: bold;
@@ -155,6 +157,58 @@
     }
 }
 
+// this class name comes from rails -- can't be changed
+.edit_donor,
+.edit_organization {
+    @include box-sizing(border-box);
+    background-color: #f5f0e2;
+    float: right;
+    padding: 25px 85px 25px 35px;
+    margin-top: 10px;
+    width: 485px;
+
+    label {
+        display: inline-block;
+        width: 70px;
+    }
+    input[type=text] {
+        height: 25px;
+        width: 282px;
+    }
+    textarea {
+        resize: vertical;
+        width: 282px;
+    }
+    .field {
+        margin-bottom: 13px;
+
+        .address-label {
+            position: relative;
+            top: 8px;
+        }
+        .checkbox-label {
+            width: 90%;
+        }
+        .bio-label {
+            float: left;
+            position: relative;
+            top: 5px;
+            width: 75px;
+        }
+    }
+    input[type=submit] {
+        @include green-button;
+        height: 30px;
+        width: 100px;
+        margin-left: 77px;
+    }
+}
+
+// this class name comes from rails -- can't be changed
+.edit_organization {
+
+}
+
 .org_edit_profile_wrapper {
     background-color: #f5f0e2;
     float: right;
@@ -242,14 +296,6 @@
 }
 .org_dash_list_heading .heading-text {
     padding-left: 20px;
-}
-
-.edit_profile_wrapper {
-    background-color: #f5f0e2;
-    float: right;
-    height: 630px;
-    margin-top: 10px;
-    width: 76%;
 }
 
 .edit_profile_picture_wrapper {
