@@ -75,6 +75,13 @@ textarea {
     }
 }
 
+
+.beige-heading-banner {
+    @extend .heading-banner;
+    background-color: #cfbe92;
+    color: #70624c;
+}
+
 .heading-banner {
     @include box-sizing(border-box);
     @include reset-box-model;

@@ -3,58 +3,72 @@
  * @overview includes everything about item-offers, including the search item-offers partial
  */
 
-.my-item-offers li,
-.item_offer_post {
-    position: relative;
-    width: 100%;
-    height: 100px;
-    box-sizing: border-box;
-    padding: 20px;
-    border-bottom: 1px solid #dcd0b0;
+@import 'compass';
+@import 'mixins';
+
+.my-item-offers-header {
+    @include box-sizing(border-box);
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: #93d2af;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-left: 20px;
+    padding-top: 12px;
+
+    .count {
+        font-size: 13px;
+        text-transform: none;
+        padding-right: 30px;
+        float: right;
+    }
 }
 
-.dash_beige_heading {
- 	width: 604px;
-	height: 50px;
-	text-transform: uppercase;
-	background-color: #cfbe92;
-	color: #70624c;
-	padding-left: 25px;
-	padding-top: 20px;
-}
+.my-item-offers {
+    li {
+        @include box-sizing(border-box);
+        height: 95px;
+        overflow: auto;
+        position: relative;
+        width: 100%;
+        padding: 20px;
+        border-bottom: 1px solid #dcd0b0;
+    }
 
-.odd_item_offer {
- 	background-color: #f8f4ea;
-}
+    .item-image {
+        height: 50px;
+        width: 50px;
+        border: 1px solid #d2c298;
+        margin-right: 15px;
+    }
 
-.even_item_offer {
- 	background-color: #f3eedf;
-}
+    .item-info {
+        @include box-sizing(border-box);
+        position: absolute;
+        height: 52px;
+        width: 70%;
+        top: 18px;
+        left: 90px;
+        overflow: hidden;
+        float: left;
+        padding-right: 20px;
 
-.item_offer_image_container {
- 	height: 50px;
- 	width: 50px;
- 	border: 1px solid #d2c298;
- 	margin-right: 15px;
-}
+        .name {
+            font-weight: bold;
+        }
+        p {
+            margin: 0;
+            margin-bottom: 7px;
+        }
+    }
 
-.item_offer_info_container {
- 	position: absolute;
- 	height: 100%;
- 	width: 70%;
- 	top: 18px;
- 	left: 90px;
-}
-
-.item_offer_info_container p {
- 	margin: 0;
- 	margin-bottom: 7px;
-}
-
-.item_offer_link_container {
- 	position: absolute;
- 	right: 20px;
- 	top: 40%;
+    a {
+        position: absolute;
+        right: 20px;
+        top: 40%;
+    }
 }
 
 #search_container {
