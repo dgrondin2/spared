@@ -55,9 +55,10 @@
 }
 
 .donation-overview {
+    // this in donor overview only
+
     position: relative;
     float: right;
-    margin-bottom: 23px;
     width: 430px;
 
     h3 {
@@ -100,6 +101,39 @@
     }
 }
 
+.wishlist-overview {
+    // this in org overview only
+
+    margin-top: 17px;
+    margin-bottom: 80px;
+    overflow: auto;
+
+    .summary {
+        @include box-sizing(border-box);
+        background-color: #EFE7D3;
+        display: inline-block;
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding-top: 10px;
+        text-align: center;
+        margin-right: 20px;
+
+        span {
+            font-weight: bold;
+        }
+    }
+    a {
+        color: #93d2af;
+        margin-right: 10px;
+    }
+    ul li {
+        clear: right;
+        float: right;
+    }
+}
+
 .profile-summary {
     position: relative;
     float: left;
@@ -110,15 +144,15 @@
         font-size: 14px;
         color: #44372b;
     }
-}
 
-.org_dash_heading {
-    height: 50px;
-    text-transform: uppercase;
-    background-color: #b8b713;
-    color: #44372b;
-    padding-left: 25px;
-    padding-top: 20px;
+    .avatar {
+        height: 75px;
+        margin-bottom: 10px;
+        width: 75px;
+
+        border: 1px solid #d2c298;
+        clear: left;
+    }
 }
 
 .org_edit_profile_wrapper {
@@ -210,33 +244,6 @@
     padding-left: 20px;
 }
 
-.org_overview {
-    position: relative;
-    width: 68%;
-    float: right;
-    margin-top: 15px;
-}
-
-.org_overview .summary {
-    float: left;
-    background-color: #EFE7D3;
-    width: 300px;
-    height: 40px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    padding-top: 10px;
-    text-align: center;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-
-.org_overview a {
-    float: left;
-    color: #93d2af;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
 .edit_profile_wrapper {
     background-color: #f5f0e2;
     float: right;
@@ -313,15 +320,6 @@
 
 .edit_profile_wrapper input[type="submit"] {
     margin: 10px 0 0 135px;
-}
-
-.avatar {
-    height: 75px;
-    margin-bottom: 10px;
-    width: 75px;
-
-    border: 1px solid #d2c298;
-    clear: left;
 }
 
 .edit_profile_wrapper .field .short_field {

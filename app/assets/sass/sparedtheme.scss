@@ -55,9 +55,24 @@ textarea {
 
 .teal-heading-banner {
     @extend .heading-banner;
-
     background-color: #93d2af;
     color: #44372b;
+
+    body & {
+        font-size: 24px;
+        padding-top: 21px;
+    }
+}
+
+.yellow-heading-banner {
+    @extend .heading-banner;
+    background-color: #c3c23b;
+    color: #44372b;
+
+    body & {
+        font-size: 24px;
+        padding-top: 21px;
+    }
 }
 
 .heading-banner {
@@ -353,7 +368,7 @@ table {
     border-radius: 1px;
 }
 
-.yellow_mini_footer {
+.yellow-mini-footer {
     height: 10px;
     width: 100%;
     background-color: #b8b713;
