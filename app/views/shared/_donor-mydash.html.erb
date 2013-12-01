@@ -1,24 +1,17 @@
-<ul class="my_dash">
-	
-	<li class="my_dash_heading">MY DASHBBOARD</li>
-	
-	<li id="my_dash_overview" <%= current_page?(donor_overview_path) ? "class=beige_lighter_bg": "" %>>
-        <%= link_to "OVERVIEW<br/>View donation history".html_safe, "/donor/", :class => "my_dash_link" %>
+<ul class="my-dash">
+	<li>
+        <h2>MY DASHBBOARD</h2>
+    </li>
+	<li <%= current_page?(donor_overview_path) ? 'class=active': '' %>>
+        <%= link_to "OVERVIEW<br/>View donation history".html_safe, "/donor/" %>
 	</li>
-
-	<li id="my_dash_offers" <%= current_page?(donor_my_item_offers_path) ? "class=beige_lighter_bg": "" %>>
-        <%= link_to "ITEM-OFFERS<br/>View submitted item-offers".html_safe, "/donor/my-item-offers",
-                    :class => "my_dash_link" %>
+	<li <%= current_page?(donor_my_item_offers_path) ? 'class=active': '' %>>
+        <%= link_to "ITEM-OFFERS<br/>View submitted item-offers".html_safe, "/donor/my-item-offers" %>
 	</li>
-	
-	<li id="my_dash_donations" <%= current_page?(donor_my_donations_path) ? "class=beige_lighter_bg": "" %>>
-        <%= link_to "FINANCIAL DONATIONS<br/>View financial donation history".html_safe, "/donor/my-donations",
-                    :class => "my_dash_link" %>
+	<li <%= current_page?(donor_my_donations_path) ? 'class=active': '' %>>
+        <%= link_to "FINANCIAL DONATIONS<br/>View financial donation history".html_safe, "/donor/my-donations" %>
 	</li>
-	
-	<li id="my_dash_volunteer" <%= current_page?(donor_my_events_path) ? "class=beige_lighter_bg": "" %>>
-        <%= link_to "VOLUNTEER<br/>View volunteer calendar & past events".html_safe, "/donor/my-events",
-                    :class => "my_dash_link" %>
+	<li <%= current_page?(donor_my_events_path) ? 'class=active': '' %>>
+        <%= link_to "VOLUNTEER<br/>View volunteer calendar & past events".html_safe, "/donor/my-events" %>
 	</li>
-
 </ul>
