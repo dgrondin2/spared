@@ -106,7 +106,7 @@ textarea {
 
 .dash-content {
     float: right;
-    width: 65%;
+    width: 628px;
 }
 
 .wide-photo {
@@ -368,12 +368,6 @@ table {
 .spared_button:hover {
     opacity: 0.8;
 }
-.even_row {
-    background-color: #EFE7D3;
-}
-.odd_row {
-    background-color: #F5F0E2;
-}
 
 .org_button {
     background-color: #93d2af;
@@ -453,4 +447,13 @@ table {
 
 .and_or_container {
     position: relative;
+}
+
+ul {
+    .odd {
+        background-color: #f5f0e2;
+    }
+    .even {
+        background-color: #efe7d3;
+    }
 }

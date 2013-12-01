@@ -47,6 +47,68 @@
     }
     .active a {
         background-color: #efe7d3;
+
+        &:hover {
+            color: #44372b;
+        }
+    }
+}
+
+.donation-overview {
+    position: relative;
+    float: right;
+    margin-bottom: 23px;
+    width: 430px;
+
+    h3 {
+        @include box-sizing(border-box);
+        @include reset-box-model;
+        background-color: #86c4a2;
+        float: right;
+        font-size: 13px;
+        font-weight: bold;
+        height: 30px;
+        margin-top: 15px;
+        padding: 7px 0 0 10px;
+        width: 100%;
+    }
+
+    a {
+        float: right;
+        padding-right: 15px;
+    }
+
+    ul li {
+        @include box-sizing(border-box);
+        clear: right;
+        border-bottom: 1px solid #CFBE92;
+        font-size: 12px;
+        height: 95px;
+        padding-top: 10px;
+
+        h4 {
+            @include reset-box-model;
+            font-weight: bold;
+        }
+        span, h4 {
+            clear: both;
+            float: left;
+            font-size: 12px;
+            line-height: 18px;
+            padding-left: 15px;
+        }
+    }
+}
+
+.profile-summary {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+
+    & > p {
+        font-size: 14px;
+        color: #44372b;
     }
 }
 
@@ -292,72 +354,4 @@
     height: 100%;
     width: 50%;
     background-color: #f26a5a;
-}
-
-.items-overview, .financial-donation-overview, .events-overview {
-    @include box-sizing(border-box);
-    border-bottom: 1px solid #CFBE92;
-    font-size: 12px;
-    height: 95px;
-    padding-top: 10px;
-}
-
-.items-overview {
-    background-color: #F5F0E2;
-}
-.financial-donation-overview {
-    background-color: #EFE7D3;
-}
-.events-overview {
-    background-color: #F5F0E2;
-}
-
-.overview-heading {
-    @include box-sizing(border-box);
-    @include reset-box-model;
-    background-color: #86c4a2;
-    float: right;
-    font-size: 13px;
-    font-weight: bold;
-    height: 30px;
-    margin-top: 15px;
-    padding: 7px 0 0 10px;
-    width: 68%;
-}
-
-.donation-overview {
-    position: relative;
-    float: right;
-    margin-bottom: 23px;
-    width: 68%;
-
-    a {
-        float: right;
-        padding-right: 15px;
-    }
-
-    h4 {
-        @include reset-box-model;
-        font-weight: bold;
-    }
-
-    span, h4 {
-        clear: both;
-        float: left;
-        font-size: 12px;
-        line-height: 18px;
-        padding-left: 15px;
-    }
-}
-
-.profile-summary {
-    position: relative;
-    float: left;
-    margin-left: 30px;
-    margin-top: 10px;
-
-    & > p {
-        font-size: 14px;
-        color: #44372b;
-    }
 }
