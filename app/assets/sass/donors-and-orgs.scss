@@ -199,6 +199,10 @@
             top: 5px;
             width: 75px;
         }
+        .avatar-label {
+            position: relative;
+            top: 5px;
+        }
     }
     input[type=submit] {
         @include green-button;

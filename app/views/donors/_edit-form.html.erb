@@ -37,6 +37,11 @@
     </div>
 
     <div class="field">
+        <%= f.label :avatar, 'profile photo', class: 'avatar-label' %>
+        <%= f.file_field :avatar %>
+    </div>
+
+    <div class="field">
         <%= f.label :bio, "short bio", class: 'bio-label' %>
         <%= f.text_area :bio %>
     </div>
