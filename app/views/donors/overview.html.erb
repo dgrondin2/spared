@@ -19,43 +19,45 @@
     <%= link_to "View/Edit profile", donor_edit_path %>
 </div>
 
-<h3 class="overview-heading">You have donated a total of <%= @item_offers.count %> items and <%= number_to_currency @total_donated %>.</h3>
-<ul class="donation-overview">
-    <li class="items-overview">
-        <h4>My matched item-offers</h4>
-        <%= link_to "View all", donor_my_item_offers_path %>
-        <% if @item_offers.any? %>
-            <% @item_offers.each do |item| %>
-                <span><%= "#{item.name}" %></span>
+<div class='donation-overview'>
+    <h3>You have donated a total of <%= @item_offers.count %> items and <%= number_to_currency @total_donated %>.</h3>
+    <ul>
+        <li class='odd'>
+            <h4>My matched item-offers</h4>
+            <%= link_to "View all", donor_my_item_offers_path %>
+            <% if @item_offers.any? %>
+                <% @item_offers.each do |item| %>
+                    <span><%= "#{item.name}" %></span>
+                <% end %>
+            <% else %>
+                <span>No item offers yet!</span>
             <% end %>
-        <% else %>
-            <span>No item offers yet!</span>
-        <% end %>
-    </li>
-    <li class="financial-donation-overview">
-        <h4>My latest financial donations</h4>
-        <%= link_to "View all", donor_my_donations_path %>
-        <% if @donations.any? %>
-            <% @donations.each do |donation| %>
-                <%# TODO: Change format and org name %>
-                <span><%= "#{donation.date_donated} -- #{number_to_currency donation.amount} -- Org name" %></span>
+        </li>
+        <li class='even'>
+            <h4>My latest financial donations</h4>
+            <%= link_to "View all", donor_my_donations_path %>
+            <% if @donations.any? %>
+                <% @donations.each do |donation| %>
+                    <%# TODO: Change format and org name %>
+                    <span><%= "#{donation.date_donated} -- #{number_to_currency donation.amount} -- Org name" %></span>
+                <% end %>
+            <% else %>
+                <span>No donations yet!</span>
             <% end %>
-        <% else %>
-            <span>No donations yet!</span>
-        <% end %>
-    </li>
-    <li class="events-overview">
-        <h4>My volunteer opportunities</h4>
-        <%= link_to "View all", donor_my_events_path %>
-        <% if @events.any? %>
-            <% @events.each do |event| %>
-                <%# TODO: Change format and org name %>
-                <span><%= "#{event.start_time} -- #{event.name}" %></span>
+        </li>
+        <li class='odd'>
+            <h4>My volunteer opportunities</h4>
+            <%= link_to "View all", donor_my_events_path %>
+            <% if @events.any? %>
+                <% @events.each do |event| %>
+                    <%# TODO: Change format and org name %>
+                    <span><%= "#{event.start_time} -- #{event.name}" %></span>
+                <% end %>
+            <% else %>
+                <span>No events yet!</span>
             <% end %>
-        <% else %>
-            <span>No events yet!</span>
-        <% end %>
-    </li>
-</ul>
+        </li>
+    </ul>
+</div>
 
 <div class="teal-mini-footer"></div>

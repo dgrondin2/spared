@@ -1,21 +1,17 @@
-<ul class="my_dash">
-
-  <li class="org_my_dash_heading">MY DASHBBOARD</li>
-
-  <li id="my_dash_overview" <%= current_page?(org_overview_path) ? "class=beige_lighter_bg" : "class=my_dash_link_hover" %>>
-    <%= link_to "OVERVIEW<br/>View donation history".html_safe, org_overview_path, :class => "my_dash_link" %>
-  </li>
-
-  <li id="my_dash_offers" <%= current_page?(org_my_item_matches_path) ? "class=beige_lighter_bg" : "class=my_dash_link_hover" %>>
-    <%= link_to "ITEM-MATCHES<br/>View/Manage item-matches".html_safe, org_my_item_matches_path, :class => "my_dash_link" %>
-  </li>
-
-  <li id="my_dash_donations" <%= current_page?(org_my_donations_path) ? "class=beige_lighter_bg" : "class=my_dash_link_hover" %>>
-    <%= link_to "FINANCIAL DONATIONS<br/>View financial donation history".html_safe, org_my_donations_path, :class => "my_dash_link" %>
-  </li>
-
-  <li id="my_dash_volunteer" <%= current_page?(org_my_events_path) ? "class=beige_lighter_bg" : "class=my_dash_link_hover" %>>
-    <%= link_to "VOLUNTEER<br/>View/Manage volunteer calendar".html_safe, org_my_events_path,  :class => "my_dash_link" %>
-  </li>
-
+<ul class="my-dash">
+    <li>
+        <h2>MY DASHBBOARD</h2>
+    </li>
+    <li <%= current_page?(org_overview_path) ? 'class=active' : '' %>>
+        <%= link_to "OVERVIEW<br/>View donation history".html_safe, org_overview_path %>
+    </li>
+    <li <%= current_page?(org_my_item_matches_path) ? 'class=active' : '' %>>
+        <%= link_to "ITEM-MATCHES<br/>View/Manage item-matches".html_safe, org_my_item_matches_path %>
+    </li>
+    <li <%= current_page?(org_my_donations_path) ? 'class=active' : '' %>>
+        <%= link_to "FINANCIAL DONATIONS<br/>View financial donation history".html_safe, org_my_donations_path %>
+    </li>
+    <li <%= current_page?(org_my_events_path) ? 'class=active' : '' %>>
+        <%= link_to "VOLUNTEER<br/>View/Manage volunteer calendar".html_safe, org_my_events_path %>
+    </li>
 </ul>

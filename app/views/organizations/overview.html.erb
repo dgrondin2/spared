@@ -1,45 +1,39 @@
-<div class="dash_content float_right">
+<div class="yellow-heading-banner">WISHLIST HISTORY AT A GLANCE</div>
 
-  <div class="org_dash_heading heading_label">DONATION HISTORY AT A GLANCE</div>
-
-  <div class="profile_summary">
+<div class="profile-summary">
     <p>
-      <%= "#{@organization.organization_name}" %><br/>
-      <% if @organization.city.present? && @organization.state.present? %>
-          <%= "#{@organization.city}, #{@organization.state} #{@organization.zip}" %>
-      <% else %>
-          <%= "#{@organization.city}" %>
-      <% end %>
+        <%= "#{@organization.organization_name}" %><br/>
+        <% if @organization.city.present? && @organization.state.present? %>
+            <%= "#{@organization.city}, #{@organization.state} #{@organization.zip}" %>
+        <% else %>
+            <%= "#{@organization.city}" %>
+        <% end %>
     </p>
 
-    <div class="avatar_wrapper">
-      <% if @organization.avatar_file_name.present? %>
-          <%= image_tag @organization.avatar.url(:thumb) %>
-      <% end %>
+    <div class="avatar">
+        <% if @organization.avatar_file_name.present? %>
+            <%= image_tag @organization.avatar.url(:thumb) %>
+        <% end %>
     </div>
 
     <%= link_to "View/Edit profile", org_edit_path %>
-  </div>
-
-  <ul class="org_overview">
-    <li>
-      <div class="summary">
-        You have <span class="bold">$0.00</span> raised from <span class="bold">0</span> donors.
-      </div>
-      <%= link_to "View Details", org_my_donations_path %>
-    </li>
-    <li>
-      <div class="summary">
-        <span class="bold">0</span> pending item-matches.
-      </div>
-      <%= link_to "View Details", org_my_item_matches_path %>
-    </li>
-  </ul>
-
-  <div class="small_whitespace clear"></div>
-
-  <br/><br/><br/>
-
-  <div class="yellow_mini_footer"></div>
-
 </div>
+
+<div class='wishlist-overview'>
+    <ul>
+        <li>
+            <div class="summary">
+                You have <span>$0.00</span> raised from <span>0</span> donors.
+            </div>
+            <%= link_to "View Details", org_my_donations_path %>
+        </li>
+        <li>
+            <div class="summary">
+                <span>0</span> pending item-matches.
+            </div>
+            <%= link_to "View Details", org_my_item_matches_path %>
+        </li>
+    </ul>
+</div>
+
+<div class="yellow-mini-footer"></div>

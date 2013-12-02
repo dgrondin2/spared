@@ -1,41 +1,36 @@
-<div class="dash-content">
+<h2 class='teal-heading-banner'>ITEM-OFFERS</h2>
 
-    <h2 class="teal-heading-banner">ITEM-OFFERS</h2>
+<h3 class='my-item-offers-header'>
+    UNMATCHED ITEM-OFFER POSTS
+    <span class='count'>Showing <%= how_many_to_show(@item_offers, 10, 1) %> of <%= @item_offers.count %></span>
+</h3>
 
-    <div class="dash_list_heading">
-        <span class="bold float_left heading-text">UNMATCHED ITEM-OFFER POSTS</span>
-        <span class="float_right ">Showing 1-3 of <%= @item_offers.count %></span>
-    </div>
+<ul class='my-item-offers'>
+    <%# TODO: should only show unmatched item-offers %>
+    <% if @item_offers.any? %>
+        <% @item_offers.each do |item| %>
+            <li class="<%= cycle('odd','even') %>">
+                <div class='item-image'>
+                    <% if item.image_file_name.present? %>
+                        <%= image_tag item.image.url(:thumb) %>
+                    <% end %>
+                </div>
 
-    <ul class="my-item-offers">
-        <% if @item_offers.any? %>
-            <% @item_offers.each do |item| %>
-                <li class="<%= cycle('odd','even') %>_item_offer">
-                    <div class="item_offer_image_container float_left">
-                        <% if item.image_file_name.present? %>
-                            <%= image_tag item.image.url(:thumb) %>
-                        <% end %>
-                    </div>
+                <div class='item-info'>
+                    <p class='name'><%= item.name %></p>
 
-                    <div class="item_offer_info_container float_left">
-                        <p class="bold"><%= item.name %></p>
+                    <p><%= item.description %></p>
+                </div>
 
-                        <p><%= item.description %></p>
-                    </div>
-
-                    <div class="item_offer_link_container float_left">
-                      <%= link_to 'View details', item, :rel => 'facebox' %>
-                    </div>
-                </li>
-            <% end %>
-        <% else %>
-
+                <%= link_to 'View details', item, class: 'facebox-modal' %>
+            </li>
         <% end %>
-    </ul>
+    <% else %>
 
-    <div class="dash_list_heading">
-        <span class="bold float_left heading-text">ITEM OFFER HISTORY</span>
-        <span class="float_right ">Showing 1 of 1</span>
-    </div>
+    <% end %>
+</ul>
 
-</div>
+<h3 class='my-item-offers-header'>
+    ITEM OFFER HISTORY
+    <span class='count'>Showing 1 of 1</span>
+</h3>

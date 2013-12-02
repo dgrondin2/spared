@@ -55,9 +55,31 @@ textarea {
 
 .teal-heading-banner {
     @extend .heading-banner;
-
     background-color: #93d2af;
     color: #44372b;
+
+    body & {
+        font-size: 24px;
+        padding-top: 21px;
+    }
+}
+
+.yellow-heading-banner {
+    @extend .heading-banner;
+    background-color: #c3c23b;
+    color: #44372b;
+
+    body & {
+        font-size: 24px;
+        padding-top: 21px;
+    }
+}
+
+
+.beige-heading-banner {
+    @extend .heading-banner;
+    background-color: #cfbe92;
+    color: #70624c;
 }
 
 .heading-banner {
@@ -106,7 +128,7 @@ textarea {
 
 .dash-content {
     float: right;
-    width: 65%;
+    width: 628px;
 }
 
 .wide-photo {
@@ -353,7 +375,7 @@ table {
     border-radius: 1px;
 }
 
-.yellow_mini_footer {
+.yellow-mini-footer {
     height: 10px;
     width: 100%;
     background-color: #b8b713;
@@ -367,12 +389,6 @@ table {
 }
 .spared_button:hover {
     opacity: 0.8;
-}
-.even_row {
-    background-color: #EFE7D3;
-}
-.odd_row {
-    background-color: #F5F0E2;
 }
 
 .org_button {
@@ -453,4 +469,17 @@ table {
 
 .and_or_container {
     position: relative;
+}
+
+ul {
+    .odd {
+        background-color: #f5f0e2;
+    }
+    .even {
+        background-color: #efe7d3;
+    }
+}
+
+.org a {
+    color: #93d2af;
 }
