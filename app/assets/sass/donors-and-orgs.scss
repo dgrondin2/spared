@@ -255,62 +255,6 @@ aside.edit-sidebar {
     }
 }
 
-.org_edit_profile_wrapper {
-    background-color: #f5f0e2;
-    float: right;
-    height: 630px;
-    margin-top: 10px;
-    width: 76%;
-}
-
-.org_edit_profile_wrapper .field {
-    margin-top: 10px;
-}
-
-.org_edit_profile_wrapper label, .org_edit_profile_wrapper legend {
-    min-width: 130px;
-    margin: 5px 5px 0 25px;
-    float: left;
-    clear: left;
-    font-size: 90%;
-}
-
-.org_edit_profile_wrapper input[type="text"], .org_edit_profile_wrapper input[type="password"] {
-    width: 270px;
-    height: 23px;
-}
-
-.org_edit_profile_wrapper .checkbox-label {
-    width: auto;
-    float: none;
-    clear: both;
-    margin: 0;
-}
-
-.org_edit_profile_wrapper input[type="checkbox"] {
-    margin-left: 135px;
-}
-
-.org_edit_profile_wrapper textarea {
-    width: 270px;
-    height: 150px;
-    margin-top: 10px;
-}
-
-.org_edit_profile_wrapper input[type="submit"] {
-    margin: 10px 0 0 135px;
-}
-
-.edit_profile_picture_wrapper .org_new_photo_link {
-    float: left;
-    clear: left;
-    color: #93d2af;
-}
-
-.org_edit_profile_wrapper .field .short_field {
-    width: 135px;
-}
-
 .org_dash_list_heading {
     height: 40px;
     margin-top: 20px;
@@ -325,64 +269,6 @@ aside.edit-sidebar {
 }
 .org_dash_list_heading .heading-text {
     padding-left: 20px;
-}
-
-.edit_profile_picture_wrapper {
-    float: left;
-    margin-top: 10px;
-}
-
-.edit_profile_picture_wrapper .profile_picture {
-    float: left;
-    clear: left;
-    margin: 10px 0;
-}
-
-.edit_profile_picture_wrapper .new_photo_link {
-    float: left;
-    clear: left;
-}
-
-.edit_profile_wrapper .field {
-    margin-top: 10px;
-}
-
-.edit_profile_wrapper label, .edit_profile_wrapper legend {
-    min-width: 85px;
-    margin: 5px 5px 0 45px;
-    float: left;
-    clear: left;
-    font-size: 90%;
-}
-
-.edit_profile_wrapper input[type="text"], .edit_profile_wrapper input[type="password"] {
-    width: 270px;
-    height: 23px;
-}
-
-.edit_profile_wrapper .checkbox-label {
-    width: auto;
-    float: none;
-    clear: both;
-    margin: 0;
-}
-
-.edit_profile_wrapper input[type="checkbox"] {
-    margin-left: 135px;
-}
-
-.edit_profile_wrapper textarea {
-    width: 270px;
-    height: 150px;
-    margin-top: 10px;
-}
-
-.edit_profile_wrapper input[type="submit"] {
-    margin: 10px 0 0 135px;
-}
-
-.edit_profile_wrapper .field .short_field {
-    width: 135px;
 }
 
 .progress_bar {
