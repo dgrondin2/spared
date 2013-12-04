@@ -16,4 +16,12 @@ module ApplicationHelper
     return "#{first_num}" if first_num == last_num
     "#{first_num}-#{last_num}"
   end
+
+  def item_offer_location(item_offer)
+    location = []
+    location.push "#{item_offer.city}," if item_offer.city.present?
+    location.push "#{item_offer.state}" if item_offer.state.present?
+    location.push "#{item_offer.zip}" if item_offer.zip.present?
+    location.join(' ')
+  end
 end

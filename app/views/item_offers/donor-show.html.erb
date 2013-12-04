@@ -1,33 +1,27 @@
 <div class="item-offer-detail">
-    <div class="heading">ITEM DETAILS</div>
+    <h3>ITEM DETAILS</h3>
 
-    <div class="image-wrapper">
+    <div class="img-frame">
         <% if @item_offer.image.present? %>
             <%= image_tag @item_offer.image.url(:detail) %>
         <% end %>
     </div>
-l
-    <div class="details">
-        <p class="name"><%= @item_offer.name %></p>
-        <% if @item_offer.city.present? && @item_offer.state.present? %>
-            <p class="bold"><%= "#{@item_offer.city}, #{@item_offer.state}" %></p>
-        <% end %>
 
-        <br/>
+    <h4 class="name"><%= @item_offer.name %></h4>
+    <% if @item_offer.city.present? && @item_offer.state.present? %>
+        <p class="bold"><%= "#{@item_offer.city}, #{@item_offer.state}" %></p>
+    <% end %>
 
-        <p class="inline bold">Category: </p><%= "#{@item_offer.category}  |  " %>
-        <p class="inline bold">Animal Type: </p><%= "#{@item_offer.animal_type}  |  " %>
-        <p class="inline bold">Condition: </p><%= "#{@item_offer.condition}  |  " %>
-        <p class="inline bold">Location: </p><%= "#{@item_offer.zip}" %>
-        <br/>
-        <p class="inline bold">Estimated Value: </p><%= "#{@item_offer.estimated_value}  |  " %>
-        <p class="inline bold">Posted: </p><%= "#{@item_offer.created_at}  |  " %>
-        <p class="inline bold">Expires: </p><%= "#{@item_offer.expiration_date}" %>
-        <br/>
-        <br/>
-        <%= @item_offer.description %>
-    </div>
+    <p class='details'>
+        <span>Category: </span><%= "#{@item_offer.category} | "%>
+        <span>Animal Type: </span><%= "#{@item_offer.animal_type} | "%>
+        <span>Condition: </span><%= "#{@item_offer.condition} | "%>
+        <span>Location: </span><%= "#{item_offer_location(@item_offer)} | "%>
+        <span>Estimated Value: </span><%= "#{@item_offer.estimated_value} | "%>
+        <span>Posted: </span><%= "#{@item_offer.created_at} | "%>
+        <span>Expires: </span><%= "#{@item_offer.expiration_date} | "%>
+    </p>
 
-    <div class="whitespace clear"></div>
+    <%= @item_offer.description %>
 </div>
 
