@@ -14,9 +14,7 @@
 
         <div class='whitespace clear'></div>
 
-        <div class='dash-content'>
-            <%= yield %>
-        </div>
+        <%= yield %>
 
         <% if logged_in? %>
             <%= render :partial => "shared/donor-mydash" %>
