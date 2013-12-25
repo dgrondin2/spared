@@ -104,25 +104,80 @@
     }
 }
 
-#search_container {
- 	width: 33%;
-}
+.search-item-offers {
+    $form-height: 465px;
+    $header-height: 40px;
+    float: left;
+    margin-bottom: 20px;
+ 	width: 315px;
 
-#search_header {
- 	box-sizing: border-box;
- 	height: 40px;
- 	background-color: #cfbe92;
- 	padding-left: 8px;
- 	padding-top: 10px;
- 	font-family: "st-marie";
- 	font-size: 16px;
-}
+    h4 {
+        @include reset-box-model;
+        @include box-sizing(border-box);
+        background-color: #cfbe92;
+        padding-left: 18px;
+        padding-top: 10px;
+        font-family: "st-marie";
+        font-size: 16px;
+        height: $header-height;
+        width: 100%;
+    }
+    form {
+        @include box-sizing(border-box);
+        background-color: #f4eee0;
+        height: $form-height - $header-height;
+        padding: 18px;
 
-#search_form_box {
- 	height: 445px;
- 	background-color: #f4eee0;
- 	box-sizing: border-box;
- 	padding: 18px;
+        label.search-for {
+            font-weight: bold;
+        }
+        hr {
+            margin: 25px 0;
+        }
+        input[type=text] {
+            height: 25px;
+            margin-top: 5px;
+            width: 273px;
+        }
+        .search-category,
+        .search-condition {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            width: 125px;
+        }
+        .city-state {
+            input[type=text] {
+                width: 140px;
+            }
+        }
+        .zip-miles {
+            input[type=text] {
+                margin: 8px 0 0 20px;
+                width: 103px;
+            }
+        }
+        .city-state select,
+        .zip-miles select {
+            margin-left: 5px;
+            width: 80px;
+        }
+        input[type=submit] {
+            @include green-button;
+            float: right;
+            margin-top: 30px;
+            height: 30px;
+            width: 100px;
+
+            .org & {
+                @include teal-button;
+            }
+        }
+    }
+
+    #search_item_button {
+        margin-top: 10px;
+    }
 }
 
 #item_offer_buttons {
@@ -161,50 +216,6 @@
 
 
  /*    FORM    */
-
-#search_text_field {
-	width: 273px;
-	height: 25px;
-	margin-top: 5px;
-}
-
-#search_category_dropdown {
-	width: 125px;
-	height: 20px;
-}
-
-#search_condition_dropdown {
-	width: 125px;
-	height: 20px;
-}
-
-#search_zip_text_field {
-	width: 103px;
-	height: 25px;
-	margin-left: 20px;
-	margin-top: 8px;
-}
-
-#search_city_text_field {
-	width: 140px;
-	height: 25px;
-}
-
-#search_miles_dropdown {
-	width: 80px;
-	height: 20px;
-	margin-left: 5px;
-}
-
-#search_state_dropdown {
-	width: 80px;
-	height: 20px;
-	margin-left: 5px;
-}
-
-#search_item_button {
-	margin-top: 10px;
-}
 
 #new_item_offer_container label {
 	display: block;
