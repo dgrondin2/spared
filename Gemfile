@@ -6,12 +6,13 @@ gem 'rails', '3.2.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
-	gem 'sqlite3'
+  gem 'sqlite3'
   gem 'pry'
 end
 
 group :production do
-	gem 'pg', '~> 0.14.0'
+  # Don't bundle this gem locally cause I don't have postgre installed yet
+  #gem 'pg', '~> 0.14.0'
 end
 
 # Gems used only for assets and not required
