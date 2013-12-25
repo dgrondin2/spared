@@ -20,10 +20,10 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by_email(params[:email])
 
-    if wrong_login_form?(user, params[:donor_or_org])
+    if user.nil? || wrong_login_form?(user, params[:donor_or_org])
       flash[:error] = "Email or password is invalid."
       redirect_to :back
-    elsif user && user.authenticate(params[:password])
+    elsif user.authenticate(params[:password])
       log_in_user(user.id)
       if user.role == "donor"
         redirect_to donor_overview_url, notice: "Logged in!"

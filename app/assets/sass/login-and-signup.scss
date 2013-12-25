@@ -103,10 +103,6 @@ form.org-login {
         margin-top: 5px;
         font-size: 12px;
         font-weight: 100;
-
-        .org & {
-            color: #86c4a1;
-        }
     }
 
     input[type=text],
@@ -209,4 +205,8 @@ form.org-login {
     margin-left: 2px; // from outline
     padding-top: 14px;
     width: 320px;
+
+    .org & {
+        color: #fff;
+    }
 }
