@@ -1,12 +1,11 @@
 <%= render :partial => 'search-form' %>
 
-<div class="dash-content">
+<div class="dash-content item-offer-board">
 
 	<div class='beige-heading-banner'>ITEM-OFFER BOARD</div>
 	
 	<br/>
 
-	<!-- Change how table is sorted -->
 	<%= label_tag(:sort, 'Sort by:') %>
 	<%= select_tag(:sort, options_for_select([['Posted date'],['Name']])) %>
 

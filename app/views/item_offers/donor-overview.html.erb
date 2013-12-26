@@ -1,52 +1,21 @@
-<div class="dash_content float_right">
-
-	<!-- Heading and image -->
-
-	<div class="dash_brown_heading heading_label white">Donate items</div>
-	
-	<div class="smaller_whitespace"></div>
+<div class="dash-content item-offer-overview">
+	<div class="brown-heading-banner">Donate items</div>
 	
 	<%= image_tag('donate-initial/Lucy.png') %>
 
-	<!-- Overview text -->
-	<div id="donate_items_text">
-		Instead of selling, throwing away, or storing unused items and supplies, post your<br/>
-		surplus items on our item-offer board. Animal organizations will log in, search the<br/>
-		board, and request the items they need. As a donor, you have complete control over<br/>
-		who receives your donation. Organizations can also post their individual wishlists,<br/>
-		which you can browse and then match your items directly.
-		<br/><br/>
+	<p class='info'>
+		Instead of selling, throwing away, or storing unused items and supplies, post your surplus items on our item-offer board. Animal organizations will log in, search the board, and request the items they need. As a donor, you have complete control over who receives your donation. Organizations can also post their individual wishlists, which you can browse and then match your items directly.
 		<hr/>
-		<br/>
-		By choosing an option below, you can begin helping animal organizations, while<br/>
-		removing unneeded items from your home.
+		By choosing an option below, you can begin helping animal organizations, while removing unneeded items from your home.
+	</p>
+
+	<div class='options'>
+		<%= link_to "POST ITEM-OFFER", donor_new_item_offer_path, :class => 'post-item-offer' %>
+		<%= link_to "FULFILL A WISHLIST",browse_wishlists_path, :class => 'fulfill-wishlist' %>
 	</div>
 
-
-	<!-- Buttons to post new item-offer or fulfill a wishlist -->
-
-	<div id="item_offer_buttons">
-		<div id="post_item_offer_button_container" class="button_border green_border">
-			<%= link_to "POST ITEM-OFFER", donor_new_item_offer_path, :id => 'post_item_offer_button', :class => 'button green_bg' %>
-		</div>
-
-		<div id="fulfill_wishlist_button_container" class="button_border green_border">
-			<%= link_to "FULFILL A WISHLIST",browse_wishlists_path, :id => 'fulfill_wishlist_button', :class => 'button green_bg' %>
-		</div>
-	</div>
-
-
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-
-
-	<!-- Detailed overview -->
-
-	<div class="dash_text_wrapper">
-	
+	<%# TODO: refactor this later (for v2) %>
+	<div class="content-box">
 		<p class="big bold">Groups</p>
 		
 		<p class="small bold inline">Items</p>
@@ -66,7 +35,6 @@
 		
 		<br/>
 		<br/>
-		<br/>
 		
 		<p class="big bold">Individuals</p>
 		
@@ -75,7 +43,6 @@
 		much more! Also visit the TIME section above to donate your time as a volunteer.
 		</p>
 		
-		<br/>
 		<br/>
 		<br/>
 		
@@ -90,7 +57,6 @@
 		
 		<br/>
 		<br/>
-		<br/>
 		
 		<p class="big bold">Post an Item-offer. It's simple!</p>
 		
@@ -101,7 +67,6 @@
 		<br/>
 		Your item-offer will be viewed by all of the animal organizations that are searching the site.<br/>
 		To update or modify your item-offer post, login to your account at any time.<br/>
-		</p>
-		
+		</p>	
 	</div>
 </div>
