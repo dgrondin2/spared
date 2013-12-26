@@ -82,6 +82,17 @@ textarea {
     color: #70624c;
 }
 
+.brown-heading-banner {
+    @extend .heading-banner;
+    background-color: #44372b;
+    color: #fff;
+
+    body & {
+        font-size: 24px;
+        padding-top: 21px;
+    }
+}
+
 .heading-banner {
     @include box-sizing(border-box);
     @include reset-box-model;
@@ -460,7 +471,7 @@ table {
     padding-top: 20px;
 }
 
-.dash_text_wrapper {
+.dash-text-wrapper {
     background-color: #f5f0e2;
     padding: 10px 40px 30px 30px;
     line-height: 15px;

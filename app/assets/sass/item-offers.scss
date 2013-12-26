@@ -174,18 +174,60 @@
             }
         }
     }
+}
 
-    #search_item_button {
+.new-item-offer {
+    img {
         margin-top: 10px;
+    }
+    .info {
+        padding: 15px 60px 10px 30px;
+    }
+    .content-box {
+        margin: 0;
+    }
+    form {
+        label {
+            display: block;
+            width: 150px;
+            float: left;
+            padding-top: 8px;
+        }
+        input[type=text] {
+            height: 25px;
+        }
+        .field {
+            margin-bottom: 10px;
+        }
+        .item-title {
+            width: 390px;
+        }
+        .item-description {
+            resize: vertical;
+            width: 392px;
+        }
+        .item-category,
+        .item-condition {
+            width: 165px;
+            margin-top: 6px;
+        }
+        .item-expiry,
+        .item-zip,
+        .item-estimated-value {
+            width: 145px;
+        }
+        input[type=submit] {
+            @include green-button;
+            margin-top: 40px;
+            height: 33px;
+            width: 100px;
+        }
     }
 }
 
 #item_offer_buttons {
  	position: relative;
 }
-
-
- /*    BUTTONS    */
 
  #fulfill_wishlist_button {
  	width: 170px;
@@ -213,57 +255,6 @@
  	top: 15px;
  }
 
-
-
- /*    FORM    */
-
-#new_item_offer_container label {
-	display: block;
-	width: 150px;
-	float: left;
-	padding-top: 8px;
-}
-
-#new_item_offer_container input {
-	min-height: 20px;
-	margin-bottom: 8px;
-}
-
-#item_title_text_field {
-	width: 385px;
-}
-
-#item_description_text_area {
-	width: 385px;
-}
-
-#item_offer_category {
-	width: 165px;
-	height: 20px;
-	margin-top: 6px;
-}
-
-#item_offer_condition {
-	width: 165px;
-	height: 20px;
-	margin-top: 6px;
-}
-
-#item_offer_expiration_date {
-	width: 145px;
-	height: 20px;
-}
-
-#item_offer_zip {
-	width: 145px;
-	height: 20px;
-}
-
-#item_offer_estimated_value {
-	width: 145px;
-	height: 20px;
-}
-
 .request_item_link {
     display: block;
     background-color: #93d2af;
@@ -286,8 +277,4 @@
 
 .org_item_offer_overlay > .header {
     background-color: #c3c23b;
-}
-
-#donate_items_text {
-    padding: 15px 50px 10px 20px;
 }

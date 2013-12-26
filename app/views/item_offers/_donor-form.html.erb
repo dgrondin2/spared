@@ -1,78 +1,66 @@
-<div class="dash_text_wrapper">
+<div class="content-box">
 
   <%= form_for(@item_offer) do |f| %>
-    <% if @item_offer.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(@item_offer.errors.count, "error") %> prohibited this item from being saved:</h2>
+      <% if @item_offer.errors.any? %>
+          <div id="error_explanation">
+              <h2>
+                  <%= pluralize(@item_offer.errors.count, "error") %> prohibited this item from being saved:
+              </h2>
 
-        <ul>
-        <% @item_offer.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-        </ul>
-      </div>
-    <% end %>
-
-    <div class="smaller_whitespace"></div>
-
-    <div id="new_item_offer_container">
+              <ul>
+                  <% @item_offer.errors.full_messages.each do |msg| %>
+                      <li><%= msg %></li>
+                  <% end %>
+              </ul>
+          </div>
+      <% end %>
 
       <div class="field">
-        <%= f.label :name, 'Title:' %>
-        <%= f.text_field :name, :id => 'item_title_text_field', :class => 'text_field' %>
+          <%= f.label :name, 'Title:' %>
+          <%= f.text_field :name, :class => 'item-title' %>
       </div>
 
       <div class="field">
-        <%= f.label :description, 'Description:' %>
-        <%= f.text_area :description, :rows => '7', :id => 'item_description_text_area', :class => 'text_field' %>
-      </div>
-
-      <div class="smaller_whitespace"></div>
-
-      <div class="field">
-        <%= f.label :animal_type, 'Animal type:' %>
-        <%= f.text_field :animal_type, :class => 'item_animal_type_checkboxes text_field' %>
+          <%= f.label :description, 'Description:' %>
+          <%= f.text_area :description, :rows => '7', :class => 'item-description' %>
       </div>
 
       <div class="field">
-        <%= f.label :category, 'Category:' %>
-        <%= f.select :category, options_for_select(['Category']), :id => 'item_offer_category' %> <br/>
-      </div>
-
-      <div class="smaller_whitespace"></div>
-
-      <div class="field">
-        <%= f.label :condition, 'Condition:' %>
-        <%= f.select :condition, options_for_select([['Any'],['New'],['Used']]), :id => 'item_offer_condition' %> <br/>
-      </div>
-
-      <div class="smaller_whitespace"></div>
-
-      <div class="field">
-        <%= f.label :expiration_date, 'Expiration date:' %>
-        <%= f.text_field :expiration_date, :id => 'item_offer_expiration_date', :class => 'jquery-ui-date text_field' %>
+          <%= f.label :animal_type, 'Animal type:' %>
+          <%= f.text_field :animal_type, :class => 'item-animal-type' %>
       </div>
 
       <div class="field">
-        <%= f.label :estimated_value, 'Estimated value:' %>
-        <%= f.text_field :estimated_value, :class => 'text_field' %>
+          <%= f.label :category, 'Category:' %>
+          <%= f.select :category, options_for_select(['Category']), :class => 'item-category' %>
       </div>
 
       <div class="field">
-        <%= f.label :zip, 'Location Zip Code:' %>
-        <%= f.text_field :zip, :class => 'text_field' %>
+          <%= f.label :condition, 'Condition:' %>
+          <%= f.select :condition, options_for_select([['Any'],['New'],['Used']]), :class => 'item-condition' %>
       </div>
 
       <div class="field">
-        <%= f.label :image, 'Add a photo:' %>
-        <%= f.file_field :image %>
+          <%= f.label :expiration_date, 'Expiration date:' %>
+          <%= f.text_field :expiration_date, :class => 'jquery-ui-date item-expiry' %>
       </div>
 
-      <div class="actions">
-        <%= f.submit %>
+      <div class="field">
+          <%= f.label :estimated_value, 'Estimated value:' %>
+          <%= f.text_field :estimated_value, :class => 'item-estimated-value' %>
       </div>
 
-    </div>
+      <div class="field">
+          <%= f.label :zip, 'Location Zip Code:' %>
+          <%= f.text_field :zip, :class => 'item-zip' %>
+      </div>
+
+      <div class="field">
+          <%= f.label :image, 'Add a photo:' %>
+          <%= f.file_field :image %>
+      </div>
+
+      <%= f.submit 'Submit' %>
   <% end %>
 
 </div>
