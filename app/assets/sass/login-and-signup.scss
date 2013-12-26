@@ -210,3 +210,11 @@ form.org-login {
         color: #fff;
     }
 }
+
+.login-error {
+    color: red;
+    float: left;
+    margin-left: 20px;
+    position: relative;
+    top: -50px;
+}

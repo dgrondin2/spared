@@ -185,6 +185,7 @@
     }
     .content-box {
         margin: 0;
+        padding-top: 25px;
     }
     form {
         label {
@@ -215,6 +216,9 @@
         .item-zip,
         .item-estimated-value {
             width: 145px;
+        }
+        .item-img {
+            margin-top: 8px;
         }
         input[type=submit] {
             @include green-button;

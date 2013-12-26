@@ -494,3 +494,16 @@ ul {
 .org a {
     color: #93d2af;
 }
+
+#error_explanation {
+    h2 {
+        margin: 0;
+        font-weight: normal;
+    }
+    ul {
+        margin-bottom: 20px;
+        li {
+            color: red;
+        }
+    }
+}
