@@ -3,6 +3,43 @@
  * @overview includes everything about events
  */
 
+ @import 'compass';
+ @import 'mixins';
+
+.donate-time-overview {
+    img {
+        margin: 10px 0;
+    }
+    .content-box {
+        margin-top: 0;
+    }
+    hr {
+        margin-top: 18px;
+    }
+    form {
+        h4 {
+            font-size: 14px;
+            margin: 30px 0;
+        }
+        input[type=text] {
+            height: 25px;
+        }
+        input[type=submit] {
+            @include green-button;
+            margin-bottom: 25px;
+            height: 34px;
+            width: 100px;
+        }
+        label {
+            display: inline-block;
+            width: 70px;
+        }
+        .fields {
+            margin-bottom: 40px;
+        }
+    }
+}
+
 .my_calendar h2 {
     text-align: center;
     margin: 5px 0;

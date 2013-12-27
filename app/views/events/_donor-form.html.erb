@@ -1,39 +1,29 @@
-<div class="dash_text_wrapper">
-  <p>Use this form to search for volunteer opportunities that match your interests.</p>
+<div class="content-box">
+    <p>Use this form to search for volunteer opportunities that match your interests.</p>
+    <hr/>
 
-  <hr/>
-  <div class="small_whitespace"></div>
+    <%= form_tag('/donor/events', :method => 'post') do %>
+        <h4>SEARCH VOLUNTEER OPPORTUNITIES BY:</h4>
 
-  <p class="big bold">SEARCH VOLUNTEER OPPORTUNITIES BY:</p>
+        <div class='fields'>
+            <%= label_tag(:location, 'Location') %>
+            <%= text_field_tag(:location, '', :class => 'event-location') %> <br/>
+        </div>
 
-  <div class="whitespace"></div>
+        <div class='fields'>
+            <%= label_tag(:category, 'Category') %>
+            <%= select_tag(:category, options_for_select(['Category']), :class => 'event-category') %>
+        </div>
 
+        <div class='fields'>
+            <%= label_tag(:start_time, "Dates") %>
+            <%= text_field_tag(:start_time, '', :class => 'jquery-ui-date event-date-from') %>
+            to
+            <%= text_field_tag(:end_time, '', :class => 'jquery-ui-date event-date-to') %>
+        </div>
 
+        <%= submit_tag "Search" %>
 
-  <%= form_tag('/donor/events', :method => 'post') do %>
-
-    <%= label_tag(:location, 'Location') %>
-    <%= text_field_tag(:location, '', :id => 'donation_location_text_field', :class => 'text_field') %> <br/>
-
-    <div class="whitespace"></div>
-
-    <%= label_tag(:category, 'Category') %>
-    <%= select_tag(:category, options_for_select(['Category']), :id => 'donation_category_dropdown') %>
-
-    <div class="whitespace"></div>
-
-      <%= label_tag(:start_time, "Dates") %>
-      <%= text_field_tag(:start_time, '', :id => 'donation_date_from_text_field', :class => 'jquery-ui-date text_field') %>
-
-    <div class="whitespace"></div>
-
-    <div id="donation_search_button" class="button_border green_border float_left">
-      <%= submit_tag("Search", :class => 'button small_button green_bg', :type => 'button') %>
-    </div>
-
-    <div class="small_whitespace clear_left"></div>
-
-    <%= link_to("Or browse all opportunities") %>
-  <% end %>
-
+        <%= link_to "Or browse all opportunities" %>
+    <% end %>
 </div>

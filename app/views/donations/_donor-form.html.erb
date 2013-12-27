@@ -1,15 +1,13 @@
-Alternatively, <%= link_to 'click here' %> to select an animal organization of your choice.<br/>
-<br/>
+Alternatively, <%= link_to 'click here' %> to select an animal organization of your choice.
 
 <%= form_tag('/donor/donations', method: 'post') do %>
-
     <span class='dollar-sign'>$</span>
     <%= text_field_tag(:org_donation, "0.00", class: 'donate-to-org') %><br/>
 
     <div class="and-or">
-        <hr class="left"/>
+        <hr/>
         <p>AND/OR</p>
-        <hr class="right"/>
+        <hr/>
     </div>
 
     Donate to spared.org to help cover our administrative costs - keep us going!<br/>
