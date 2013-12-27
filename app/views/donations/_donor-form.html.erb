@@ -3,26 +3,18 @@ Alternatively, <%= link_to 'click here' %> to select an animal organization of y
 
 <%= form_tag('/donor/donations', method: 'post') do %>
 
-    <%= text_field_tag(:org_donation, "$0.00", class: 'text_field donation_textfield') %><br/>
-    <br/><br/>
+    <span class='dollar-sign'>$</span>
+    <%= text_field_tag(:org_donation, "0.00", class: 'donate-to-org') %><br/>
 
-    <div class="and_or">
+    <div class="and-or">
         <hr class="left"/>
         <p>AND/OR</p>
         <hr class="right"/>
     </div>
 
-    <br/><br/>
-
     Donate to spared.org to help cover our administrative costs - keep us going!<br/>
-    <br/>
-    <%= text_field_tag(:spared_donation, "$0.00", class: 'text_field donation_textfield') %><br/>
+    <span class='dollar-sign'>$</span>
+    <%= text_field_tag(:spared_donation, "0.00", class: 'donate-to-spared') %><br/>
 
-    <br/>
-
-    <div id="donate_button" class="button_border green_border float_left">
-        <%= submit_tag("Donate", class: 'button small_button green_bg', type: 'button') %>
-    </div>
-
-    <div class="whitespace"></div>
+    <%= submit_tag "Donate" %>
 <% end %>

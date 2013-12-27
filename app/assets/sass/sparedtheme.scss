@@ -347,31 +347,6 @@ table {
     font-size: 100%;
 }
 
-.and_or .left {
-    border: 0;
-    height: 1px;
-    width: 240px;
-    float: left;
-    color: #d9cba8;
-    background-color: #d9cba8;
-}
-
-.and_or .right {
-    position: relative;
-    top: -15px;
-    border: 0;
-    height: 1px;
-    width: 240px;
-    float: right;
-    color: #d9cba8;
-    background-color: #d9cba8;
-}
-
-.and_or p {
-    margin: 8px;
-    display: inline;
-}
-
 .teal-mini-footer {
     background-color: #93d2af;
     clear: both;
@@ -478,10 +453,6 @@ table {
     width: 88%;
 }
 
-.and_or_container {
-    position: relative;
-}
-
 ul {
     .odd {
         background-color: #f5f0e2;
@@ -491,8 +462,29 @@ ul {
     }
 }
 
+textarea {
+    font-size: 13px;
+}
+
 .org a {
     color: #93d2af;
+}
+
+.and-or {
+    hr {
+        position: relative;
+        top: 3px;
+        display: inline-block;
+        border: 0;
+        height: 1px;
+        width: 240px;
+        color: #d9cba8;
+        background-color: #d9cba8;   
+    }
+    p {
+        margin: 8px;
+        display: inline-block;
+    }
 }
 
 #error_explanation {

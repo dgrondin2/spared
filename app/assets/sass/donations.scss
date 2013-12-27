@@ -1,7 +1,10 @@
 /**
  * @file donations.scss
- * @overview includes everything about donations
+ * @overview includes everything about money donations
  */
+
+@import 'compass';
+@import 'mixins';
 
 .latest-financial-donations {
     margin: 20px 0;
@@ -28,6 +31,48 @@
 
     .bottom-total {
         text-align: right;
+    }
+}
+
+.donate-money-overview {
+    img {
+        margin: 10px 0;
+    }
+    .content-box {
+        margin: 0;
+
+        .preamble {
+            font-weight: bold;
+        }
+    }
+    form {
+        input[type=text] {
+            padding-left: 15px;
+            width: 135px;
+            height: 25px;
+            position: relative;
+            z-index: 0;
+            right: 12px;
+        }
+        .dollar-sign {
+            position: relative;
+            top: 1px;
+            z-index: 10;
+            left: 4px;
+            color: #999;
+        }
+        .and-or {
+            margin: 25px 0;
+        }
+        .donate-to-spared {
+            margin: 20px 0 40px;
+        }
+        input[type=submit] {
+            @include green-button;
+            font-size: 16px;
+            height: 34px;
+            width: 130px;
+        }
     }
 }
 
@@ -110,9 +155,4 @@
 
 .org_latest_financial_donations .bottom_total {
     text-align: right;
-}
-
-.donation_textfield {
-    width: 135px;
-    height: 25px;
 }
