@@ -1,0 +1,13 @@
+<div class='filters'>
+	<div class='field'>
+		<%= label_tag(:sort, 'Sort by:') %>
+		<%= select_tag(:sort, options_for_select([['Posted date'],['Name']])) %>
+	</div>
+	<div class='field'>
+		<%= label_tag(:results, 'Results:') %>
+		<%= select_tag(:results, options_for_select([['10'],['20'],['30'],['50'],['100']])) %>
+	</div>
+	<div class='page'>
+		Showing <span><%= how_many_to_show(what, 10, 1) %></span> of <span><%= what.count %></span>
+	</div>
+</div>

@@ -1,0 +1,33 @@
+<%= render :partial => 'search-form' %>
+
+<div class="dash-content wishlist-board">
+    <div class='beige-heading-banner'>Organization Wishlists</div>
+
+    <%= render partial: 'shared/sort-filters', locals: {what: @wishlists} %>
+
+    <ul class='wishlists'>
+        <% if @wishlists.empty? %>
+            <li class="odd">
+              <p>There are no wishlists yet.</p>
+            </li>
+        <% else %>
+            <% @wishlists.each do |wishlist| %>
+                <li class="<%= cycle('odd','even') %>">
+                    <div class='wishlist-image'>
+                        <% if wishlist.image_file_name.present? %>
+                            <%= image_tag wishlist.image.url(:thumb) %>
+                        <% end %>
+                    </div>
+
+                    <div class="wishlist-info">
+                        <p class="name"><%= wishlist.name %></p>
+
+                        <p><%= wishlist.description %></p>
+                    </div>
+
+                    <%= link_to 'View details', wishlist, class: 'facebox-modal' %>
+                </li>
+            <% end %>
+        <% end %>
+    </div>
+</div>
