@@ -1,77 +1,67 @@
 <%= render :partial => 'search-form' %>
 
 <div class="dash-content item-offer-board">
-
 	<div class='beige-heading-banner'>ITEM-OFFER BOARD</div>
 	
-	<br/>
-
-	<%= label_tag(:sort, 'Sort by:') %>
-	<%= select_tag(:sort, options_for_select([['Posted date'],['Name']])) %>
-
-	<!-- Change how many item-offers are displayed per page -->
-	<%= label_tag(:results, 'Results:') %>
-	<%= select_tag(:results, options_for_select([['10'],['20'],['30'],['50'],['100']])) %>
-
-	<!-- Display which item-offers are shown (and total) -->
-	<div class="float_right">
-		<p class="inline">Showing</p>
-		<p class="inline bold">1-10</p>
-		<p class="inline">of</p>
-		<p class="inline bold"><%= ItemOffer.count %></p> <br/>
+	<div class='filters'>
+		<div class='field'>
+			<%= label_tag(:sort, 'Sort by:') %>
+			<%= select_tag(:sort, options_for_select([['Posted date'],['Name']])) %>
+		</div>
+		<div class='field'>
+			<%= label_tag(:results, 'Results:') %>
+			<%= select_tag(:results, options_for_select([['10'],['20'],['30'],['50'],['100']])) %>
+		</div>
+		<div class='page'>
+			Showing <span><%= how_many_to_show(@item_offers, 10, 1) %></span> of <span><%= @item_offers.count %></span>
+		</div>
 	</div>
 
-	<br/><br/>
+	<ul class='item-offers'>
+		<% if @item_offers.empty? %>
+			<li class='odd'>
+				<p>There are no item-offers.</p>
+			</li>
+		<% else %>
+			<% @item_offers.each do |item| %>
+				<li class='<%= cycle('odd','even') %>'>
+					<div class='item-image'>
+						<% if item.image_file_name.present? %>
+	                        <%= image_tag item.image.url(:thumb) %>
+						<% end %>
+					</div>
 
+					<div class='item-info'>
+						<p class='name'><%= item.name %></p>
 
-	<!-- Display item-offers (if any) -->
+						<p class='summary'>
+							<span class='label'>Category: </span>
+							<%= item.category %>
+							<span class='delimiter'>|</span>
+							<span class='label'>Condition: </span>
+							<%= item.condition %>
+							<span class='delimiter'>|</span>
+							<span class='label'>Location: </span>
+							<%= item.zip %>
+							<br/>
+							<span class='label'>Posted: </span>
+							<%= item.created_at.to_date %>
 
-	<% if @item_offers.empty? %>
+							<% if item.expiration_date.present? %>
+								<span class='delimiter'>|</span>
+								<span class='label'>Expires: </span>
+								<%= item.expiration_date %>
+							<% end %>
+						</p>
 
-		<div class="item_offer_post even_item_offer">
-			<p>There are no item-offers.</p>
-		</div>
+						<p class='description'><%= item.description %></p>
+					</div>
 
-	<% else %>
-
-		<% @item_offers.each do |item_offer| %>
-
-			<div class="item_offer_post <%= cycle('odd','even') %>_item_offer">
-
-				<!-- Item-offer image -->
-				<div class="item_offer_image_container float_left">
-					<% if item_offer.image_file_name.present? %>
-                        <%= image_tag item_offer.image.url(:thumb) %>
-					<% end %>
-				</div>
-				<!-- Item-offer information (overview) -->
-				<div class="item_offer_info_container float_left">
-					<p class="bold"><%= item_offer.name %></p>
-
-					<p class="bold inline">Category:</p> 
-					<p class="inline"><%= item_offer.category %> |</p>
-					<p class="bold inline">Condition:</p>
-					<p class="inline"><%= item_offer.condition %> |</p>
-					<p class="bold inline">Location:</p>
-					<p class="inline"><%= item_offer.zip %></p>
-					<br/>
-					<p class="bold inline">Posted:</p>
-					<p class="inline"><%= item_offer.created_at.to_date %> |</p>
-					<p class="bold inline">Expires:</p>
-					<p class="inline"><%= item_offer.expiration_date %></p>
-					<br/>
-					<p><%= item_offer.description %></p>
-
-				</div>
-
-				<!-- Link to view item-offer details -->
-				<div class="item_offer_link_container float_left">
-					<%= link_to 'View details', item_offer, :rel => 'facebox' %>
-				</div>
-			</div>
-
+					<%= link_to 'View details', item, class: 'facebox-modal' %>
+				</li>
+			<% end %>
 		<% end %>
+	</ul>
 
-	<% end %>
-
+	<%# TODO: paginator %>
 </div>

@@ -5,17 +5,17 @@
     <%= form_tag('/donor/events', :method => 'post') do %>
         <h4>SEARCH VOLUNTEER OPPORTUNITIES BY:</h4>
 
-        <div class='fields'>
+        <div class='field'>
             <%= label_tag(:location, 'Location') %>
             <%= text_field_tag(:location, '', :class => 'event-location') %> <br/>
         </div>
 
-        <div class='fields'>
+        <div class='field'>
             <%= label_tag(:category, 'Category') %>
             <%= select_tag(:category, options_for_select(['Category']), :class => 'event-category') %>
         </div>
 
-        <div class='fields'>
+        <div class='field'>
             <%= label_tag(:start_time, "Dates") %>
             <%= text_field_tag(:start_time, '', :class => 'jquery-ui-date event-date-from') %>
             to

@@ -1,12 +1,12 @@
-<div class='dash-content'>
+<div class='dash-content my-item-offers-page'>
     <h2 class='teal-heading-banner'>ITEM-OFFERS</h2>
 
-    <h3 class='my-item-offers-header'>
+    <h3>
         UNMATCHED ITEM-OFFER POSTS
         <span class='count'>Showing <%= how_many_to_show(@item_offers, 10, 1) %> of <%= @item_offers.count %></span>
     </h3>
 
-    <ul class='my-item-offers'>
+    <ul class='item-offers'>
         <%# TODO: should only show unmatched item-offers %>
         <% if @item_offers.any? %>
             <% @item_offers.each do |item| %>
@@ -31,7 +31,7 @@
         <% end %>
     </ul>
 
-    <h3 class='my-item-offers-header'>
+    <h3>
         ITEM OFFER HISTORY
         <span class='count'>Showing 1 of 1</span>
     </h3>

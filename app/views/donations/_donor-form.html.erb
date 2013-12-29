@@ -2,7 +2,7 @@ Alternatively, <%= link_to 'click here' %> to select an animal organization of y
 
 <%= form_tag('/donor/donations', method: 'post') do %>
     <span class='dollar-sign'>$</span>
-    <%= text_field_tag(:org_donation, "0.00", class: 'donate-to-org') %><br/>
+    <%= text_field_tag(:org_donation, '', placeholder: '0.00', class: 'donate-to-org') %><br/>
 
     <div class="and-or">
         <hr/>
@@ -12,7 +12,7 @@ Alternatively, <%= link_to 'click here' %> to select an animal organization of y
 
     Donate to spared.org to help cover our administrative costs - keep us going!<br/>
     <span class='dollar-sign'>$</span>
-    <%= text_field_tag(:spared_donation, "0.00", class: 'donate-to-spared') %><br/>
+    <%= text_field_tag(:spared_donation, '', placeholder: '0.00', class: 'donate-to-spared') %><br/>
 
     <%= submit_tag "Donate" %>
 <% end %>
