@@ -13,10 +13,8 @@
         <%= render :partial => "shared/org-dash-nav" %>
 
         <div class="whitespace clear"></div>
-
-        <div class='dash-content'>
-            <%= yield %>
-        </div>
+        
+        <%= yield %>
 
         <% if current_user %>
             <%= render :partial => 'shared/org-mydash' %>

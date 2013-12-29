@@ -1,4 +1,5 @@
 @import 'compass';
+@import 'variables';
 
 .page-frame {
     min-height: 1000px;
@@ -15,7 +16,7 @@ body {
 }
 
 a {
-    color: #a8a70f;
+    color: $donor-link-color;
     font-weight: bold;
     font-size: 13px;
     font-family: "Lucida Grande";
@@ -466,8 +467,12 @@ textarea {
     font-size: 13px;
 }
 
-.org a {
-    color: #93d2af;
+.org {
+    a,
+    .account-links .separator,
+    .page-header nav a:hover {
+        color: $org-link-color;
+    }
 }
 
 .and-or {

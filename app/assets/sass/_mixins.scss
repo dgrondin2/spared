@@ -1,7 +1,7 @@
 .button {
     @include box-sizing(border-box);
     display: block;
-    color: #fff;
+    color: #fff !important;
     border: 2px solid #fff;
     font-size: 13px;
     font-weight: 100;

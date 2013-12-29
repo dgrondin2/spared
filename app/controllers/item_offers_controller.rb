@@ -14,9 +14,9 @@ class ItemOffersController < ApplicationController
       respond_to do |format|
         format.html {
           if @user.role == "donor"
-            render :action => 'donor-index', layout: 'donor-dash'
+            render layout: 'donor-dash'
           elsif @user.role == "organization"
-            render :action => 'org-index', layout: 'org-dash'
+            render layout: 'org-dash'
           end
         }
         format.json { render :json => @item_offers }

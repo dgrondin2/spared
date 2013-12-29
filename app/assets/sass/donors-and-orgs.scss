@@ -47,6 +47,10 @@
         &:hover {
             color: #a8a70f;
             cursor: pointer;
+
+            .org & {
+                color: #93d2af;
+            }
         }
     }
     .active a {

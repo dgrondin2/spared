@@ -1,7 +1,10 @@
 module ApplicationHelper
   def guess_user_role
     # if we know it, return it
-    return current_user.role if current_user
+    if current_user && current_user.role.present?
+      return 'org' if current_user.role == 'organization'
+      return current_user.role
+    end
     guess = current_page?(org_login_path) ? 'org' : nil
     guess ||= cookies[:is_member] || 'donor'
   end
