@@ -7,10 +7,10 @@ class WishlistsController < ApplicationController
 
     respond_to do |format|
       format.html {
-        if @user.role == "donor"
-          render :action => 'donor-index', layout: 'donor-dash'
-        elsif @user.role == "organization"
-          render :action => 'org-index', layout: 'org-dash'
+        if @user.role == "organization"
+          render :action => 'index', layout: 'org-dash'
+        else
+          render :action => 'index', layout: 'donor-dash'
         end
       }
       format.json { render :json => @wishlists }
@@ -23,9 +23,25 @@ class WishlistsController < ApplicationController
 
     respond_to do |format|
       format.html {
-        render :action => 'org-new', :layout => 'org-dash'
+        render :action => 'new', :layout => 'org-dash'
       }
       format.json { render :json => @wishlist }
+    end
+  end
+
+  def create
+    org = Organization.find(current_user.organization_id)
+    @wishlist = Wishlist.new(params[:wishlist])
+    @wishlist.organization_id = org.id
+
+    respond_to do |format|
+      if @wishlist.save
+        format.html { redirect_to :back, :notice => 'Item-offer was successfully posted.' }
+        format.json { render :json => @wishlist, :status => :created, :location => @wishlist }
+      else
+        format.html { render :action => "new", :layout => 'org-dash' }
+        format.json { render :json => @wishlist.errors, :status => :unprocessable_entity }
+      end
     end
   end
 

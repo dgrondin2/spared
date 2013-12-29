@@ -45,12 +45,20 @@ input[type=password] {
     border: 1px solid #777777;
     border-radius: 1px;
     font-size: 13px;
-    outline-color: #b8b713;
+    outline-color: $donor-link-color;
     padding-left: 5px;
+
+    .org & {
+        outline-color: $org-link-color;
+    }
 }
 
 textarea {
-    outline-color: #b8b713;
+    outline-color: $donor-link-color;
+
+    .org & {
+        outline-color: $org-link-color;
+    }
 }
 
 

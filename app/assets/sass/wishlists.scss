@@ -3,12 +3,121 @@
  * @overview includes everything about wishlists
  */
 
-.odd_wishlist {
-    background-color: #f8f4ea;
+ @import 'compass';
+ @import 'mixins';
+
+.my-wishlists-page {
+    .wishlists {
+        margin-top: 10px;
+
+        li {
+            @include box-sizing(border-box);
+            border-bottom: 1px solid #dcd0b0;
+            min-height: 100px;
+            overflow: hidden;
+            padding: 20px;
+            position: relative;
+
+            .wishlist-image {
+                display: inline-block;
+                height: 50px;
+                width: 50px;
+                border: 1px solid #d2c298;
+                margin-right: 15px;
+                vertical-align: top;
+            }
+            .wishlist-info {
+                @include box-sizing(border-box);
+                position: absolute;
+                min-height: 52px;
+                width: 70%;
+                top: 18px;
+                left: 90px;
+                overflow: hidden;
+                float: left;
+                padding-right: 20px;
+
+                .name {
+                    font-weight: bold;
+                }
+                p {
+                    margin: 0;
+                    margin-bottom: 7px;
+                }
+            }
+            a {
+                position: absolute;
+                right: 20px;
+                top: 40%;
+            }
+        }
+    }
+
+    .new-wishlist-button {
+        $line-height: 16px;
+        $btn-height: 34px;
+        @include teal-button;
+        line-height: $line-height;
+        margin-top: 25px;
+        padding: floor(($btn-height - $line-height - 4)/2);
+        text-transform: uppercase;
+        height: $btn-height;
+        width: 195px;
+
+        .body & { // overrides
+            font-size: 14px;
+        }
+    }
 }
 
-.even_wishlist {
-    background-color: #f3eedf;
+.new-wishlist-page {
+    > img {
+        margin: 10px 0;
+    }
+    .content-box {
+        margin: 0;
+        padding-top: 25px;
+    }
+    form {
+        label {
+            display: block;
+            width: 150px;
+            float: left;
+            padding-top: 8px;
+        }
+        input[type=text] {
+            height: 25px;
+        }
+        .field {
+            margin-bottom: 10px;
+        }
+        .item-title {
+            width: 390px;
+        }
+        .item-description {
+            resize: vertical;
+            width: 392px;
+        }
+        .item-category,
+        .item-condition {
+            width: 165px;
+            margin-top: 6px;
+        }
+        .item-expiry,
+        .item-zip,
+        .item-estimated-value {
+            width: 145px;
+        }
+        .item-img {
+            margin-top: 8px;
+        }
+        input[type=submit] {
+            @include teal-button;
+            margin-top: 40px;
+            height: 33px;
+            width: 100px;
+        }
+    }
 }
 
 .odd_wishlist, .even_wishlist {
