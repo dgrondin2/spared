@@ -512,3 +512,25 @@ textarea {
         }
     }
 }
+
+.wishlist-board,
+.item-offer-board,
+.volunteer-board {
+    .filters {
+        margin: 25px 0 20px;
+        overflow: auto;
+
+        .field {
+            float: left;
+            margin-right: 10px;
+        }
+        .page {
+            float: right;
+            padding-top: 2px;
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}
