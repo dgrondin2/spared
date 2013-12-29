@@ -6,7 +6,8 @@
  @import 'compass';
  @import 'mixins';
 
-.my-wishlists-page {
+.my-wishlists-page,
+.wishlist-board {
     .wishlists {
         margin-top: 10px;
 
@@ -48,11 +49,13 @@
             a {
                 position: absolute;
                 right: 20px;
-                top: 40%;
+                top: 42px;
             }
         }
     }
+}
 
+.my-wishlists-page {
     .new-wishlist-button {
         $line-height: 16px;
         $btn-height: 34px;
@@ -120,15 +123,24 @@
     }
 }
 
-.odd_wishlist, .even_wishlist {
-    border-bottom: 1px solid #cfbe92;
-    box-sizing: border-box;
-    height: 90px;
-    padding: 20px;
-}
+.wishlist-board {
+    .filters {
+        margin: 25px 0 20px;
+        overflow: auto;
 
-.odd_wishlist > *, .even_wishlist > * {
-    float: left;
+        .field {
+            float: left;
+            margin-right: 10px;
+        }
+        .page {
+            float: right;
+            padding-top: 2px;
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
 }
 
 .wishlist_info p {
@@ -141,14 +153,6 @@
 
 .odd_wishlist input, .even_wishlist input {
     margin: 15px 0 0 20px;
-}
-
-.new_wishlist_button {
-    display: block;
-    margin-top: 25px;
-    height: 30px;
-    width: 200px;
-    font-weight: normal;
 }
 
 .wishlist_date_field {
