@@ -1,23 +1,26 @@
-<div class="org_item_offer_overlay">
+<div class="request-item-detail">
+    <h3>Request An Item</h3>
 
-  <div class="header">REQUEST AN ITEM</div>
-
-  <div class="event_image_container float_left">
-
-  </div>
-
-  <div class="details">
-    <div class="header">Name of event, 2pm to 5pm</div>
-    <div class="content">
-      Attending volunteers: <span>00</span><br/>
-      Total volunteers needed: <span>10</span><br/>
-      <br/>
-
-      <a>Name of Volunteers</a><br/>
-      <a>Get listed here</a><br/>
-      <a>And clicking on them</a><br/>
-      <a>Will link to</a><br/>
-      <a>Donor profile</a><br/>
+    <div class="img-frame">
+        <% if @item_offer.image.present? %>
+            <%= image_tag @item_offer.image.url(:detail) %>
+        <% end %>
     </div>
-  </div>
+
+    <h4 class="name"><%= @item_offer.name %></h4>
+    <% if @item_offer.city.present? && @item_offer.state.present? %>
+        <p class="bold"><%= "#{@item_offer.city}, #{@item_offer.state}" %></p>
+    <% end %>
+
+    <p class='details'>
+        <span>Category: </span><%= "#{@item_offer.category} | "%>
+        <span>Animal Type: </span><%= "#{@item_offer.animal_type} | "%>
+        <span>Condition: </span><%= "#{@item_offer.condition} | "%>
+        <span>Location: </span><%= "#{item_offer_location(@item_offer)} | "%>
+        <span>Estimated Value: </span><%= "#{@item_offer.estimated_value} | "%>
+        <span>Posted: </span><%= "#{@item_offer.created_at} | "%>
+        <span>Expires: </span><%= "#{@item_offer.expiration_date} | "%>
+    </p>
+
+    <%= @item_offer.description %>
 </div>

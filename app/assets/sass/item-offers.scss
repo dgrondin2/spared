@@ -5,6 +5,7 @@
 
 @import 'compass';
 @import 'mixins';
+@import 'variables';
 
 .my-item-offers-page,
 .item-offer-board {
@@ -121,25 +122,49 @@
         a {
             position: absolute;
             right: 30px;
-            top: 42%;
+            top: 38px;
+
+            &.request-item {
+                $line-height: 16px;
+                $button-height: 30px;
+                @include box-sizing(border-box);
+                background-color: $org-link-color;
+                color: #fff;
+                display: block;
+                font-weight: normal;
+                line-height: $line-height;
+                padding-top: floor(($button-height - $line-height) / 2); // vertical align
+                text-align: center;
+                text-transform: uppercase;
+                top: 35px;
+                height: $button-height;
+                width: 105px;
+
+                &:hover {
+                    opacity: 0.85;
+                }
+            }
         }
     }
 }
 
-.item-offer-detail {
-    margin: 25px 25px 35px;
+.item-offer-detail,
+.request-item-detail {
+    margin: 25px 25px 55px;
 
     h3 {
-        height: 35px;
-        padding: 10px 0 0 20px;
-        margin: 20px 0 30px 0;
-        width: 680px;
-
-        background-color: #93d2af;
-        box-sizing: border-box;
-        color: #3b261c;
+        $line-height: 16px;
+        $header-height: 40px;
+        @include box-sizing(border-box);
+        background-color: #c3c23b;
+        color: #44372b;
         font-size: 14px;
-        font-weight: normal;
+        line-height: $line-height;
+        padding-top: floor(($header-height - $line-height)/2); // vertical-align
+        padding-left: 20px;
+        text-transform: uppercase;
+        height: $header-height;
+        width: 670px;
     }
     .img-frame {
         float: left;
@@ -148,7 +173,6 @@
         border: 1px solid #d2c298;
         margin: 0 20px;
     }
-
     .details span {
         font-weight: bold;
     }
@@ -157,6 +181,25 @@
         font-weight: normal;
         margin: 0;
     }
+}
+
+.item-offer-detail {
+    h3 {
+        margin: 20px 0 30px 0;
+        background-color: #93d2af;
+        color: #3b261c;
+    }
+}
+
+.request-item-detail {
+    h3 {
+        background-color: #c3c23b;
+        color: #44372b;
+    }
+}
+
+.org_item_offer_overlay > .header {
+    background-color: #c3c23b;
 }
 
 .search-item-offers {
@@ -336,28 +379,4 @@
             width: 100px;
         }
     }
-}
-
-.request_item_link {
-    display: block;
-    background-color: #93d2af;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: 100;
-}
-
-.request_item_link:hover {
-    opacity: 0.9;
-}
-
-.org_item_offer_overlay {
-    box-sizing: border-box;
-    border-radius: 5px;
-    width: 630px;
-    padding: 0 0 30px 40px;
-    overflow: hidden;
-}
-
-.org_item_offer_overlay > .header {
-    background-color: #c3c23b;
 }

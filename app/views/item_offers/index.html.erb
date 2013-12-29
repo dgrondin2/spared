@@ -57,7 +57,11 @@
 						<p class='description'><%= item.description %></p>
 					</div>
 
-					<%= link_to 'View details', item, class: 'facebox-modal' %>
+					<% if current_user && current_user.is_organization? %>
+						<%= link_to 'Request item', item, class: 'request-item facebox-modal' %>
+					<% else %>
+						<%= link_to 'View details', item, class: 'facebox-modal' %>
+					<% end %>
 				</li>
 			<% end %>
 		<% end %>
