@@ -1,34 +1,34 @@
 <%= render :partial => 'org-search-form' %>
 
 <div class="dash-content volunteer-board">
-  <div class='beige-heading-banner'>VOLUNTEER OPPORTUNITIES</div>
+    <div class='beige-heading-banner'>VOLUNTEER OPPORTUNITIES</div>
 
-  <%= render partial: 'shared/sort-filters', locals: {what: @events} %>
+    <%= render partial: 'shared/sort-filters', locals: {what: @events} %>
 
-  <% if @events.empty? %>
+    <% if @events.empty? %>
 
-      <div class="event_post even_event">
-        <p>No events yet!.</p>
-      </div>
+        <div class="event_post even_event">
+            <p>No events yet!.</p>
+        </div>
 
-  <% else %>
-      <% @events.each do |event| %>
-          <div class="event_post <%= cycle('odd','even') %>_event">
+    <% else %>
+        <% @events.each do |event| %>
+            <div class="event_post <%= cycle('odd','even') %>_event">
 
-              <div class="event_image_container float_left">
-                  <% if event.image_file_name.present? %>
-                      <%= image_tag event.image.url(:thumb) %>
-                  <% end %>
-              </div>
+                <div class="event_image_container float_left">
+                    <% if event.image_file_name.present? %>
+                        <%= image_tag event.image.url(:thumb) %>
+                    <% end %>
+                </div>
 
-              <div class="event_info_container float_left">
-                  <p><%= event.description %></p>
-              </div>
+                <div class="event_info_container float_left">
+                    <p><%= event.description %></p>
+                </div>
 
-              <div class="event_link_container float_left">
-                  <%= link_to 'View Details', "/org/events/#{event.id}", class: "org_event_detail_link", rel: 'facebox' %>
-              </div>
-          </div>
-      <% end %>
-  <% end %>
+                <div class="event_link_container float_left">
+                    <%= link_to 'View Details', "/org/events/#{event.id}", class: "org_event_detail_link", rel: 'facebox' %>
+                </div>
+            </div>
+        <% end %>
+    <% end %>
 </div>

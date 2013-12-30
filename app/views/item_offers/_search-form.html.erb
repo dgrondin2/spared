@@ -4,7 +4,7 @@
 
 	<%= form_tag('/donor/items/index', :method => 'post') do %>
 		<%= label_tag(:search, 'Search for', class: 'search-for') %>
-		<%= text_field_tag(:search, "", :id => "search_text_field") %>
+		<%= text_field_tag(:search, "", class: "search-field") %>
 
 		<hr/>
 
@@ -22,7 +22,7 @@
 		<div class='zip-miles'>
 			<%= label_tag(:zip, 'or', :class => 'italic') %>
 			<%= text_field_tag(:zip, '', placeholder: "Zipcode") %>
-			<%= select_tag(:miles, options_for_select([['10 mi'],['25 mi'],['50 mi'],['100 mi']]), :class => 'text_field') %>
+			<%= select_tag(:miles, options_for_select([['10 mi'],['25 mi'],['50 mi'],['100 mi']])) %>
 		</div>
 
         <%= submit_tag 'Search' %>	

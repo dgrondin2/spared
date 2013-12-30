@@ -123,21 +123,102 @@
     }
 }
 
-.wishlist-board {
-    .filters {
-        margin: 25px 0 20px;
-        overflow: auto;
+.search-wishlists {
+    $form-height: 500px;
+    $header-height: 40px;
+    float: left;
+    margin-bottom: 20px;
+    width: 315px;
 
-        .field {
-            float: left;
-            margin-right: 10px;
+    h4 {
+        @include reset-box-model;
+        @include box-sizing(border-box);
+        background-color: #cfbe92;
+        padding-left: 18px;
+        padding-top: 10px;
+        font-family: "st-marie";
+        font-size: 16px;
+        height: $header-height;
+        width: 100%;
+    }
+    form {
+        @include box-sizing(border-box);
+        background-color: #f4eee0;
+        height: $form-height - $header-height;
+        padding: 18px;
+
+        label.search-for {
+            font-weight: bold;
         }
-        .page {
+        hr {
+            margin: 25px 0;
+        }
+        input[type=text] {
+            height: 25px;
+            margin-top: 5px;
+            width: 273px;
+        }
+        input[type=submit] {
+            @include green-button;
             float: right;
-            padding-top: 2px;
+            height: 34px;
+            width: 114px;
 
-            span {
-                font-weight: bold;
+            .org & {
+                @include teal-button;
+            }
+        }
+        .date-fields {
+            margin-bottom: 25px;
+
+            .dates-label {
+                display: block;
+            }
+            .to-label {
+                margin: 0 20px;
+            }
+            input[type=text] {
+                width: 75px;
+            }
+        }
+        .category-fields {
+            margin-bottom: 25px;
+
+            > * {
+                display: block;
+            }
+            .category {
+                width: 165px;
+            }
+            .subcategory {
+                width: 125px;
+            }
+            > select {
+                margin-top: 10px;
+            }
+        }
+        .city-state {
+            label {
+                display: block;
+            }
+            input[type=text] {
+                width: 140px;
+            }
+            select {
+                width: 80px;
+            }
+        }
+        .zip-miles {
+            margin-bottom: 25px;
+
+            label {
+                margin: 0 5px;
+            }
+            input[type=text] {
+                width: 113px;
+            }
+            select {
+                width: 80px;
             }
         }
     }

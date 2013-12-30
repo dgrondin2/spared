@@ -185,78 +185,6 @@
     background-color: #c3c23b;
 }
 
-.search-item-offers {
-    $form-height: 465px;
-    $header-height: 40px;
-    float: left;
-    margin-bottom: 20px;
- 	width: 315px;
-
-    h4 {
-        @include reset-box-model;
-        @include box-sizing(border-box);
-        background-color: #cfbe92;
-        padding-left: 18px;
-        padding-top: 10px;
-        font-family: "st-marie";
-        font-size: 16px;
-        height: $header-height;
-        width: 100%;
-    }
-    form {
-        @include box-sizing(border-box);
-        background-color: #f4eee0;
-        height: $form-height - $header-height;
-        padding: 18px;
-
-        label.search-for {
-            font-weight: bold;
-        }
-        hr {
-            margin: 25px 0;
-        }
-        input[type=text] {
-            height: 25px;
-            margin-top: 5px;
-            width: 273px;
-        }
-        .search-category,
-        .search-condition {
-            display: block;
-            margin-top: 10px;
-            margin-bottom: 25px;
-            width: 125px;
-        }
-        .city-state {
-            input[type=text] {
-                width: 140px;
-            }
-        }
-        .zip-miles {
-            input[type=text] {
-                margin: 8px 0 0 20px;
-                width: 103px;
-            }
-        }
-        .city-state select,
-        .zip-miles select {
-            margin-left: 5px;
-            width: 80px;
-        }
-        input[type=submit] {
-            @include green-button;
-            float: right;
-            margin-top: 30px;
-            height: 30px;
-            width: 100px;
-
-            .org & {
-                @include teal-button;
-            }
-        }
-    }
-}
-
 .item-offer-overview {
     img {
         margin-top: 10px;
@@ -360,6 +288,78 @@
             margin-top: 40px;
             height: 33px;
             width: 100px;
+        }
+    }
+}
+
+.search-item-offers {
+    $form-height: 465px;
+    $header-height: 40px;
+    float: left;
+    margin-bottom: 20px;
+    width: 315px;
+
+    h4 {
+        @include reset-box-model;
+        @include box-sizing(border-box);
+        background-color: #cfbe92;
+        padding-left: 18px;
+        padding-top: 10px;
+        font-family: "st-marie";
+        font-size: 16px;
+        height: $header-height;
+        width: 100%;
+    }
+    form {
+        @include box-sizing(border-box);
+        background-color: #f4eee0;
+        height: $form-height - $header-height;
+        padding: 18px;
+
+        label.search-for {
+            font-weight: bold;
+        }
+        hr {
+            margin: 25px 0;
+        }
+        input[type=text] {
+            height: 25px;
+            margin-top: 5px;
+            width: 273px;
+        }
+        .search-category,
+        .search-condition {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            width: 125px;
+        }
+        .city-state {
+            input[type=text] {
+                width: 140px;
+            }
+        }
+        .zip-miles {
+            input[type=text] {
+                margin: 8px 0 0 20px;
+                width: 103px;
+            }
+        }
+        .city-state select,
+        .zip-miles select {
+            margin-left: 5px;
+            width: 80px;
+        }
+        input[type=submit] {
+            @include green-button;
+            float: right;
+            margin-top: 30px;
+            height: 30px;
+            width: 100px;
+
+            .org & {
+                @include teal-button;
+            }
         }
     }
 }
