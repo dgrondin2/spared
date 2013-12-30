@@ -45,6 +45,20 @@ class WishlistsController < ApplicationController
     end
   end
 
+  def show
+    @wishlist = Wishlist.find(params[:id])
+    @user = current_user
+    @organization = Organization.find(@user.organization_id)
+    @wishlist_items = @wishlist.wishlist_items if @wishlist.present?
+
+    respond_to do |format|
+      format.html {
+        render action: 'show', layout: 'yield-only'
+      }
+      format.json { render :json => @wishlist_items }
+    end
+  end
+
   def my_wishlists
     @user = current_user
     @wishlists = Wishlist.all

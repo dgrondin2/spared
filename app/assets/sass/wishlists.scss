@@ -5,12 +5,11 @@
 
  @import 'compass';
  @import 'mixins';
+ @import 'variables';
 
 .my-wishlists-page,
 .wishlist-board {
     .wishlists {
-        margin-top: 10px;
-
         li {
             @include box-sizing(border-box);
             border-bottom: 1px solid #dcd0b0;
@@ -56,6 +55,9 @@
 }
 
 .my-wishlists-page {
+    > img {
+        margin: 10px 0;
+    }
     .new-wishlist-button {
         $line-height: 16px;
         $btn-height: 34px;
@@ -73,12 +75,84 @@
     }
 }
 
-.new-wishlist-page {
-    > img {
-        margin: 10px 0;
+.wishlist-detail {
+    margin: 25px 25px 55px;
+    overflow: hidden;
+
+    h3 {
+        $line-height: 16px;
+        $header-height: 40px;
+        @include box-sizing(border-box);
+        background-color: #44372b;
+        color: #fff;
+        font-size: 14px;
+        line-height: $line-height;
+        padding-top: floor(($header-height - $line-height)/2); // vertical-align
+        padding-left: 20px;
+        text-transform: uppercase;
+        height: $header-height;
+        width: 670px;
     }
+    .org-info {
+        float: left;
+
+        .img-frame {
+            width: 125px;
+            height: 125px;
+            border: 1px solid #d2c298;
+        }
+        p {
+            color: $org-link-color;
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 17px;
+
+            span {
+                color: #393939;
+                font-size: 11px;
+                font-weight: normal;
+            }
+        }
+    }
+    .wishlist-info {
+        float: right;
+        width: 465px;
+
+        h4 {
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        h5 {
+            @include box-sizing(border-box);
+            $height: 40px;
+            $line-height: 16px;
+            background-color: #f3eedf;
+            font-size: 13px;
+            font-weight: bold;
+            line-height: $line-height;
+            margin: 0;
+            padding-top: floor(($height - $line-height)/2);
+            padding-left: 20px;
+            height: $height;
+            width: 100%;
+
+            span {
+                font-weight: normal;
+
+                .amount-raised {
+                    color: $org-link-color;
+                    font-weight: bold;
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+}
+
+.new-wishlist-page {
     .content-box {
-        margin: 0;
+        margin: 10px 0 0;
         padding-top: 25px;
     }
     form {

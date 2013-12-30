@@ -1,6 +1,8 @@
 <div class="dash-content my-wishlists-page">
     <div class="brown-heading-banner">My Wishlists</div>
 
+    <%= image_tag('donate-initial/Lucy.png') %>
+
     <ul class="wishlists">
         <% if @wishlists.count() > 0 %>
             <% @wishlists.each do |wishlist| %>
@@ -14,7 +16,7 @@
                         <p class="name"><%= wishlist.name %></p>
                         <p class="description"><%= wishlist.description %></p>
                     </div>
-                    <%= link_to "view/edit" %>
+                    <%= link_to "view/edit", wishlist, class: 'facebox-modal' %>
                 </li>
             <% end %>
         <% else %>

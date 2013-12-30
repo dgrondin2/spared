@@ -16,7 +16,7 @@
         <span>Category: </span><%= "#{@item_offer.category} | "%>
         <span>Animal Type: </span><%= "#{@item_offer.animal_type} | "%>
         <span>Condition: </span><%= "#{@item_offer.condition} | "%>
-        <span>Location: </span><%= "#{item_offer_location(@item_offer)} | "%>
+        <span>Location: </span><%= "#{show_location(@item_offer)} | "%>
         <span>Estimated Value: </span><%= "#{@item_offer.estimated_value} | "%>
         <span>Posted: </span><%= "#{@item_offer.created_at} | "%>
         <span>Expires: </span><%= "#{@item_offer.expiration_date} | "%>

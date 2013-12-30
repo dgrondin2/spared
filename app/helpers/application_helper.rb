@@ -20,11 +20,11 @@ module ApplicationHelper
     "#{first_num}-#{last_num}"
   end
 
-  def item_offer_location(item_offer)
+  def show_location(what)
     location = []
-    location.push "#{item_offer.city}," if item_offer.city.present?
-    location.push "#{item_offer.state}" if item_offer.state.present?
-    location.push "#{item_offer.zip}" if item_offer.zip.present?
+    location.push "#{what.city}," if what.city.present?
+    location.push "#{what.state}" if what.state.present?
+    location.push "#{what.zip}" if what.zip.present?
     location.join(' ')
   end
 end
