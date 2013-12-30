@@ -1,0 +1,41 @@
+<div class='wishlist-detail'>
+	<h3>Wishlist Posted <%= @wishlist.created_at.to_date %></h3>
+
+	<div class='org-info'>
+		<div class="img-frame">
+	        <% if @wishlist.image.present? %>
+	            <%= image_tag @wishlist.image.url(:detail) %>
+	        <% end %>
+	    </div>
+
+	    <p>
+	    	<%= @organization.organization_name %>
+	    	<span class='location'><%= show_location(@organization) %></span>
+	    </p>
+	</div>
+
+    <div class='wishlist-info'>
+    	<h4><%= @wishlist.name %></h4>
+    	<h5>
+    		Wishlist Items
+    		<span><span class='amount-raised'>$0.00 raised</span> / $95.98 needed</span>
+    	</h5>
+    	<ul class='wishlist-items'>
+    		<% if @wishlist_items.nil? %>
+    			<li class='odd'>
+					No wishlist items yet.
+    			</li>
+    		<% else %>
+    			<% @wishlist_items.each do |wi| %>
+		    		<li class="<%= cycle('odd','even') %>">
+						<div class='item-image'>
+							<% if item.image_file_name.present? %>
+		                        <%= image_tag item.image.url(:thumb) %>
+							<% end %>
+						</div>
+		    		</li>
+	    		<% end %>
+    		<% end %>
+    	</ul>
+    </div>
+</div>
