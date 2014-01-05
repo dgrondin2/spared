@@ -133,7 +133,7 @@
 
 .item-offer-detail,
 .request-item-detail {
-    margin: 25px 25px 55px;
+    margin: 25px 25px 45px;
 
     h3 {
         $line-height: 16px;
@@ -178,6 +178,52 @@
     h3 {
         background-color: #c3c23b;
         color: #44372b;
+    }
+    .details {
+        margin-left: 142px; // TODO: use sass vars for better stability
+
+        .description {
+            font-weight: normal;
+            margin-top: 5px;
+            position: relative;
+            top: 5px;
+        }
+    }
+    form {
+        margin-top: 50px;
+        .comment {
+            margin-left: 142px;
+
+            label {
+                font-weight: bold;
+                margin-right: 8px;
+                position: relative;
+                top: 11px;
+                vertical-align: top;
+            }
+            textarea {
+                height: 150px;
+                width: 375px;
+            }
+        }
+        p, .cancel {
+            margin-left: 20px;
+        }
+        p {
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+        .cancel {
+            @include cancel-button;
+            display: inline-block;
+            margin-right: 15px;
+        }
+        input[type=submit] {
+            @include teal-button;
+            display: inline-block;
+            height: 34px;
+            width: 120px;
+        }
     }
 }
 

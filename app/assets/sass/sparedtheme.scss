@@ -472,7 +472,9 @@ ul {
 }
 
 textarea {
+    box-sizing: border-box;
     font-size: 13px;
+    padding: 10px;
 }
 
 .org {

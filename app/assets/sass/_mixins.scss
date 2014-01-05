@@ -32,3 +32,13 @@
     background-color: #93d2af;
     outline-color: #93d2af;
 }
+
+@mixin cancel-button {
+    $height: 34px;
+    $line-height: 16px;
+    @include beige-button;
+    line-height: $line-height;
+    height: $height;
+    width: 120px;
+    padding-top: floor(($height - $line-height - 4)/2);
+}
